@@ -1,0 +1,18 @@
+platform :ios, '7.0'
+pod "AFNetworking", "~> 2.0"
+
+pod 'ReactiveCocoa', '2.5'
+
+pod 'FMDB'
+
+pod 'FMDBMigrationManager'
+
+pod 'pop', '~> 1.0'
+
+pod "JDFPeekaboo"
+
+pod 'PARTagPicker'
+
+pod 'SWTableViewCell', '~> 0.3.7'
+
+pod "AKPickerView"
