@@ -1,5 +1,5 @@
 //
-//  Item_1_Cell.h
+//  FWCDetailVC.h
 //  FATodos
 //
 //  Created by 李杰 on 9/9/15.
@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SWTableViewCell.h"
 
-@interface Item_1_Cell : SWTableViewCell
+@interface FWCDetailVC : UIViewController <RoutableProt>
 
 @end

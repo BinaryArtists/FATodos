@@ -359,8 +359,6 @@
 		6ACFDF321B9C23FD0061DA35 /* selector.c in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFDDC31B9C23FC0061DA35 /* selector.c */; };
 		6ACFDF331B9C23FD0061DA35 /* tokenizer.c in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFDDC51B9C23FC0061DA35 /* tokenizer.c */; };
 		6ACFDF341B9C23FD0061DA35 /* Routable.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFDDCD1B9C23FC0061DA35 /* Routable.m */; };
-		6ACFDF351B9C23FD0061DA35 /* MainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFDDD01B9C23FC0061DA35 /* MainVC.m */; };
-		6ACFDF361B9C23FD0061DA35 /* MainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6ACFDDD11B9C23FC0061DA35 /* MainVC.xib */; };
 		6ACFDF8F1B9C2E740061DA35 /* db.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6ACFDF3A1B9C2E740061DA35 /* db.plist */; };
 		6ACFDF901B9C2E740061DA35 /* ZIMDbConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFDF3E1B9C2E740061DA35 /* ZIMDbConnection.m */; };
 		6ACFDF911B9C2E740061DA35 /* ZIMDbConnectionPool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFDF401B9C2E740061DA35 /* ZIMDbConnectionPool.m */; };
@@ -405,10 +403,6 @@
 		6ACFDFCC1B9D40F40061DA35 /* MZDayPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFDFC81B9D40F40061DA35 /* MZDayPicker.m */; };
 		6ACFDFCD1B9D40F40061DA35 /* MZDayPickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFDFCA1B9D40F40061DA35 /* MZDayPickerCell.m */; };
 		6ACFDFD31B9E63DD0061DA35 /* Item1.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFDFD21B9E63DD0061DA35 /* Item1.m */; };
-		6ACFDFD71B9FF3C00061DA35 /* Item_1_Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFDFD51B9FF3C00061DA35 /* Item_1_Cell.m */; };
-		6ACFDFD81B9FF3C00061DA35 /* Item_1_Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6ACFDFD61B9FF3C00061DA35 /* Item_1_Cell.xib */; };
-		6ACFDFDD1B9FF7BC0061DA35 /* FWCDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFDFDB1B9FF7BC0061DA35 /* FWCDetailVC.m */; };
-		6ACFDFDE1B9FF7BC0061DA35 /* FWCDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6ACFDFDC1B9FF7BC0061DA35 /* FWCDetailVC.xib */; };
 		6ACFDFE41BA0207F0061DA35 /* check@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6ACFDFE01BA0207F0061DA35 /* check@2x.png */; };
 		6ACFDFE51BA0207F0061DA35 /* clock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6ACFDFE11BA0207F0061DA35 /* clock@2x.png */; };
 		6ACFDFE61BA0207F0061DA35 /* cross@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6ACFDFE21BA0207F0061DA35 /* cross@2x.png */; };
@@ -416,6 +410,15 @@
 		6ACFDFEB1BA02A3E0061DA35 /* UIColor+Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFDFEA1BA02A3E0061DA35 /* UIColor+Theme.m */; };
 		6ACFDFF41BA040AE0061DA35 /* NSString+Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFDFF31BA040AE0061DA35 /* NSString+Theme.m */; };
 		6ACFDFF91BA127660061DA35 /* NSDictionary+Params.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFDFF81BA127660061DA35 /* NSDictionary+Params.m */; };
+		6ACFDFFE1BA14B980061DA35 /* DESIGN.md in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFDFFD1BA14B980061DA35 /* DESIGN.md */; };
+		6ACFE0031BA16C380061DA35 /* FWCDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFE0011BA16C380061DA35 /* FWCDetailVC.m */; };
+		6ACFE0041BA16C380061DA35 /* FWCDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6ACFE0021BA16C380061DA35 /* FWCDetailVC.xib */; };
+		6ACFE00F1BA170720061DA35 /* Item_1_Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFE00A1BA170720061DA35 /* Item_1_Cell.m */; };
+		6ACFE0101BA170720061DA35 /* Item_1_Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6ACFE00B1BA170720061DA35 /* Item_1_Cell.xib */; };
+		6ACFE0111BA170720061DA35 /* MainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFE00D1BA170720061DA35 /* MainVC.m */; };
+		6ACFE0121BA170720061DA35 /* MainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6ACFE00E1BA170720061DA35 /* MainVC.xib */; };
+		6ACFE0141BA1708F0061DA35 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFE0131BA1708F0061DA35 /* README.md */; };
+		6ACFE01C1BA19AD20061DA35 /* RoutableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFE01B1BA19AD20061DA35 /* RoutableVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1133,9 +1136,6 @@
 		6ACFDDC61B9C23FC0061DA35 /* tokenizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tokenizer.h; sourceTree = "<group>"; };
 		6ACFDDCC1B9C23FC0061DA35 /* Routable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Routable.h; sourceTree = "<group>"; };
 		6ACFDDCD1B9C23FC0061DA35 /* Routable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Routable.m; sourceTree = "<group>"; };
-		6ACFDDCF1B9C23FC0061DA35 /* MainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainVC.h; sourceTree = "<group>"; };
-		6ACFDDD01B9C23FC0061DA35 /* MainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainVC.m; sourceTree = "<group>"; };
-		6ACFDDD11B9C23FC0061DA35 /* MainVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainVC.xib; sourceTree = "<group>"; };
 		6ACFDF3A1B9C2E740061DA35 /* db.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = db.plist; sourceTree = "<group>"; };
 		6ACFDF3D1B9C2E740061DA35 /* ZIMDbConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIMDbConnection.h; sourceTree = "<group>"; };
 		6ACFDF3E1B9C2E740061DA35 /* ZIMDbConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZIMDbConnection.m; sourceTree = "<group>"; };
@@ -1230,12 +1230,6 @@
 		6ACFDFCA1B9D40F40061DA35 /* MZDayPickerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZDayPickerCell.m; sourceTree = "<group>"; };
 		6ACFDFD11B9E63DD0061DA35 /* Item1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item1.h; sourceTree = "<group>"; };
 		6ACFDFD21B9E63DD0061DA35 /* Item1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item1.m; sourceTree = "<group>"; };
-		6ACFDFD41B9FF3C00061DA35 /* Item_1_Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item_1_Cell.h; sourceTree = "<group>"; };
-		6ACFDFD51B9FF3C00061DA35 /* Item_1_Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item_1_Cell.m; sourceTree = "<group>"; };
-		6ACFDFD61B9FF3C00061DA35 /* Item_1_Cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Item_1_Cell.xib; sourceTree = "<group>"; };
-		6ACFDFDA1B9FF7BC0061DA35 /* FWCDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWCDetailVC.h; sourceTree = "<group>"; };
-		6ACFDFDB1B9FF7BC0061DA35 /* FWCDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWCDetailVC.m; sourceTree = "<group>"; };
-		6ACFDFDC1B9FF7BC0061DA35 /* FWCDetailVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FWCDetailVC.xib; sourceTree = "<group>"; };
 		6ACFDFE01BA0207F0061DA35 /* check@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check@2x.png"; sourceTree = "<group>"; };
 		6ACFDFE11BA0207F0061DA35 /* clock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clock@2x.png"; sourceTree = "<group>"; };
 		6ACFDFE21BA0207F0061DA35 /* cross@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cross@2x.png"; sourceTree = "<group>"; };
@@ -1250,6 +1244,19 @@
 		6ACFDFF61BA127450061DA35 /* RoutableProt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoutableProt.h; sourceTree = "<group>"; };
 		6ACFDFF71BA127660061DA35 /* NSDictionary+Params.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Params.h"; sourceTree = "<group>"; };
 		6ACFDFF81BA127660061DA35 /* NSDictionary+Params.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Params.m"; sourceTree = "<group>"; };
+		6ACFDFFD1BA14B980061DA35 /* DESIGN.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = DESIGN.md; sourceTree = "<group>"; };
+		6ACFE0001BA16C380061DA35 /* FWCDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWCDetailVC.h; sourceTree = "<group>"; };
+		6ACFE0011BA16C380061DA35 /* FWCDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWCDetailVC.m; sourceTree = "<group>"; };
+		6ACFE0021BA16C380061DA35 /* FWCDetailVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FWCDetailVC.xib; sourceTree = "<group>"; };
+		6ACFE0091BA170720061DA35 /* Item_1_Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item_1_Cell.h; sourceTree = "<group>"; };
+		6ACFE00A1BA170720061DA35 /* Item_1_Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item_1_Cell.m; sourceTree = "<group>"; };
+		6ACFE00B1BA170720061DA35 /* Item_1_Cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Item_1_Cell.xib; sourceTree = "<group>"; };
+		6ACFE00C1BA170720061DA35 /* MainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainVC.h; sourceTree = "<group>"; };
+		6ACFE00D1BA170720061DA35 /* MainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainVC.m; sourceTree = "<group>"; };
+		6ACFE00E1BA170720061DA35 /* MainVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainVC.xib; sourceTree = "<group>"; };
+		6ACFE0131BA1708F0061DA35 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		6ACFE01A1BA19AD20061DA35 /* RoutableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoutableVC.h; sourceTree = "<group>"; };
+		6ACFE01B1BA19AD20061DA35 /* RoutableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoutableVC.m; sourceTree = "<group>"; };
 		850482635E526CD13E018DB7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1286,6 +1293,7 @@
 		6A158E2A1B70B482007FE54F = {
 			isa = PBXGroup;
 			children = (
+				6ACFDFFC1BA14B980061DA35 /* Documentation */,
 				6ACFDFF11BA037FC0061DA35 /* macrodef.h */,
 				6ACFDFEF1BA037C60061DA35 /* typedef.h */,
 				6ACFDFDF1BA0207E0061DA35 /* Image */,
@@ -2567,11 +2575,9 @@
 		6ACFDDCE1B9C23FC0061DA35 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				6ACFDFD91B9FF7990061DA35 /* 俯卧撑 */,
-				6ACFDFC31B9D2C3C0061DA35 /* Cell */,
-				6ACFDDCF1B9C23FC0061DA35 /* MainVC.h */,
-				6ACFDDD01B9C23FC0061DA35 /* MainVC.m */,
-				6ACFDDD11B9C23FC0061DA35 /* MainVC.xib */,
+				6ACFE0061BA170720061DA35 /* FourQuadrant */,
+				6ACFE0071BA170720061DA35 /* Pushup */,
+				6ACFDFFF1BA16C380061DA35 /* Diagram */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -2726,16 +2732,6 @@
 			path = Entity;
 			sourceTree = "<group>";
 		};
-		6ACFDFC31B9D2C3C0061DA35 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				6ACFDFD41B9FF3C00061DA35 /* Item_1_Cell.h */,
-				6ACFDFD51B9FF3C00061DA35 /* Item_1_Cell.m */,
-				6ACFDFD61B9FF3C00061DA35 /* Item_1_Cell.xib */,
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
 		6ACFDFC41B9D40F40061DA35 /* MZDayPicker */ = {
 			isa = PBXGroup;
 			children = (
@@ -2747,16 +2743,6 @@
 				6ACFDFCA1B9D40F40061DA35 /* MZDayPickerCell.m */,
 			);
 			path = MZDayPicker;
-			sourceTree = "<group>";
-		};
-		6ACFDFD91B9FF7990061DA35 /* 俯卧撑 */ = {
-			isa = PBXGroup;
-			children = (
-				6ACFDFDA1B9FF7BC0061DA35 /* FWCDetailVC.h */,
-				6ACFDFDB1B9FF7BC0061DA35 /* FWCDetailVC.m */,
-				6ACFDFDC1B9FF7BC0061DA35 /* FWCDetailVC.xib */,
-			);
-			path = "俯卧撑";
 			sourceTree = "<group>";
 		};
 		6ACFDFDF1BA0207E0061DA35 /* Image */ = {
@@ -2776,8 +2762,58 @@
 				6ACFDFF61BA127450061DA35 /* RoutableProt.h */,
 				6ACFDFF71BA127660061DA35 /* NSDictionary+Params.h */,
 				6ACFDFF81BA127660061DA35 /* NSDictionary+Params.m */,
+				6ACFE01A1BA19AD20061DA35 /* RoutableVC.h */,
+				6ACFE01B1BA19AD20061DA35 /* RoutableVC.m */,
 			);
 			path = extension;
+			sourceTree = "<group>";
+		};
+		6ACFDFFC1BA14B980061DA35 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				6ACFE0131BA1708F0061DA35 /* README.md */,
+				6ACFDFFD1BA14B980061DA35 /* DESIGN.md */,
+			);
+			name = Documentation;
+			path = ../Documentation;
+			sourceTree = "<group>";
+		};
+		6ACFDFFF1BA16C380061DA35 /* Diagram */ = {
+			isa = PBXGroup;
+			children = (
+				6ACFE0001BA16C380061DA35 /* FWCDetailVC.h */,
+				6ACFE0011BA16C380061DA35 /* FWCDetailVC.m */,
+				6ACFE0021BA16C380061DA35 /* FWCDetailVC.xib */,
+			);
+			path = Diagram;
+			sourceTree = "<group>";
+		};
+		6ACFE0061BA170720061DA35 /* FourQuadrant */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FourQuadrant;
+			sourceTree = "<group>";
+		};
+		6ACFE0071BA170720061DA35 /* Pushup */ = {
+			isa = PBXGroup;
+			children = (
+				6ACFE0081BA170720061DA35 /* Cell */,
+				6ACFE00C1BA170720061DA35 /* MainVC.h */,
+				6ACFE00D1BA170720061DA35 /* MainVC.m */,
+				6ACFE00E1BA170720061DA35 /* MainVC.xib */,
+			);
+			path = Pushup;
+			sourceTree = "<group>";
+		};
+		6ACFE0081BA170720061DA35 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6ACFE0091BA170720061DA35 /* Item_1_Cell.h */,
+				6ACFE00A1BA170720061DA35 /* Item_1_Cell.m */,
+				6ACFE00B1BA170720061DA35 /* Item_1_Cell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		D9A204C453E856BEF0A3F158 /* Frameworks */ = {
@@ -2876,18 +2912,18 @@
 				6ACFDF8F1B9C2E740061DA35 /* db.plist in Resources */,
 				6A158E4A1B70B482007FE54F /* LaunchScreen.xib in Resources */,
 				6ACFDFE61BA0207F0061DA35 /* cross@2x.png in Resources */,
+				6ACFE0121BA170720061DA35 /* MainVC.xib in Resources */,
+				6ACFE0041BA16C380061DA35 /* FWCDetailVC.xib in Resources */,
 				6ACFDF171B9C23FD0061DA35 /* html+samurai.css in Resources */,
 				6ACFDF181B9C23FD0061DA35 /* html.css in Resources */,
 				6ACFDF161B9C23FD0061DA35 /* html+native.css in Resources */,
 				6ACFDE581B9C23FD0061DA35 /* ServiceInspector.bundle in Resources */,
-				6ACFDF361B9C23FD0061DA35 /* MainVC.xib in Resources */,
 				6ACFDE551B9C23FD0061DA35 /* ServiceGrids.bundle in Resources */,
 				6ACFDE4D1B9C23FD0061DA35 /* ServiceGesture.bundle in Resources */,
 				6A158E471B70B482007FE54F /* Images.xcassets in Resources */,
-				6ACFDFD81B9FF3C00061DA35 /* Item_1_Cell.xib in Resources */,
-				6ACFDFDE1B9FF7BC0061DA35 /* FWCDetailVC.xib in Resources */,
 				6ACFDE491B9C23FD0061DA35 /* ServiceBorder.bundle in Resources */,
 				6ACFDFE41BA0207F0061DA35 /* check@2x.png in Resources */,
+				6ACFE0101BA170720061DA35 /* Item_1_Cell.xib in Resources */,
 				6ACFDFE71BA0207F0061DA35 /* list@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2977,7 +3013,6 @@
 				6ACFDE991B9C23FD0061DA35 /* Samurai_CSSValue.m in Sources */,
 				6ACFDE651B9C23FD0061DA35 /* ServiceTapspotHook.m in Sources */,
 				6ACFDF031B9C23FD0061DA35 /* Samurai_HtmlLayoutText.m in Sources */,
-				6ACFDFD71B9FF3C00061DA35 /* Item_1_Cell.m in Sources */,
 				6ACFDE291B9C23FD0061DA35 /* Samurai_Document.m in Sources */,
 				6ACFDE871B9C23FD0061DA35 /* Samurai_CSSNumberMs.m in Sources */,
 				6ACFDE951B9C23FD0061DA35 /* Samurai_CSSObject.m in Sources */,
@@ -2992,7 +3027,6 @@
 				6ACFDE811B9C23FD0061DA35 /* Samurai_CSSNumberFr.m in Sources */,
 				6ACFDF0D1B9C23FD0061DA35 /* Samurai_HtmlRenderStoreScope.m in Sources */,
 				6ACFDE5E1B9C23FD0061DA35 /* ServiceMonitor.m in Sources */,
-				6ACFDFDD1B9FF7BC0061DA35 /* FWCDetailVC.m in Sources */,
 				6ACFDE151B9C23FD0061DA35 /* Samurai_UIProgressView.m in Sources */,
 				6ACFDFB81B9C3CC30061DA35 /* UIViewController+UINavigationBar.m in Sources */,
 				6ACFDF081B9C23FD0061DA35 /* Samurai_HtmlRenderTable.m in Sources */,
@@ -3003,6 +3037,7 @@
 				6ACFDFB11B9C2E740061DA35 /* ZIMMessageDigest.m in Sources */,
 				6ACFDE711B9C23FD0061DA35 /* Samurai_CSSSelectorChecker.m in Sources */,
 				6ACFDDED1B9C23FD0061DA35 /* Samurai_Trigger.m in Sources */,
+				6ACFE0031BA16C380061DA35 /* FWCDetailVC.m in Sources */,
 				6ACFDE2D1B9C23FD0061DA35 /* Samurai_RenderStyle.m in Sources */,
 				6ACFDE9B1B9C23FD0061DA35 /* UIButton+Html.m in Sources */,
 				6ACFDEE91B9C23FD0061DA35 /* Samurai_HtmlElementOutput.m in Sources */,
@@ -3087,6 +3122,7 @@
 				6ACFDDDC1B9C23FD0061DA35 /* NSMutableArray+Extension.m in Sources */,
 				6ACFDDF81B9C23FD0061DA35 /* Samurai_Event.m in Sources */,
 				6ACFDDFB1B9C23FD0061DA35 /* Samurai_ModelInstance.m in Sources */,
+				6ACFE01C1BA19AD20061DA35 /* RoutableVC.m in Sources */,
 				6ACFDF121B9C23FD0061DA35 /* Samurai_HtmlRenderWorklet_30UpdateFrame.m in Sources */,
 				6ACFDF341B9C23FD0061DA35 /* Routable.m in Sources */,
 				6ACFDE541B9C23FD0061DA35 /* ServiceGestureViewSwipe.m in Sources */,
@@ -3111,7 +3147,6 @@
 				6ACFDE111B9C23FD0061DA35 /* Samurai_UICollectionViewCell.m in Sources */,
 				6ACFDE6A1B9C23FD0061DA35 /* UIViewController+DataBinding.m in Sources */,
 				6ACFDEE31B9C23FD0061DA35 /* Samurai_HtmlElementLegend.m in Sources */,
-				6ACFDF351B9C23FD0061DA35 /* MainVC.m in Sources */,
 				6ACFDEEB1B9C23FD0061DA35 /* Samurai_HtmlElementPre.m in Sources */,
 				6ACFDE031B9C23FD0061DA35 /* Samurai_ServiceInstance.m in Sources */,
 				6ACFDEDE1B9C23FD0061DA35 /* Samurai_HtmlElementInputRadio.m in Sources */,
@@ -3139,6 +3174,7 @@
 				6ACFDE601B9C23FD0061DA35 /* ServiceMonitorFPSModel.m in Sources */,
 				6ACFDEF01B9C23FD0061DA35 /* Samurai_HtmlElementSub.m in Sources */,
 				6ACFDEC01B9C23FD0061DA35 /* Samurai_HtmlElementCode.m in Sources */,
+				6ACFE00F1BA170720061DA35 /* Item_1_Cell.m in Sources */,
 				6ACFDEFE1B9C23FD0061DA35 /* Samurai_HtmlElementViewport.m in Sources */,
 				6ACFDEA91B9C23FD0061DA35 /* UITextView+Html.m in Sources */,
 				6ACFDFEB1BA02A3E0061DA35 /* UIColor+Theme.m in Sources */,
@@ -3215,6 +3251,7 @@
 				6ACFDE201B9C23FD0061DA35 /* Samurai_UIWebView.m in Sources */,
 				6ACFDDD81B9C23FD0061DA35 /* NSBundle+Extension.m in Sources */,
 				6ACFDE0B1B9C23FD0061DA35 /* UIViewController+NavigationBar.m in Sources */,
+				6ACFE0111BA170720061DA35 /* MainVC.m in Sources */,
 				6ACFDFA01B9C2E740061DA35 /* ZIMSqlDropTriggerStatement.m in Sources */,
 				6ACFDE781B9C23FD0061DA35 /* Samurai_CSSNumberChs.m in Sources */,
 				6ACFDEA11B9C23FD0061DA35 /* UIProgressView+Html.m in Sources */,
@@ -3281,6 +3318,7 @@
 				6ACFDEC61B9C23FD0061DA35 /* Samurai_HtmlElementDiv.m in Sources */,
 				6ACFDEC51B9C23FD0061DA35 /* Samurai_HtmlElementDir.m in Sources */,
 				6ACFDE901B9C23FD0061DA35 /* Samurai_CSSNumberTurn.m in Sources */,
+				6ACFE0141BA1708F0061DA35 /* README.md in Sources */,
 				6ACFDED51B9C23FD0061DA35 /* Samurai_HtmlElementHr.m in Sources */,
 				6ACFDF961B9C2E740061DA35 /* ZIMSqlAnalyzeStatement.m in Sources */,
 				6ACFDDD41B9C23FD0061DA35 /* Samurai_Config.m in Sources */,
@@ -3295,6 +3333,7 @@
 				6ACFDEA51B9C23FD0061DA35 /* UISwitch+Html.m in Sources */,
 				6ACFDDD71B9C23FD0061DA35 /* NSArray+Extension.m in Sources */,
 				6ACFDE7E1B9C23FD0061DA35 /* Samurai_CSSNumberDppx.m in Sources */,
+				6ACFDFFE1BA14B980061DA35 /* DESIGN.md in Sources */,
 				6ACFDE421B9C23FD0061DA35 /* Samurai_ViewConfig.m in Sources */,
 				6ACFDE6F1B9C23FD0061DA35 /* Samurai_CSSRuleCollector.m in Sources */,
 				6A158E391B70B482007FE54F /* main.m in Sources */,
