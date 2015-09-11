@@ -6,20 +6,18 @@
 //  Copyright (c) 2015 fallen.ink. All rights reserved.
 //
 
-#import "MainVC.h"
+#import "PushupVC.h"
 #import "UIViewController+UINavigationBar.h"
 #import "UIView+Frame.h"
 #import "MZDayPicker.h"
 #import "Samurai_Property.h"
 #import "JDFPeekabooCoordinator.h"
-#import "FWCDetailVC.h"
-#import "Routable.h"
-#import "AppDelegate.h"
+#import "DiagramVC.h"
 #import "NSMutableArray+SWUtilityButtons.h"
 #import "SWTableViewCell.h"
 #import "Item_1_Cell.h"
 
-@interface MainVC () <UITableViewDelegate, UITableViewDataSource, MZDayPickerDelegate, MZDayPickerDataSource, SWTableViewCellDelegate>
+@interface PushupVC () <UITableViewDelegate, UITableViewDataSource, MZDayPickerDelegate, MZDayPickerDataSource, SWTableViewCellDelegate, Item_1_CellDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *          tableView;
 @property (weak, nonatomic) IBOutlet MZDayPicker *          dayPicker;
@@ -38,15 +36,15 @@
 
 @end
 
-@implementation MainVC
+@implementation PushupVC
 
-@def_string( TABLE_CELL_INDETIFY, @"UITableViewCell.identifier");
+@def_string( TABLE_CELL_INDETIFY, @"identifier.UITableViewCell");
 
 #pragma mark - Initialize
 
 - (id)initWithRouterParams:(NSDictionary *)params {
     if ((self = [self initWithNibName:nil bundle:nil])) {
-        self.title = @"Main";
+        self.title = @"俯卧撑";
     }
     return self;
 }
@@ -55,15 +53,11 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    
-//    self.navigationController.navigationBarHidden   = YES;
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
-    
-//    self.navigationController.navigationBarHidden   = NO;
-    
+
     [self.scrollCoordinator disable];
 }
 
@@ -141,6 +135,11 @@
 - (void)didClickOnNavigationBarRightItem:(id)sender {
     [self setTableViewEditStyle:UITableViewCellEditingStyleInsert];
     
+    
+    Item1 *item         = [self.tableData lastObject];
+    
+    if ([item isInit] ||    // 最后一项未初始化
+        !item)              // 还没有任何数据
     // 新增一个表项（当日）
     {
         NSIndexPath *ip = [NSIndexPath indexPathForRow:[self.tableData count]
@@ -150,6 +149,15 @@
         
         [self.tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:ip]
                               withRowAnimation:UITableViewRowAnimationRight];
+    }
+    else
+    // 重新加载当前项目
+    {
+        NSIndexPath *ip = [NSIndexPath indexPathForRow:[self.tableData count]-1
+                                             inSection:0];
+        
+        [self.tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:ip]
+                              withRowAnimation:UITableViewRowAnimationLeft];
     }
 }
 
@@ -181,7 +189,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 44.f;
+    return 58.f;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -192,19 +200,19 @@
     cell.textLabel.text = item.name;
     
     if (!cell.textLabel.text) {
-        cell.textLabel.text = [NSString stringWithFormat:@"Section: %ld, Seat: %ld", (long)indexPath.section, (long)indexPath.row];
+        cell.textLabel.text = [NSString stringWithFormat:@"空空如也"];
     }
 
     // optionally specify a width that each set of utility buttons will share
     cell.delegate = self;
-    [cell setLeftUtilityButtons:[self leftButtons] WithButtonWidth:32.0f];
+    [cell setLeftUtilityButtons:[self leftButtons] WithButtonWidth:58.0f];
     [cell setRightUtilityButtons:[self rightButtons] WithButtonWidth:58.0f];
 
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [[Routable sharedRouter] open:[AppDelegate FWC_DETAIL_VC] animated:YES extraParams:@{}];
+    // Do nothing
 }
 
 - (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -261,10 +269,11 @@
 - (void)swipeableTableViewCell:(SWTableViewCell *)cell didTriggerRightUtilityButtonWithIndex:(NSInteger)index {
     switch (index) {
         case 0: {
-            UIAlertView *alertTest = [[UIAlertView alloc] initWithTitle:@"Hello" message:@"More more more" delegate:nil cancelButtonTitle:@"cancel" otherButtonTitles: nil];
-            [alertTest show];
             
             [cell hideUtilityButtonsAnimated:YES];
+            
+            [[Routable sharedRouter] open:[AppDelegate DIAGRAM_VC] animated:YES extraParams:@{}];
+            
             break;
         }
         case 1: {
@@ -303,6 +312,20 @@
     }
     
     return YES;
+}
+
+#pragma mark - Item_1_CellDelegate
+
+- (BOOL)item_1_CellShouldExpandForEditing:(Item_1_Cell *)cell {
+    return YES;
+}
+
+- (void)item_1_CellDidExpand:(Item_1_Cell *)cell {
+    
+}
+
+- (void)item_1_CellDidBack:(Item_1_Cell *)cell {
+    // save state to model
 }
 
 #pragma mark - UIScrollViewDelegate

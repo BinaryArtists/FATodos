@@ -43,6 +43,8 @@
 
 @string( MAIN_VC )
 
-@string( FWC_DETAIL_VC )
+@string( PUSHUP_VC )
+
+@string( DIAGRAM_VC )
 
 @end

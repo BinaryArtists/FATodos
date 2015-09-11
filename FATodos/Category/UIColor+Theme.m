@@ -45,4 +45,10 @@
                            alpha:1.f];
 }
 
+#pragma mark - 
+
++ (UIColor *)bgGrayColor {
+    return [UIColor darkGrayColor];
+}
+
 @end

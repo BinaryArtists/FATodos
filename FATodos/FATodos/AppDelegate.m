@@ -1,7 +1,8 @@
 #import "AppDelegate.h"
 #import "Routable.h"
+#import "PushupVC.h"
+#import "DiagramVC.h"
 #import "MainVC.h"
-#import "FWCDetailVC.h"
 
 @interface AppDelegate ()
 
@@ -52,7 +53,8 @@
 #pragma mark - VC mapping
 
 - (void)mapping {
-    [[Routable sharedRouter] map:[self FWC_DETAIL_VC] toController:[FWCDetailVC class]];
+    [[Routable sharedRouter] map:[self PUSHUP_VC] toController:[PushupVC class]];
+    [[Routable sharedRouter] map:[self DIAGRAM_VC] toController:[DiagramVC class]];
 }
 
 @end
@@ -61,7 +63,8 @@
 
 @implementation AppDelegate (ViewRoutable)
 
-@def_string( MAIN_VC, @"vc.main" )
-@def_string( FWC_DETAIL_VC, @"vc.fwc.detail" )
+@def_string( MAIN_VC,       @"vc.main")
+@def_string( PUSHUP_VC,     @"vc.pushup" )
+@def_string( DIAGRAM_VC,    @"vc.diagram" )
 
 @end

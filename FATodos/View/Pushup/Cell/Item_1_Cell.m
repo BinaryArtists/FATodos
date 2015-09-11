@@ -10,6 +10,8 @@
 
 @interface Item_1_Cell () <AKPickerViewDataSource, AKPickerViewDelegate>
 
+@property (nonatomic, weak) Item1 *item;
+
 // PickerView
 @property (nonatomic, strong) NSArray *roundData;
 
@@ -40,11 +42,47 @@
     
     self.nameLabel.text = item.name;
     
+    // state control
+    
+    UITapGestureRecognizer *doubleTapGestureRecognizer  = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(doubleTappedOnCell:)];
+    doubleTapGestureRecognizer.numberOfTapsRequired     = 2;
+    doubleTapGestureRecognizer.cancelsTouchesInView     = NO;
+    doubleTapGestureRecognizer.delegate                 = self;
+//    [self addGestureRecognizer:doubleTapGestureRecognizer];
+    
+    // 用长按吧，然后弹起来～～～
+    
     [self initPickerViewWithModel:item];
+    
+    self.item          = model;
 }
 
 - (CGFloat)cellHeight {
     return self.round_1_pickerViewHeightConstraint.constant;
+}
+
+#pragma mark - 
+
+- (void)doubleTappedOnCell:(UIGestureRecognizer *)gestureRecognizer {
+    /**
+     *  todo:
+     
+        左右编辑态 和 数字编辑态 是互斥的！
+     */
+    
+    if (self.transitionDelegate &&
+        [self.transitionDelegate respondsToSelector:@selector(item_1_CellShouldExpandForEditing:)]) {
+        if ([self.transitionDelegate item_1_CellShouldExpandForEditing:self]) {
+            
+            if (self.displayState == kItem_1_CellDisplayNormal) {
+                // expand
+                
+            } else {
+                // back
+            }
+            
+        }
+    }
 }
 
 #pragma mark - Utility
@@ -99,6 +137,15 @@
 
 - (void)pickerView:(AKPickerView *)pickerView didSelectItem:(NSInteger)item {
     NSLog(@"%@", self.roundData[item]);
+    
+    
+    if (self.round_1_pickerView == pickerView) {
+        self.item.num_1     = [self.roundData[item] intValue];
+    } else if (self.round_2_pickerView == pickerView) {
+        self.item.num_2     = [self.roundData[item] intValue];
+    } else {
+        self.item.num_3     = [self.roundData[item] intValue];
+    }
 }
 
 

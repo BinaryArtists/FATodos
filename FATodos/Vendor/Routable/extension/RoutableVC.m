@@ -18,7 +18,7 @@
 
 - (id)initWithRouterParams:(NSDictionary *)params {
     if (self = [self initWithNibName:nil bundle:nil]) {
-        
+        self.params = params;
     }
     
     return self;

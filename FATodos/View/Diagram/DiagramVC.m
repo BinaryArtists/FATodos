@@ -6,10 +6,10 @@
 //  Copyright (c) 2015 fallen.ink. All rights reserved.
 //
 
-#import "FWCDetailVC.h"
+#import "DiagramVC.h"
 #import "JDFPeekabooCoordinator.h"
 
-@interface FWCDetailVC ()
+@interface DiagramVC ()
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
@@ -22,7 +22,7 @@
 
 @end
 
-@implementation FWCDetailVC
+@implementation DiagramVC
 
 #pragma mark - Initialize
 

@@ -35,4 +35,8 @@
  */
 + (UIColor *)gray_1_color;
 
+#pragma mark - 
+
++ (UIColor *)bgGrayColor;
+
 @end

@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MainVC : UIViewController <RoutableProt>
+@interface PushupVC : UIViewController <RoutableProt>
 
 @end

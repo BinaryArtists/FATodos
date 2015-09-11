@@ -16,3 +16,7 @@ pod 'PARTagPicker'
 pod 'SWTableViewCell', '~> 0.3.7'
 
 pod "AKPickerView"
+
+pod 'UIColor+MLPFlatColors', '~> 1.0'
+
+pod "ASCFlatUIColor"

@@ -24,4 +24,8 @@
 @property (nonatomic, assign) BOOL          has_3;
 @property (nonatomic, assign) int32_t       num_3;
 
+#pragma mark - Utility
+
+@property (nonatomic, assign, readonly) BOOL isInit;
+
 @end

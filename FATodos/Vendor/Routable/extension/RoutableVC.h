@@ -10,4 +10,6 @@
 
 @interface RoutableVC : UIViewController <RoutableProt>
 
+@property (nonatomic, strong) NSDictionary *params;
+
 @end

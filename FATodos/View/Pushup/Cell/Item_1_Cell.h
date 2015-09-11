@@ -47,6 +47,8 @@ typedef NS_ENUM(NSInteger, Item_1_CellDisplayState) {
 @property (weak, nonatomic) IBOutlet AKPickerView *round_2_pickerView;
 @property (weak, nonatomic) IBOutlet AKPickerView *round_3_pickerView;
 
+// 1~3 右往左
+
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *round_1_pickerViewHeightConstraint;
 
 - (void)setModel:(id)model;

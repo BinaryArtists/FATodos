@@ -48,4 +48,10 @@
     }
 }
 
+#pragma mark - Utility
+
+- (BOOL)isInit {
+    return self.has_1 || self.has_2 || self.has_3 || self.name;
+}
+
 @end

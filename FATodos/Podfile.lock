@@ -39,6 +39,7 @@ PODS:
   - ReactiveCocoa/UI (2.5):
     - ReactiveCocoa/Core
   - SWTableViewCell (0.3.7)
+  - UIColor+MLPFlatColors (1.0)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.0)
@@ -50,6 +51,7 @@ DEPENDENCIES:
   - pop (~> 1.0)
   - ReactiveCocoa (= 2.5)
   - SWTableViewCell (~> 0.3.7)
+  - UIColor+MLPFlatColors (~> 1.0)
 
 SPEC CHECKSUMS:
   AFNetworking: 79f7eb1a0fcfa7beb409332b2ca49afe9ce53b05
@@ -61,5 +63,6 @@ SPEC CHECKSUMS:
   pop: 628ffc631644601567ee8bfaaaea493ebd7d0923
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   SWTableViewCell: 2a94aadc9d47b2b611fa064566bf57948b95b579
+  UIColor+MLPFlatColors: 14deb8f28da06ab8918c14231d4ff49ca7cd384a
 
 COCOAPODS: 0.38.2

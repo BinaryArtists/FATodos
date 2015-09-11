@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FWCDetailVC : UIViewController <RoutableProt>
+@interface DiagramVC : UIViewController <RoutableProt>
 
 @end
