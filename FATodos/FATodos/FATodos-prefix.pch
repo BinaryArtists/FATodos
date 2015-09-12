@@ -20,6 +20,9 @@
 #import "macrodef.h"
 #import "typedef.h"
 
+// Base
+#import "UITableViewCellProtocol.h"
+
 // Framework
 #import "Samurai_Property.h"
 

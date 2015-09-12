@@ -27,6 +27,7 @@
 // 2. 下载sqlite
 
 // 俯卧撑 分3组
+// cell 长按，从原地动画弹起来，然后扩展，并选择
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>

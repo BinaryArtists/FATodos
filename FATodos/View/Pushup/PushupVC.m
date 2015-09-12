@@ -77,8 +77,8 @@
     {
         self.tableView.tableFooterView  = [UIView new];
 
-        [self.tableView registerClass:[Item_1_Cell class]
-               forCellReuseIdentifier:[self TABLE_CELL_INDETIFY]];
+        [self.tableView registerNib:[Item_1_Cell nib]
+             forCellReuseIdentifier:[self TABLE_CELL_INDETIFY]];
     }
     
     {
@@ -197,16 +197,13 @@
     Item_1_Cell *cell   = [tableView dequeueReusableCellWithIdentifier:[self TABLE_CELL_INDETIFY]
                                                             forIndexPath:indexPath];
 
-    cell.textLabel.text = item.name;
-    
-    if (!cell.textLabel.text) {
-        cell.textLabel.text = [NSString stringWithFormat:@"空空如也"];
-    }
-
     // optionally specify a width that each set of utility buttons will share
     cell.delegate = self;
     [cell setLeftUtilityButtons:[self leftButtons] WithButtonWidth:58.0f];
     [cell setRightUtilityButtons:[self rightButtons] WithButtonWidth:58.0f];
+    
+    // Set model
+    [cell setModel:item];
 
     return cell;
 }

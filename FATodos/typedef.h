@@ -12,6 +12,7 @@
 typedef NS_ENUM(NSInteger, ModuleType) {
     kModuleItem             = 1, // 俯卧撑、哑铃
     kModuleFourQuadrant     = 2, // 四象限
+    kModuleNote             = 3, // 便签纪录
 };
 
 typedef NS_ENUM(NSInteger, ItemType) {

@@ -19,6 +19,10 @@
 
 @implementation Item_1_Cell
 
++ (UINib *)nib {
+    return [UINib nibWithNibName:NSStringFromClass([self class]) bundle:nil];
+}
+
 - (void)awakeFromNib {
     // Initialization code
 }
@@ -34,13 +38,17 @@
     
     [self initPickerView:self.round_2_pickerView withIndex:item.num_2];
     
-    [self initPickerView:self.round_3_pickerView withIndex:item.num_3];
+    [self initPickerView:self.round_3_pickerView withIndex:item.num_1];
 }
 
 - (void)setModel:(id)model {
     Item1 *item         = model;
     
     self.nameLabel.text = item.name;
+    
+    if (!self.nameLabel.text) {
+        self.nameLabel.text = [NSString stringWithFormat:@"空空如也"];
+    }
     
     // state control
     
@@ -96,7 +104,7 @@
     pickerView.highlightedFont      = [UIFont fontWithName:@"HelveticaNeue" size:20];
     pickerView.interitemSpacing     = 20.0;
     pickerView.fisheyeFactor        = 0.001;
-    pickerView.pickerViewStyle      = AKPickerViewStyle3D;
+    pickerView.pickerViewStyle      = AKPickerViewStyleFlat;
     pickerView.maskDisabled         = false;
     
     /**
@@ -104,7 +112,21 @@
      
      *  可以根据统计，当量上去之后，区间也跟上去，下来，也跟着下来
      */
-    self.roundData                  = @[@10, @15, @20, @25, @30, @35, @40, @45, @50, @55, @60, @65, @70, @75, @80];
+    self.roundData                  = @[@"10",
+                                        @"15",
+                                        @"20",
+                                        @"25",
+                                        @"30",
+                                        @"35",
+                                        @"40",
+                                        @"45",
+                                        @"50",
+                                        @"55",
+                                        @"60",
+                                        @"65",
+                                        @"70",
+                                        @"75",
+                                        @"80"];
     
     [pickerView reloadData];
 }

@@ -1286,6 +1286,7 @@
 		6ACFE0401BA2D98F0061DA35 /* FBShimmeringLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBShimmeringLayer.m; sourceTree = "<group>"; };
 		6ACFE0411BA2D98F0061DA35 /* FBShimmeringView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBShimmeringView.h; sourceTree = "<group>"; };
 		6ACFE0421BA2D98F0061DA35 /* FBShimmeringView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBShimmeringView.m; sourceTree = "<group>"; };
+		6ACFE0481BA3CA240061DA35 /* UITableViewCellProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITableViewCellProtocol.h; sourceTree = "<group>"; };
 		850482635E526CD13E018DB7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1325,6 +1326,7 @@
 		6A158E2A1B70B482007FE54F = {
 			isa = PBXGroup;
 			children = (
+				6ACFE0471BA3C72C0061DA35 /* Base */,
 				6ACFDFFC1BA14B980061DA35 /* Documentation */,
 				6ACFDFF11BA037FC0061DA35 /* macrodef.h */,
 				6ACFDFEF1BA037C60061DA35 /* typedef.h */,
@@ -2877,6 +2879,14 @@
 				6ACFE0421BA2D98F0061DA35 /* FBShimmeringView.m */,
 			);
 			path = FBShimmering;
+			sourceTree = "<group>";
+		};
+		6ACFE0471BA3C72C0061DA35 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				6ACFE0481BA3CA240061DA35 /* UITableViewCellProtocol.h */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		D9A204C453E856BEF0A3F158 /* Frameworks */ = {
