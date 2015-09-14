@@ -6,9 +6,9 @@
 //  Copyright (c) 2015 fallen.ink. All rights reserved.
 //
 
-#import "VerticalPickerComponentView.h"
+#import "VerticalPickerGroupView.h"
 
-@implementation VerticalPickerComponentView
+@implementation VerticalPickerGroupView
 
 /*
 // Only override drawRect: if you perform custom drawing.

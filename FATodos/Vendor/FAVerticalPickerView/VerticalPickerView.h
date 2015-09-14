@@ -30,18 +30,6 @@
  */
 @protocol VerticalPickerViewDelegate <NSObject>
 
-- (CGFloat)pickerView:(VerticalPickerView *)pickerView
-    widthForComponent:(NSInteger)component;
-//- (CGFloat)pickerView:(MyPickerView *)pickerView rowHeightForComponent:(NSInteger)component;
 
-- (NSString *)pickerView:(VerticalPickerView *)pickerView
-             titleForRow:(NSInteger)row
-            forComponent:(NSInteger)component;
-
-//- (UIView *)pickerView:(MyPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view;
-
-- (void)pickerView:(VerticalPickerView *)pickerView
-      didSelectRow:(NSInteger)row
-       inComponent:(NSInteger)component;
 
 @end
