@@ -430,6 +430,8 @@
 		6ACFE03A1BA2C8FF0061DA35 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ACFE0391BA2C8FF0061DA35 /* AudioToolbox.framework */; };
 		6ACFE0431BA2D98F0061DA35 /* FBShimmeringLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFE0401BA2D98F0061DA35 /* FBShimmeringLayer.m */; };
 		6ACFE0441BA2D98F0061DA35 /* FBShimmeringView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFE0421BA2D98F0061DA35 /* FBShimmeringView.m */; };
+		6ACFE04D1BA5CC310061DA35 /* VerticalPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFE04C1BA5CC310061DA35 /* VerticalPickerView.m */; };
+		6ACFE0501BA5CD0E0061DA35 /* VerticalPickerComponentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFE04F1BA5CD0E0061DA35 /* VerticalPickerComponentView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1287,6 +1289,10 @@
 		6ACFE0411BA2D98F0061DA35 /* FBShimmeringView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBShimmeringView.h; sourceTree = "<group>"; };
 		6ACFE0421BA2D98F0061DA35 /* FBShimmeringView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBShimmeringView.m; sourceTree = "<group>"; };
 		6ACFE0481BA3CA240061DA35 /* UITableViewCellProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITableViewCellProtocol.h; sourceTree = "<group>"; };
+		6ACFE04B1BA5CC310061DA35 /* VerticalPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerticalPickerView.h; sourceTree = "<group>"; };
+		6ACFE04C1BA5CC310061DA35 /* VerticalPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerticalPickerView.m; sourceTree = "<group>"; };
+		6ACFE04E1BA5CD0E0061DA35 /* VerticalPickerComponentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerticalPickerComponentView.h; sourceTree = "<group>"; };
+		6ACFE04F1BA5CD0E0061DA35 /* VerticalPickerComponentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerticalPickerComponentView.m; sourceTree = "<group>"; };
 		850482635E526CD13E018DB7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -2589,6 +2595,7 @@
 		6ACFDDCA1B9C23FC0061DA35 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				6ACFE04A1BA5C4520061DA35 /* FAVerticalPickerView */,
 				6ACFE03C1BA2D98F0061DA35 /* FBShimmering */,
 				6ACFE02A1BA2C8630061DA35 /* ScrollerMenu */,
 				6ACFDFC41B9D40F40061DA35 /* MZDayPicker */,
@@ -2887,6 +2894,17 @@
 				6ACFE0481BA3CA240061DA35 /* UITableViewCellProtocol.h */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		6ACFE04A1BA5C4520061DA35 /* FAVerticalPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				6ACFE04B1BA5CC310061DA35 /* VerticalPickerView.h */,
+				6ACFE04C1BA5CC310061DA35 /* VerticalPickerView.m */,
+				6ACFE04E1BA5CD0E0061DA35 /* VerticalPickerComponentView.h */,
+				6ACFE04F1BA5CD0E0061DA35 /* VerticalPickerComponentView.m */,
+			);
+			path = FAVerticalPickerView;
 			sourceTree = "<group>";
 		};
 		D9A204C453E856BEF0A3F158 /* Frameworks */ = {
@@ -3310,10 +3328,12 @@
 				6ACFDEC21B9C23FD0061DA35 /* Samurai_HtmlElementColGroup.m in Sources */,
 				6ACFDDEC1B9C23FD0061DA35 /* Samurai_Thread.m in Sources */,
 				6ACFDE041B9C23FD0061DA35 /* Samurai_ServiceLoader.m in Sources */,
+				6ACFE0501BA5CD0E0061DA35 /* VerticalPickerComponentView.m in Sources */,
 				6ACFDE9F1B9C23FD0061DA35 /* UILabel+Html.m in Sources */,
 				6ACFDE621B9C23FD0061DA35 /* ServiceMonitorNetworkModel.m in Sources */,
 				6ACFDED01B9C23FD0061DA35 /* Samurai_HtmlElementH4.m in Sources */,
 				6ACFDE141B9C23FD0061DA35 /* Samurai_UIPageControl.m in Sources */,
+				6ACFE04D1BA5CC310061DA35 /* VerticalPickerView.m in Sources */,
 				6ACFDE6B1B9C23FD0061DA35 /* Samurai_CSSMediaQuery.m in Sources */,
 				6ACFDE5C1B9C23FD0061DA35 /* JBChartView.m in Sources */,
 				6ACFDE691B9C23FD0061DA35 /* UIView+DataBinding.m in Sources */,
