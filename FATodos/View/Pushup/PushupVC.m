@@ -17,7 +17,7 @@
 #import "SWTableViewCell.h"
 #import "Item_1_Cell.h"
 
-@interface PushupVC () <UITableViewDelegate, UITableViewDataSource, MZDayPickerDelegate, MZDayPickerDataSource, SWTableViewCellDelegate, Item_1_CellDelegate>
+@interface PushupVC () <UITableViewDelegate, UITableViewDataSource, MZDayPickerDelegate, MZDayPickerDataSource, Item_1_CellDelegate, MGSwipeTableCellDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *          tableView;
 @property (weak, nonatomic) IBOutlet MZDayPicker *          dayPicker;
@@ -32,13 +32,9 @@
 
 @property (nonatomic, strong) JDFPeekabooCoordinator *scrollCoordinator;
 
-@string( TABLE_CELL_INDETIFY )
-
 @end
 
 @implementation PushupVC
-
-@def_string( TABLE_CELL_INDETIFY, @"identifier.UITableViewCell");
 
 #pragma mark - Initialize
 
@@ -78,7 +74,9 @@
         self.tableView.tableFooterView  = [UIView new];
 
         [self.tableView registerNib:[Item_1_Cell nib]
-             forCellReuseIdentifier:[self TABLE_CELL_INDETIFY]];
+             forCellReuseIdentifier:[Item_1_Cell identifier]];
+        
+        self.tableView.separatorInset   = UIEdgeInsetsMake(0, 0, 0, 0);
     }
     
     {
@@ -193,25 +191,37 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    Item1 *item         = [self.tableData objectAtIndex:indexPath.row];
-    Item_1_Cell *cell   = [tableView dequeueReusableCellWithIdentifier:[self TABLE_CELL_INDETIFY]
-                                                            forIndexPath:indexPath];
+    Item1 *item             = [self.tableData objectAtIndex:indexPath.row];
+    Item_1_Cell *cell       = [tableView dequeueReusableCellWithIdentifier:[Item_1_Cell identifier]
+                                                              forIndexPath:indexPath];
     
-    if (cell == nil) {
+    cell.backgroundColor    = [UIColor whiteColor];
+    cell.accessoryType      = UITableViewCellAccessoryNone;
+    cell.selectionStyle     = UITableViewCellSelectionStyleNone;
+    
+//    {
+//        cell.delegate           = self;
+//        [cell setLeftUtilityButtons:[self leftButtons] WithButtonWidth:58.0f];
+//        [cell setRightUtilityButtons:[self rightButtons] WithButtonWidth:58.0f];
+//    }
+    
+    {
+        cell.delegate = self; //optional
         
-        cell = [[SWTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier];
+        //configure left buttons
+        cell.leftButtons = [self leftButtons];
+        cell.leftSwipeSettings.transition = MGSwipeTransitionDrag;
         
-        cell.leftUtilityButtons = [self leftButtons];
-        cell.rightUtilityButtons = [self rightButtons];
-        cell.delegate = self;
+        //configure right buttons
+        cell.rightButtons = [self rightButtons];
+        cell.rightSwipeSettings.transition = MGSwipeTransitionDrag;
+
+        //
+//        [MGSwipeButton buttonWithTitle:@"More" backgroundColor:[UIColor lightGrayColor] callback:^BOOL(MGSwipeTableCell *sender) {
+//            NSLog(@"Convenience callback for swipe buttons!");
+//        }]
     }
 
-    // optionally specify a width that each set of utility buttons will share
-    cell.delegate = self;
-    [cell setLeftUtilityButtons:[self leftButtons] WithButtonWidth:58.0f];
-    [cell setRightUtilityButtons:[self rightButtons] WithButtonWidth:58.0f];
-    
-    // Set model
     [cell setModel:item];
 
     return cell;
@@ -233,88 +243,58 @@
     
 }
 
-#pragma mark - SWTableViewDelegate
+#pragma mark - MGSwipeTableCellDelegate
 
-- (void)swipeableTableViewCell:(SWTableViewCell *)cell scrollingToState:(SWCellState)state {
-    switch (state) {
-        case 0:
-            NSLog(@"utility buttons closed");
-            break;
-        case 1:
-            NSLog(@"left utility buttons open");
-            break;
-        case 2:
-            NSLog(@"right utility buttons open");
-            break;
-        default:
-            break;
-    }
-}
-
-- (void)swipeableTableViewCell:(SWTableViewCell *)cell didTriggerLeftUtilityButtonWithIndex:(NSInteger)index {
-    // Get cell's index
-    NSIndexPath *cellIndexPath  = [self.tableView indexPathForCell:cell];
-    Item1 *item                 = [self.tableData objectAtIndex:cellIndexPath.row];
+- (BOOL)swipeTableCell:(MGSwipeTableCell*)cell
+   tappedButtonAtIndex:(NSInteger)index
+             direction:(MGSwipeDirection)direction
+         fromExpansion:(BOOL)fromExpansion {
     
-    // Update data
-    switch (index+1) {
-        case kItemPushup: {
-            [item setType:kItemPushup];
+    if (direction == MGSwipeDirectionLeftToRight) {
+        // Get cell's index
+        NSIndexPath *cellIndexPath  = [self.tableView indexPathForCell:cell];
+        Item1 *item                 = [self.tableData objectAtIndex:cellIndexPath.row];
+        
+        // Update data
+        switch (index+1) {
+            case kItemPushup: {
+                [item setType:kItemPushup];
+            }
+                break;
+            case kItemDumbbell: {
+                [item setType:kItemDumbbell];
+            }
+                break;
         }
-            break;
-        case kItemDumbbell: {
-            [item setType:kItemDumbbell];
+        
+        // Reload cell
+        [self.tableView reloadRowsAtIndexPaths:@[cellIndexPath] withRowAnimation:UITableViewRowAnimationNone];
+    } else {
+        switch (index) {
+            case 0: {
+                [self setTableViewEditStyle:UITableViewCellEditingStyleDelete];
+                
+                // Delete button was pressed
+                NSIndexPath *cellIndexPath = [self.tableView indexPathForCell:cell];
+                
+                [self.tableData removeObjectAtIndex:cellIndexPath.row];
+                
+                [self.tableView deleteRowsAtIndexPaths:@[cellIndexPath] withRowAnimation:UITableViewRowAnimationLeft];
+                break;
+            }
+                
+            case 1: {
+                
+                [cell hideSwipeAnimated:YES];
+                
+                [[Routable sharedRouter] open:[AppDelegate DIAGRAM_VC] animated:YES extraParams:@{}];
+                
+                break;
+            }
+                
+            default:
+                break;
         }
-            break;
-    }
-    
-    // Reload cell
-    [self.tableView reloadRowsAtIndexPaths:@[cellIndexPath] withRowAnimation:UITableViewRowAnimationNone];
-}
-
-- (void)swipeableTableViewCell:(SWTableViewCell *)cell didTriggerRightUtilityButtonWithIndex:(NSInteger)index {
-    switch (index) {
-        case 0: {
-            
-            [cell hideUtilityButtonsAnimated:YES];
-            
-            [[Routable sharedRouter] open:[AppDelegate DIAGRAM_VC] animated:YES extraParams:@{}];
-            
-            break;
-        }
-        case 1: {
-            [self setTableViewEditStyle:UITableViewCellEditingStyleDelete];
-            
-            // Delete button was pressed
-            NSIndexPath *cellIndexPath = [self.tableView indexPathForCell:cell];
-            
-            [self.tableData removeObjectAtIndex:cellIndexPath.row];
-            
-            [self.tableView deleteRowsAtIndexPaths:@[cellIndexPath] withRowAnimation:UITableViewRowAnimationLeft];
-            break;
-        }
-        default:
-            break;
-    }
-}
-
-- (BOOL)swipeableTableViewCellShouldHideUtilityButtonsOnSwipe:(SWTableViewCell *)cell {
-    // allow just one cell's utility button to be open at once
-    return YES;
-}
-
-- (BOOL)swipeableTableViewCell:(SWTableViewCell *)cell canSwipeToState:(SWCellState)state {
-    switch (state) {
-        case 1:
-            // set to NO to disable all left utility buttons appearing
-            return YES;
-            break;
-        case 2:
-            // set to NO to disable all right utility buttons appearing
-            return YES;
-            break;
-        default:
-            break;
     }
     
     return YES;
@@ -334,41 +314,22 @@
     // save state to model
 }
 
-#pragma mark - UIScrollViewDelegate
-
-//- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-//    CGFloat sectionHeaderHeight = self.tableViewHeader.height;
-//    
-//    if (scrollView.contentOffset.y <= sectionHeaderHeight &&
-//        scrollView.contentOffset.y >= 0) {
-//        scrollView.contentInset = UIEdgeInsetsMake(-scrollView.contentOffset.y, 0, 0, 0);
-//    } else if (scrollView.contentOffset.y >= sectionHeaderHeight) {
-//        scrollView.contentInset = UIEdgeInsetsMake(-sectionHeaderHeight, 0, 0, 0);
-//    }
-//}
-
 #pragma mark - Property
 
 - (NSArray *)rightButtons {
-    NSMutableArray *rightUtilityButtons = [NSMutableArray new];
-    [rightUtilityButtons sw_addUtilityButtonWithColor:[UIColor gray_1_color]
-                                                title:@"更多"];
-    [rightUtilityButtons sw_addUtilityButtonWithColor:[UIColor red_1_color]
-                                                title:@"删除"];
-    
-    return rightUtilityButtons;
+    return @[
+             [MGSwipeButton buttonWithTitle:[s  Delete]
+                            backgroundColor:[UIColor red_1_color]],
+             [MGSwipeButton buttonWithTitle:[s More]
+                            backgroundColor:[UIColor gray_1_color]]];
 }
 
 - (NSArray *)leftButtons {
-    NSMutableArray *leftUtilityButtons = [NSMutableArray new];
-    
-    [leftUtilityButtons sw_addUtilityButtonWithColor:[UIColor blue_1_color]
-                                                title:@"俯卧撑"];
-    [leftUtilityButtons sw_addUtilityButtonWithColor:[UIColor green_1_color]
-                                                title:@"哑铃"];
-
-    
-    return leftUtilityButtons;
+    return @[
+             [MGSwipeButton buttonWithTitle:[s Pushup]
+                            backgroundColor:[UIColor blue_1_color]],
+             [MGSwipeButton buttonWithTitle:[s Dumbell]
+                            backgroundColor:[UIColor green_1_color]]];
 }
 
 @end

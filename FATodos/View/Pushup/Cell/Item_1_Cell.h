@@ -36,7 +36,7 @@ typedef NS_ENUM(NSInteger, Item_1_CellDisplayState) {
 
 @end
 
-@interface Item_1_Cell : SWTableViewCell <UITableViewCellProtocol>
+@interface Item_1_Cell : MGSwipeTableCell <UITableViewCellProtocol>
 
 @property (nonatomic, assign) Item_1_CellDisplayState displayState;
 

@@ -22,3 +22,7 @@ pod 'UIColor+MLPFlatColors', '~> 1.0'
 pod "ASCFlatUIColor"
 
 pod 'ZLSwipeableView'
+
+pod 'Masonry'
+
+pod 'SDWebImage', '~>3.6'

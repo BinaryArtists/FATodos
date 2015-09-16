@@ -14,6 +14,9 @@
 		6A158E4A1B70B482007FE54F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A158E481B70B482007FE54F /* LaunchScreen.xib */; };
 		6A158E561B70B482007FE54F /* FATodosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A158E551B70B482007FE54F /* FATodosTests.m */; };
 		6ACEBAF01BA94AD30011E3F7 /* UITableViewCell+Base.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACEBAEF1BA94AD30011E3F7 /* UITableViewCell+Base.m */; };
+		6ACEBAF71BA974810011E3F7 /* MGSwipeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACEBAF41BA974810011E3F7 /* MGSwipeButton.m */; };
+		6ACEBAF81BA974810011E3F7 /* MGSwipeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACEBAF61BA974810011E3F7 /* MGSwipeTableCell.m */; };
+		6ACEBB001BA9B7CE0011E3F7 /* s.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACEBAFF1BA9B7CE0011E3F7 /* s.m */; };
 		6ACFDDD21B9C23FC0061DA35 /* Samurai_Config(Phone).m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFDACE1B9C23FC0061DA35 /* Samurai_Config(Phone).m */; };
 		6ACFDDD31B9C23FC0061DA35 /* Samurai_Config(Simulator).m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFDAD01B9C23FC0061DA35 /* Samurai_Config(Simulator).m */; };
 		6ACFDDD41B9C23FD0061DA35 /* Samurai_Config.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFDAD21B9C23FC0061DA35 /* Samurai_Config.m */; };
@@ -460,6 +463,12 @@
 		6A158E551B70B482007FE54F /* FATodosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FATodosTests.m; sourceTree = "<group>"; };
 		6ACEBAEE1BA94AD30011E3F7 /* UITableViewCell+Base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Base.h"; sourceTree = "<group>"; };
 		6ACEBAEF1BA94AD30011E3F7 /* UITableViewCell+Base.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Base.m"; sourceTree = "<group>"; };
+		6ACEBAF31BA974810011E3F7 /* MGSwipeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSwipeButton.h; sourceTree = "<group>"; };
+		6ACEBAF41BA974810011E3F7 /* MGSwipeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSwipeButton.m; sourceTree = "<group>"; };
+		6ACEBAF51BA974810011E3F7 /* MGSwipeTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSwipeTableCell.h; sourceTree = "<group>"; };
+		6ACEBAF61BA974810011E3F7 /* MGSwipeTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSwipeTableCell.m; sourceTree = "<group>"; };
+		6ACEBAFE1BA9B7CE0011E3F7 /* s.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = s.h; sourceTree = "<group>"; };
+		6ACEBAFF1BA9B7CE0011E3F7 /* s.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = s.m; sourceTree = "<group>"; };
 		6ACFDACB1B9C23FC0061DA35 /* _pragma_pop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _pragma_pop.h; sourceTree = "<group>"; };
 		6ACFDACC1B9C23FC0061DA35 /* _pragma_push.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _pragma_push.h; sourceTree = "<group>"; };
 		6ACFDACD1B9C23FC0061DA35 /* Samurai_Config(Phone).h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Samurai_Config(Phone).h"; sourceTree = "<group>"; };
@@ -1368,6 +1377,7 @@
 		6A158E351B70B482007FE54F /* FATodos */ = {
 			isa = PBXGroup;
 			children = (
+				6ACEBAFD1BA9B7B90011E3F7 /* Utility */,
 				6A158E3A1B70B482007FE54F /* AppDelegate.h */,
 				6A158E3B1B70B482007FE54F /* AppDelegate.m */,
 				6A158E461B70B482007FE54F /* Images.xcassets */,
@@ -1411,6 +1421,26 @@
 				6ACEBAEF1BA94AD30011E3F7 /* UITableViewCell+Base.m */,
 			);
 			path = extension;
+			sourceTree = "<group>";
+		};
+		6ACEBAF21BA974810011E3F7 /* MGSwipeTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				6ACEBAF31BA974810011E3F7 /* MGSwipeButton.h */,
+				6ACEBAF41BA974810011E3F7 /* MGSwipeButton.m */,
+				6ACEBAF51BA974810011E3F7 /* MGSwipeTableCell.h */,
+				6ACEBAF61BA974810011E3F7 /* MGSwipeTableCell.m */,
+			);
+			path = MGSwipeTableCell;
+			sourceTree = "<group>";
+		};
+		6ACEBAFD1BA9B7B90011E3F7 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				6ACEBAFE1BA9B7CE0011E3F7 /* s.h */,
+				6ACEBAFF1BA9B7CE0011E3F7 /* s.m */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 		6ACFDAC61B9C23FC0061DA35 /* Category */ = {
@@ -2607,6 +2637,7 @@
 		6ACFDDCA1B9C23FC0061DA35 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				6ACEBAF21BA974810011E3F7 /* MGSwipeTableCell */,
 				6ACFE04A1BA5C4520061DA35 /* FAVerticalPickerView */,
 				6ACFE03C1BA2D98F0061DA35 /* FBShimmering */,
 				6ACFE02A1BA2C8630061DA35 /* ScrollerMenu */,
@@ -3127,6 +3158,7 @@
 				6ACFDE291B9C23FD0061DA35 /* Samurai_Document.m in Sources */,
 				6ACFDE871B9C23FD0061DA35 /* Samurai_CSSNumberMs.m in Sources */,
 				6ACFDE951B9C23FD0061DA35 /* Samurai_CSSObject.m in Sources */,
+				6ACEBAF81BA974810011E3F7 /* MGSwipeTableCell.m in Sources */,
 				6ACFDF0A1B9C23FD0061DA35 /* Samurai_HtmlRenderViewport.m in Sources */,
 				6ACFDF041B9C23FD0061DA35 /* Samurai_HtmlLayoutViewport.m in Sources */,
 				6ACFDF2D1B9C23FD0061DA35 /* vector.c in Sources */,
@@ -3247,6 +3279,7 @@
 				6ACFDEAD1B9C23FD0061DA35 /* Samurai_HtmlDocument.m in Sources */,
 				6ACFDF091B9C23FD0061DA35 /* Samurai_HtmlRenderText.m in Sources */,
 				6ACFDE6E1B9C23FD0061DA35 /* Samurai_CSSRule.m in Sources */,
+				6ACEBAF71BA974810011E3F7 /* MGSwipeButton.m in Sources */,
 				6ACFDE3C1B9C23FD0061DA35 /* Samurai_Font.m in Sources */,
 				6ACFDEB21B9C23FD0061DA35 /* Samurai_HtmlDocumentWorklet_40MergeStyleTree.m in Sources */,
 				6ACFDDE21B9C23FD0061DA35 /* Samurai_Debug.m in Sources */,
@@ -3439,6 +3472,7 @@
 				6ACFDED51B9C23FD0061DA35 /* Samurai_HtmlElementHr.m in Sources */,
 				6ACFE0211BA27BB20061DA35 /* MainVC.m in Sources */,
 				6ACFDF961B9C2E740061DA35 /* ZIMSqlAnalyzeStatement.m in Sources */,
+				6ACEBB001BA9B7CE0011E3F7 /* s.m in Sources */,
 				6ACFDDD41B9C23FD0061DA35 /* Samurai_Config.m in Sources */,
 				6ACFDFA81B9C2E740061DA35 /* ZIMSqlShowColumnsStatement.m in Sources */,
 				6ACFDEC71B9C23FD0061DA35 /* Samurai_HtmlElementDl.m in Sources */,
