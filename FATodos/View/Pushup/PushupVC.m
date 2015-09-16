@@ -196,6 +196,15 @@
     Item1 *item         = [self.tableData objectAtIndex:indexPath.row];
     Item_1_Cell *cell   = [tableView dequeueReusableCellWithIdentifier:[self TABLE_CELL_INDETIFY]
                                                             forIndexPath:indexPath];
+    
+    if (cell == nil) {
+        
+        cell = [[SWTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier];
+        
+        cell.leftUtilityButtons = [self leftButtons];
+        cell.rightUtilityButtons = [self rightButtons];
+        cell.delegate = self;
+    }
 
     // optionally specify a width that each set of utility buttons will share
     cell.delegate = self;

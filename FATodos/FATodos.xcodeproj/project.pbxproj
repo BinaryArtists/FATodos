@@ -13,6 +13,7 @@
 		6A158E471B70B482007FE54F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A158E461B70B482007FE54F /* Images.xcassets */; };
 		6A158E4A1B70B482007FE54F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A158E481B70B482007FE54F /* LaunchScreen.xib */; };
 		6A158E561B70B482007FE54F /* FATodosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A158E551B70B482007FE54F /* FATodosTests.m */; };
+		6ACEBAF01BA94AD30011E3F7 /* UITableViewCell+Base.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACEBAEF1BA94AD30011E3F7 /* UITableViewCell+Base.m */; };
 		6ACFDDD21B9C23FC0061DA35 /* Samurai_Config(Phone).m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFDACE1B9C23FC0061DA35 /* Samurai_Config(Phone).m */; };
 		6ACFDDD31B9C23FC0061DA35 /* Samurai_Config(Simulator).m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFDAD01B9C23FC0061DA35 /* Samurai_Config(Simulator).m */; };
 		6ACFDDD41B9C23FD0061DA35 /* Samurai_Config.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFDAD21B9C23FC0061DA35 /* Samurai_Config.m */; };
@@ -457,6 +458,8 @@
 		6A158E4F1B70B482007FE54F /* FATodosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FATodosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A158E541B70B482007FE54F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A158E551B70B482007FE54F /* FATodosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FATodosTests.m; sourceTree = "<group>"; };
+		6ACEBAEE1BA94AD30011E3F7 /* UITableViewCell+Base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Base.h"; sourceTree = "<group>"; };
+		6ACEBAEF1BA94AD30011E3F7 /* UITableViewCell+Base.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Base.m"; sourceTree = "<group>"; };
 		6ACFDACB1B9C23FC0061DA35 /* _pragma_pop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _pragma_pop.h; sourceTree = "<group>"; };
 		6ACFDACC1B9C23FC0061DA35 /* _pragma_push.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _pragma_push.h; sourceTree = "<group>"; };
 		6ACFDACD1B9C23FC0061DA35 /* Samurai_Config(Phone).h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Samurai_Config(Phone).h"; sourceTree = "<group>"; };
@@ -1399,6 +1402,15 @@
 				6A158E541B70B482007FE54F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6ACEBAED1BA94AD30011E3F7 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				6ACEBAEE1BA94AD30011E3F7 /* UITableViewCell+Base.h */,
+				6ACEBAEF1BA94AD30011E3F7 /* UITableViewCell+Base.m */,
+			);
+			path = extension;
 			sourceTree = "<group>";
 		};
 		6ACFDAC61B9C23FC0061DA35 /* Category */ = {
@@ -2891,6 +2903,7 @@
 		6ACFE0471BA3C72C0061DA35 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				6ACEBAED1BA94AD30011E3F7 /* extension */,
 				6ACFE0481BA3CA240061DA35 /* UITableViewCellProtocol.h */,
 			);
 			path = Base;
@@ -3086,6 +3099,7 @@
 				6ACFDFB01B9C2E740061DA35 /* ZIMSqlUpsertStatement.m in Sources */,
 				6ACFDEE71B9C23FD0061DA35 /* Samurai_HtmlElementNav.m in Sources */,
 				6ACFDE311B9C23FD0061DA35 /* Samurai_StyleSheet.m in Sources */,
+				6ACEBAF01BA94AD30011E3F7 /* UITableViewCell+Base.m in Sources */,
 				6ACFDEFB1B9C23FD0061DA35 /* Samurai_HtmlElementTime.m in Sources */,
 				6ACFDE441B9C23FD0061DA35 /* Samurai_App.m in Sources */,
 				6ACFDDE41B9C23FD0061DA35 /* Samurai_Handler.m in Sources */,
