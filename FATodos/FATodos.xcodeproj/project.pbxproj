@@ -1305,6 +1305,10 @@
 		6ACFE04C1BA5CC310061DA35 /* VerticalPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerticalPickerView.m; sourceTree = "<group>"; };
 		6ACFE04E1BA5CD0E0061DA35 /* VerticalPickerGroupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerticalPickerGroupView.h; sourceTree = "<group>"; };
 		6ACFE04F1BA5CD0E0061DA35 /* VerticalPickerCroupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerticalPickerCroupView.m; sourceTree = "<group>"; };
+		6AD283161BB12DAB008900FA /* BaseViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewProtocol.h; sourceTree = "<group>"; };
+		6AD283171BB12DC6008900FA /* BasePresenterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasePresenterProtocol.h; sourceTree = "<group>"; };
+		6AD283181BB12DDD008900FA /* BaseInteractorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseInteractorProtocol.h; sourceTree = "<group>"; };
+		6AD283191BB12DF7008900FA /* BaseEntityProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseEntityProtocol.h; sourceTree = "<group>"; };
 		850482635E526CD13E018DB7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -2934,6 +2938,7 @@
 		6ACFE0471BA3C72C0061DA35 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				6AD283151BB12D91008900FA /* architect */,
 				6ACEBAED1BA94AD30011E3F7 /* extension */,
 				6ACFE0481BA3CA240061DA35 /* UITableViewCellProtocol.h */,
 			);
@@ -2949,6 +2954,17 @@
 				6ACFE04F1BA5CD0E0061DA35 /* VerticalPickerCroupView.m */,
 			);
 			path = FAVerticalPickerView;
+			sourceTree = "<group>";
+		};
+		6AD283151BB12D91008900FA /* architect */ = {
+			isa = PBXGroup;
+			children = (
+				6AD283161BB12DAB008900FA /* BaseViewProtocol.h */,
+				6AD283171BB12DC6008900FA /* BasePresenterProtocol.h */,
+				6AD283181BB12DDD008900FA /* BaseInteractorProtocol.h */,
+				6AD283191BB12DF7008900FA /* BaseEntityProtocol.h */,
+			);
+			path = architect;
 			sourceTree = "<group>";
 		};
 		D9A204C453E856BEF0A3F158 /* Frameworks */ = {

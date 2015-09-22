@@ -6,6 +6,4 @@ TODO：
 2. need sqlite
 3. need cell customize
 4. 便签纪录, 卡片模式。。。
-
-09-10
-commit first　
+5. app视图风格切换：demo、苹果扁平、meterial、winphone风格

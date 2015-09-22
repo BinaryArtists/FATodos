@@ -6,16 +6,6 @@
 //  Copyright (c) 2015 fallen.ink. All rights reserved.
 //
 
-// 特点：
-// Use Viper!!!!!! View.Interactor.Presenter.Entity.Routing
-// Example
-// View：ViewController
-// Presenter：DataSource，被View弱持有、持有Interactor、Frame，通过Frame控制View的显示
-// Frame：持有View、ViewController（用于present、dismiss）
-// Interactor：连接Presenter和Entity
-// Entity：DataManager，被Interactor持有
-// Routing：小维度是frame，大流程AppDependence
-
 // Use Framework.SAMURAI
 // Use Vendor.Routable
 // Use sql-query-builder
