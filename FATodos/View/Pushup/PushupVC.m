@@ -253,7 +253,7 @@
     id model                = [self.tableData objectAtIndex:indexPath.row];
     
     if ([model isKindOfClass:[Item1 class]]) {
-        Item1 *item             = model;
+        __unused Item1 *item            = model;
         
         // expand next cell
         if ([self isListEditing]) {

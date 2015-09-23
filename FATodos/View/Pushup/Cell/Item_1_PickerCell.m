@@ -27,6 +27,10 @@
     self.pickerModel = model;
     
     
+    self.round_1_pickerView.delegate    = self;
+    self.round_2_pickerView.delegate    = self;
+    self.round_3_pickerView.delegate    = self;
+    
     [self.round_1_pickerView reloadAllComponents];
     [self.round_2_pickerView reloadAllComponents];
     [self.round_3_pickerView reloadAllComponents];
@@ -62,7 +66,7 @@
         label.textAlignment = NSTextAlignmentCenter;
     }
     
-    label.font = [UIFont systemFontOfSize:15.f];
+    label.font = [UIFont systemFontOfSize:21.f];
 
     if (pickerView == self.round_1_pickerView) {
         label.textColor = [UIColor lightGreenColor];

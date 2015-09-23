@@ -44,6 +44,32 @@
     if (!self.nameLabel.text) {
         self.nameLabel.text = [NSString stringWithFormat:@"空空如也"];
     }
+    
+    @weakify(self)
+    
+    [RACObserve(item, num_1) subscribeNext:^(id x) {
+        NSNumber *value                 = x;
+        
+        @strongify(self)
+        
+        self.round_1_valueLabel.text    = [NSString stringWithFormat:@"%d", [value intValue]];
+    }];
+    
+    [RACObserve(item, num_2) subscribeNext:^(id x) {
+        NSNumber *value                 = x;
+        
+        @strongify(self)
+        
+        self.round_2_valueLabel.text    = [NSString stringWithFormat:@"%d", [value intValue]];
+    }];
+    
+    [RACObserve(item, num_3) subscribeNext:^(id x) {
+        NSNumber *value                 = x;
+        
+        @strongify(self)
+        
+        self.round_3_valueLabel.text    = [NSString stringWithFormat:@"%d", [value intValue]];
+    }];
 
     self.item          = model;
 }
