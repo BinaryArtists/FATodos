@@ -16,8 +16,12 @@
 #import "NSMutableArray+SWUtilityButtons.h"
 #import "SWTableViewCell.h"
 #import "Item_1_Cell.h"
+#import "Item_1_PickerCell.h"
+#import "PickerModel.h"
 
-@interface PushupVC () <UITableViewDelegate, UITableViewDataSource, MZDayPickerDelegate, MZDayPickerDataSource, Item_1_CellDelegate, MGSwipeTableCellDelegate>
+#pragma mark -
+
+@interface PushupVC () <UITableViewDelegate, UITableViewDataSource, MZDayPickerDelegate, MZDayPickerDataSource, MGSwipeTableCellDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *          tableView;
 @property (weak, nonatomic) IBOutlet MZDayPicker *          dayPicker;
@@ -75,6 +79,8 @@
 
         [self.tableView registerNib:[Item_1_Cell nib]
              forCellReuseIdentifier:[Item_1_Cell identifier]];
+        [self.tableView registerNib:[Item_1_PickerCell nib]
+             forCellReuseIdentifier:[Item_1_PickerCell identifier]];
         
         self.tableView.separatorInset   = UIEdgeInsetsMake(0, 0, 0, 0);
     }
@@ -131,19 +137,19 @@
 #pragma mark - Action handle
 
 - (void)didClickOnNavigationBarRightItem:(id)sender {
-    [self setTableViewEditStyle:UITableViewCellEditingStyleInsert];
-    
-    
     Item1 *item         = [self.tableData lastObject];
     
-    if ([item isInit] ||    // 最后一项未初始化
-        !item)              // 还没有任何数据
+    if (![item isKindOfClass:[PickerModel class]] &&
+        ([item isInit] ||    // 最后一项未初始化
+        !item))              // 还没有任何数据
     // 新增一个表项（当日）
     {
         NSIndexPath *ip = [NSIndexPath indexPathForRow:[self.tableData count]
                                              inSection:0];
         
         [self.tableData addObject:[Item1 new]];
+        
+        [self setTableViewEditStyle:UITableViewCellEditingStyleInsert];
         
         [self.tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:ip]
                               withRowAnimation:UITableViewRowAnimationRight];
@@ -187,48 +193,115 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 58.f;
+    id model                = [self.tableData objectAtIndex:indexPath.row];
+    
+    if ([model isKindOfClass:[Item1 class]]) {
+        return 58.f;
+    } else if ([model isKindOfClass:[PickerModel class]]) {
+        return 162.f;
+    } else {
+        return 0.f;
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    Item1 *item             = [self.tableData objectAtIndex:indexPath.row];
-    Item_1_Cell *cell       = [tableView dequeueReusableCellWithIdentifier:[Item_1_Cell identifier]
-                                                              forIndexPath:indexPath];
+    id model                = [self.tableData objectAtIndex:indexPath.row];
     
-    cell.backgroundColor    = [UIColor whiteColor];
-    cell.accessoryType      = UITableViewCellAccessoryNone;
-    cell.selectionStyle     = UITableViewCellSelectionStyleNone;
-    
-//    {
-//        cell.delegate           = self;
-//        [cell setLeftUtilityButtons:[self leftButtons] WithButtonWidth:58.0f];
-//        [cell setRightUtilityButtons:[self rightButtons] WithButtonWidth:58.0f];
-//    }
-    
-    {
-        cell.delegate = self; //optional
+    if ([model isKindOfClass:[Item1 class]]) {
+        Item1 *item             = model;
+        Item_1_Cell *cell       = [tableView dequeueReusableCellWithIdentifier:[Item_1_Cell identifier]
+                                                                  forIndexPath:indexPath];
         
-        //configure left buttons
-        cell.leftButtons = [self leftButtons];
-        cell.leftSwipeSettings.transition = MGSwipeTransitionDrag;
+        cell.backgroundColor    = [UIColor whiteColor];
+        cell.accessoryType      = UITableViewCellAccessoryNone;
+        cell.selectionStyle     = UITableViewCellSelectionStyleNone;
         
-        //configure right buttons
-        cell.rightButtons = [self rightButtons];
-        cell.rightSwipeSettings.transition = MGSwipeTransitionDrag;
+        {
+            cell.delegate = self; //optional
+            
+            //configure left buttons
+            cell.leftButtons = [self leftButtons];
+            cell.leftSwipeSettings.transition = MGSwipeTransitionDrag;
+            
+            //configure right buttons
+            cell.rightButtons = [self rightButtons];
+            cell.rightSwipeSettings.transition = MGSwipeTransitionDrag;
+        }
+        
+        [cell setModel:item];
+        
+        return cell;
+    } else if ([model isKindOfClass:[PickerModel class]]) {
+        PickerModel *pickerModel        = model;
+        Item_1_PickerCell *cell         = [tableView dequeueReusableCellWithIdentifier:[Item_1_PickerCell identifier]
+                                                                          forIndexPath:indexPath];
+        
+        cell.backgroundColor    = [UIColor whiteColor];
+        cell.accessoryType      = UITableViewCellAccessoryNone;
+        cell.selectionStyle     = UITableViewCellSelectionStyleNone;
 
-        //
-//        [MGSwipeButton buttonWithTitle:@"More" backgroundColor:[UIColor lightGrayColor] callback:^BOOL(MGSwipeTableCell *sender) {
-//            NSLog(@"Convenience callback for swipe buttons!");
-//        }]
+        [cell setModel:pickerModel];
+        
+        
+        return cell;
+    } else {
+        return nil;
     }
-
-    [cell setModel:item];
-
-    return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Do nothing
+    id model                = [self.tableData objectAtIndex:indexPath.row];
+    
+    if ([model isKindOfClass:[Item1 class]]) {
+        Item1 *item             = model;
+        
+        // expand next cell
+        if ([self isListEditing]) {
+            
+            if (indexPath.row == [self listEditingAtIndex]-1) {
+                // 点击的同一个cell
+                NSInteger deleteIndex   = [self listEditingAtIndex];
+                
+                // delete
+                [self setTableViewEditStyle:UITableViewCellEditingStyleDelete];
+                
+                [self.tableData removeObjectAtIndex:deleteIndex];
+                
+                [self.tableView beginUpdates];
+                [self.tableView deleteRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:deleteIndex inSection:0]]
+                                      withRowAnimation:UITableViewRowAnimationAutomatic];
+                [self.tableView endUpdates];
+            } else {
+                // move model
+                
+                
+                // move cell
+                [self.tableView moveRowAtIndexPath:[NSIndexPath indexPathForRow:[self listEditingAtIndex] inSection:0]
+                                       toIndexPath:[NSIndexPath indexPathForRow:indexPath.row+1 inSection:0]];
+            }
+        } else {
+            Item1 *item         = [self.tableData objectAtIndex:indexPath.row];
+            
+            // insert to
+            PickerModel *model  = [PickerModel new];
+            model.round_1       = item.num_1;
+            model.round_2       = item.num_2;
+            model.round_3       = item.num_3;
+            model.item          = item;
+            
+            [self.tableData insertObject:model atIndex:indexPath.row+1];
+
+            [self setTableViewEditStyle:UITableViewCellEditingStyleInsert];
+            
+            [self.tableView insertRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:indexPath.row+1
+                                                                        inSection:0]]
+                                  withRowAnimation:UITableViewRowAnimationAutomatic];
+        }
+    } else if ([model isKindOfClass:[PickerModel class]]) {
+        // do nothing
+    } else {
+        // do nothing
+    }
 }
 
 - (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -236,6 +309,10 @@
 }
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    return YES;
+}
+
+- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
     return YES;
 }
 
@@ -272,6 +349,7 @@
     } else {
         switch (index) {
             case 0: {
+                // todo: 如果存在展开，则要删除两个
                 [self setTableViewEditStyle:UITableViewCellEditingStyleDelete];
                 
                 // Delete button was pressed
@@ -300,18 +378,34 @@
     return YES;
 }
 
-#pragma mark - Item_1_CellDelegate
+#pragma mark - Utility
 
-- (BOOL)item_1_CellShouldExpandForEditing:(Item_1_Cell *)cell {
-    return YES;
-}
-
-- (void)item_1_CellDidExpand:(Item_1_Cell *)cell {
+- (BOOL)isListEditing {
+    __block BOOL is = NO;
     
+    [self.tableData enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        if ([obj isKindOfClass:[PickerModel class]]) {
+            is      = YES;
+            
+            *stop       = YES;
+        }
+    }];
+    
+    return is;
 }
 
-- (void)item_1_CellDidBack:(Item_1_Cell *)cell {
-    // save state to model
+- (NSInteger)listEditingAtIndex {
+    __block NSInteger idx_  = -1;
+    
+    [self.tableData enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        if ([obj isKindOfClass:[PickerModel class]]) {
+            idx_            = idx;
+            
+            *stop       = YES;
+        }
+    }];
+    
+    return idx_;
 }
 
 #pragma mark - Property

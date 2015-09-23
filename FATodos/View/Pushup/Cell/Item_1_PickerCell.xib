@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="136" id="KGk-i7-Jjw" customClass="Item_1_PickerCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="162"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qb9-uf-tyw">
+                        <rect key="frame" x="8" y="-1" width="96" height="162"/>
+                        <color key="backgroundColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </pickerView>
+                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cbm-hL-Dba">
+                        <rect key="frame" x="112" y="-1" width="96" height="162"/>
+                        <color key="backgroundColor" red="0.42352941179999998" green="0.72549019609999998" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </pickerView>
+                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zwf-ic-Vh8">
+                        <rect key="frame" x="216" y="-0.5" width="96" height="162"/>
+                        <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </pickerView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="zwf-ic-Vh8" firstAttribute="leading" secondItem="cbm-hL-Dba" secondAttribute="trailing" constant="8" id="BEL-tt-rMG"/>
+                    <constraint firstItem="Qb9-uf-tyw" firstAttribute="height" secondItem="zwf-ic-Vh8" secondAttribute="height" id="Ex1-I1-qjR"/>
+                    <constraint firstItem="Qb9-uf-tyw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Gqt-sm-xQB"/>
+                    <constraint firstItem="cbm-hL-Dba" firstAttribute="leading" secondItem="Qb9-uf-tyw" secondAttribute="trailing" constant="8" id="MXK-fe-WKN"/>
+                    <constraint firstItem="Qb9-uf-tyw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="PIo-vM-dBr"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Qb9-uf-tyw" secondAttribute="bottom" id="UHP-7p-jo6"/>
+                    <constraint firstItem="zwf-ic-Vh8" firstAttribute="top" secondItem="Qb9-uf-tyw" secondAttribute="top" id="ZrU-NC-R1U"/>
+                    <constraint firstItem="cbm-hL-Dba" firstAttribute="width" secondItem="Qb9-uf-tyw" secondAttribute="width" id="fEt-Iq-Aan"/>
+                    <constraint firstItem="zwf-ic-Vh8" firstAttribute="top" secondItem="cbm-hL-Dba" secondAttribute="top" id="gWb-qA-FC2"/>
+                    <constraint firstItem="zwf-ic-Vh8" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="lrU-6f-Oen"/>
+                    <constraint firstItem="Qb9-uf-tyw" firstAttribute="width" secondItem="zwf-ic-Vh8" secondAttribute="width" id="wPt-B1-Cd4"/>
+                    <constraint firstItem="cbm-hL-Dba" firstAttribute="height" secondItem="Qb9-uf-tyw" secondAttribute="height" id="wV2-Z9-CWt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="round_1_pickerView" destination="Qb9-uf-tyw" id="Mnx-ef-uRR"/>
+                <outlet property="round_2_pickerView" destination="cbm-hL-Dba" id="Ojr-Z1-Bob"/>
+                <outlet property="round_3_pickerView" destination="zwf-ic-Vh8" id="2Cp-yr-Sy8"/>
+            </connections>
+            <point key="canvasLocation" x="354" y="267"/>
+        </tableViewCell>
+    </objects>
+</document>

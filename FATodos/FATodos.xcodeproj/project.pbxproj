@@ -436,6 +436,9 @@
 		6ACFE0441BA2D98F0061DA35 /* FBShimmeringView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFE0421BA2D98F0061DA35 /* FBShimmeringView.m */; };
 		6ACFE04D1BA5CC310061DA35 /* VerticalPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFE04C1BA5CC310061DA35 /* VerticalPickerView.m */; };
 		6ACFE0501BA5CD0E0061DA35 /* VerticalPickerCroupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFE04F1BA5CD0E0061DA35 /* VerticalPickerCroupView.m */; };
+		6AD283221BB17883008900FA /* Item_1_PickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD283201BB17883008900FA /* Item_1_PickerCell.m */; };
+		6AD283231BB17883008900FA /* Item_1_PickerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AD283211BB17883008900FA /* Item_1_PickerCell.xib */; };
+		6AD283301BB193D1008900FA /* PickerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD2832F1BB193D1008900FA /* PickerModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1300,7 +1303,6 @@
 		6ACFE0401BA2D98F0061DA35 /* FBShimmeringLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBShimmeringLayer.m; sourceTree = "<group>"; };
 		6ACFE0411BA2D98F0061DA35 /* FBShimmeringView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBShimmeringView.h; sourceTree = "<group>"; };
 		6ACFE0421BA2D98F0061DA35 /* FBShimmeringView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBShimmeringView.m; sourceTree = "<group>"; };
-		6ACFE0481BA3CA240061DA35 /* UITableViewCellProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITableViewCellProtocol.h; sourceTree = "<group>"; };
 		6ACFE04B1BA5CC310061DA35 /* VerticalPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerticalPickerView.h; sourceTree = "<group>"; };
 		6ACFE04C1BA5CC310061DA35 /* VerticalPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerticalPickerView.m; sourceTree = "<group>"; };
 		6ACFE04E1BA5CD0E0061DA35 /* VerticalPickerGroupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerticalPickerGroupView.h; sourceTree = "<group>"; };
@@ -1309,6 +1311,12 @@
 		6AD283171BB12DC6008900FA /* BasePresenterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasePresenterProtocol.h; sourceTree = "<group>"; };
 		6AD283181BB12DDD008900FA /* BaseInteractorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseInteractorProtocol.h; sourceTree = "<group>"; };
 		6AD283191BB12DF7008900FA /* BaseEntityProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseEntityProtocol.h; sourceTree = "<group>"; };
+		6AD2831C1BB15CC9008900FA /* FAVerticalPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAVerticalPickerView.h; sourceTree = "<group>"; };
+		6AD2831F1BB17883008900FA /* Item_1_PickerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item_1_PickerCell.h; sourceTree = "<group>"; };
+		6AD283201BB17883008900FA /* Item_1_PickerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item_1_PickerCell.m; sourceTree = "<group>"; };
+		6AD283211BB17883008900FA /* Item_1_PickerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Item_1_PickerCell.xib; sourceTree = "<group>"; };
+		6AD2832E1BB193D1008900FA /* PickerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerModel.h; sourceTree = "<group>"; };
+		6AD2832F1BB193D1008900FA /* PickerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerModel.m; sourceTree = "<group>"; };
 		850482635E526CD13E018DB7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1348,6 +1356,7 @@
 		6A158E2A1B70B482007FE54F = {
 			isa = PBXGroup;
 			children = (
+				6AD2832D1BB19341008900FA /* AppModel */,
 				6ACFE0471BA3C72C0061DA35 /* Base */,
 				6ACFDFFC1BA14B980061DA35 /* Documentation */,
 				6ACFDFF11BA037FC0061DA35 /* macrodef.h */,
@@ -2905,6 +2914,9 @@
 				6ACFE0091BA170720061DA35 /* Item_1_Cell.h */,
 				6ACFE00A1BA170720061DA35 /* Item_1_Cell.m */,
 				6ACFE00B1BA170720061DA35 /* Item_1_Cell.xib */,
+				6AD2831F1BB17883008900FA /* Item_1_PickerCell.h */,
+				6AD283201BB17883008900FA /* Item_1_PickerCell.m */,
+				6AD283211BB17883008900FA /* Item_1_PickerCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -2940,7 +2952,6 @@
 			children = (
 				6AD283151BB12D91008900FA /* architect */,
 				6ACEBAED1BA94AD30011E3F7 /* extension */,
-				6ACFE0481BA3CA240061DA35 /* UITableViewCellProtocol.h */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -2952,6 +2963,7 @@
 				6ACFE04C1BA5CC310061DA35 /* VerticalPickerView.m */,
 				6ACFE04E1BA5CD0E0061DA35 /* VerticalPickerGroupView.h */,
 				6ACFE04F1BA5CD0E0061DA35 /* VerticalPickerCroupView.m */,
+				6AD2831C1BB15CC9008900FA /* FAVerticalPickerView.h */,
 			);
 			path = FAVerticalPickerView;
 			sourceTree = "<group>";
@@ -2965,6 +2977,15 @@
 				6AD283191BB12DF7008900FA /* BaseEntityProtocol.h */,
 			);
 			path = architect;
+			sourceTree = "<group>";
+		};
+		6AD2832D1BB19341008900FA /* AppModel */ = {
+			isa = PBXGroup;
+			children = (
+				6AD2832E1BB193D1008900FA /* PickerModel.h */,
+				6AD2832F1BB193D1008900FA /* PickerModel.m */,
+			);
+			path = AppModel;
 			sourceTree = "<group>";
 		};
 		D9A204C453E856BEF0A3F158 /* Frameworks */ = {
@@ -3069,6 +3090,7 @@
 				6ACFE0121BA170720061DA35 /* PushupVC.xib in Resources */,
 				6ACFE0041BA16C380061DA35 /* DiagramVC.xib in Resources */,
 				6ACFDF171B9C23FD0061DA35 /* html+samurai.css in Resources */,
+				6AD283231BB17883008900FA /* Item_1_PickerCell.xib in Resources */,
 				6ACFDF181B9C23FD0061DA35 /* html.css in Resources */,
 				6ACFE0321BA2C8630061DA35 /* Tock.wav in Resources */,
 				6ACFDF161B9C23FD0061DA35 /* html+native.css in Resources */,
@@ -3238,6 +3260,7 @@
 				6ACFDEC81B9C23FD0061DA35 /* Samurai_HtmlElementDt.m in Sources */,
 				6ACFDF241B9C23FD0061DA35 /* char_ref.c in Sources */,
 				6ACFDE721B9C23FD0061DA35 /* Samurai_CSSStyleSheet.m in Sources */,
+				6AD283221BB17883008900FA /* Item_1_PickerCell.m in Sources */,
 				6ACFDEE01B9C23FD0061DA35 /* Samurai_HtmlElementInputSubmit.m in Sources */,
 				6ACFDED21B9C23FD0061DA35 /* Samurai_HtmlElementH6.m in Sources */,
 				6ACFDE1A1B9C23FD0061DA35 /* Samurai_UITableView.m in Sources */,
@@ -3438,6 +3461,7 @@
 				6ACFDF291B9C23FD0061DA35 /* tag.c in Sources */,
 				6ACFDFD31B9E63DD0061DA35 /* Item1.m in Sources */,
 				6ACFDE401B9C23FD0061DA35 /* Samurai_ViewUtility.m in Sources */,
+				6AD283301BB193D1008900FA /* PickerModel.m in Sources */,
 				6ACFDDF31B9C23FD0061DA35 /* Samurai_NotificationBus.m in Sources */,
 				6ACFDEB11B9C23FD0061DA35 /* Samurai_HtmlDocumentWorklet_30ParseResource.m in Sources */,
 				6ACFDEE41B9C23FD0061DA35 /* Samurai_HtmlElementLi.m in Sources */,

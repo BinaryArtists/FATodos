@@ -21,7 +21,6 @@
 #import "typedef.h"
 
 // Base
-#import "UITableViewCellProtocol.h"
 #import "UITableViewCell+Base.h"
 
 // Framework
@@ -55,6 +54,7 @@
 #import "RoutableVC.h"
 #import "MGSwipeButton.h"
 #import "MGSwipeTableCell.h"
+#import "FAVerticalPickerView.h"
 
 // Entity
 #import "Item1.h"

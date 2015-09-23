@@ -37,6 +37,24 @@
 
 #pragma mark - 
 
++ (UIColor *)fontGray001Color;
+
++ (UIColor *)fontGray002Color;
+
+#pragma mark - 
+
 + (UIColor *)bgGrayColor;
+
+#pragma mark - 小清新
+
++ (UIColor *)lightGreenColor;
+
++ (UIColor *)lightYellowColor;
+
++ (UIColor *)lightGrayColor;
+
++ (UIColor *)brightGreenColor;
+
++ (UIColor *)flatBlueColor;
 
 @end

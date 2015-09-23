@@ -8,11 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol VerticalPickerViewDelegate;
+@protocol VerticalPickerViewDataSource;
+
+
 /**
- *
+ * 选择器
  */
 
 @interface VerticalPickerView : UIView
+
+@property (nonatomic, weak) id<VerticalPickerViewDelegate> delegate;
+@property (nonatomic, weak) id<VerticalPickerViewDataSource> dataSource;
 
 @end
 
@@ -21,7 +28,9 @@
  */
 @protocol VerticalPickerViewDataSource <NSObject>
 
+- (NSInteger)numberOfRowsInVerticalPickerView:(VerticalPickerView *)pickerView;
 
+- (NSString *)verticalPickerView:(VerticalPickerView *)pickerView titleAtIndex:(NSUInteger)index;
 
 @end
 
@@ -30,6 +39,10 @@
  */
 @protocol VerticalPickerViewDelegate <NSObject>
 
+- (CGFloat)verticalPickerView:(VerticalPickerView *)pickerView heightForRowAtIndex:(NSInteger)index;
 
+- (void)verticalPickerViewDidScroll:(VerticalPickerView *)pickerView;
+
+- (void)verticalPickerView:(VerticalPickerView *)pickerView DidSelectRowAtIndex:(NSInteger)index;
 
 @end
