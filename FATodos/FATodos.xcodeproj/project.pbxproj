@@ -439,6 +439,8 @@
 		6AD283221BB17883008900FA /* Item_1_PickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD283201BB17883008900FA /* Item_1_PickerCell.m */; };
 		6AD283231BB17883008900FA /* Item_1_PickerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AD283211BB17883008900FA /* Item_1_PickerCell.xib */; };
 		6AD283301BB193D1008900FA /* PickerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD2832F1BB193D1008900FA /* PickerModel.m */; };
+		6AD283401BB2C754008900FA /* BaseEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD2833F1BB2C754008900FA /* BaseEntity.m */; };
+		6AD283431BB2C77A008900FA /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD283421BB2C77A008900FA /* BaseView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1317,6 +1319,10 @@
 		6AD283211BB17883008900FA /* Item_1_PickerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Item_1_PickerCell.xib; sourceTree = "<group>"; };
 		6AD2832E1BB193D1008900FA /* PickerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerModel.h; sourceTree = "<group>"; };
 		6AD2832F1BB193D1008900FA /* PickerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerModel.m; sourceTree = "<group>"; };
+		6AD2833E1BB2C754008900FA /* BaseEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseEntity.h; sourceTree = "<group>"; };
+		6AD2833F1BB2C754008900FA /* BaseEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseEntity.m; sourceTree = "<group>"; };
+		6AD283411BB2C77A008900FA /* BaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
+		6AD283421BB2C77A008900FA /* BaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
 		850482635E526CD13E018DB7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -2952,6 +2958,10 @@
 			children = (
 				6AD283151BB12D91008900FA /* architect */,
 				6ACEBAED1BA94AD30011E3F7 /* extension */,
+				6AD2833E1BB2C754008900FA /* BaseEntity.h */,
+				6AD2833F1BB2C754008900FA /* BaseEntity.m */,
+				6AD283411BB2C77A008900FA /* BaseView.h */,
+				6AD283421BB2C77A008900FA /* BaseView.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -3159,6 +3169,7 @@
 				6ACFDEF91B9C23FD0061DA35 /* Samurai_HtmlElementTh.m in Sources */,
 				6ACFDDFA1B9C23FD0061DA35 /* Signal+Model.m in Sources */,
 				6ACFDFBB1B9C85A90061DA35 /* NSString+Size.m in Sources */,
+				6AD283431BB2C77A008900FA /* BaseView.m in Sources */,
 				6ACFDEC91B9C23FD0061DA35 /* Samurai_HtmlElementElement.m in Sources */,
 				6ACFDE821B9C23FD0061DA35 /* Samurai_CSSNumberGRad.m in Sources */,
 				6ACFDEDF1B9C23FD0061DA35 /* Samurai_HtmlElementInputReset.m in Sources */,
@@ -3290,6 +3301,7 @@
 				6ACFDE941B9C23FD0061DA35 /* Samurai_CSSNumberVw.m in Sources */,
 				6ACFDEE11B9C23FD0061DA35 /* Samurai_HtmlElementInputText.m in Sources */,
 				6ACFDF2F1B9C23FD0061DA35 /* katana.lex.c in Sources */,
+				6AD283401BB2C754008900FA /* BaseEntity.m in Sources */,
 				6ACFDE1C1B9C23FD0061DA35 /* Samurai_UITextField.m in Sources */,
 				6ACFDE851B9C23FD0061DA35 /* Samurai_CSSNumberKhz.m in Sources */,
 				6ACFDEC31B9C23FD0061DA35 /* Samurai_HtmlElementDatalist.m in Sources */,

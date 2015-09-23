@@ -21,7 +21,15 @@
 #import "typedef.h"
 
 // Base
+#import "BaseViewProtocol.h"
+#import "BasePresenterProtocol.h"
+#import "BaseInteractorProtocol.h"
+#import "BaseEntityProtocol.h"
+
 #import "UITableViewCell+Base.h"
+
+#import "BaseEntity.h"
+#import "BaseView.h"
 
 // Framework
 #import "Samurai_Property.h"

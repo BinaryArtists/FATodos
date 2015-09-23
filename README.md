@@ -7,7 +7,7 @@ Many app about TODO, but it is my own.
 
     ==> 持有Presenter
 
-* Presenter：数据加工，更新数据到View
+* Presenter：数据加工，更新数据到View（通知机制：ReactiveCocoa）
 
     ==> 持有Interactor
 
