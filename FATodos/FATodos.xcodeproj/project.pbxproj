@@ -441,6 +441,8 @@
 		6AD283301BB193D1008900FA /* PickerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD2832F1BB193D1008900FA /* PickerModel.m */; };
 		6AD283401BB2C754008900FA /* BaseEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD2833F1BB2C754008900FA /* BaseEntity.m */; };
 		6AD283431BB2C77A008900FA /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD283421BB2C77A008900FA /* BaseView.m */; };
+		6AD283461BB2C893008900FA /* 图量表-1-按钮颜色参考.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AD283441BB2C893008900FA /* 图量表-1-按钮颜色参考.png */; };
+		6AD283471BB2C893008900FA /* 图量表-2-背景色参考.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6AD283451BB2C893008900FA /* 图量表-2-背景色参考.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1323,6 +1325,8 @@
 		6AD2833F1BB2C754008900FA /* BaseEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseEntity.m; sourceTree = "<group>"; };
 		6AD283411BB2C77A008900FA /* BaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
 		6AD283421BB2C77A008900FA /* BaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
+		6AD283441BB2C893008900FA /* 图量表-1-按钮颜色参考.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图量表-1-按钮颜色参考.png"; sourceTree = "<group>"; };
+		6AD283451BB2C893008900FA /* 图量表-2-背景色参考.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "图量表-2-背景色参考.jpg"; sourceTree = "<group>"; };
 		850482635E526CD13E018DB7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -2856,6 +2860,8 @@
 		6ACFDFDF1BA0207E0061DA35 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				6AD283441BB2C893008900FA /* 图量表-1-按钮颜色参考.png */,
+				6AD283451BB2C893008900FA /* 图量表-2-背景色参考.jpg */,
 				6ACFDFE01BA0207F0061DA35 /* check@2x.png */,
 				6ACFDFE11BA0207F0061DA35 /* clock@2x.png */,
 				6ACFDFE21BA0207F0061DA35 /* cross@2x.png */,
@@ -3096,6 +3102,7 @@
 				6ACFDFE51BA0207F0061DA35 /* clock@2x.png in Resources */,
 				6ACFDF8F1B9C2E740061DA35 /* db.plist in Resources */,
 				6A158E4A1B70B482007FE54F /* LaunchScreen.xib in Resources */,
+				6AD283471BB2C893008900FA /* 图量表-2-背景色参考.jpg in Resources */,
 				6ACFDFE61BA0207F0061DA35 /* cross@2x.png in Resources */,
 				6ACFE0121BA170720061DA35 /* PushupVC.xib in Resources */,
 				6ACFE0041BA16C380061DA35 /* DiagramVC.xib in Resources */,
@@ -3108,6 +3115,7 @@
 				6ACFDE581B9C23FD0061DA35 /* ServiceInspector.bundle in Resources */,
 				6ACFDE551B9C23FD0061DA35 /* ServiceGrids.bundle in Resources */,
 				6ACFDE4D1B9C23FD0061DA35 /* ServiceGesture.bundle in Resources */,
+				6AD283461BB2C893008900FA /* 图量表-1-按钮颜色参考.png in Resources */,
 				6ACFE0341BA2C8630061DA35 /* userdefault.jpg in Resources */,
 				6A158E471B70B482007FE54F /* Images.xcassets in Resources */,
 				6ACFDE491B9C23FD0061DA35 /* ServiceBorder.bundle in Resources */,
