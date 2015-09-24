@@ -26,3 +26,5 @@ pod 'ZLSwipeableView'
 pod 'Masonry'
 
 pod 'SDWebImage', '~>3.6'
+
+pod 'FlatUIKit'

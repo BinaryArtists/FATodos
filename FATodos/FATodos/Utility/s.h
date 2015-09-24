@@ -17,7 +17,13 @@
 
 // Service
 
-@string( Pushup )
-@string( Dumbell )
+// todo: http://www.oschina.net/p/Voice2Note（懒人笔记）
+// 便签显示方式：http://www.oschina.net/p/timeline-for-ios
+// 输入方式：
+@string( Memo ) // 便签：
+@string( Note ) // 笔记：与上面的区别就是，便签可以分类，但不做关联，笔记是可以较少层次的树状分类，和关联
+
+@string( Pushup ) // 俯卧撑
+@string( Dumbell ) // 哑铃
 
 @end

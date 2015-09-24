@@ -14,11 +14,32 @@
 
 @implementation BaseView
 
+#pragma mark - Initialize UInitialize
+
+- (instancetype)init {
+    if (self = [super init]) {
+        [self initObserver];
+    }
+    
+    return self;
+}
+
+- (void)initObserver {
+    [self observeNotification:UIApplicationDidEnterBackgroundNotification];
+}
+
+- (void)uinitObserver {
+    [self unobserveAllNotifications];
+}
+
 #pragma mark - Life cycle
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    // todo: load cache
+    NSMutableDictionary *bundle    = [NSMutableDictionary new];
+    [self onLoadInstanceState:bundle];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -26,16 +47,36 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)dealloc {
+    [self uinitObserver];
 }
-*/
+
+#pragma mark - Notification handler
+
+- (void)handleNotification:(NSNotification *)notification {
+    if ([notification is:UIApplicationDidEnterBackgroundNotification]) {
+        // todo: NSKeyedArchiver
+        NSMutableDictionary *bundle = [NSMutableDictionary new];
+        
+        [self onSaveInstanceState:bundle];
+    }
+}
 
 #pragma mark - BaseViewProtocol
+
+/**
+ *
+ */
+
+/**
+ *  备忘录
+ */
+- (void)onSaveInstanceState:(NSMutableDictionary *)bundle {
+    
+}
+
+- (void)onLoadInstanceState:(NSDictionary *)bundle {
+    
+}
 
 @end

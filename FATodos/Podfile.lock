@@ -22,6 +22,7 @@ PODS:
     - AFNetworking/NSURLSession
   - AKPickerView (0.2.6)
   - ASCFlatUIColor (0.1.0)
+  - FlatUIKit (1.6.2)
   - FMDB (2.5):
     - FMDB/standard (= 2.5)
   - FMDB/common (2.5)
@@ -30,9 +31,9 @@ PODS:
   - FMDBMigrationManager (1.3.4):
     - FMDB/common (~> 2.3)
   - JDFPeekaboo (0.2.1)
-  - Masonry (0.6.2)
+  - Masonry (0.6.3)
   - PARTagPicker (1.0.0)
-  - pop (1.0.7)
+  - pop (1.0.8)
   - ReactiveCocoa (2.5):
     - ReactiveCocoa/UI (= 2.5)
   - ReactiveCocoa/Core (2.5):
@@ -51,6 +52,7 @@ DEPENDENCIES:
   - AFNetworking (~> 2.0)
   - AKPickerView
   - ASCFlatUIColor
+  - FlatUIKit
   - FMDB
   - FMDBMigrationManager
   - JDFPeekaboo
@@ -67,12 +69,13 @@ SPEC CHECKSUMS:
   AFNetworking: 79f7eb1a0fcfa7beb409332b2ca49afe9ce53b05
   AKPickerView: e31dcb9572c04d8439512315798862d9eb84b18f
   ASCFlatUIColor: 4219ca860d305a88f5240b9cd380e002d0e0b672
+  FlatUIKit: 1b41f0d4952ce8d970d8479ce79df54a960242c4
   FMDB: 96e8f1bcc1329e269330f99770ad4285d9003e52
   FMDBMigrationManager: aa46d473c863b6ade5676c49b73f56540b358ad7
   JDFPeekaboo: 24baf48f53e51210919f8160c1c235ccc7055021
-  Masonry: 362e8a1cc0beada4a4c4832d5e863da2a51533be
+  Masonry: ff105a956abcd19a618b2028b121cb638d7a8e2f
   PARTagPicker: 6d6aea6627d6ffaed1efc13fefe8c4fc8c1ac3c5
-  pop: 628ffc631644601567ee8bfaaaea493ebd7d0923
+  pop: bb773ae2c791ca2629de13b347e7a8b450fa6a57
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
   SWTableViewCell: 2a94aadc9d47b2b611fa064566bf57948b95b579

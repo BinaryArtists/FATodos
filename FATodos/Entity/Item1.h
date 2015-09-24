@@ -6,11 +6,11 @@
 //  Copyright (c) 2015 fallen.ink. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "BaseEntity.h"
 
 // 俯卧撑、哑铃
 
-@interface Item1 : NSObject
+@interface Item1 : BaseEntity
 
 @property (nonatomic, copy) NSString *      name;
 @property (nonatomic, assign) int32_t       type; // in

@@ -10,4 +10,17 @@
 
 @protocol BaseViewProtocol <NSObject>
 
+@required
+
+
+@optional // 备忘录
+
+- (void)onSaveInstanceState:(NSMutableDictionary *)bundle;
+
+- (void)onLoadInstanceState:(NSDictionary *)bundle;
+
+@optional
+
+
+
 @end
