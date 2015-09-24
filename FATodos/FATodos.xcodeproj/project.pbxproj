@@ -3886,11 +3886,32 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "/Users/lijie/Desktop/gits/FATodos/FATodos/FATodos/FATodos-prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/AKPickerView\"",
+					"\"${PODS_ROOT}/Headers/Public/ASCFlatUIColor\"",
+					"\"${PODS_ROOT}/Headers/Public/FMDB\"",
+					"\"${PODS_ROOT}/Headers/Public/FMDBMigrationManager\"",
+					"\"${PODS_ROOT}/Headers/Public/FlatUIKit\"",
+					"\"${PODS_ROOT}/Headers/Public/GCDObjC\"",
+					"\"${PODS_ROOT}/Headers/Public/JDFPeekaboo\"",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"\"${PODS_ROOT}/Headers/Public/PARTagPicker\"",
+					"\"${PODS_ROOT}/Headers/Public/ReactiveCocoa\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"\"${PODS_ROOT}/Headers/Public/SWTableViewCell\"",
+					"\"${PODS_ROOT}/Headers/Public/UIColor+MLPFlatColors\"",
+					"\"${PODS_ROOT}/Headers/Public/ZLSwipeableView\"",
+					"\"${PODS_ROOT}/Headers/Public/pop\"",
+					"${SRCROOT}/../**",
+				);
 				INFOPLIST_FILE = FATodos/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/../**";
 			};
 			name = Debug;
 		};
@@ -3902,11 +3923,32 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "/Users/lijie/Desktop/gits/FATodos/FATodos/FATodos/FATodos-prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/AKPickerView\"",
+					"\"${PODS_ROOT}/Headers/Public/ASCFlatUIColor\"",
+					"\"${PODS_ROOT}/Headers/Public/FMDB\"",
+					"\"${PODS_ROOT}/Headers/Public/FMDBMigrationManager\"",
+					"\"${PODS_ROOT}/Headers/Public/FlatUIKit\"",
+					"\"${PODS_ROOT}/Headers/Public/GCDObjC\"",
+					"\"${PODS_ROOT}/Headers/Public/JDFPeekaboo\"",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"\"${PODS_ROOT}/Headers/Public/PARTagPicker\"",
+					"\"${PODS_ROOT}/Headers/Public/ReactiveCocoa\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"\"${PODS_ROOT}/Headers/Public/SWTableViewCell\"",
+					"\"${PODS_ROOT}/Headers/Public/UIColor+MLPFlatColors\"",
+					"\"${PODS_ROOT}/Headers/Public/ZLSwipeableView\"",
+					"\"${PODS_ROOT}/Headers/Public/pop\"",
+					"${SRCROOT}/../**",
+				);
 				INFOPLIST_FILE = FATodos/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/../**";
 			};
 			name = Release;
 		};

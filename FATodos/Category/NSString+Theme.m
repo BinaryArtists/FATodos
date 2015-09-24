@@ -13,12 +13,12 @@
 + (NSString *)forItemType:(NSInteger)type {
     switch (type) {
         case kItemDumbbell: {
-            return kStringDumbell;
+            return [s Dumbell];
         }
             break;
             
         case kItemPushup: {
-            return kStringPushup;
+            return [s Pushup];
         }
             break;
     }
