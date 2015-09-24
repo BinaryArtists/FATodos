@@ -40,4 +40,10 @@
 
 @string( DIAGRAM_VC )
 
+@string( MEMO_VC )
+
+@string( NOTE_VC )
+
+@string( QUADRANT_VC )
+
 @end

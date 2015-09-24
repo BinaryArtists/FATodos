@@ -445,6 +445,8 @@
 		6AF4BCC31BB2D5540047A720 /* UIColor+Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF4BCC21BB2D5540047A720 /* UIColor+Expanded.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		6AF4BD721BB3E43B0047A720 /* CatDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF4BD701BB3E43B0047A720 /* CatDetailViewController.m */; };
 		6AF4BD731BB3E43B0047A720 /* ChinaCity.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6AF4BD711BB3E43B0047A720 /* ChinaCity.plist */; };
+		6AF4BD7A1BB3F7860047A720 /* Item_1_Cache.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF4BD791BB3F7860047A720 /* Item_1_Cache.m */; };
+		6AF4BD7F1BB3FEB20047A720 /* NSObject+Base.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF4BD7E1BB3FEB20047A720 /* NSObject+Base.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1331,6 +1333,11 @@
 		6AF4BD6F1BB3E43B0047A720 /* CatDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatDetailViewController.h; sourceTree = "<group>"; };
 		6AF4BD701BB3E43B0047A720 /* CatDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatDetailViewController.m; sourceTree = "<group>"; };
 		6AF4BD711BB3E43B0047A720 /* ChinaCity.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ChinaCity.plist; sourceTree = "<group>"; };
+		6AF4BD781BB3F7860047A720 /* Item_1_Cache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item_1_Cache.h; sourceTree = "<group>"; };
+		6AF4BD791BB3F7860047A720 /* Item_1_Cache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item_1_Cache.m; sourceTree = "<group>"; };
+		6AF4BD7B1BB3F8090047A720 /* CacheProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CacheProtocol.h; sourceTree = "<group>"; };
+		6AF4BD7D1BB3FEB20047A720 /* NSObject+Base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Base.h"; sourceTree = "<group>"; };
+		6AF4BD7E1BB3FEB20047A720 /* NSObject+Base.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Base.m"; sourceTree = "<group>"; };
 		850482635E526CD13E018DB7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1446,6 +1453,8 @@
 			children = (
 				6ACEBAEE1BA94AD30011E3F7 /* UITableViewCell+Base.h */,
 				6ACEBAEF1BA94AD30011E3F7 /* UITableViewCell+Base.m */,
+				6AF4BD7D1BB3FEB20047A720 /* NSObject+Base.h */,
+				6AF4BD7E1BB3FEB20047A720 /* NSObject+Base.m */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -2669,7 +2678,7 @@
 				6AF4BD6E1BB3E43B0047A720 /* CatDetailViewController */,
 				6AF4BCC71BB2E9690047A720 /* LibraryAPI */,
 				6AF4BC861BB2D4280047A720 /* FADatePickerViewController */,
-				6AD283481BB2CA95008900FA /* FAStorage */,
+				6AD283481BB2CA95008900FA /* LibraryStorage */,
 				6ACEBAF21BA974810011E3F7 /* MGSwipeTableCell */,
 				6ACFE03C1BA2D98F0061DA35 /* FBShimmering */,
 				6ACFE02A1BA2C8630061DA35 /* ScrollerMenu */,
@@ -2693,6 +2702,8 @@
 		6ACFDDCE1B9C23FC0061DA35 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				6AF4BD751BB3F5E30047A720 /* Memo */,
+				6AF4BD761BB3F5E30047A720 /* Note */,
 				6ACFE0061BA170720061DA35 /* FourQuadrant */,
 				6ACFE0071BA170720061DA35 /* Pushup */,
 				6ACFDFFF1BA16C380061DA35 /* Diagram */,
@@ -3001,10 +3012,14 @@
 			path = AppModel;
 			sourceTree = "<group>";
 		};
-		6AD283481BB2CA95008900FA /* FAStorage */ = {
+		6AD283481BB2CA95008900FA /* LibraryStorage */ = {
 			isa = PBXGroup;
 			children = (
+				6AF4BD781BB3F7860047A720 /* Item_1_Cache.h */,
+				6AF4BD791BB3F7860047A720 /* Item_1_Cache.m */,
+				6AF4BD7B1BB3F8090047A720 /* CacheProtocol.h */,
 			);
+			name = LibraryStorage;
 			path = FAStorage;
 			sourceTree = "<group>";
 		};
@@ -3032,6 +3047,20 @@
 				6AF4BD711BB3E43B0047A720 /* ChinaCity.plist */,
 			);
 			path = CatDetailViewController;
+			sourceTree = "<group>";
+		};
+		6AF4BD751BB3F5E30047A720 /* Memo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Memo;
+			sourceTree = "<group>";
+		};
+		6AF4BD761BB3F5E30047A720 /* Note */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Note;
 			sourceTree = "<group>";
 		};
 		D9A204C453E856BEF0A3F158 /* Frameworks */ = {
@@ -3316,6 +3345,7 @@
 				6ACFDED21B9C23FD0061DA35 /* Samurai_HtmlElementH6.m in Sources */,
 				6ACFDE1A1B9C23FD0061DA35 /* Samurai_UITableView.m in Sources */,
 				6ACFDEF31B9C23FD0061DA35 /* Samurai_HtmlElementTbody.m in Sources */,
+				6AF4BD7F1BB3FEB20047A720 /* NSObject+Base.m in Sources */,
 				6ACFDDD61B9C23FD0061DA35 /* Samurai_Predefine.m in Sources */,
 				6ACFDEB71B9C23FD0061DA35 /* Samurai_HtmlDomNode.m in Sources */,
 				6ACFDF101B9C23FD0061DA35 /* Samurai_HtmlRenderWorklet_10Begin.m in Sources */,
@@ -3518,6 +3548,7 @@
 				6ACFDEB11B9C23FD0061DA35 /* Samurai_HtmlDocumentWorklet_30ParseResource.m in Sources */,
 				6ACFDEE41B9C23FD0061DA35 /* Samurai_HtmlElementLi.m in Sources */,
 				6ACFDED11B9C23FD0061DA35 /* Samurai_HtmlElementH5.m in Sources */,
+				6AF4BD7A1BB3F7860047A720 /* Item_1_Cache.m in Sources */,
 				6ACFDE7F1B9C23FD0061DA35 /* Samurai_CSSNumberEm.m in Sources */,
 				6ACFDED41B9C23FD0061DA35 /* Samurai_HtmlElementHgroup.m in Sources */,
 				6ACFDFCC1B9D40F40061DA35 /* MZDayPicker.m in Sources */,

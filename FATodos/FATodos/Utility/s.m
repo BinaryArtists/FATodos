@@ -8,7 +8,7 @@
 
 #import "s.h"
 
-@implementation s
+@implementation s // todo: 用plist改进
 
 #pragma mark -
 
@@ -17,6 +17,10 @@
 
 #pragma mark -
 
+@def_string( Memo,          @"便签" )
+@def_string( Note,          @"笔记" )
+
+@def_string( SitsUp,        @"仰卧起坐" )
 @def_string( Pushup,        @"俯卧撑" )
 @def_string( Dumbell,       @"哑铃" )
 

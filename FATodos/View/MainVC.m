@@ -14,7 +14,13 @@
 
 @interface MainVC () <ScrollViewDelegate>
 
-@property (weak, nonatomic) IBOutlet ScrollView *scrollView;
+@property (weak, nonatomic) IBOutlet ScrollView *   scrollView;
+
+@property (nonatomic, strong) UserBoxView *         pushupView;
+@property (nonatomic, strong) UserBoxView *         dumbellView;
+@property (nonatomic, strong) UserBoxView *         sitsupView;
+@property (nonatomic, strong) UserBoxView *         memoView;
+@property (nonatomic, strong) UserBoxView *         noteView;
 
 @end
 
@@ -37,31 +43,31 @@
     self.scrollView.backgroundColor         = [UIColor clearColor];
 
     UserBoxView *boxView = [[UserBoxView alloc] init];
-    [boxView.displayTextLabel setText:[NSString stringWithFormat:@"俯卧撑"]];
+    [boxView.displayTextLabel setText:[s Pushup]];
     [boxView.userImageView setImage:[UIImage imageNamed:@"userdefault.jpg"]];
 
     [self.scrollView addUserView:boxView];
 
     boxView = [[UserBoxView alloc] init];
-    [boxView.displayTextLabel setText:[NSString stringWithFormat:@"哑铃"]];
+    [boxView.displayTextLabel setText:[s Dumbell]];
     [boxView.userImageView setImage:[UIImage imageNamed:@"userdefault.jpg"]];
     
     [self.scrollView addUserView:boxView];
 
     boxView = [[UserBoxView alloc] init];
-    [boxView.displayTextLabel setText:[NSString stringWithFormat:@"仰卧起坐"]];
+    [boxView.displayTextLabel setText:[s SitsUp]];
     [boxView.userImageView setImage:[UIImage imageNamed:@"userdefault.jpg"]];
     
     [self.scrollView addUserView:boxView];
 
     boxView = [[UserBoxView alloc] init];
-    [boxView.displayTextLabel setText:[NSString stringWithFormat:@"啦啦啦啦啦"]];
+    [boxView.displayTextLabel setText:[s Memo]];
     [boxView.userImageView setImage:[UIImage imageNamed:@"userdefault.jpg"]];
     
     [self.scrollView addUserView:boxView];
     
     boxView = [[UserBoxView alloc] init];
-    [boxView.displayTextLabel setText:[NSString stringWithFormat:@"啦啦啦啦啦"]];
+    [boxView.displayTextLabel setText:[s Note]];
     [boxView.userImageView setImage:[UIImage imageNamed:@"userdefault.jpg"]];
     
     [self.scrollView addUserView:boxView];
@@ -95,7 +101,17 @@
 #pragma mark - ScrollViewDelegate
 
 - (void)selectedView:(UserBoxView *)selectedview {
-    [[Routable sharedRouter] open:[AppDelegate PUSHUP_VC] animated:YES];
+    if (selectedview == self.pushupView) {
+        [[Routable sharedRouter] open:[AppDelegate PUSHUP_VC] animated:YES];
+    } else if (selectedview == self.dumbellView) {
+        [[Routable sharedRouter] open:[AppDelegate PUSHUP_VC] animated:YES];
+    } else if (selectedview == self.sitsupView) {
+        [[Routable sharedRouter] open:[AppDelegate PUSHUP_VC] animated:YES];
+    } else if (selectedview == self.memoView) {
+        [[Routable sharedRouter] open:[AppDelegate PUSHUP_VC] animated:YES];
+    } else if (selectedview == self.noteView) {
+        [[Routable sharedRouter] open:[AppDelegate PUSHUP_VC] animated:YES];
+    }
 }
 
 @end

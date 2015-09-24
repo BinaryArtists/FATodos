@@ -67,4 +67,8 @@
 @def_string( PUSHUP_VC,     @"vc.pushup" )
 @def_string( DIAGRAM_VC,    @"vc.diagram" )
 
+@def_string( MEMO_VC,       @"vc.memo" )
+@def_string( NOTE_VC,       @"vc.note" )
+@def_string( QUADRANT_VC,   @"vc.quadrant")
+
 @end
