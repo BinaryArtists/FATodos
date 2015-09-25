@@ -464,6 +464,16 @@
 		6AF4BDB41BB441760047A720 /* NSObject+MTLComparisonAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF4BDA11BB441760047A720 /* NSObject+MTLComparisonAdditions.m */; };
 		6AF4BDB51BB441760047A720 /* NSValueTransformer+MTLInversionAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF4BDA31BB441760047A720 /* NSValueTransformer+MTLInversionAdditions.m */; };
 		6AF4BDB61BB441760047A720 /* NSValueTransformer+MTLPredefinedTransformerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF4BDA51BB441760047A720 /* NSValueTransformer+MTLPredefinedTransformerAdditions.m */; };
+		6AF4BDC41BB52D040047A720 /* AMBouncingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF4BDB91BB52D040047A720 /* AMBouncingView.m */; };
+		6AF4BDC51BB52D040047A720 /* AMSmoothAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF4BDBC1BB52D040047A720 /* AMSmoothAlertView.m */; };
+		6AF4BDC61BB52D040047A720 /* checkMark.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AF4BDBE1BB52D040047A720 /* checkMark.png */; };
+		6AF4BDC71BB52D040047A720 /* checkMark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AF4BDBF1BB52D040047A720 /* checkMark@2x.png */; };
+		6AF4BDC81BB52D040047A720 /* crossMark.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AF4BDC01BB52D040047A720 /* crossMark.png */; };
+		6AF4BDC91BB52D040047A720 /* crossMark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AF4BDC11BB52D040047A720 /* crossMark@2x.png */; };
+		6AF4BDCA1BB52D040047A720 /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AF4BDC21BB52D040047A720 /* info.png */; };
+		6AF4BDCB1BB52D040047A720 /* info@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AF4BDC31BB52D040047A720 /* info@2x.png */; };
+		6AF4BDCF1BB52E260047A720 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AF4BDCE1BB52E260047A720 /* CoreGraphics.framework */; };
+		6AF4BDD11BB538CF0047A720 /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AF4BDD01BB538CF0047A720 /* GPUImage.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1391,6 +1401,19 @@
 		6AF4BDA31BB441760047A720 /* NSValueTransformer+MTLInversionAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSValueTransformer+MTLInversionAdditions.m"; sourceTree = "<group>"; };
 		6AF4BDA41BB441760047A720 /* NSValueTransformer+MTLPredefinedTransformerAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSValueTransformer+MTLPredefinedTransformerAdditions.h"; sourceTree = "<group>"; };
 		6AF4BDA51BB441760047A720 /* NSValueTransformer+MTLPredefinedTransformerAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSValueTransformer+MTLPredefinedTransformerAdditions.m"; sourceTree = "<group>"; };
+		6AF4BDB81BB52D040047A720 /* AMBouncingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMBouncingView.h; sourceTree = "<group>"; };
+		6AF4BDB91BB52D040047A720 /* AMBouncingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMBouncingView.m; sourceTree = "<group>"; };
+		6AF4BDBA1BB52D040047A720 /* AMSmoothAlertConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSmoothAlertConstants.h; sourceTree = "<group>"; };
+		6AF4BDBB1BB52D040047A720 /* AMSmoothAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSmoothAlertView.h; sourceTree = "<group>"; };
+		6AF4BDBC1BB52D040047A720 /* AMSmoothAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSmoothAlertView.m; sourceTree = "<group>"; };
+		6AF4BDBE1BB52D040047A720 /* checkMark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkMark.png; sourceTree = "<group>"; };
+		6AF4BDBF1BB52D040047A720 /* checkMark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkMark@2x.png"; sourceTree = "<group>"; };
+		6AF4BDC01BB52D040047A720 /* crossMark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crossMark.png; sourceTree = "<group>"; };
+		6AF4BDC11BB52D040047A720 /* crossMark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crossMark@2x.png"; sourceTree = "<group>"; };
+		6AF4BDC21BB52D040047A720 /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
+		6AF4BDC31BB52D040047A720 /* info@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "info@2x.png"; sourceTree = "<group>"; };
+		6AF4BDCE1BB52E260047A720 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6AF4BDD01BB538CF0047A720 /* GPUImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GPUImage.framework; sourceTree = "<group>"; };
 		850482635E526CD13E018DB7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1399,10 +1422,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AF4BDCF1BB52E260047A720 /* CoreGraphics.framework in Frameworks */,
 				6ACFE03A1BA2C8FF0061DA35 /* AudioToolbox.framework in Frameworks */,
 				6ACFE0371BA2C8F60061DA35 /* AddressBook.framework in Frameworks */,
 				6ACFE0381BA2C8F60061DA35 /* AddressBookUI.framework in Frameworks */,
 				6ACFDFC21B9C8BBD0061DA35 /* UIKit.framework in Frameworks */,
+				6AF4BDD11BB538CF0047A720 /* GPUImage.framework in Frameworks */,
 				6ACFDFC01B9C8B860061DA35 /* Foundation.framework in Frameworks */,
 				534CB05A2535D65788892768 /* libPods.a in Frameworks */,
 			);
@@ -1554,6 +1579,7 @@
 		6ACFDAC71B9C23FC0061DA35 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				6AF4BDD01BB538CF0047A720 /* GPUImage.framework */,
 				6ACFDAC81B9C23FC0061DA35 /* SAMURAI */,
 			);
 			path = Framework;
@@ -2728,6 +2754,7 @@
 		6ACFDDCA1B9C23FC0061DA35 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				6AF4BDB71BB52D040047A720 /* AMSmoothAlert */,
 				6AF4BD801BB441760047A720 /* Mantle */,
 				6AF4BD6E1BB3E43B0047A720 /* CatDetailViewController */,
 				6AF4BCC71BB2E9690047A720 /* LibraryAPI */,
@@ -3168,9 +3195,36 @@
 			path = extobjc;
 			sourceTree = "<group>";
 		};
+		6AF4BDB71BB52D040047A720 /* AMSmoothAlert */ = {
+			isa = PBXGroup;
+			children = (
+				6AF4BDB81BB52D040047A720 /* AMBouncingView.h */,
+				6AF4BDB91BB52D040047A720 /* AMBouncingView.m */,
+				6AF4BDBA1BB52D040047A720 /* AMSmoothAlertConstants.h */,
+				6AF4BDBB1BB52D040047A720 /* AMSmoothAlertView.h */,
+				6AF4BDBC1BB52D040047A720 /* AMSmoothAlertView.m */,
+				6AF4BDBD1BB52D040047A720 /* assets */,
+			);
+			path = AMSmoothAlert;
+			sourceTree = "<group>";
+		};
+		6AF4BDBD1BB52D040047A720 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				6AF4BDBE1BB52D040047A720 /* checkMark.png */,
+				6AF4BDBF1BB52D040047A720 /* checkMark@2x.png */,
+				6AF4BDC01BB52D040047A720 /* crossMark.png */,
+				6AF4BDC11BB52D040047A720 /* crossMark@2x.png */,
+				6AF4BDC21BB52D040047A720 /* info.png */,
+				6AF4BDC31BB52D040047A720 /* info@2x.png */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
 		D9A204C453E856BEF0A3F158 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6AF4BDCE1BB52E260047A720 /* CoreGraphics.framework */,
 				6ACFE0391BA2C8FF0061DA35 /* AudioToolbox.framework */,
 				6ACFE0351BA2C8F60061DA35 /* AddressBook.framework */,
 				6ACFE0361BA2C8F60061DA35 /* AddressBookUI.framework */,
@@ -3264,6 +3318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6ACFDFE51BA0207F0061DA35 /* clock@2x.png in Resources */,
+				6AF4BDC61BB52D040047A720 /* checkMark.png in Resources */,
 				6ACFDF8F1B9C2E740061DA35 /* db.plist in Resources */,
 				6A158E4A1B70B482007FE54F /* LaunchScreen.xib in Resources */,
 				6AD283471BB2C893008900FA /* 图量表-2-背景色参考.jpg in Resources */,
@@ -3273,21 +3328,26 @@
 				6ACFDF171B9C23FD0061DA35 /* html+samurai.css in Resources */,
 				6AD283231BB17883008900FA /* Item_1_PickerCell.xib in Resources */,
 				6ACFDF181B9C23FD0061DA35 /* html.css in Resources */,
+				6AF4BDCA1BB52D040047A720 /* info.png in Resources */,
 				6ACFE0321BA2C8630061DA35 /* Tock.wav in Resources */,
 				6ACFDF161B9C23FD0061DA35 /* html+native.css in Resources */,
 				6ACFE0221BA27BB20061DA35 /* MainVC.xib in Resources */,
 				6AF4BD731BB3E43B0047A720 /* ChinaCity.plist in Resources */,
 				6ACFDE581B9C23FD0061DA35 /* ServiceInspector.bundle in Resources */,
 				6ACFDE551B9C23FD0061DA35 /* ServiceGrids.bundle in Resources */,
+				6AF4BDC81BB52D040047A720 /* crossMark.png in Resources */,
+				6AF4BDC91BB52D040047A720 /* crossMark@2x.png in Resources */,
 				6ACFDE4D1B9C23FD0061DA35 /* ServiceGesture.bundle in Resources */,
 				6AD283461BB2C893008900FA /* 图量表-1-按钮颜色参考.png in Resources */,
 				6ACFE0341BA2C8630061DA35 /* userdefault.jpg in Resources */,
 				6A158E471B70B482007FE54F /* Images.xcassets in Resources */,
 				6ACFDE491B9C23FD0061DA35 /* ServiceBorder.bundle in Resources */,
+				6AF4BDC71BB52D040047A720 /* checkMark@2x.png in Resources */,
 				6ACFDFE41BA0207F0061DA35 /* check@2x.png in Resources */,
 				6ACFE0101BA170720061DA35 /* Item_1_Cell.xib in Resources */,
 				6AF4BDA81BB441760047A720 /* Info.plist in Resources */,
 				6ACFDFE71BA0207F0061DA35 /* list@2x.png in Resources */,
+				6AF4BDCB1BB52D040047A720 /* info@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3589,6 +3649,7 @@
 				6ACFDDF91B9C23FD0061DA35 /* Samurai_EventConfig.m in Sources */,
 				6ACFDE891B9C23FD0061DA35 /* Samurai_CSSNumberPercentage.m in Sources */,
 				6ACFDE881B9C23FD0061DA35 /* Samurai_CSSNumberPc.m in Sources */,
+				6AF4BDC41BB52D040047A720 /* AMBouncingView.m in Sources */,
 				6AF4BDB51BB441760047A720 /* NSValueTransformer+MTLInversionAdditions.m in Sources */,
 				6ACFDE2C1B9C23FD0061DA35 /* Samurai_RenderObject.m in Sources */,
 				6ACFDF051B9C23FD0061DA35 /* Samurai_HtmlRenderContainer.m in Sources */,
@@ -3682,6 +3743,7 @@
 				6ACFDEAE1B9C23FD0061DA35 /* Samurai_HtmlDocumentWorkflow.m in Sources */,
 				6ACFDE001B9C23FD0061DA35 /* Samurai_DockerProtocol.m in Sources */,
 				6ACFDDE01B9C23FD0061DA35 /* NSString+Extension.m in Sources */,
+				6AF4BDC51BB52D040047A720 /* AMSmoothAlertView.m in Sources */,
 				6ACFDEAB1B9C23FD0061DA35 /* UIView+Html.m in Sources */,
 				6ACFDE661B9C23FD0061DA35 /* ServiceTapspotManager.m in Sources */,
 				6ACFDE2F1B9C23FD0061DA35 /* Samurai_ResourceFetcher.m in Sources */,
@@ -3884,6 +3946,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Framework",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "/Users/lijie/Desktop/gits/FATodos/FATodos/FATodos/FATodos-prefix.pch";
 				HEADER_SEARCH_PATHS = (
@@ -3921,6 +3987,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Framework",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "/Users/lijie/Desktop/gits/FATodos/FATodos/FATodos/FATodos-prefix.pch";
 				HEADER_SEARCH_PATHS = (

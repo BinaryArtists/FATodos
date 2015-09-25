@@ -62,7 +62,7 @@
                 if (res) {
                     NSLog(@"db[%@] create table[%@] success.", [self.class dbPath], [self SQL_TABLE_NAME_ITEM1]);
                 } else {
-                    NSLog(@"db[%@] create table[%@] failed.", [self.class dbPath], [self SQL_TABLE_NAME_ITEM1]);
+                    NSLog(@"db[%@] create table[%@] failed: %@.", [self.class dbPath], [self SQL_TABLE_NAME_ITEM1], [db lastErrorMessage]);
                 }
 
             }];
@@ -108,6 +108,8 @@
             item.id     = [ret intForColumnIndex:0];
             
             [self.item1Array addObject:item];
+        } else {
+            NSLog(@"%@", [db lastErrorMessage]);
         }
         
         completionHandler(ret, item);

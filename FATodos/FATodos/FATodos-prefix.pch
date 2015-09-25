@@ -67,6 +67,7 @@
 #import "RoutableVC.h"
 #import "MGSwipeButton.h"
 #import "MGSwipeTableCell.h"
+#import "AMSmoothAlertView.h"
 
 // Entity
 #import "Item1.h"

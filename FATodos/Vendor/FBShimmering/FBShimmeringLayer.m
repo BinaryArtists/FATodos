@@ -50,7 +50,7 @@ static NSString *const kFBEndFadeAnimationKey = @"fade-end";
 static CABasicAnimation *fade_animation(CALayer *layer, CGFloat opacity, CFTimeInterval duration)
 {
   CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"opacity"];
-  animation.fromValue = @([(layer.presentationLayer ?: layer) opacity]);
+  animation.fromValue = @([(CALayer *)(layer.presentationLayer ?: layer) opacity]);
   animation.toValue = @(opacity);
   animation.fillMode = kCAFillModeBoth;
   animation.removedOnCompletion = NO;
