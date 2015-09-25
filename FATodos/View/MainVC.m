@@ -42,37 +42,37 @@
     self.scrollView.scrollViewDelegate      = self;
     self.scrollView.backgroundColor         = [UIColor clearColor];
 
+    self.pushupView = [[UserBoxView alloc] init];
+    [self.pushupView.displayTextLabel setText:[s Pushup]];
+    [self.pushupView.userImageView setImage:[UIImage imageNamed:@"userdefault.jpg"]];
+
+    [self.scrollView addUserView:self.pushupView];
+
+    self.dumbellView = [[UserBoxView alloc] init];
+    [self.dumbellView.displayTextLabel setText:[s Dumbell]];
+    [self.dumbellView.userImageView setImage:[UIImage imageNamed:@"userdefault.jpg"]];
+    
+    [self.scrollView addUserView:self.dumbellView];
+
+    self.sitsupView = [[UserBoxView alloc] init];
+    [self.sitsupView.displayTextLabel setText:[s SitsUp]];
+    [self.sitsupView.userImageView setImage:[UIImage imageNamed:@"userdefault.jpg"]];
+    
+    [self.scrollView addUserView:self.sitsupView];
+
+    self.memoView = [[UserBoxView alloc] init];
+    [self.memoView.displayTextLabel setText:[s Memo]];
+    [self.memoView.userImageView setImage:[UIImage imageNamed:@"userdefault.jpg"]];
+    
+    [self.scrollView addUserView:self.memoView];
+    
+    self.noteView = [[UserBoxView alloc] init];
+    [self.noteView.displayTextLabel setText:[s Note]];
+    [self.noteView.userImageView setImage:[UIImage imageNamed:@"userdefault.jpg"]];
+    
+    [self.scrollView addUserView:self.noteView];
+    
     UserBoxView *boxView = [[UserBoxView alloc] init];
-    [boxView.displayTextLabel setText:[s Pushup]];
-    [boxView.userImageView setImage:[UIImage imageNamed:@"userdefault.jpg"]];
-
-    [self.scrollView addUserView:boxView];
-
-    boxView = [[UserBoxView alloc] init];
-    [boxView.displayTextLabel setText:[s Dumbell]];
-    [boxView.userImageView setImage:[UIImage imageNamed:@"userdefault.jpg"]];
-    
-    [self.scrollView addUserView:boxView];
-
-    boxView = [[UserBoxView alloc] init];
-    [boxView.displayTextLabel setText:[s SitsUp]];
-    [boxView.userImageView setImage:[UIImage imageNamed:@"userdefault.jpg"]];
-    
-    [self.scrollView addUserView:boxView];
-
-    boxView = [[UserBoxView alloc] init];
-    [boxView.displayTextLabel setText:[s Memo]];
-    [boxView.userImageView setImage:[UIImage imageNamed:@"userdefault.jpg"]];
-    
-    [self.scrollView addUserView:boxView];
-    
-    boxView = [[UserBoxView alloc] init];
-    [boxView.displayTextLabel setText:[s Note]];
-    [boxView.userImageView setImage:[UIImage imageNamed:@"userdefault.jpg"]];
-    
-    [self.scrollView addUserView:boxView];
-    
-    boxView = [[UserBoxView alloc] init];
     [boxView.displayTextLabel setText:[NSString stringWithFormat:@"啦啦啦啦啦"]];
     [boxView.userImageView setImage:[UIImage imageNamed:@"userdefault.jpg"]];
     

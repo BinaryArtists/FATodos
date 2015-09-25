@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol CacheProtocol;
+#import "CacheProtocol.h"
 
 @interface Item_1_Cache : NSObject <CacheProtocol>
 

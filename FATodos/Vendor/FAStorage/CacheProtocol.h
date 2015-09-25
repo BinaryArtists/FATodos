@@ -15,7 +15,7 @@
 /**
  * 该接口需要检查条目是否存在，如果存在则更新它
  */
-- (void)addObject:(id)obj withCompletionBlock:(void (^) (BOOL isSucceed))completionHandler;
+- (void)addObject:(id)obj withCompletionBlock:(void (^)(BOOL isSucceed, id inserted))completionHandler;
 
 - (void)updateObject:(id)obj;
 

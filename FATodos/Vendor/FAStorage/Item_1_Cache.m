@@ -86,7 +86,7 @@
 
 #pragma mark - CacheProtocol
 
-- (void)addObject:(id)obj withCompletionBlock:(void (^)(BOOL))completionHandler {
+- (void)addObject:(id)obj withCompletionBlock:(void (^)(BOOL isSucceed, id inserted))completionHandler {
     Item1 *item = obj;
     
     NSAssert(completionHandler, @"- (void)addObject:(id)obj withCompletionBlock:(void (^)(BOOL))completionHandler");
@@ -101,10 +101,16 @@
         BOOL ret        = [db executeUpdate:sql, @(item.type), @(item.num_1), @(item.num_2), @(item.num_3)];
         
         if (ret) {
-            [self.item1Array addObject:obj];
+            // todo: 需要优化
+            // select
+            sql         = [NSString stringWithFormat:@"SELECT * FROM SQLITE_SEQUENCE WHERE name=%@", [self SQL_TABLE_NAME_ITEM1]];
+            FMResultSet *ret = [db executeQuery:sql];
+            item.id     = [ret intForColumnIndex:0];
+            
+            [self.item1Array addObject:item];
         }
         
-        completionHandler(ret);
+        completionHandler(ret, item);
     }];
 }
 
@@ -164,7 +170,7 @@
         }
         
         // 自增清零
-        sql             = [NSString stringWithFormat:@"UPDATE sqlite_sequence SET seq=0 WHERE name='%@'", [self SQL_TABLE_NAME_ITEM1]];
+        sql             = [NSString stringWithFormat:@"UPDATE SQLITE_SEQUENCE SET seq=0 WHERE name='%@'", [self SQL_TABLE_NAME_ITEM1]];
         ret             = [db executeUpdate:sql];
         
         if (!ret) {

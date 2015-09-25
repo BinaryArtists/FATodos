@@ -18,6 +18,7 @@
 #import "Item_1_Cell.h"
 #import "Item_1_PickerCell.h"
 #import "PickerModel.h"
+#import "Item_1_Cache.h"
 
 #pragma mark -
 
@@ -144,15 +145,21 @@
         !item))              // 还没有任何数据
     // 新增一个表项（当日）
     {
-        NSIndexPath *ip = [NSIndexPath indexPathForRow:[self.tableData count]
-                                             inSection:0];
-        
-        [self.tableData addObject:[Item1 new]];
-        
-        [self setTableViewEditStyle:UITableViewCellEditingStyleInsert];
-        
-        [self.tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:ip]
-                              withRowAnimation:UITableViewRowAnimationRight];
+        Item1 *item     = [Item1 new];
+        [[Item_1_Cache sharedInstance] addObject:item
+                             withCompletionBlock:^(BOOL isSucceed, id inserted) {
+                                 
+                                 NSIndexPath *ip = [NSIndexPath indexPathForRow:[self.tableData count]
+                                                                      inSection:0];
+                                 
+                                 [self.tableData addObject:inserted];
+                                 
+                                 [self setTableViewEditStyle:UITableViewCellEditingStyleInsert];
+                                 
+                                 [self.tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:ip]
+                                                       withRowAnimation:UITableViewRowAnimationRight];
+                                 
+                             }];
     }
     else
     // 重新加载当前项目
