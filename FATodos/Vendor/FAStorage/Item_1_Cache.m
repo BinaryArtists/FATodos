@@ -26,11 +26,11 @@
 
 @implementation Item_1_Cache
 
-@def_string( SQL_TABLE_NAME_ITEM1, @"table.item1" )
-@def_string( SQL_TABLE_ELEMENT_NAME_TYPE, @"table.element.type" )
-@def_string( SQL_TABLE_ELEMENT_NAME_NUM1, @"table.element.num1" )
-@def_string( SQL_TABLE_ELEMENT_NAME_NUM2, @"table.element.num2" )
-@def_string( SQL_TABLE_ELEMENT_NAME_NUM3, @"table.element.num3" )
+@def_string( SQL_TABLE_NAME_ITEM1, @"table_item1" )
+@def_string( SQL_TABLE_ELEMENT_NAME_TYPE, @"type" )
+@def_string( SQL_TABLE_ELEMENT_NAME_NUM1, @"num_1" )
+@def_string( SQL_TABLE_ELEMENT_NAME_NUM2, @"num_2" )
+@def_string( SQL_TABLE_ELEMENT_NAME_NUM3, @"num_3" )
 
 @def_singleton( Item_1_Cache )
 
@@ -38,12 +38,6 @@
 
 - (instancetype)init {
     if (self = [super init]) {
-//        NSFileManager *fileManager = [NSFileManager defaultManager];
-//        if ([fileManager fileExistsAtPath:[self.class dbPath]]) { // db do exist
-//            
-//            (void)[self dbQueue];
-//            
-//        } else
         {
             
             [self.dbQueue inDatabase:^(FMDatabase *db) {
@@ -97,15 +91,11 @@
                            @"num_1,"
                            @"num_2,"
                            @"num_3"
-                           @") values (?, ?, ?)", [self SQL_TABLE_NAME_ITEM1]];
+                           @") values (?, ?, ?, ?)", [self SQL_TABLE_NAME_ITEM1]];
         BOOL ret        = [db executeUpdate:sql, @(item.type), @(item.num_1), @(item.num_2), @(item.num_3)];
         
         if (ret) {
-            // todo: 需要优化
-            // select
-            sql         = [NSString stringWithFormat:@"SELECT * FROM SQLITE_SEQUENCE WHERE name=%@", [self SQL_TABLE_NAME_ITEM1]];
-            FMResultSet *ret = [db executeQuery:sql];
-            item.id     = [ret intForColumnIndex:0];
+            item.id     = [db lastInsertRowId];
             
             [self.item1Array addObject:item];
         } else {
@@ -121,18 +111,17 @@
     
     [self.dbQueue inDatabase:^(FMDatabase *db) {
         NSString *sql   = [NSString stringWithFormat:@"UPDATE %@ SET "
-                           @"type=? "
-                           @"num_1=? "
-                           @"num_2=? "
+                           @"type=?, "
+                           @"num_1=?, "
+                           @"num_2=?, "
                            @"num_3=? "
                            @"WHERE %@=?", [self SQL_TABLE_NAME_ITEM1], [BaseEntity SQL_TABLE_ELEMENT_NAME_ID]];
-        BOOL ret        = [db executeUpdate:sql, @(item.type), @(item.num_1), @(item.num_2), @(item.num_3)];
+        BOOL ret        = [db executeUpdate:sql, @(item.type), @(item.num_1), @(item.num_2), @(item.num_3), @(item.id)];
+
         
         if (!ret) {
             NSLog(@"- (void)removeObjectById:(int64_t)id_");
         }
-        
-//        completionHandler(ret);
     }];
 }
 
@@ -204,6 +193,7 @@
         while ([rs next]) {
             Item1 *item     = [Item1 new];
             
+            item.id         = [rs longLongIntForColumn:[BaseEntity SQL_TABLE_ELEMENT_NAME_ID]];
             item.type       = [rs intForColumn:[self SQL_TABLE_ELEMENT_NAME_TYPE]];
             item.num_1      = [rs intForColumn:[self SQL_TABLE_ELEMENT_NAME_NUM1]];
             item.num_2      = [rs intForColumn:[self SQL_TABLE_ELEMENT_NAME_NUM2]];

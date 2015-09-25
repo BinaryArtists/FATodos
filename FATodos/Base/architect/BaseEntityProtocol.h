@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol BaseEntityProtocol <NSObject>
+@protocol BaseEntityProtocol <NSObject> // 组建式思维，而非多建几个XXXCache
 
 // 表名字
 

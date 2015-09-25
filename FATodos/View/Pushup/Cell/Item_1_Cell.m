@@ -7,6 +7,7 @@
 //
 
 #import "Item_1_Cell.h"
+#import "Item_1_Cache.h"
 
 @interface Item_1_Cell ()
 
@@ -45,30 +46,40 @@
         self.nameLabel.text = [NSString stringWithFormat:@"空空如也"];
     }
     
+    self.round_1_valueLabel.text    = [NSString stringWithFormat:@"%d", [item num_1]];
+    self.round_2_valueLabel.text    = [NSString stringWithFormat:@"%d", [item num_2]];
+    self.round_3_valueLabel.text    = [NSString stringWithFormat:@"%d", [item num_3]];
+    
     @weakify(self)
     
-    [RACObserve(item, num_1) subscribeNext:^(id x) {
+    [[RACObserve(item, num_1) distinctUntilChanged] subscribeNext:^(id x) {
         NSNumber *value                 = x;
         
         @strongify(self)
         
         self.round_1_valueLabel.text    = [NSString stringWithFormat:@"%d", [value intValue]];
+        
+        [[Item_1_Cache sharedInstance] updateObject:item];
     }];
     
-    [RACObserve(item, num_2) subscribeNext:^(id x) {
+    [[RACObserve(item, num_2) distinctUntilChanged] subscribeNext:^(id x) {
         NSNumber *value                 = x;
         
         @strongify(self)
         
         self.round_2_valueLabel.text    = [NSString stringWithFormat:@"%d", [value intValue]];
+        
+        [[Item_1_Cache sharedInstance] updateObject:item];
     }];
     
-    [RACObserve(item, num_3) subscribeNext:^(id x) {
+    [[RACObserve(item, num_3) distinctUntilChanged] subscribeNext:^(id x) {
         NSNumber *value                 = x;
         
         @strongify(self)
         
         self.round_3_valueLabel.text    = [NSString stringWithFormat:@"%d", [value intValue]];
+        
+        [[Item_1_Cache sharedInstance] updateObject:item];
     }];
 
     self.item          = model;

@@ -128,6 +128,14 @@
     {
         [self setNavRightItemWithName:@"新增" target:self action:@selector(didClickOnNavigationBarRightItem:)];
     }
+    
+    [[Item_1_Cache sharedInstance] allObjectsUsingBlock:^(NSArray *allobjects) {
+        [self.tableData addObjectsFromArray:allobjects];
+        
+        // fixme: 删除无效的
+        
+        [self.tableView reloadData];
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -351,6 +359,8 @@
                 break;
         }
         
+        [[Item_1_Cache sharedInstance] updateObject:item];
+        
         // Reload cell
         [self.tableView reloadRowsAtIndexPaths:@[cellIndexPath] withRowAnimation:UITableViewRowAnimationNone];
     } else {
@@ -361,6 +371,9 @@
                 
                 // Delete button was pressed
                 NSIndexPath *cellIndexPath = [self.tableView indexPathForCell:cell];
+                Item1 *item                 = [self.tableData objectAtIndex:cellIndexPath.row];
+                
+                [[Item_1_Cache sharedInstance] removeObjectById:item.id];
                 
                 [self.tableData removeObjectAtIndex:cellIndexPath.row];
                 
