@@ -111,6 +111,12 @@
         [[Routable sharedRouter] open:[AppDelegate PUSHUP_VC] animated:YES];
     } else if (selectedview == self.noteView) {
         [[Routable sharedRouter] open:[AppDelegate PUSHUP_VC] animated:YES];
+    } else {
+        // todo: 这个alert需要优化
+        AMSmoothAlertView *alert    = [[AMSmoothAlertView alloc] initFadeAlertWithTitle:@"Notice!"
+                                                                                andText:@"店铺还未开张!" andCancelButton:YES
+                                                                           forAlertType:AlertInfo];
+        [alert show];
     }
 }
 

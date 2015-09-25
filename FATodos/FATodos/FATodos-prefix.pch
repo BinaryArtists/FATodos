@@ -45,6 +45,7 @@
 #import "NSString+Size.h"
 #import "UIViewController+NavigationBar.h"
 #import "NSString+Theme.h"
+#import "UIView+Hierarchy.h"
 
 // Pods
 #import "AFNetworking.h"
@@ -68,6 +69,7 @@
 #import "MGSwipeButton.h"
 #import "MGSwipeTableCell.h"
 #import "AMSmoothAlertView.h"
+#import "UIUtils.h"
 
 // Entity
 #import "Item1.h"
