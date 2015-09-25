@@ -10,4 +10,8 @@
 
 @interface BaseEntity : NSObject <BaseEntityProtocol>
 
+@string( SQL_TABLE_ELEMENT_NAME_ID )
+@property (nonatomic, assign) int64_t id;
+
+
 @end

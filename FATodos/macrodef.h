@@ -17,11 +17,19 @@
 #define RGBACOLOR(r,g,b,a) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:(a)]
 
 #ifdef DEBUG
-#define debugLog(...) NSLog(__VA_ARGS__)
-#define debugMethod() NSLog(@"%s", __func__)
+
+#   define debugLog(...) NSLog(__VA_ARGS__)
+#   define debugMethod() NSLog(@"%s", __func__)
+
+#   define FAssert( __condition ) NSAssert(__condition, NSStringFromSelector(_cmd));
+
 #else
-#define debugLog(...)
-#define debugMethod()
+
+#   define debugLog(...)
+#   define debugMethod()
+
+#   define FAssert( __condition )
+
 #endif
 
 #define EMPTY_STRING        @""

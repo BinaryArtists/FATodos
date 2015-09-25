@@ -17,6 +17,10 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+// Framework
+#import "Samurai_Property.h"
+
+// Defines
 #import "macrodef.h"
 #import "typedef.h"
 
@@ -30,9 +34,6 @@
 
 #import "BaseEntity.h"
 #import "BaseView.h"
-
-// Framework
-#import "Samurai_Property.h"
 
 // App
 #import "AppDelegate.h"

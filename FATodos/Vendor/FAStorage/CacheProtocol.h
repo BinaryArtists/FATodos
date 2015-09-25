@@ -15,11 +15,15 @@
 /**
  * 该接口需要检查条目是否存在，如果存在则更新它
  */
-- (void)addObject:(id)obj;
+- (void)addObject:(id)obj withCompletionBlock:(void (^) (BOOL isSucceed))completionHandler;
 
-- (void)removeAllObject;
+- (void)updateObject:(id)obj;
+
+- (void)removeAllObjects;
 
 - (void)allObjectsUsingBlock:(void (^) (NSArray *allobjects))handler;
+
+- (void)removeObjectById:(int64_t)id_;
 
 @optional
 
@@ -29,14 +33,7 @@
 - (id)objectForId:(id)id_;
 - (NSString *)nameForId:(NSNumber *)id_ default:(NSString *)num;
 
-- (BOOL)hasObjectForName:(id)name;
-- (id)objectForName:(id)name;
-- (NSNumber *)idForName:(NSString *)name default:(NSNumber *)str;
-
 - (NSMutableArray *)getObjects;
-- (void)setObject:(id)object forKey:(id)key;
-
-- (void)removeObjectById:(id)id_;
 
 // query ranges
 

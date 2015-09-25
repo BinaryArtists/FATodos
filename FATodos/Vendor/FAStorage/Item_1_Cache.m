@@ -38,23 +38,23 @@
 
 - (instancetype)init {
     if (self = [super init]) {
-        NSFileManager *fileManager = [NSFileManager defaultManager];
-        if ([fileManager fileExistsAtPath:[self.class dbPath]]) { // db do exist
-            
-            (void)[self dbQueue];
-            
-        } else { // db donot exist
+//        NSFileManager *fileManager = [NSFileManager defaultManager];
+//        if ([fileManager fileExistsAtPath:[self.class dbPath]]) { // db do exist
+//            
+//            (void)[self dbQueue];
+//            
+//        } else
+        {
             
             [self.dbQueue inDatabase:^(FMDatabase *db) {
                 // create item1 table
                 
-                NSString *sql = [NSString stringWithFormat:@"CREATE TABLE '%@' ("
-                                 @"'msgId' INTEGER,"
-                                 @"'teacherId' INTEGER,"
-                                 @"'message' VARCHAR(255),"
-                                 @"'createTime' INTEGER,"
-                                 @"'type' INTEGER,"
-                                 @"'status' INTEGER"
+                NSString *sql = [NSString stringWithFormat:@"CREATE TABLE IF NOT EXISTS %@ ("
+                                 @"id INTEGER PRIMARY KEY AUTOINCREMENT,"
+                                 @"type INTEGER,"
+                                 @"num_1 INTEGER,"
+                                 @"num_2 INTEGER,"
+                                 @"num_3 INTEGER"
                                  @")",
                                  [self SQL_TABLE_NAME_ITEM1]];
                 
@@ -79,23 +79,98 @@
 
 + (NSString *)dbPath {
     NSString * doc = PATH_OF_DOCUMENT;
-    NSString * path = [doc stringByAppendingPathComponent:@"system_message.sqlite"];
+    NSString * path = [doc stringByAppendingPathComponent:@"item_1_cache.sqlite"];
     
     return path;
 }
 
 #pragma mark - CacheProtocol
 
-- (void)addObject:(id)obj {
+- (void)addObject:(id)obj withCompletionBlock:(void (^)(BOOL))completionHandler {
     Item1 *item = obj;
     
+    NSAssert(completionHandler, @"- (void)addObject:(id)obj withCompletionBlock:(void (^)(BOOL))completionHandler");
     
+    [self.dbQueue inDatabase:^(FMDatabase *db) {
+        NSString *sql   = [NSString stringWithFormat:@"INSERT INTO %@ ("
+                           @"type,"
+                           @"num_1,"
+                           @"num_2,"
+                           @"num_3"
+                           @") values (?, ?, ?)", [self SQL_TABLE_NAME_ITEM1]];
+        BOOL ret        = [db executeUpdate:sql, @(item.type), @(item.num_1), @(item.num_2), @(item.num_3)];
+        
+        if (ret) {
+            [self.item1Array addObject:obj];
+        }
+        
+        completionHandler(ret);
+    }];
 }
 
-
+- (void)updateObject:(id)obj {
+    Item1 *item = obj;
+    
+    [self.dbQueue inDatabase:^(FMDatabase *db) {
+        NSString *sql   = [NSString stringWithFormat:@"UPDATE %@ SET "
+                           @"type=? "
+                           @"num_1=? "
+                           @"num_2=? "
+                           @"num_3=? "
+                           @"WHERE %@=?", [self SQL_TABLE_NAME_ITEM1], [BaseEntity SQL_TABLE_ELEMENT_NAME_ID]];
+        BOOL ret        = [db executeUpdate:sql, @(item.type), @(item.num_1), @(item.num_2), @(item.num_3)];
+        
+        if (!ret) {
+            NSLog(@"- (void)removeObjectById:(int64_t)id_");
+        }
+        
+//        completionHandler(ret);
+    }];
+}
 
 - (void)allObjectsUsingBlock:(void (^)(NSArray *))handler {
     
+    NSAssert(handler, @"- (void)allObjectsUsingBlock:(void (^)(NSArray *))handler");
+    
+    if (!self.item1Array) {
+        [self initSysMessageListWithCompletionBlock:^{
+            handler(self.item1Array);
+        }];
+    } else {
+        [[GCDQueue mainQueue] queueBlock:^{
+            handler(self.item1Array);
+        }];
+    }
+}
+
+- (void)removeObjectById:(int64_t)id_ {
+    [self.dbQueue inDatabase:^(FMDatabase *db) {
+        NSString *sql   = [NSString stringWithFormat:@"DELETE FROM %@ WHERE %@=?", [self SQL_TABLE_NAME_ITEM1], [BaseEntity SQL_TABLE_ELEMENT_NAME_ID]];
+        BOOL ret        = [db executeUpdate:sql, @(id_)];
+        
+        if (!ret) {
+            NSLog(@"- (void)removeObjectById:(int64_t)id_");
+        }
+    }];
+}
+
+- (void)removeAllObjects {
+    [self.dbQueue inDatabase:^(FMDatabase *db) {
+        NSString *sql   = [NSString stringWithFormat:@"DELETE FROM %@", [self SQL_TABLE_NAME_ITEM1]];
+        BOOL ret        = [db executeUpdate:sql];
+        
+        if (!ret) {
+            NSLog(@"- (void)removeObjectById:(int64_t)id_");
+        }
+        
+        // 自增清零
+        sql             = [NSString stringWithFormat:@"UPDATE sqlite_sequence SET seq=0 WHERE name='%@'", [self SQL_TABLE_NAME_ITEM1]];
+        ret             = [db executeUpdate:sql];
+        
+        if (!ret) {
+            NSLog(@"- (void)removeObjecdddtById:(int64_t)id_");
+        }
+    }];
 }
 
 #pragma mark - Private method

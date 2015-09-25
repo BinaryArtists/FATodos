@@ -10,6 +10,8 @@
 
 @implementation BaseEntity
 
+@def_string( SQL_TABLE_ELEMENT_NAME_ID, @"id" )
+
 #pragma mark - BaseEntityProtocol
 
 @end
