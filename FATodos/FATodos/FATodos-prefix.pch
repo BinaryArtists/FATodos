@@ -44,8 +44,12 @@
 #import "UIView+Frame.h"
 #import "NSString+Size.h"
 #import "UIViewController+NavigationBar.h"
+#import "UIViewController+UINavigationBar.h"
 #import "NSString+Theme.h"
 #import "UIView+Hierarchy.h"
+#import "UIButton+Theme.h"
+#import "UIImage+Blur.h"
+#import "UIImage+Utility.h"
 
 // Pods
 #import "AFNetworking.h"

@@ -57,6 +57,11 @@
         
         @strongify(self)
         
+        // 初始状态不更新，不然会产生死锁：addObject的completion中进行了insert
+        if (!item.has_1) {
+            return;
+        }
+        
         self.round_1_valueLabel.text    = [NSString stringWithFormat:@"%d", [value intValue]];
         
         [[Item_1_Cache sharedInstance] updateObject:item];
@@ -67,6 +72,10 @@
         
         @strongify(self)
         
+        if (!item.has_2) {
+            return;
+        }
+        
         self.round_2_valueLabel.text    = [NSString stringWithFormat:@"%d", [value intValue]];
         
         [[Item_1_Cache sharedInstance] updateObject:item];
@@ -76,6 +85,10 @@
         NSNumber *value                 = x;
         
         @strongify(self)
+        
+        if (!item.has_3) {
+            return;
+        }
         
         self.round_3_valueLabel.text    = [NSString stringWithFormat:@"%d", [value intValue]];
         

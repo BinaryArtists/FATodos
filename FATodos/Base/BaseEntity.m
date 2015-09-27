@@ -14,4 +14,16 @@
 
 #pragma mark - BaseEntityProtocol
 
+- (void)update {
+    
+}
+
+- (void)remove {
+    
+}
+
+- (void)purge {
+    
+}
+
 @end

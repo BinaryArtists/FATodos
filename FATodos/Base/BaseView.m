@@ -16,6 +16,13 @@
 
 #pragma mark - Initialize UInitialize
 
+- (id)initWithRouterParams:(NSDictionary *)params {
+    if ((self = [self initWithNibName:nil bundle:nil])) {
+        [self initObserver];
+    }
+    return self;
+}
+
 - (instancetype)init {
     if (self = [super init]) {
         [self initObserver];

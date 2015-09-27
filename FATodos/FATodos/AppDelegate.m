@@ -3,6 +3,8 @@
 #import "PushupVC.h"
 #import "DiagramVC.h"
 #import "MainVC.h"
+#import "MemoVC.h"
+#import "Memo.h"
 
 @interface AppDelegate ()
 
@@ -24,6 +26,8 @@
     [[Routable sharedRouter] open:[self MAIN_VC]];
     
     [self mapping];
+    
+    [self test];
     
     return YES;
 }
@@ -50,11 +54,20 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+#pragma mark -
+
+- (void)test {
+    NSDictionary *dict = [NSDictionary mtl_identityPropertyMapWithModel:[Memo class]];
+    
+    NSLog(@"%@", dict);
+}
+
 #pragma mark - VC mapping
 
 - (void)mapping {
     [[Routable sharedRouter] map:[self PUSHUP_VC] toController:[PushupVC class]];
     [[Routable sharedRouter] map:[self DIAGRAM_VC] toController:[DiagramVC class]];
+    [[Routable sharedRouter] map:[self MEMO_VC] toController:[MemoVC class]];
 }
 
 @end

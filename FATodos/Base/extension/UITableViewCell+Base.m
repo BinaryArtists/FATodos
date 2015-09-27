@@ -12,6 +12,14 @@
     return [UINib nibWithNibName:[self identifier] bundle:nil];
 }
 
++ (CGFloat)cellHeight {
+    return 0.f;
+}
+
++ (CGFloat)cellHeightWithModel:(id)model {
+    return 0.f;
+}
+
 #pragma mark - Object
 
 - (CGFloat)cellHeight {
@@ -20,6 +28,15 @@
 
 - (void)setModel:(id)model {
     // do nothing.
+}
+
+#pragma mark - On UITableView
+
++ (void)registerOn:(UITableView *)tableView {
+    FAssert( tableView )
+    
+    [tableView registerNib:[self nib]
+    forCellReuseIdentifier:[self identifier]];
 }
 
 @end

@@ -9,6 +9,13 @@
 + (UINib *)nib;
 
 - (CGFloat)cellHeight;
++ (CGFloat)cellHeightWithModel:(id)model;
++ (CGFloat)cellHeight;
+
 - (void)setModel:(id)model;
+
+#pragma mark - On UITableView
+
++ (void)registerOn:(UITableView *)tableView;
 
 @end

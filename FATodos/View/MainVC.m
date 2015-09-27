@@ -36,7 +36,7 @@
     
     [self.view setBackgroundColor:[UIColor bgGrayColor]];
 
-    UIBarButtonItem *addContactBarButton    = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addNewContact:)];
+    UIBarButtonItem *addContactBarButton    = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(clickOnAddNewContact:)];
     self.navigationItem.rightBarButtonItem  = addContactBarButton;
     
     self.scrollView.scrollViewDelegate      = self;
@@ -94,7 +94,7 @@
 
 #pragma mark - Action handle
 
-- (void)addNewContact:(id)sender {
+- (void)clickOnAddNewContact:(id)sender {
     // Add function.....
 }
 
@@ -108,7 +108,7 @@
     } else if (selectedview == self.sitsupView) {
         [[Routable sharedRouter] open:[AppDelegate PUSHUP_VC] animated:YES];
     } else if (selectedview == self.memoView) {
-        [[Routable sharedRouter] open:[AppDelegate PUSHUP_VC] animated:YES];
+        [[Routable sharedRouter] open:[AppDelegate MEMO_VC] animated:YES];
     } else if (selectedview == self.noteView) {
         [[Routable sharedRouter] open:[AppDelegate PUSHUP_VC] animated:YES];
     } else {

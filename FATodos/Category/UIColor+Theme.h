@@ -57,4 +57,18 @@
 
 + (UIColor *)flatBlueColor;
 
+#pragma mark - 便签 列表颜色
+
++ (UIColor *)memoDarkGreenColor;
++ (UIColor *)memoBrightGreenColor;
++ (UIColor *)memoLightGreenColor;
+
++ (UIColor *)memoDarkPurpleColor;
++ (UIColor *)memoLightPurpleColor;
+
++ (UIColor *)memoLightPinkColor;
++ (UIColor *)memoBrightPinkColor;
++ (UIColor *)memoDarkPinkColor;
+
++ (UIColor *)memoLightRedColor;
 @end

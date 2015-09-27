@@ -7,6 +7,7 @@
 //
 
 #import "UIColor+Theme.h"
+#import "UIColor+Expanded.h"
 
 @implementation UIColor (Theme)
 
@@ -108,6 +109,32 @@
                            green:177.f/255
                             blue:181.f/255
                            alpha:1.f];
+}
+
+#pragma mark - 便签 列表颜色
+
++ (UIColor *)memoDarkGreenColor {
+    return [UIColor colorWithRGBHex:0x1A470D];
+}
+
++ (UIColor *)memoBrightGreenColor {
+    return [UIColor colorWithRGBHex:0x259977];
+}
+
++ (UIColor *)memoLightGreenColor {
+    return [UIColor colorWithRGBHex:0x71F36A];
+}
+
++ (UIColor *)memoDarkPinkColor {
+    return [UIColor colorWithRGBHex:0x765177];
+}
+
++ (UIColor *)memoBrightPinkColor {
+    return [UIColor colorWithRGBHex:0xCF53CB];
+}
+
++ (UIColor *)memoLightRedColor {
+    return [UIColor colorWithRGBHex:0xE1404D];
 }
 
 @end

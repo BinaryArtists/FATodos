@@ -6,11 +6,12 @@
 //  Copyright (c) 2015 fallen.ink. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "MTLModel.h"
 
-@interface BaseEntity : NSObject <BaseEntityProtocol>
+@interface BaseEntity : MTLModel <BaseEntityProtocol>
 
 @string( SQL_TABLE_ELEMENT_NAME_ID )
+
 @property (nonatomic, assign) int64_t id;
 
 

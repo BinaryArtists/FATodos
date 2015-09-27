@@ -17,6 +17,7 @@
 
 #pragma mark -
 
+@def_string( VoiceMemo,     @"语音便签" )
 @def_string( Memo,          @"便签" )
 @def_string( Note,          @"笔记" )
 

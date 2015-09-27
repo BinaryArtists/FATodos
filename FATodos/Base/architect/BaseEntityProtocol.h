@@ -25,14 +25,23 @@
 /**
  *  1. 如果不存在，则insert
  *  2. 如果存在，则update
+ 
+ *  default: update all properties
+ 
+ *  todo: KVO ????? 每个property改变都需要update？
  */
 - (void)update;
 
+/**
+ *  default: remove entity by 'id'
+ */
 - (void)remove;
 
 
 /**
  *  清除同类型，所有记录
+ 
+ *  default: delete the table
  */
 - (void)purge;
 
