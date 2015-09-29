@@ -10,6 +10,10 @@
 
 @interface s : NSObject
 
+// Utility
+
+@string( APP_ID )
+
 // Operation
 
 @string( Delete )

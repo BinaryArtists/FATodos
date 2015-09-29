@@ -10,12 +10,16 @@
 
 @implementation s // todo: 用plist改进
 
-#pragma mark -
+#pragma mark - Utility
+
+@def_string( APP_ID, @"5609fa53" )
+
+#pragma mark - Operation
 
 @def_string( Delete,        @"删除" )
 @def_string( More,          @"更多" )
 
-#pragma mark -
+#pragma mark - Service
 
 @def_string( VoiceMemo,     @"语音便签" )
 @def_string( Memo,          @"便签" )

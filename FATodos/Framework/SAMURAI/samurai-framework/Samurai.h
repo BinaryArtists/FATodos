@@ -40,6 +40,7 @@
 #import "Samurai_Vendor.h"
 #import "Samurai_ClassLoader.h"
 #import "Samurai_Watcher.h"
+#import "Samurai_Package.h"
 
 #pragma mark -
 

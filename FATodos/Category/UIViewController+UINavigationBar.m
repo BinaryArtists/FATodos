@@ -21,7 +21,9 @@
         return CGSizeMake(0, 0);
     }
     NSMutableString *string = [NSMutableString stringWithString:name];
-    return [string textSizeWithFont:[UIFont systemFontOfSize: 15] constrainedToSize:CGSizeMake(100, 1000) lineBreakMode:NSLineBreakByWordWrapping];  //一行宽度最大为 100 高度1000
+    return [string sizeWithFont:[UIFont systemFontOfSize: 15]
+              constrainedToSize:CGSizeMake(100, 1000)
+                  lineBreakMode:NSLineBreakByWordWrapping];  //一行宽度最大为 100 高度1000
 }
 
 #pragma mark - Settings

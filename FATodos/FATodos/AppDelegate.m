@@ -1,4 +1,5 @@
 #import "AppDelegate.h"
+#import "Component.h"
 #import "Routable.h"
 #import "PushupVC.h"
 #import "DiagramVC.h"
@@ -11,6 +12,13 @@
 @end
 
 @implementation AppDelegate
+
+- (void)load {
+    [super load];
+    
+    // load classes
+    [SamuraiComponent load];
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window                 = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];

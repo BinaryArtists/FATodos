@@ -15,6 +15,14 @@
 		6A158E561B70B482007FE54F /* FATodosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A158E551B70B482007FE54F /* FATodosTests.m */; };
 		6A95EC101BB992E300B14EA5 /* MemoEditVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A95EC0E1BB992E300B14EA5 /* MemoEditVC.m */; };
 		6A95EC111BB992E300B14EA5 /* MemoEditVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A95EC0F1BB992E300B14EA5 /* MemoEditVC.xib */; };
+		6A95EC1A1BBA391B00B14EA5 /* Component.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A95EC191BBA391B00B14EA5 /* Component.m */; };
+		6A95EC1D1BBA3CB900B14EA5 /* Samurai_Package.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A95EC1C1BBA3CB900B14EA5 /* Samurai_Package.m */; };
+		6A95EC211BBA407200B14EA5 /* IflyComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A95EC201BBA407200B14EA5 /* IflyComponent.m */; };
+		6A95EC231BBA456500B14EA5 /* iflyMSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A95EC221BBA456500B14EA5 /* iflyMSC.framework */; };
+		6A95EC251BBA457200B14EA5 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A95EC241BBA457200B14EA5 /* libz.dylib */; };
+		6A95EC271BBA459800B14EA5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A95EC261BBA459800B14EA5 /* SystemConfiguration.framework */; };
+		6A95EC291BBA45AD00B14EA5 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A95EC281BBA45AD00B14EA5 /* CoreTelephony.framework */; };
+		6A95EC2B1BBA45B500B14EA5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A95EC2A1BBA45B500B14EA5 /* CoreLocation.framework */; };
 		6ACEBAF01BA94AD30011E3F7 /* UITableViewCell+Base.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACEBAEF1BA94AD30011E3F7 /* UITableViewCell+Base.m */; };
 		6ACEBAF71BA974810011E3F7 /* MGSwipeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACEBAF41BA974810011E3F7 /* MGSwipeButton.m */; };
 		6ACEBAF81BA974810011E3F7 /* MGSwipeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACEBAF61BA974810011E3F7 /* MGSwipeTableCell.m */; };
@@ -516,6 +524,17 @@
 		6A95EC0D1BB992E300B14EA5 /* MemoEditVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoEditVC.h; sourceTree = "<group>"; };
 		6A95EC0E1BB992E300B14EA5 /* MemoEditVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoEditVC.m; sourceTree = "<group>"; };
 		6A95EC0F1BB992E300B14EA5 /* MemoEditVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MemoEditVC.xib; sourceTree = "<group>"; };
+		6A95EC181BBA391B00B14EA5 /* Component.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Component.h; sourceTree = "<group>"; };
+		6A95EC191BBA391B00B14EA5 /* Component.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Component.m; sourceTree = "<group>"; };
+		6A95EC1B1BBA3CB900B14EA5 /* Samurai_Package.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Samurai_Package.h; sourceTree = "<group>"; };
+		6A95EC1C1BBA3CB900B14EA5 /* Samurai_Package.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Samurai_Package.m; sourceTree = "<group>"; };
+		6A95EC1F1BBA407200B14EA5 /* IflyComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IflyComponent.h; sourceTree = "<group>"; };
+		6A95EC201BBA407200B14EA5 /* IflyComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IflyComponent.m; sourceTree = "<group>"; };
+		6A95EC221BBA456500B14EA5 /* iflyMSC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iflyMSC.framework; sourceTree = "<group>"; };
+		6A95EC241BBA457200B14EA5 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		6A95EC261BBA459800B14EA5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		6A95EC281BBA45AD00B14EA5 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		6A95EC2A1BBA45B500B14EA5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		6ACEBAEE1BA94AD30011E3F7 /* UITableViewCell+Base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Base.h"; sourceTree = "<group>"; };
 		6ACEBAEF1BA94AD30011E3F7 /* UITableViewCell+Base.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Base.m"; sourceTree = "<group>"; };
 		6ACEBAF31BA974810011E3F7 /* MGSwipeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSwipeButton.h; sourceTree = "<group>"; };
@@ -1460,12 +1479,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6AF4BDCF1BB52E260047A720 /* CoreGraphics.framework in Frameworks */,
-				6ACFE03A1BA2C8FF0061DA35 /* AudioToolbox.framework in Frameworks */,
+				6A95EC2B1BBA45B500B14EA5 /* CoreLocation.framework in Frameworks */,
+				6A95EC291BBA45AD00B14EA5 /* CoreTelephony.framework in Frameworks */,
 				6ACFE0371BA2C8F60061DA35 /* AddressBook.framework in Frameworks */,
+				6A95EC271BBA459800B14EA5 /* SystemConfiguration.framework in Frameworks */,
+				6ACFE03A1BA2C8FF0061DA35 /* AudioToolbox.framework in Frameworks */,
+				6A95EC251BBA457200B14EA5 /* libz.dylib in Frameworks */,
+				6AF4BDCF1BB52E260047A720 /* CoreGraphics.framework in Frameworks */,
 				6ACFE0381BA2C8F60061DA35 /* AddressBookUI.framework in Frameworks */,
 				6ACFDFC21B9C8BBD0061DA35 /* UIKit.framework in Frameworks */,
 				6AF4BDD11BB538CF0047A720 /* GPUImage.framework in Frameworks */,
+				6A95EC231BBA456500B14EA5 /* iflyMSC.framework in Frameworks */,
 				6ACFDFC01B9C8B860061DA35 /* Foundation.framework in Frameworks */,
 				534CB05A2535D65788892768 /* libPods.a in Frameworks */,
 			);
@@ -1493,6 +1517,7 @@
 		6A158E2A1B70B482007FE54F = {
 			isa = PBXGroup;
 			children = (
+				6A95EC171BBA38B000B14EA5 /* Component */,
 				6AD2832D1BB19341008900FA /* AppModel */,
 				6ACFE0471BA3C72C0061DA35 /* Base */,
 				6ACFDAC61B9C23FC0061DA35 /* Category */,
@@ -1564,6 +1589,25 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		6A95EC171BBA38B000B14EA5 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				6A95EC1E1BBA405C00B14EA5 /* IflyComponent */,
+				6A95EC181BBA391B00B14EA5 /* Component.h */,
+				6A95EC191BBA391B00B14EA5 /* Component.m */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		6A95EC1E1BBA405C00B14EA5 /* IflyComponent */ = {
+			isa = PBXGroup;
+			children = (
+				6A95EC1F1BBA407200B14EA5 /* IflyComponent.h */,
+				6A95EC201BBA407200B14EA5 /* IflyComponent.m */,
+			);
+			path = IflyComponent;
+			sourceTree = "<group>";
+		};
 		6ACEBAED1BA94AD30011E3F7 /* extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -1625,6 +1669,7 @@
 		6ACFDAC71B9C23FC0061DA35 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				6A95EC221BBA456500B14EA5 /* iflyMSC.framework */,
 				6AF4BDD01BB538CF0047A720 /* GPUImage.framework */,
 				6ACFDAC81B9C23FC0061DA35 /* SAMURAI */,
 			);
@@ -1662,6 +1707,8 @@
 				6ACFDBCC1B9C23FC0061DA35 /* Samurai_Watcher.h */,
 				6ACFDBCD1B9C23FC0061DA35 /* Samurai_Watcher.m */,
 				6ACFDBCE1B9C23FC0061DA35 /* vendor */,
+				6A95EC1B1BBA3CB900B14EA5 /* Samurai_Package.h */,
+				6A95EC1C1BBA3CB900B14EA5 /* Samurai_Package.m */,
 			);
 			path = "samurai-framework";
 			sourceTree = "<group>";
@@ -3309,6 +3356,10 @@
 		D9A204C453E856BEF0A3F158 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6A95EC2A1BBA45B500B14EA5 /* CoreLocation.framework */,
+				6A95EC281BBA45AD00B14EA5 /* CoreTelephony.framework */,
+				6A95EC261BBA459800B14EA5 /* SystemConfiguration.framework */,
+				6A95EC241BBA457200B14EA5 /* libz.dylib */,
 				6AF4BDCE1BB52E260047A720 /* CoreGraphics.framework */,
 				6ACFE0391BA2C8FF0061DA35 /* AudioToolbox.framework */,
 				6ACFE0351BA2C8F60061DA35 /* AddressBook.framework */,
@@ -3626,6 +3677,7 @@
 				6ACFDE9C1B9C23FD0061DA35 /* UICollectionView+Html.m in Sources */,
 				6ACFDE021B9C23FD0061DA35 /* Samurai_DockerWindow.m in Sources */,
 				6ACFDDFD1B9C23FD0061DA35 /* Samurai_Model.m in Sources */,
+				6A95EC1D1BBA3CB900B14EA5 /* Samurai_Package.m in Sources */,
 				6ACFDE4A1B9C23FD0061DA35 /* ServiceBorder.m in Sources */,
 				6ACFDE631B9C23FD0061DA35 /* ServiceMonitorStatusBar.m in Sources */,
 				6ACFDE941B9C23FD0061DA35 /* Samurai_CSSNumberVw.m in Sources */,
@@ -3807,6 +3859,7 @@
 				6ACFDE331B9C23FD0061DA35 /* Samurai_ViewCore.m in Sources */,
 				6AF4BDAA1BB441760047A720 /* MTLModel+NSCoding.m in Sources */,
 				6ACFDE281B9C23FD0061DA35 /* Samurai_ViewController.m in Sources */,
+				6A95EC211BBA407200B14EA5 /* IflyComponent.m in Sources */,
 				6AF4BDA71BB441760047A720 /* EXTScope.m in Sources */,
 				6ACFDF0E1B9C23FD0061DA35 /* Samurai_HtmlRenderStyle.m in Sources */,
 				6ACFDE8D1B9C23FD0061DA35 /* Samurai_CSSNumberRad.m in Sources */,
@@ -3844,6 +3897,7 @@
 				6ACFDE661B9C23FD0061DA35 /* ServiceTapspotManager.m in Sources */,
 				6ACFDE2F1B9C23FD0061DA35 /* Samurai_ResourceFetcher.m in Sources */,
 				6ACFDE251B9C23FD0061DA35 /* Samurai_ActivityStackGroup.m in Sources */,
+				6A95EC1A1BBA391B00B14EA5 /* Component.m in Sources */,
 				6ACFDE381B9C23FD0061DA35 /* Samurai_EventSwipeGesture.m in Sources */,
 				6ACFDE731B9C23FD0061DA35 /* Samurai_CSSArray.m in Sources */,
 				6ACFDF281B9C23FD0061DA35 /* string_piece.c in Sources */,
