@@ -7,6 +7,7 @@
 //
 
 #import "MemoCell.h"
+#import "Memo.h"
 
 @implementation MemoCell
 
@@ -23,7 +24,12 @@
 }
 
 + (CGFloat)cellHeightWithModel:(id)model {
-    return 92.f;
+    Memo *memo          = model;
+    CGSize screenSize   = [[UIScreen mainScreen] bounds].size;
+    CGFloat preferHeight= [memo.content sizeWithFont:[UIFont systemFontOfSize:18.f]
+                                                size:CGSizeMake(screenSize.width-PIXEL_16, screenSize.height)];
+    
+    return preferHeight+PIXEL_16;
 }
 
 @end

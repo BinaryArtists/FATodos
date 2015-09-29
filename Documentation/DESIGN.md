@@ -1,6 +1,11 @@
 # FATodos
 Many app about TODO, but it is my own.
 
+走走停停
+
+走走：计划点什么
+停停：写下点什么
+
 TODO：
 1. need 4 quadrant
 2. need sqlite

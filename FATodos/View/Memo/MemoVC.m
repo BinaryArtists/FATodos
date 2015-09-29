@@ -36,6 +36,10 @@
         [self setNavRightItemWithName:@"新增"
                                target:self
                                action:@selector(clickOnAddNewMemo:)];
+        
+        // todo: 添加一个右侧按钮 语音输入, 仅仅是尝试，并且扩展setNavRightItemWithName，让他能添加多个
+        
+        // todo: 用类似微信的方式，下拉列表去，弹出 语音输入
     }
     
     // Table data source

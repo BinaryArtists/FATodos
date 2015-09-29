@@ -14,5 +14,7 @@
 
 @property (nonatomic, assign) int64_t id;
 
+// todo：利用 + (const char *)attributesForProperty:(NSString *)property
+
 
 @end

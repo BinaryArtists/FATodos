@@ -13,6 +13,8 @@
 		6A158E471B70B482007FE54F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A158E461B70B482007FE54F /* Images.xcassets */; };
 		6A158E4A1B70B482007FE54F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A158E481B70B482007FE54F /* LaunchScreen.xib */; };
 		6A158E561B70B482007FE54F /* FATodosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A158E551B70B482007FE54F /* FATodosTests.m */; };
+		6A95EC101BB992E300B14EA5 /* MemoEditVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A95EC0E1BB992E300B14EA5 /* MemoEditVC.m */; };
+		6A95EC111BB992E300B14EA5 /* MemoEditVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A95EC0F1BB992E300B14EA5 /* MemoEditVC.xib */; };
 		6ACEBAF01BA94AD30011E3F7 /* UITableViewCell+Base.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACEBAEF1BA94AD30011E3F7 /* UITableViewCell+Base.m */; };
 		6ACEBAF71BA974810011E3F7 /* MGSwipeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACEBAF41BA974810011E3F7 /* MGSwipeButton.m */; };
 		6ACEBAF81BA974810011E3F7 /* MGSwipeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACEBAF61BA974810011E3F7 /* MGSwipeTableCell.m */; };
@@ -511,6 +513,9 @@
 		6A158E4F1B70B482007FE54F /* FATodosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FATodosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A158E541B70B482007FE54F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A158E551B70B482007FE54F /* FATodosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FATodosTests.m; sourceTree = "<group>"; };
+		6A95EC0D1BB992E300B14EA5 /* MemoEditVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoEditVC.h; sourceTree = "<group>"; };
+		6A95EC0E1BB992E300B14EA5 /* MemoEditVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoEditVC.m; sourceTree = "<group>"; };
+		6A95EC0F1BB992E300B14EA5 /* MemoEditVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MemoEditVC.xib; sourceTree = "<group>"; };
 		6ACEBAEE1BA94AD30011E3F7 /* UITableViewCell+Base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Base.h"; sourceTree = "<group>"; };
 		6ACEBAEF1BA94AD30011E3F7 /* UITableViewCell+Base.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Base.m"; sourceTree = "<group>"; };
 		6ACEBAF31BA974810011E3F7 /* MGSwipeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSwipeButton.h; sourceTree = "<group>"; };
@@ -3182,6 +3187,9 @@
 				6AD47CB81BB7732300BBBC0F /* MemoVC.h */,
 				6AD47CB91BB7732300BBBC0F /* MemoVC.m */,
 				6AD47CBA1BB7732300BBBC0F /* MemoVC.xib */,
+				6A95EC0D1BB992E300B14EA5 /* MemoEditVC.h */,
+				6A95EC0E1BB992E300B14EA5 /* MemoEditVC.m */,
+				6A95EC0F1BB992E300B14EA5 /* MemoEditVC.xib */,
 			);
 			path = Memo;
 			sourceTree = "<group>";
@@ -3414,6 +3422,7 @@
 				6ACFDE551B9C23FD0061DA35 /* ServiceGrids.bundle in Resources */,
 				6AF4BDC81BB52D040047A720 /* crossMark.png in Resources */,
 				6AF4BDC91BB52D040047A720 /* crossMark@2x.png in Resources */,
+				6A95EC111BB992E300B14EA5 /* MemoEditVC.xib in Resources */,
 				6AD47CB71BB772D600BBBC0F /* MemoCell.xib in Resources */,
 				6ACFDE4D1B9C23FD0061DA35 /* ServiceGesture.bundle in Resources */,
 				6AD283461BB2C893008900FA /* 图量表-1-按钮颜色参考.png in Resources */,
@@ -3769,6 +3778,7 @@
 				6ACFDEE81B9C23FD0061DA35 /* Samurai_HtmlElementOl.m in Sources */,
 				6ACFDEB61B9C23FD0061DA35 /* Samurai_HtmlDocumentWorklet_80Finish.m in Sources */,
 				6ACFDE471B9C23FD0061DA35 /* Samurai_Watcher.m in Sources */,
+				6A95EC101BB992E300B14EA5 /* MemoEditVC.m in Sources */,
 				6ACFDE4C1B9C23FD0061DA35 /* ServiceBorderLayer.m in Sources */,
 				6ACFDE751B9C23FD0061DA35 /* Samurai_CSSFunction.m in Sources */,
 				6ACFDDD21B9C23FC0061DA35 /* Samurai_Config(Phone).m in Sources */,

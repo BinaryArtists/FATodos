@@ -1,6 +1,8 @@
 ## FATodos
 Many app about TODO, but it is my own.
 
+旨在打造一个自己日常依赖的工具（首先得自己用得着嘛），然后改进。
+
 ## 模式 VIPER View.Interactor.Presenter.Entity.Routing
 
 * View：ViewController
@@ -33,6 +35,13 @@ Many app about TODO, but it is my own.
 
 
 ## 功能模块
-* 1. FourQuadrant 四个象限
+* 1. FourQuadrant (事务)四个象限
 * 2. Pushup 俯卧撑等等
 * 3. Diagram 统计图表
+* 4. Memo 便签
+* 5. Note 日记
+* 6. 
+
+## 特点
+* 1. 语音输入（推荐：懒人日记）（科大讯飞的语音sdk）
+
