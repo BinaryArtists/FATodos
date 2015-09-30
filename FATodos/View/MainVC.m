@@ -22,6 +22,8 @@
 @property (nonatomic, strong) UserBoxView *         memoView;
 @property (nonatomic, strong) UserBoxView *         noteView;
 
+@property (nonatomic, strong) AFViewShaker *        viewShaker;
+
 @end
 
 @implementation MainVC
@@ -85,6 +87,12 @@
     [self.scrollView addUserView:boxView];
     
     [self.scrollView bringViewAtIndexToFront:3 animated:YES];
+    
+    {
+        // Init view shaker
+
+        self.viewShaker     = [[AFViewShaker alloc] initWithView:self.noteView];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -110,9 +118,16 @@
     } else if (selectedview == self.memoView) {
         [[Routable sharedRouter] open:[AppDelegate MEMO_VC] animated:YES];
     } else if (selectedview == self.noteView) {
-        [[Routable sharedRouter] open:[AppDelegate PUSHUP_VC] animated:YES];
+        // bug: fixme，动画有问题！会先回到中间，然后震动.
+        [self.viewShaker shakeWithDuration:0.6
+                                completion:^{
+                                    AMSmoothAlertView *alert    = [[AMSmoothAlertView alloc] initFadeAlertWithTitle:@"Notice!"
+                                                                                                            andText:@"店铺还未开张!" andCancelButton:YES
+                                                                                                       forAlertType:AlertInfo];
+                                    [alert show];
+                                }];
     } else {
-        // todo: 这个alert需要优化
+        // fixme: 这个alert需要优化
         AMSmoothAlertView *alert    = [[AMSmoothAlertView alloc] initFadeAlertWithTitle:@"Notice!"
                                                                                 andText:@"店铺还未开张!" andCancelButton:YES
                                                                            forAlertType:AlertInfo];

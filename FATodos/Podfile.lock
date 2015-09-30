@@ -20,6 +20,7 @@ PODS:
   - AFNetworking/UIKit (2.6.0):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - AFViewShaker (0.0.2)
   - AKPickerView (0.2.6)
   - ASCFlatUIColor (0.1.0)
   - FlatUIKit (1.6.2)
@@ -32,6 +33,7 @@ PODS:
     - FMDB/common (~> 2.3)
   - GCDObjC (0.2.0)
   - JDFPeekaboo (0.2.1)
+  - KVOController (1.0.3)
   - Masonry (0.6.3)
   - PARTagPicker (1.0.0)
   - pop (1.0.8)
@@ -51,6 +53,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 2.0)
+  - AFViewShaker (~> 0.0.2)
   - AKPickerView
   - ASCFlatUIColor
   - FlatUIKit
@@ -58,6 +61,7 @@ DEPENDENCIES:
   - FMDBMigrationManager
   - GCDObjC
   - JDFPeekaboo
+  - KVOController
   - Masonry
   - PARTagPicker
   - pop (~> 1.0)
@@ -69,6 +73,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: 79f7eb1a0fcfa7beb409332b2ca49afe9ce53b05
+  AFViewShaker: 7e4bc215ca3e92347b78da436fca74e1730b52e8
   AKPickerView: e31dcb9572c04d8439512315798862d9eb84b18f
   ASCFlatUIColor: 4219ca860d305a88f5240b9cd380e002d0e0b672
   FlatUIKit: 1b41f0d4952ce8d970d8479ce79df54a960242c4
@@ -76,6 +81,7 @@ SPEC CHECKSUMS:
   FMDBMigrationManager: aa46d473c863b6ade5676c49b73f56540b358ad7
   GCDObjC: adcd9941029e3628de539347d3a6777470a65998
   JDFPeekaboo: 24baf48f53e51210919f8160c1c235ccc7055021
+  KVOController: 9fd8f0343670994e4b6f9f0b31f5a45663f3e1cf
   Masonry: ff105a956abcd19a618b2028b121cb638d7a8e2f
   PARTagPicker: 6d6aea6627d6ffaed1efc13fefe8c4fc8c1ac3c5
   pop: bb773ae2c791ca2629de13b347e7a8b450fa6a57

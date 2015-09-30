@@ -126,7 +126,7 @@
     }
     
     {
-        [self setNavRightItemWithName:@"新增" target:self action:@selector(didClickOnNavigationBarRightItem:)];
+        [self setNavRightItemWithName:@"新增" target:self action:@selector(OnNavigationBarRightItem:)];
     }
     
     [[Item_1_Cache sharedInstance] allObjectsUsingBlock:^(NSArray *allobjects) {
@@ -145,7 +145,7 @@
 
 #pragma mark - Action handle
 
-- (void)didClickOnNavigationBarRightItem:(id)sender {
+- (void)OnNavigationBarRightItem:(id)sender {
     Item1 *item         = [self.tableData lastObject];
     
     if (![item isKindOfClass:[PickerModel class]] &&
@@ -317,6 +317,8 @@
     } else {
         // do nothing
     }
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 - (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath {

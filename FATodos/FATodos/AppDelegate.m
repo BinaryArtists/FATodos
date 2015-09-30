@@ -68,6 +68,16 @@
     NSDictionary *dict = [NSDictionary mtl_identityPropertyMapWithModel:[Memo class]];
     
     NSLog(@"%@", dict);
+    
+    [self test_speech];
+}
+
+- (void)test_speech {
+    AVSpeechSynthesizer *av         = [[AVSpeechSynthesizer alloc]init];
+    AVSpeechUtterance *utterance    = [[AVSpeechUtterance alloc]initWithString:@"走走 停停"];
+    
+    utterance.rate                  = AVSpeechUtteranceMinimumSpeechRate;
+    [av speakUtterance:utterance];
 }
 
 #pragma mark - VC mapping

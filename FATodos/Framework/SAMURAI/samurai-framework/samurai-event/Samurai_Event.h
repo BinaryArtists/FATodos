@@ -39,3 +39,4 @@
 #import "Samurai_Signal.h"
 #import "Samurai_SignalBus.h"
 #import "Samurai_SignalKVO.h"
+#import "Samurai_Error.h"

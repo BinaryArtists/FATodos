@@ -23,6 +23,10 @@
 		6A95EC271BBA459800B14EA5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A95EC261BBA459800B14EA5 /* SystemConfiguration.framework */; };
 		6A95EC291BBA45AD00B14EA5 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A95EC281BBA45AD00B14EA5 /* CoreTelephony.framework */; };
 		6A95EC2B1BBA45B500B14EA5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A95EC2A1BBA45B500B14EA5 /* CoreLocation.framework */; };
+		6A95EC311BBA596000B14EA5 /* SpeechComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A95EC301BBA596000B14EA5 /* SpeechComponent.m */; };
+		6A95EC371BBA5B0800B14EA5 /* Samurai_Error.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A95EC361BBA5B0800B14EA5 /* Samurai_Error.m */; };
+		6A95EC3A1BBA65CF00B14EA5 /* IflyComponent_Config.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A95EC391BBA65CF00B14EA5 /* IflyComponent_Config.m */; };
+		6A95EC401BBA7F6700B14EA5 /* NSObject+FBKVOController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A95EC3F1BBA7F6700B14EA5 /* NSObject+FBKVOController.m */; };
 		6ACEBAF01BA94AD30011E3F7 /* UITableViewCell+Base.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACEBAEF1BA94AD30011E3F7 /* UITableViewCell+Base.m */; };
 		6ACEBAF71BA974810011E3F7 /* MGSwipeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACEBAF41BA974810011E3F7 /* MGSwipeButton.m */; };
 		6ACEBAF81BA974810011E3F7 /* MGSwipeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACEBAF61BA974810011E3F7 /* MGSwipeTableCell.m */; };
@@ -535,6 +539,14 @@
 		6A95EC261BBA459800B14EA5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		6A95EC281BBA45AD00B14EA5 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		6A95EC2A1BBA45B500B14EA5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		6A95EC2F1BBA596000B14EA5 /* SpeechComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeechComponent.h; sourceTree = "<group>"; };
+		6A95EC301BBA596000B14EA5 /* SpeechComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeechComponent.m; sourceTree = "<group>"; };
+		6A95EC351BBA5B0800B14EA5 /* Samurai_Error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Samurai_Error.h; sourceTree = "<group>"; };
+		6A95EC361BBA5B0800B14EA5 /* Samurai_Error.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Samurai_Error.m; sourceTree = "<group>"; };
+		6A95EC381BBA65CF00B14EA5 /* IflyComponent_Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IflyComponent_Config.h; sourceTree = "<group>"; };
+		6A95EC391BBA65CF00B14EA5 /* IflyComponent_Config.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IflyComponent_Config.m; sourceTree = "<group>"; };
+		6A95EC3E1BBA7F6700B14EA5 /* NSObject+FBKVOController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+FBKVOController.h"; sourceTree = "<group>"; };
+		6A95EC3F1BBA7F6700B14EA5 /* NSObject+FBKVOController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+FBKVOController.m"; sourceTree = "<group>"; };
 		6ACEBAEE1BA94AD30011E3F7 /* UITableViewCell+Base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Base.h"; sourceTree = "<group>"; };
 		6ACEBAEF1BA94AD30011E3F7 /* UITableViewCell+Base.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Base.m"; sourceTree = "<group>"; };
 		6ACEBAF31BA974810011E3F7 /* MGSwipeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSwipeButton.h; sourceTree = "<group>"; };
@@ -1592,6 +1604,9 @@
 		6A95EC171BBA38B000B14EA5 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				6A95EC2C1BBA592E00B14EA5 /* Speech */,
+				6A95EC2D1BBA592E00B14EA5 /* Speech.apple */,
+				6A95EC2E1BBA592E00B14EA5 /* Speech.ifly */,
 				6A95EC1E1BBA405C00B14EA5 /* IflyComponent */,
 				6A95EC181BBA391B00B14EA5 /* Component.h */,
 				6A95EC191BBA391B00B14EA5 /* Component.m */,
@@ -1604,13 +1619,40 @@
 			children = (
 				6A95EC1F1BBA407200B14EA5 /* IflyComponent.h */,
 				6A95EC201BBA407200B14EA5 /* IflyComponent.m */,
+				6A95EC381BBA65CF00B14EA5 /* IflyComponent_Config.h */,
+				6A95EC391BBA65CF00B14EA5 /* IflyComponent_Config.m */,
 			);
 			path = IflyComponent;
+			sourceTree = "<group>";
+		};
+		6A95EC2C1BBA592E00B14EA5 /* Speech */ = {
+			isa = PBXGroup;
+			children = (
+				6A95EC2F1BBA596000B14EA5 /* SpeechComponent.h */,
+				6A95EC301BBA596000B14EA5 /* SpeechComponent.m */,
+			);
+			path = Speech;
+			sourceTree = "<group>";
+		};
+		6A95EC2D1BBA592E00B14EA5 /* Speech.apple */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Speech.apple;
+			sourceTree = "<group>";
+		};
+		6A95EC2E1BBA592E00B14EA5 /* Speech.ifly */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Speech.ifly;
 			sourceTree = "<group>";
 		};
 		6ACEBAED1BA94AD30011E3F7 /* extension */ = {
 			isa = PBXGroup;
 			children = (
+				6A95EC3E1BBA7F6700B14EA5 /* NSObject+FBKVOController.h */,
+				6A95EC3F1BBA7F6700B14EA5 /* NSObject+FBKVOController.m */,
 				6ACEBAEE1BA94AD30011E3F7 /* UITableViewCell+Base.h */,
 				6ACEBAEF1BA94AD30011E3F7 /* UITableViewCell+Base.m */,
 				6AF4BD7D1BB3FEB20047A720 /* NSObject+Base.h */,
@@ -1824,6 +1866,8 @@
 		6ACFDB111B9C23FC0061DA35 /* modules */ = {
 			isa = PBXGroup;
 			children = (
+				6A95EC351BBA5B0800B14EA5 /* Samurai_Error.h */,
+				6A95EC361BBA5B0800B14EA5 /* Samurai_Error.m */,
 				6ACFDB121B9C23FC0061DA35 /* Samurai_Notification.h */,
 				6ACFDB131B9C23FC0061DA35 /* Samurai_Notification.m */,
 				6ACFDB141B9C23FC0061DA35 /* Samurai_NotificationBus.h */,
@@ -3603,6 +3647,7 @@
 				6ACFDEBD1B9C23FD0061DA35 /* Samurai_HtmlElementButton.m in Sources */,
 				6ACFDE121B9C23FD0061DA35 /* Samurai_UIImageView.m in Sources */,
 				6ACFDFB11B9C2E740061DA35 /* ZIMMessageDigest.m in Sources */,
+				6A95EC401BBA7F6700B14EA5 /* NSObject+FBKVOController.m in Sources */,
 				6ACFDE711B9C23FD0061DA35 /* Samurai_CSSSelectorChecker.m in Sources */,
 				6AF4BDAB1BB441760047A720 /* MTLModel.m in Sources */,
 				6ACFDDED1B9C23FD0061DA35 /* Samurai_Trigger.m in Sources */,
@@ -3671,6 +3716,7 @@
 				6ACFDFCD1B9D40F40061DA35 /* MZDayPickerCell.m in Sources */,
 				6ACFDE321B9C23FD0061DA35 /* Samurai_Template.m in Sources */,
 				6ACFDDEF1B9C23FD0061DA35 /* Samurai_Validator.m in Sources */,
+				6A95EC3A1BBA65CF00B14EA5 /* IflyComponent_Config.m in Sources */,
 				6ACFDE501B9C23FD0061DA35 /* ServiceGestureSetting.m in Sources */,
 				6ACFDE361B9C23FD0061DA35 /* Samurai_EventPanGesture.m in Sources */,
 				6ACFDEAC1B9C23FD0061DA35 /* UIWebView+Html.m in Sources */,
@@ -3741,6 +3787,7 @@
 				6ACFDF951B9C2E740061DA35 /* ZIMSqlAlterTableStatement.m in Sources */,
 				6ACFDEED1B9C23FD0061DA35 /* Samurai_HtmlElementSection.m in Sources */,
 				6ACFDE071B9C23FD0061DA35 /* Signal+View.m in Sources */,
+				6A95EC371BBA5B0800B14EA5 /* Samurai_Error.m in Sources */,
 				6ACFDDDD1B9C23FD0061DA35 /* NSMutableDictionary+Extension.m in Sources */,
 				6ACFDDE61B9C23FD0061DA35 /* Samurai_Performance.m in Sources */,
 				6ACFDE1D1B9C23FD0061DA35 /* Samurai_UITextView.m in Sources */,
@@ -3965,6 +4012,7 @@
 				6ACFDF191B9C23FD0061DA35 /* Samurai_WebCore.m in Sources */,
 				6ACFDEEE1B9C23FD0061DA35 /* Samurai_HtmlElementSelect.m in Sources */,
 				6ACFDE3F1B9C23FD0061DA35 /* Samurai_Tree.m in Sources */,
+				6A95EC311BBA596000B14EA5 /* SpeechComponent.m in Sources */,
 				6ACFDF941B9C2E740061DA35 /* ZIMOrmSelectStatement.m in Sources */,
 				6ACFDE771B9C23FD0061DA35 /* Samurai_CSSNumberAutomatic.m in Sources */,
 				6ACFDE511B9C23FD0061DA35 /* ServiceGestureView.m in Sources */,

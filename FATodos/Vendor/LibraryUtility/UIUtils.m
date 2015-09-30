@@ -65,9 +65,9 @@
     lbl.lineBreakMode = NSLineBreakByCharWrapping;
     lbl.text = text;
     
-    CGSize contentSize = [text textSizeWithFont:lbl.font
-                              constrainedToSize:CGSizeZero
-                                  lineBreakMode:NSLineBreakByWordWrapping];
+    CGSize contentSize = [text sizeWithFont:lbl.font
+                          constrainedToSize:CGSizeZero
+                              lineBreakMode:NSLineBreakByWordWrapping];
     lbl.width = contentSize.width;
     lbl.height = contentSize.height;
     

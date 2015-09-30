@@ -9,6 +9,16 @@
 #import <iflyMSC/iflyMSC.h>
 
 #import "IflyComponent.h"
+#import "IflyComponent_Config.h"
+
+@interface IflyComponent () <IFlySpeechRecognizerDelegate, IFlyRecognizerViewDelegate>
+
+@property (nonatomic, strong) IFlySpeechRecognizer *    iFlySpeechRecognizer;   //不带界面的识别对象
+@property (nonatomic, strong) IFlyRecognizerView *      iflyRecognizerView;     //带界面的识别对象
+
+@property (nonatomic, strong) IFlyDataUploader *        uploader;               //数据上传对象
+
+@end
 
 @implementation IflyComponent
 
@@ -31,16 +41,76 @@
     
     //所有服务启动前，需要确保执行createUtility
     [IFlySpeechUtility createUtility:initString];
+    
+    // 订阅 showSpeechView
+    IflyComponent_Config *config    = [[IflyComponent sharedInstance] config];
+    kvo_ptr kvoPtr     = [[IflyComponent sharedInstance] kvo];
+
+    [kvoPtr observe:config
+            keyPath:@"showSpeechView"
+            options:NSKeyValueObservingOptionInitial|NSKeyValueObservingOptionNew
+              block:^(IflyComponent *observer, IflyComponent_Config *object, NSDictionary *change) {
+                  NSNumber *newValue    = kvo_value_of( change )
+                  
+                  [observer whenShowSpeechView:[newValue boolValue]];
+              }];
 }
 
 + (void)powerOff {
-    
+    [[IflyComponent sharedInstance] kvo_off];
 }
 
 #pragma mark - 
 
 - (void)process:(id)data {
     [[IFlySpeechUtility getUtility] handleOpenURL:data];
+}
+
+#pragma mark - IFlySpeechRecognizerDelegate
+
+- (void)onResults:(NSArray *)results isLast:(BOOL)isLast {
+    
+}
+
+#pragma mark - IFlyRecognizerViewDelegate
+
+/*!
+ *  回调返回识别结果
+ *
+ *  @param resultArray 识别结果，NSArray的第一个元素为NSDictionary，NSDictionary的key为识别结果，sc为识别结果的置信度
+ *  @param isLast      -[out] 是否最后一个结果
+ */
+- (void)onResult:(NSArray *)resultArray isLast:(BOOL) isLast {
+    
+}
+
+/*!
+ *  识别结束回调
+ *
+ *  @param error 识别结束错误码
+ */
+- (void)onError: (IFlySpeechError *) error {
+    
+}
+
+#pragma mark - Private method
+
+/**
+ *  Notice:
+ 
+ *  尽量用好on、when等词，常用在事件过程
+ 
+ *  像 didClick 是面相事件对应的操作类型的用语
+ */
+
+- (void)whenShowSpeechView:(BOOL)show {
+    
+}
+
+#pragma mark - Property
+
+- (IflyComponent_Config *)config {
+    return [IflyComponent_Config sharedInstance];
 }
 
 @end

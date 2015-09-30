@@ -31,6 +31,8 @@
 #import "BaseEntityProtocol.h"
 
 #import "UITableViewCell+Base.h"
+#import "NSObject+FBKVOController.h"
+#import "NSObject+Base.h"
 
 #import "BaseEntity.h"
 #import "BaseView.h"
@@ -63,6 +65,8 @@
 #import "AKPickerView.h"
 #import "FADatePickerViewController.h"
 #import "GCDObjC.h"
+#import "FBKVOController.h"
+#import "AFViewShaker.h"
 
 // Vendor
 #import "Mantle.h"

@@ -30,3 +30,8 @@ pod 'SDWebImage', '~>3.6'
 pod 'FlatUIKit'
 
 pod "GCDObjC"
+
+pod 'KVOController'
+
+pod "AFViewShaker", "~> 0.0.2"
+
