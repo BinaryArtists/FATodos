@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4EEBF9F8D8348519901DEC48 /* libPods-FATodosTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4958D1F04CC182351417F64 /* libPods-FATodosTests.a */; };
 		534CB05A2535D65788892768 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18CA0A1539FBCF69D8C82F1E /* libPods.a */; };
 		6A158E391B70B482007FE54F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A158E381B70B482007FE54F /* main.m */; };
 		6A158E3C1B70B482007FE54F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A158E3B1B70B482007FE54F /* AppDelegate.m */; };
@@ -456,6 +457,7 @@
 		6AD283461BB2C893008900FA /* 图量表-1-按钮颜色参考.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AD283441BB2C893008900FA /* 图量表-1-按钮颜色参考.png */; };
 		6AD283471BB2C893008900FA /* 图量表-2-背景色参考.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6AD283451BB2C893008900FA /* 图量表-2-背景色参考.jpg */; };
 		6AD438291BC36EDF000DA4D0 /* UINavigationItem+MultipleItems.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD438281BC36EDF000DA4D0 /* UINavigationItem+MultipleItems.m */; };
+		6AD438461BC79DED000DA4D0 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AD438451BC79DEC000DA4D0 /* SenTestingKit.framework */; };
 		6AD47CB11BB6F1FB00BBBC0F /* 图量表-便签.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AD47CB01BB6F1FB00BBBC0F /* 图量表-便签.png */; };
 		6AD47CB61BB772D600BBBC0F /* MemoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD47CB41BB772D600BBBC0F /* MemoCell.m */; };
 		6AD47CB71BB772D600BBBC0F /* MemoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AD47CB51BB772D600BBBC0F /* MemoCell.xib */; };
@@ -1404,6 +1406,7 @@
 		6AD283451BB2C893008900FA /* 图量表-2-背景色参考.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "图量表-2-背景色参考.jpg"; sourceTree = "<group>"; };
 		6AD438271BC36EDF000DA4D0 /* UINavigationItem+MultipleItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+MultipleItems.h"; sourceTree = "<group>"; };
 		6AD438281BC36EDF000DA4D0 /* UINavigationItem+MultipleItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+MultipleItems.m"; sourceTree = "<group>"; };
+		6AD438451BC79DEC000DA4D0 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		6AD47CB01BB6F1FB00BBBC0F /* 图量表-便签.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图量表-便签.png"; sourceTree = "<group>"; };
 		6AD47CB31BB772D600BBBC0F /* MemoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoCell.h; sourceTree = "<group>"; };
 		6AD47CB41BB772D600BBBC0F /* MemoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoCell.m; sourceTree = "<group>"; };
@@ -1487,6 +1490,9 @@
 		6AF4BDE01BB553190047A720 /* UIView+Hierarchy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Hierarchy.h"; sourceTree = "<group>"; };
 		6AF4BDE11BB553190047A720 /* UIView+Hierarchy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Hierarchy.m"; sourceTree = "<group>"; };
 		850482635E526CD13E018DB7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		9B16E1206F253B4579B0BD13 /* Pods-FATodosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FATodosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FATodosTests/Pods-FATodosTests.release.xcconfig"; sourceTree = "<group>"; };
+		AAE214C40F4F23B5E7224076 /* Pods-FATodosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FATodosTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FATodosTests/Pods-FATodosTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F4958D1F04CC182351417F64 /* libPods-FATodosTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FATodosTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1514,6 +1520,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AD438461BC79DED000DA4D0 /* SenTestingKit.framework in Frameworks */,
+				4EEBF9F8D8348519901DEC48 /* libPods-FATodosTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1525,6 +1533,8 @@
 			children = (
 				18D659119DE5A3C514B68F1F /* Pods.debug.xcconfig */,
 				850482635E526CD13E018DB7 /* Pods.release.xcconfig */,
+				AAE214C40F4F23B5E7224076 /* Pods-FATodosTests.debug.xcconfig */,
+				9B16E1206F253B4579B0BD13 /* Pods-FATodosTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -3405,6 +3415,7 @@
 		D9A204C453E856BEF0A3F158 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6AD438451BC79DEC000DA4D0 /* SenTestingKit.framework */,
 				6A95EC2A1BBA45B500B14EA5 /* CoreLocation.framework */,
 				6A95EC281BBA45AD00B14EA5 /* CoreTelephony.framework */,
 				6A95EC261BBA459800B14EA5 /* SystemConfiguration.framework */,
@@ -3416,6 +3427,7 @@
 				6ACFDFC11B9C8BBD0061DA35 /* UIKit.framework */,
 				6ACFDFBF1B9C8B860061DA35 /* Foundation.framework */,
 				18CA0A1539FBCF69D8C82F1E /* libPods.a */,
+				F4958D1F04CC182351417F64 /* libPods-FATodosTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -3446,9 +3458,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A158E5C1B70B482007FE54F /* Build configuration list for PBXNativeTarget "FATodosTests" */;
 			buildPhases = (
+				3DB694D7014CAAE824EA0B45 /* Check Pods Manifest.lock */,
 				6A158E4B1B70B482007FE54F /* Sources */,
 				6A158E4C1B70B482007FE54F /* Frameworks */,
 				6A158E4D1B70B482007FE54F /* Resources */,
+				FB687A0101F6B201C59E3333 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -3550,6 +3564,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3DB694D7014CAAE824EA0B45 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		558AA8E597428D901E4EE85C /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -3563,6 +3592,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FB687A0101F6B201C59E3333 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FATodosTests/Pods-FATodosTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FEBA886D8D5FCD8B6FB5DE49 /* Copy Pods Resources */ = {
@@ -4231,11 +4275,13 @@
 		};
 		6A158E5D1B70B482007FE54F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAE214C40F4F23B5E7224076 /* Pods-FATodosTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -4250,11 +4296,13 @@
 		};
 		6A158E5E1B70B482007FE54F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B16E1206F253B4579B0BD13 /* Pods-FATodosTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				INFOPLIST_FILE = FATodosTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
