@@ -455,6 +455,7 @@
 		6AD283431BB2C77A008900FA /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD283421BB2C77A008900FA /* BaseView.m */; };
 		6AD283461BB2C893008900FA /* 图量表-1-按钮颜色参考.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AD283441BB2C893008900FA /* 图量表-1-按钮颜色参考.png */; };
 		6AD283471BB2C893008900FA /* 图量表-2-背景色参考.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6AD283451BB2C893008900FA /* 图量表-2-背景色参考.jpg */; };
+		6AD438291BC36EDF000DA4D0 /* UINavigationItem+MultipleItems.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD438281BC36EDF000DA4D0 /* UINavigationItem+MultipleItems.m */; };
 		6AD47CB11BB6F1FB00BBBC0F /* 图量表-便签.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AD47CB01BB6F1FB00BBBC0F /* 图量表-便签.png */; };
 		6AD47CB61BB772D600BBBC0F /* MemoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD47CB41BB772D600BBBC0F /* MemoCell.m */; };
 		6AD47CB71BB772D600BBBC0F /* MemoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AD47CB51BB772D600BBBC0F /* MemoCell.xib */; };
@@ -1401,6 +1402,8 @@
 		6AD283421BB2C77A008900FA /* BaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
 		6AD283441BB2C893008900FA /* 图量表-1-按钮颜色参考.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图量表-1-按钮颜色参考.png"; sourceTree = "<group>"; };
 		6AD283451BB2C893008900FA /* 图量表-2-背景色参考.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "图量表-2-背景色参考.jpg"; sourceTree = "<group>"; };
+		6AD438271BC36EDF000DA4D0 /* UINavigationItem+MultipleItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+MultipleItems.h"; sourceTree = "<group>"; };
+		6AD438281BC36EDF000DA4D0 /* UINavigationItem+MultipleItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+MultipleItems.m"; sourceTree = "<group>"; };
 		6AD47CB01BB6F1FB00BBBC0F /* 图量表-便签.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图量表-便签.png"; sourceTree = "<group>"; };
 		6AD47CB31BB772D600BBBC0F /* MemoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoCell.h; sourceTree = "<group>"; };
 		6AD47CB41BB772D600BBBC0F /* MemoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoCell.m; sourceTree = "<group>"; };
@@ -1684,6 +1687,8 @@
 		6ACFDAC61B9C23FC0061DA35 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				6AD438271BC36EDF000DA4D0 /* UINavigationItem+MultipleItems.h */,
+				6AD438281BC36EDF000DA4D0 /* UINavigationItem+MultipleItems.m */,
 				6AD47CC31BB7832F00BBBC0F /* UIImage+Blur.h */,
 				6AD47CC41BB7832F00BBBC0F /* UIImage+Blur.m */,
 				6AD47CC51BB7832F00BBBC0F /* UIImage+Utility.h */,
@@ -3795,6 +3800,7 @@
 				6ACFDEEF1B9C23FD0061DA35 /* Samurai_HtmlElementSpan.m in Sources */,
 				6ACFDE561B9C23FD0061DA35 /* ServiceGrids.m in Sources */,
 				6ACFDFAB1B9C2E740061DA35 /* ZIMSqlShowTriggersStatement.m in Sources */,
+				6AD438291BC36EDF000DA4D0 /* UINavigationItem+MultipleItems.m in Sources */,
 				6ACFDF921B9C2E740061DA35 /* NSString+ZIMString.m in Sources */,
 				6ACFDFAF1B9C2E740061DA35 /* ZIMSqlUpdateStatement.m in Sources */,
 				6ACFDE591B9C23FD0061DA35 /* ServiceInspector.m in Sources */,

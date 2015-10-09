@@ -318,6 +318,12 @@
         // do nothing
     }
     
+    /**
+     *  fallen.ink
+     *  Notice:
+     
+     *  要注意这个用法！
+     */
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 

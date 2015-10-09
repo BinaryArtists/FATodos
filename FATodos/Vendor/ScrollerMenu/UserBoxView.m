@@ -19,7 +19,7 @@
         // Initialization code.
 		
 		self.layer.cornerRadius = 5;
-		[self setBackgroundColor:RGBACOLOR(255,255,255,1)];
+		[self setBackgroundColor:rgba_color(255, 255, 255, 1)];
 		
 		_userImageView = [[UIImageView alloc] init];
 		[_userImageView setBackgroundColor:[UIColor clearColor]];
@@ -41,7 +41,7 @@
 		[_badgeLabel setFont:[UIFont fontWithName:@"Helvetica" size:12]];
 		[_badgeLabel setContentMode:UIViewContentModeCenter];
 		[_badgeLabel setTextAlignment:UITextAlignmentCenter];
-		[_badgeLabel setBackgroundColor:RGBCOLOR(182,224,13)];
+		[_badgeLabel setBackgroundColor:rgb_color(182, 224, 13)];
 		_badgeLabel.layer.cornerRadius = 3;
 		[self addSubview:_badgeLabel];
 		

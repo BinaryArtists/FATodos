@@ -112,14 +112,14 @@
 		//v.alpha = 0;
 		if (currentViewIndex == index) {
             v.alpha = 1;
-            [v setBackgroundColor:RGBACOLOR(255,255,255,1)];
+            [v setBackgroundColor:rgba_color(255,255,255,1)];
             [UIView animateWithDuration:speed delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
                 v.layer.transform = CATransform3DMakeTranslation(-(spaceFromCurrent-30), 0, -300);
             } completion:^(BOOL finished) {
                 //
             }];
 		}else {
-			[v setBackgroundColor:RGBACOLOR(255,255,255,0.8)];
+			[v setBackgroundColor:rgba_color(255,255,255,0.8)];
 			if (currentViewIndex == index-1 || currentViewIndex == index + 1) {
                 [UIView animateWithDuration:speed delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
                     v.alpha = 0.9;

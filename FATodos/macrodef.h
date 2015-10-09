@@ -5,16 +5,10 @@
 //  Created by 李杰 on 9/9/15.
 //  Copyright (c) 2015 fallen.ink. All rights reserved.
 //
+//  所有宏定义，都遵循下划线风格
 
 #ifndef FATodos_macrodef_h
 #define FATodos_macrodef_h
-
-#define RGBCOLOR(r,g,b) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:1]
-#define RGBACOLOR(r,g,b,a) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:(a)]
-#define DEPRECATED_METHOD __attribute__((deprecated))
-#define Y(__POINTER) { [__POINTER release]; __POINTER = nil; }
-#define RGBCOLOR(r,g,b) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:1]
-#define RGBACOLOR(r,g,b,a) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:(a)]
 
 #ifdef DEBUG
 
@@ -23,6 +17,8 @@
 
 #   define FAssert( __condition ) NSAssert(__condition, NSStringFromSelector(_cmd));
 
+#   define debugCode( __code_fragment ) { __code_fragment }
+
 #else
 
 #   define debugLog(...)
@@ -30,20 +26,24 @@
 
 #   define FAssert( __condition )
 
+#   define debugCode( __code_fragment )
+
 #endif
 
-#define EMPTY_STRING        @""
+#define rgb_color(r,g,b) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:1]
+#define rgba_color(r,g,b,a) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:(a)]
+#define deprecated_method __attribute__((deprecated))
 
-#define STR(key)            NSLocalizedString(key, nil)
+#define empty_string        @""
 
-#define PATH_OF_APP_HOME    NSHomeDirectory()
-#define PATH_OF_TEMP        NSTemporaryDirectory()
-#define PATH_OF_DOCUMENT    [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0]
-#define PATH_OF_CACHE       [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) objectAtIndex:0]
+#define str(key)            NSLocalizedString(key, nil)
 
-#define APP_VERSION         [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"]
+#define path_of_app_home    NSHomeDirectory()
+#define path_of_temp        NSTemporaryDirectory()
+#define path_of_document    [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0]
+#define path_of_cache       [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) objectAtIndex:0]
 
-#define RGB(A, B, C)        [UIColor colorWithRed:A/255.0 green:B/255.0 blue:C/255.0 alpha:1.0]
+#define app_version         [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"]
 
 #define _ self
 

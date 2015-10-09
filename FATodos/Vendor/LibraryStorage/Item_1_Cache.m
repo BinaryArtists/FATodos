@@ -72,7 +72,7 @@
 #pragma mark - Basic
 
 + (NSString *)dbPath {
-    NSString * doc = PATH_OF_DOCUMENT;
+    NSString * doc = path_of_document;
     NSString * path = [doc stringByAppendingPathComponent:@"item_1_cache.sqlite"];
     
     return path;

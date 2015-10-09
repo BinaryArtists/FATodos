@@ -15,6 +15,8 @@
 
 @optional // 备忘录
 
+@property (nonatomic, strong) NSObject *testObj;
+
 - (void)onSaveInstanceState:(NSMutableDictionary *)bundle;
 
 - (void)onLoadInstanceState:(NSDictionary *)bundle;

@@ -17,7 +17,7 @@
     
     _pcmFile    = pcmFile;
     
-    NSMutableString *path   = [PATH_OF_CACHE mutableCopy];
+    NSMutableString *path   = [path_of_cache mutableCopy];
     [path appendFormat:@"/%@", pcmFile];
     _pcmPath    = path;
 }

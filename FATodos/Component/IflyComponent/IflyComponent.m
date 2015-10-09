@@ -34,7 +34,7 @@
     [IFlySetting showLogcat:YES];
     
     //设置sdk的工作路径
-    [IFlySetting setLogFilePath:PATH_OF_CACHE];
+    [IFlySetting setLogFilePath:path_of_cache];
     
     //创建语音配置,appid必须要传入，仅执行一次则可
     NSString *initString = [[NSString alloc] initWithFormat:@"appid=%@", [s APP_ID]];

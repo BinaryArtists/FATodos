@@ -22,6 +22,15 @@
 // 俯卧撑 分3组
 // cell 长按，从原地动画弹起来，然后扩展，并选择
 
+//self.notificationController = [FTGNotificationController controllerWithObserver:self];
+//[self.notificationController observeNotificationName:UIApplicationDidReceiveMemoryWarningNotification
+//                                              object:nil
+//                                               queue:[NSOperationQueue mainQueue]
+//                                               block:^(NSNotification *note, id observer)
+// {
+//     NSLog(@"observer %@ notification payload %@", observer, note);
+// }];
+
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
 
