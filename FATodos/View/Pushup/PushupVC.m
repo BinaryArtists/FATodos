@@ -365,6 +365,11 @@
                 [item setType:kItemDumbbell];
             }
                 break;
+                
+            case kItemSitup: {
+                [item setType:kItemSitup];
+            }
+                break;
         }
         
         [[Item_1_Cache sharedInstance] updateObject:item];

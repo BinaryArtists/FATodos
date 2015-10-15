@@ -14,8 +14,6 @@
 
 @interface MainVC () <ScrollViewDelegate>
 
-singleton(<#__class#>)
-
 @property (weak, nonatomic) IBOutlet ScrollView *   scrollView;
 
 @property (nonatomic, strong) UserBoxView *         pushupView;

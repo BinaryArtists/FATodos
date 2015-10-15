@@ -21,6 +21,10 @@
             return [s Pushup];
         }
             break;
+            
+        case kItemSitup: {
+            return [s SitsUp];
+        }
     }
     
     return nil;

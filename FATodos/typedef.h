@@ -43,6 +43,7 @@ typedef NS_ENUM(NSInteger, ModuleType) {
 typedef NS_ENUM(NSInteger, ItemType) {
     kItemPushup             = 1, // 俯卧撑
     kItemDumbbell           = 2, // 哑铃
+    kItemSitup              = 3, // 仰卧起坐
 };
 
 #endif
