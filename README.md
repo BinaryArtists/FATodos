@@ -40,7 +40,7 @@ Many app about TODO, but it is my own.
 * 3. Diagram 统计图表
 * 4. Memo 便签
 * 5. Note 日记
-* 6. 
+* 6. Plan 计划
 
 ## 特点
 * 1. 语音输入（推荐：懒人日记）（科大讯飞的语音sdk）

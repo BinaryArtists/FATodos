@@ -31,6 +31,11 @@
 //     NSLog(@"observer %@ notification payload %@", observer, note);
 // }];
 
+
+//相关工程：
+//MSCDemo_UI
+//Voice2Note
+
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
 
