@@ -75,7 +75,7 @@
     [self.scrollView addUserView:self.noteView];
     
     UserBoxView *boxView = [[UserBoxView alloc] init];
-    [boxView.displayTextLabel setText:[NSString stringWithFormat:@"啦啦啦啦啦"]];
+    [boxView.displayTextLabel setText:[s FourQuadrant]];
     [boxView.userImageView setImage:[UIImage imageNamed:@"userdefault.jpg"]];
     
     [self.scrollView addUserView:boxView];

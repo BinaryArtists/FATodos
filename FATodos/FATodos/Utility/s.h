@@ -24,6 +24,7 @@
 @string( ModuleFourQuadrant ) // 四象限
 @string( ModuleMemo )
 @string( ModuleNote ) // 便签纪录
+@string( ModulePomodoro ) // 番茄工作法
 
 // Service
 
@@ -33,6 +34,8 @@
 @string( VoiceMemo) // 语音便签
 @string( Memo ) // 便签：
 @string( Note ) // 笔记：与上面的区别就是，便签可以分类，但不做关联，笔记是可以较少层次的树状分类，和关联
+@string( FourQuadrant)
+@string( Pomodoro )
 
 @string( SitsUp ) // 仰卧起坐
 @string( Pushup ) // 俯卧撑

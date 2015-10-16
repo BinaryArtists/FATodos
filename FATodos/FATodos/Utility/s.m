@@ -21,16 +21,19 @@
 
 #pragma mark - Module
 
-@def_string( ModuleItem,    @"俯卧撑、哑铃、仰卧起坐" )
-@def_string( ModuleFourQuadrant, @"行事四象限" )
-@def_string( ModuleMemo,    @"便签")
-@def_string( ModuleNote,    @"笔记")
+@def_string( ModuleItem,            @"俯卧撑、哑铃、仰卧起坐" )
+@def_string( ModuleFourQuadrant,    @"行事四象限" )
+@def_string( ModuleMemo,            @"便签")
+@def_string( ModuleNote,            @"笔记")
+@def_string( ModulePomodoro,        @"番茄工作法")
 
 #pragma mark - Service
 
 @def_string( VoiceMemo,     @"语音便签" )
 @def_string( Memo,          @"便签" )
 @def_string( Note,          @"笔记" )
+@def_string( FourQuadrant,  @"行事四象限" )
+@def_string( Pomodoro,      @"番茄工作法" )
 
 @def_string( SitsUp,        @"仰卧起坐" )
 @def_string( Pushup,        @"俯卧撑" )
