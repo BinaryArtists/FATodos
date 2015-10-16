@@ -429,14 +429,12 @@
 		6ACFDFEB1BA02A3E0061DA35 /* UIColor+Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFDFEA1BA02A3E0061DA35 /* UIColor+Theme.m */; };
 		6ACFDFF41BA040AE0061DA35 /* NSString+Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFDFF31BA040AE0061DA35 /* NSString+Theme.m */; };
 		6ACFDFF91BA127660061DA35 /* NSDictionary+Params.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFDFF81BA127660061DA35 /* NSDictionary+Params.m */; };
-		6ACFDFFE1BA14B980061DA35 /* DESIGN.md in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFDFFD1BA14B980061DA35 /* DESIGN.md */; };
 		6ACFE0031BA16C380061DA35 /* DiagramVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFE0011BA16C380061DA35 /* DiagramVC.m */; };
 		6ACFE0041BA16C380061DA35 /* DiagramVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6ACFE0021BA16C380061DA35 /* DiagramVC.xib */; };
 		6ACFE00F1BA170720061DA35 /* Item_1_Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFE00A1BA170720061DA35 /* Item_1_Cell.m */; };
 		6ACFE0101BA170720061DA35 /* Item_1_Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6ACFE00B1BA170720061DA35 /* Item_1_Cell.xib */; };
 		6ACFE0111BA170720061DA35 /* PushupVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFE00D1BA170720061DA35 /* PushupVC.m */; };
 		6ACFE0121BA170720061DA35 /* PushupVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6ACFE00E1BA170720061DA35 /* PushupVC.xib */; };
-		6ACFE0141BA1708F0061DA35 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFE0131BA1708F0061DA35 /* README.md */; };
 		6ACFE01C1BA19AD20061DA35 /* RoutableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFE01B1BA19AD20061DA35 /* RoutableVC.m */; };
 		6ACFE0211BA27BB20061DA35 /* MainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFE01F1BA27BB20061DA35 /* MainVC.m */; };
 		6ACFE0221BA27BB20061DA35 /* MainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6ACFE0201BA27BB20061DA35 /* MainVC.xib */; };
@@ -4018,7 +4016,6 @@
 				6ACFDEC61B9C23FD0061DA35 /* Samurai_HtmlElementDiv.m in Sources */,
 				6ACFDEC51B9C23FD0061DA35 /* Samurai_HtmlElementDir.m in Sources */,
 				6ACFDE901B9C23FD0061DA35 /* Samurai_CSSNumberTurn.m in Sources */,
-				6ACFE0141BA1708F0061DA35 /* README.md in Sources */,
 				6ACFDED51B9C23FD0061DA35 /* Samurai_HtmlElementHr.m in Sources */,
 				6ACFE0211BA27BB20061DA35 /* MainVC.m in Sources */,
 				6ACFDF961B9C2E740061DA35 /* ZIMSqlAnalyzeStatement.m in Sources */,
@@ -4038,7 +4035,6 @@
 				6ACFDDD71B9C23FD0061DA35 /* NSArray+Extension.m in Sources */,
 				6ACFDE7E1B9C23FD0061DA35 /* Samurai_CSSNumberDppx.m in Sources */,
 				6AF4BDA61BB441760047A720 /* EXTRuntimeExtensions.m in Sources */,
-				6ACFDFFE1BA14B980061DA35 /* DESIGN.md in Sources */,
 				6ACFDE421B9C23FD0061DA35 /* Samurai_ViewConfig.m in Sources */,
 				6AF4BDD61BB550420047A720 /* FAPopup.m in Sources */,
 				6ACFDE6F1B9C23FD0061DA35 /* Samurai_CSSRuleCollector.m in Sources */,
@@ -4225,7 +4221,7 @@
 					"${SRCROOT}/../**",
 				);
 				INFOPLIST_FILE = FATodos/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/../**";
@@ -4266,7 +4262,7 @@
 					"${SRCROOT}/../**",
 				);
 				INFOPLIST_FILE = FATodos/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/../**";

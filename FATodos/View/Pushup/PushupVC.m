@@ -456,7 +456,9 @@
              [MGSwipeButton buttonWithTitle:[s Pushup]
                             backgroundColor:[UIColor blue_1_color]],
              [MGSwipeButton buttonWithTitle:[s Dumbell]
-                            backgroundColor:[UIColor green_1_color]]];
+                            backgroundColor:[UIColor green_1_color]],
+             [MGSwipeButton buttonWithTitle:[s SitsUp]
+                            backgroundColor:[UIColor blue_1_color]]];
 }
 
 @end
