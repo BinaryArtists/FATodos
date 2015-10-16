@@ -37,7 +37,8 @@ typedef void(^SendRequestAndResendRequestBlock)(id sendBlock, id resendBlock);
 typedef NS_ENUM(NSInteger, ModuleType) {
     kModuleItem             = 1, // 俯卧撑、哑铃
     kModuleFourQuadrant     = 2, // 四象限
-    kModuleNote             = 3, // 便签纪录
+    kModuleNote             = 3, // 笔记
+    kModuleMemo             = 4, // 便签
 };
 
 typedef NS_ENUM(NSInteger, ItemType) {

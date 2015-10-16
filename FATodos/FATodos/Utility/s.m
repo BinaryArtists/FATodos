@@ -19,6 +19,13 @@
 @def_string( Delete,        @"删除" )
 @def_string( More,          @"更多" )
 
+#pragma mark - Module
+
+@def_string( ModuleItem,    @"俯卧撑、哑铃、仰卧起坐" )
+@def_string( ModuleFourQuadrant, @"行事四象限" )
+@def_string( ModuleMemo,    @"便签")
+@def_string( ModuleNote,    @"笔记")
+
 #pragma mark - Service
 
 @def_string( VoiceMemo,     @"语音便签" )

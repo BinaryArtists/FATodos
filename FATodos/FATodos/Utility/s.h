@@ -19,6 +19,12 @@
 @string( Delete )
 @string( More )
 
+// Module
+@string( ModuleItem ) // 俯卧撑、哑铃
+@string( ModuleFourQuadrant ) // 四象限
+@string( ModuleMemo )
+@string( ModuleNote ) // 便签纪录
+
 // Service
 
 // todo: http://www.oschina.net/p/Voice2Note（懒人笔记）

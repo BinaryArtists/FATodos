@@ -33,7 +33,7 @@
 + (NSString *)forModuleType:(NSInteger)type {
     switch (type) {
         case kModuleItem: {
-            
+            return
         }
             break;
             
@@ -41,6 +41,10 @@
             
         }
             break;
+            
+        case kModuleNote: {
+            
+        }
     }
     
     return nil;
