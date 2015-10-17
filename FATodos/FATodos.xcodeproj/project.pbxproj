@@ -455,7 +455,6 @@
 		6AD283461BB2C893008900FA /* 图量表-1-按钮颜色参考.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AD283441BB2C893008900FA /* 图量表-1-按钮颜色参考.png */; };
 		6AD283471BB2C893008900FA /* 图量表-2-背景色参考.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6AD283451BB2C893008900FA /* 图量表-2-背景色参考.jpg */; };
 		6AD438291BC36EDF000DA4D0 /* UINavigationItem+MultipleItems.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD438281BC36EDF000DA4D0 /* UINavigationItem+MultipleItems.m */; };
-		6AD438461BC79DED000DA4D0 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AD438451BC79DEC000DA4D0 /* SenTestingKit.framework */; };
 		6AD47CB11BB6F1FB00BBBC0F /* 图量表-便签.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AD47CB01BB6F1FB00BBBC0F /* 图量表-便签.png */; };
 		6AD47CB61BB772D600BBBC0F /* MemoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD47CB41BB772D600BBBC0F /* MemoCell.m */; };
 		6AD47CB71BB772D600BBBC0F /* MemoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AD47CB51BB772D600BBBC0F /* MemoCell.xib */; };
@@ -1404,7 +1403,6 @@
 		6AD283451BB2C893008900FA /* 图量表-2-背景色参考.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "图量表-2-背景色参考.jpg"; sourceTree = "<group>"; };
 		6AD438271BC36EDF000DA4D0 /* UINavigationItem+MultipleItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+MultipleItems.h"; sourceTree = "<group>"; };
 		6AD438281BC36EDF000DA4D0 /* UINavigationItem+MultipleItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+MultipleItems.m"; sourceTree = "<group>"; };
-		6AD438451BC79DEC000DA4D0 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		6AD47CB01BB6F1FB00BBBC0F /* 图量表-便签.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图量表-便签.png"; sourceTree = "<group>"; };
 		6AD47CB31BB772D600BBBC0F /* MemoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoCell.h; sourceTree = "<group>"; };
 		6AD47CB41BB772D600BBBC0F /* MemoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoCell.m; sourceTree = "<group>"; };
@@ -1518,7 +1516,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6AD438461BC79DED000DA4D0 /* SenTestingKit.framework in Frameworks */,
 				4EEBF9F8D8348519901DEC48 /* libPods-FATodosTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3413,7 +3410,6 @@
 		D9A204C453E856BEF0A3F158 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6AD438451BC79DEC000DA4D0 /* SenTestingKit.framework */,
 				6A95EC2A1BBA45B500B14EA5 /* CoreLocation.framework */,
 				6A95EC281BBA45AD00B14EA5 /* CoreTelephony.framework */,
 				6A95EC261BBA459800B14EA5 /* SystemConfiguration.framework */,
@@ -3478,7 +3474,8 @@
 		6A158E2B1B70B482007FE54F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastTestingUpgradeCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = fallen.ink;
 				TargetAttributes = {
 					6A158E321B70B482007FE54F = {
@@ -4126,6 +4123,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -4198,7 +4196,7 @@
 					"$(PROJECT_DIR)/Framework",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "/Users/lijie/Desktop/gits/FATodos/FATodos/FATodos/FATodos-prefix.pch";
+				GCC_PREFIX_HEADER = "FATodos/FATodos-prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",
@@ -4223,6 +4221,7 @@
 				INFOPLIST_FILE = FATodos/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fallen.ink.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/../**";
 			};
@@ -4239,7 +4238,7 @@
 					"$(PROJECT_DIR)/Framework",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "/Users/lijie/Desktop/gits/FATodos/FATodos/FATodos/FATodos-prefix.pch";
+				GCC_PREFIX_HEADER = "FATodos/FATodos-prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",
@@ -4264,6 +4263,7 @@
 				INFOPLIST_FILE = FATodos/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fallen.ink.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/../**";
 			};
@@ -4285,6 +4285,7 @@
 				);
 				INFOPLIST_FILE = FATodosTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fallen.ink.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FATodos.app/FATodos";
 			};
@@ -4302,6 +4303,7 @@
 				);
 				INFOPLIST_FILE = FATodosTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fallen.ink.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FATodos.app/FATodos";
 			};
