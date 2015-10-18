@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "F56050D6C4C6E494F282866CB10FD48541DC49B1",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "1480C2462FBE636FBF129122450B8E3FDDA526FD" : 0,
+    "F56050D6C4C6E494F282866CB10FD48541DC49B1" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "80BD0016-4690-4BD0-B883-E1E0B9007016",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "1480C2462FBE636FBF129122450B8E3FDDA526FD" : "FATodos\/FATodos\/Framework\/samurai-native\/",
+    "F56050D6C4C6E494F282866CB10FD48541DC49B1" : "FATodos\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "FATodos",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "FATodos\/FATodos.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/fallending\/samurai-native.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1480C2462FBE636FBF129122450B8E3FDDA526FD"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/BinaryArtists\/FATodos.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F56050D6C4C6E494F282866CB10FD48541DC49B1"
+    }
+  ]
+}
