@@ -20,6 +20,11 @@
 		6A6DA0A31BD3440500A359C0 /* NoteVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A6DA0A11BD3440500A359C0 /* NoteVC.xib */; settings = {ASSET_TAGS = (); }; };
 		6A6DA0AC1BD3445B00A359C0 /* PomodoroVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6DA0AA1BD3445B00A359C0 /* PomodoroVC.m */; settings = {ASSET_TAGS = (); }; };
 		6A6DA0AD1BD3445B00A359C0 /* PomodoroVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A6DA0AB1BD3445B00A359C0 /* PomodoroVC.xib */; settings = {ASSET_TAGS = (); }; };
+		6A6DA0AF1BD3584600A359C0 /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A6DA0AE1BD3584600A359C0 /* GPUImage.framework */; settings = {ASSET_TAGS = (); }; };
+		6A6DA0B31BD378DA00A359C0 /* LibraryAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6DA0B21BD378DA00A359C0 /* LibraryAPI.m */; settings = {ASSET_TAGS = (); }; };
+		6A6DA0B61BD378EF00A359C0 /* LibraryTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6DA0B51BD378EF00A359C0 /* LibraryTime.m */; settings = {ASSET_TAGS = (); }; };
+		6A6DA0BB1BD37A8D00A359C0 /* NSDate+Format.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6DA0BA1BD37A8D00A359C0 /* NSDate+Format.m */; settings = {ASSET_TAGS = (); }; };
+		6A6DA0BE1BD37AC400A359C0 /* NSDate+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6DA0BD1BD37AC400A359C0 /* NSDate+Compare.m */; settings = {ASSET_TAGS = (); }; };
 		6A95EC101BB992E300B14EA5 /* MemoEditVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A95EC0E1BB992E300B14EA5 /* MemoEditVC.m */; };
 		6A95EC111BB992E300B14EA5 /* MemoEditVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A95EC0F1BB992E300B14EA5 /* MemoEditVC.xib */; };
 		6A95EC1A1BBA391B00B14EA5 /* Component.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A95EC191BBA391B00B14EA5 /* Component.m */; };
@@ -458,10 +463,8 @@
 		6AD283301BB193D1008900FA /* PickerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD2832F1BB193D1008900FA /* PickerModel.m */; };
 		6AD283401BB2C754008900FA /* BaseEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD2833F1BB2C754008900FA /* BaseEntity.m */; };
 		6AD283431BB2C77A008900FA /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD283421BB2C77A008900FA /* BaseView.m */; };
-		6AD283461BB2C893008900FA /* 图量表-1-按钮颜色参考.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AD283441BB2C893008900FA /* 图量表-1-按钮颜色参考.png */; };
 		6AD283471BB2C893008900FA /* 图量表-2-背景色参考.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6AD283451BB2C893008900FA /* 图量表-2-背景色参考.jpg */; };
 		6AD438291BC36EDF000DA4D0 /* UINavigationItem+MultipleItems.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD438281BC36EDF000DA4D0 /* UINavigationItem+MultipleItems.m */; };
-		6AD47CB11BB6F1FB00BBBC0F /* 图量表-便签.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AD47CB01BB6F1FB00BBBC0F /* 图量表-便签.png */; };
 		6AD47CB61BB772D600BBBC0F /* MemoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD47CB41BB772D600BBBC0F /* MemoCell.m */; };
 		6AD47CB71BB772D600BBBC0F /* MemoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AD47CB51BB772D600BBBC0F /* MemoCell.xib */; };
 		6AD47CBB1BB7732300BBBC0F /* MemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD47CB91BB7732300BBBC0F /* MemoVC.m */; };
@@ -501,7 +504,6 @@
 		6AF4BDCA1BB52D040047A720 /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AF4BDC21BB52D040047A720 /* info.png */; };
 		6AF4BDCB1BB52D040047A720 /* info@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AF4BDC31BB52D040047A720 /* info@2x.png */; };
 		6AF4BDCF1BB52E260047A720 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AF4BDCE1BB52E260047A720 /* CoreGraphics.framework */; };
-		6AF4BDD11BB538CF0047A720 /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AF4BDD01BB538CF0047A720 /* GPUImage.framework */; };
 		6AF4BDD61BB550420047A720 /* FAPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF4BDD51BB550420047A720 /* FAPopup.m */; };
 		6AF4BDDE1BB551EF0047A720 /* Item_1_Cache.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF4BDDA1BB551EF0047A720 /* Item_1_Cache.m */; };
 		6AF4BDDF1BB551EF0047A720 /* UIUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF4BDDD1BB551EF0047A720 /* UIUtils.m */; };
@@ -540,6 +542,15 @@
 		6A6DA0A91BD3445B00A359C0 /* PomodoroVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PomodoroVC.h; sourceTree = "<group>"; };
 		6A6DA0AA1BD3445B00A359C0 /* PomodoroVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PomodoroVC.m; sourceTree = "<group>"; };
 		6A6DA0AB1BD3445B00A359C0 /* PomodoroVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PomodoroVC.xib; sourceTree = "<group>"; };
+		6A6DA0AE1BD3584600A359C0 /* GPUImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GPUImage.framework; sourceTree = "<group>"; };
+		6A6DA0B11BD378DA00A359C0 /* LibraryAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryAPI.h; sourceTree = "<group>"; };
+		6A6DA0B21BD378DA00A359C0 /* LibraryAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryAPI.m; sourceTree = "<group>"; };
+		6A6DA0B41BD378EF00A359C0 /* LibraryTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryTime.h; sourceTree = "<group>"; };
+		6A6DA0B51BD378EF00A359C0 /* LibraryTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryTime.m; sourceTree = "<group>"; };
+		6A6DA0B91BD37A8D00A359C0 /* NSDate+Format.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Format.h"; sourceTree = "<group>"; };
+		6A6DA0BA1BD37A8D00A359C0 /* NSDate+Format.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Format.m"; sourceTree = "<group>"; };
+		6A6DA0BC1BD37AC400A359C0 /* NSDate+Compare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Compare.h"; sourceTree = "<group>"; };
+		6A6DA0BD1BD37AC400A359C0 /* NSDate+Compare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Compare.m"; sourceTree = "<group>"; };
 		6A95EC0D1BB992E300B14EA5 /* MemoEditVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoEditVC.h; sourceTree = "<group>"; };
 		6A95EC0E1BB992E300B14EA5 /* MemoEditVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoEditVC.m; sourceTree = "<group>"; };
 		6A95EC0F1BB992E300B14EA5 /* MemoEditVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MemoEditVC.xib; sourceTree = "<group>"; };
@@ -1490,7 +1501,6 @@
 		6AF4BDC21BB52D040047A720 /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
 		6AF4BDC31BB52D040047A720 /* info@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "info@2x.png"; sourceTree = "<group>"; };
 		6AF4BDCE1BB52E260047A720 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		6AF4BDD01BB538CF0047A720 /* GPUImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GPUImage.framework; sourceTree = "<group>"; };
 		6AF4BDD41BB550420047A720 /* FAPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAPopup.h; sourceTree = "<group>"; };
 		6AF4BDD51BB550420047A720 /* FAPopup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAPopup.m; sourceTree = "<group>"; };
 		6AF4BDD81BB551EF0047A720 /* CacheProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CacheProtocol.h; sourceTree = "<group>"; };
@@ -1511,6 +1521,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A6DA0AF1BD3584600A359C0 /* GPUImage.framework in Frameworks */,
 				6A95EC2B1BBA45B500B14EA5 /* CoreLocation.framework in Frameworks */,
 				6A95EC291BBA45AD00B14EA5 /* CoreTelephony.framework in Frameworks */,
 				6ACFE0371BA2C8F60061DA35 /* AddressBook.framework in Frameworks */,
@@ -1520,7 +1531,6 @@
 				6AF4BDCF1BB52E260047A720 /* CoreGraphics.framework in Frameworks */,
 				6ACFE0381BA2C8F60061DA35 /* AddressBookUI.framework in Frameworks */,
 				6ACFDFC21B9C8BBD0061DA35 /* UIKit.framework in Frameworks */,
-				6AF4BDD11BB538CF0047A720 /* GPUImage.framework in Frameworks */,
 				6A95EC231BBA456500B14EA5 /* iflyMSC.framework in Frameworks */,
 				6ACFDFC01B9C8B860061DA35 /* Foundation.framework in Frameworks */,
 				534CB05A2535D65788892768 /* libPods.a in Frameworks */,
@@ -1654,6 +1664,27 @@
 			path = Pomodoro;
 			sourceTree = "<group>";
 		};
+		6A6DA0B01BD3789200A359C0 /* LibraryTime */ = {
+			isa = PBXGroup;
+			children = (
+				6A6DA0B71BD3791200A359C0 /* extension */,
+				6A6DA0B41BD378EF00A359C0 /* LibraryTime.h */,
+				6A6DA0B51BD378EF00A359C0 /* LibraryTime.m */,
+			);
+			path = LibraryTime;
+			sourceTree = "<group>";
+		};
+		6A6DA0B71BD3791200A359C0 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				6A6DA0B91BD37A8D00A359C0 /* NSDate+Format.h */,
+				6A6DA0BA1BD37A8D00A359C0 /* NSDate+Format.m */,
+				6A6DA0BC1BD37AC400A359C0 /* NSDate+Compare.h */,
+				6A6DA0BD1BD37AC400A359C0 /* NSDate+Compare.m */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
 		6A95EC171BBA38B000B14EA5 /* Component */ = {
 			isa = PBXGroup;
 			children = (
@@ -1766,8 +1797,8 @@
 		6ACFDAC71B9C23FC0061DA35 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				6A6DA0AE1BD3584600A359C0 /* GPUImage.framework */,
 				6A95EC221BBA456500B14EA5 /* iflyMSC.framework */,
-				6AF4BDD01BB538CF0047A720 /* GPUImage.framework */,
 				6ACFDAC81B9C23FC0061DA35 /* SAMURAI */,
 			);
 			path = Framework;
@@ -2946,6 +2977,7 @@
 		6ACFDDCA1B9C23FC0061DA35 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				6A6DA0B01BD3789200A359C0 /* LibraryTime */,
 				6AF4BDD71BB551EF0047A720 /* LibraryStorage */,
 				6AF4BDDB1BB551EF0047A720 /* LibraryUtility */,
 				6AF4BDD31BB550210047A720 /* FAPopup */,
@@ -3306,6 +3338,8 @@
 		6AF4BCC71BB2E9690047A720 /* LibraryAPI */ = {
 			isa = PBXGroup;
 			children = (
+				6A6DA0B11BD378DA00A359C0 /* LibraryAPI.h */,
+				6A6DA0B21BD378DA00A359C0 /* LibraryAPI.m */,
 			);
 			path = LibraryAPI;
 			sourceTree = "<group>";
@@ -3569,7 +3603,6 @@
 				6A95EC111BB992E300B14EA5 /* MemoEditVC.xib in Resources */,
 				6AD47CB71BB772D600BBBC0F /* MemoCell.xib in Resources */,
 				6ACFDE4D1B9C23FD0061DA35 /* ServiceGesture.bundle in Resources */,
-				6AD283461BB2C893008900FA /* 图量表-1-按钮颜色参考.png in Resources */,
 				6ACFE0341BA2C8630061DA35 /* userdefault.jpg in Resources */,
 				6A158E471B70B482007FE54F /* Images.xcassets in Resources */,
 				6ACFDE491B9C23FD0061DA35 /* ServiceBorder.bundle in Resources */,
@@ -3577,7 +3610,6 @@
 				6AF4BDC71BB52D040047A720 /* checkMark@2x.png in Resources */,
 				6ACFDFE41BA0207F0061DA35 /* check@2x.png in Resources */,
 				6ACFE0101BA170720061DA35 /* Item_1_Cell.xib in Resources */,
-				6AD47CB11BB6F1FB00BBBC0F /* 图量表-便签.png in Resources */,
 				6AF4BDA81BB441760047A720 /* Info.plist in Resources */,
 				6ACFDFE71BA0207F0061DA35 /* list@2x.png in Resources */,
 				6AF4BDCB1BB52D040047A720 /* info@2x.png in Resources */,
@@ -3772,6 +3804,7 @@
 				6ACFDE341B9C23FD0061DA35 /* Samurai_Workflow.m in Sources */,
 				6ACFDDE31B9C23FD0061DA35 /* Samurai_Encoding.m in Sources */,
 				6ACFDE831B9C23FD0061DA35 /* Samurai_CSSNumberHz.m in Sources */,
+				6A6DA0B31BD378DA00A359C0 /* LibraryAPI.m in Sources */,
 				6ACFDEC81B9C23FD0061DA35 /* Samurai_HtmlElementDt.m in Sources */,
 				6ACFDF241B9C23FD0061DA35 /* char_ref.c in Sources */,
 				6ACFDE721B9C23FD0061DA35 /* Samurai_CSSStyleSheet.m in Sources */,
@@ -3802,6 +3835,7 @@
 				6ACFDE361B9C23FD0061DA35 /* Samurai_EventPanGesture.m in Sources */,
 				6ACFDEAC1B9C23FD0061DA35 /* UIWebView+Html.m in Sources */,
 				6ACFDE9C1B9C23FD0061DA35 /* UICollectionView+Html.m in Sources */,
+				6A6DA0BE1BD37AC400A359C0 /* NSDate+Compare.m in Sources */,
 				6ACFDE021B9C23FD0061DA35 /* Samurai_DockerWindow.m in Sources */,
 				6ACFDDFD1B9C23FD0061DA35 /* Samurai_Model.m in Sources */,
 				6A95EC1D1BBA3CB900B14EA5 /* Samurai_Package.m in Sources */,
@@ -3864,6 +3898,7 @@
 				6ACFDE031B9C23FD0061DA35 /* Samurai_ServiceInstance.m in Sources */,
 				6ACFDEDE1B9C23FD0061DA35 /* Samurai_HtmlElementInputRadio.m in Sources */,
 				6ACFDEA21B9C23FD0061DA35 /* UIScrollView+Html.m in Sources */,
+				6A6DA0B61BD378EF00A359C0 /* LibraryTime.m in Sources */,
 				6ACFDE571B9C23FD0061DA35 /* ServiceGridsWindow.m in Sources */,
 				6ACFDE931B9C23FD0061DA35 /* Samurai_CSSNumberVmin.m in Sources */,
 				6ACFDF951B9C2E740061DA35 /* ZIMSqlAlterTableStatement.m in Sources */,
@@ -4084,6 +4119,7 @@
 				6ACFDE3A1B9C23FD0061DA35 /* Samurai_ViewEvent.m in Sources */,
 				6ACFDE9D1B9C23FD0061DA35 /* UICollectionViewCell+Html.m in Sources */,
 				6ACFDED61B9C23FD0061DA35 /* Samurai_HtmlElementHtml.m in Sources */,
+				6A6DA0BB1BD37A8D00A359C0 /* NSDate+Format.m in Sources */,
 				6ACFDED71B9C23FD0061DA35 /* Samurai_HtmlElementImg.m in Sources */,
 				6ACFDE161B9C23FD0061DA35 /* Samurai_UIScrollView.m in Sources */,
 				6ACFDEF21B9C23FD0061DA35 /* Samurai_HtmlElementTable.m in Sources */,
@@ -4229,6 +4265,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Framework",
@@ -4259,6 +4296,7 @@
 				INFOPLIST_FILE = FATodos/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fallen.ink.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/../**";
@@ -4271,6 +4309,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Framework",
@@ -4301,6 +4340,7 @@
 				INFOPLIST_FILE = FATodos/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fallen.ink.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/../**";
