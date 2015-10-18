@@ -13,6 +13,7 @@
 // Utility
 
 @string( APP_ID )
+@string( APP_NAME )
 
 // Operation
 

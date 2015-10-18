@@ -35,7 +35,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title                              = @"功能目录";
+    self.title                              = [s APP_NAME];
     self.edgesForExtendedLayout             = UIRectEdgeNone;
     
     [self.view setBackgroundColor:[UIColor bgGrayColor]];

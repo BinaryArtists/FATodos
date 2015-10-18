@@ -12,12 +12,13 @@
 
 #pragma mark - Utility
 
-@def_string( APP_ID, @"5609fa53" )
+@def_string( APP_ID,                @"5609fa53" )
+@def_string( APP_NAME,              @"走走停停" )
 
 #pragma mark - Operation
 
-@def_string( Delete,        @"删除" )
-@def_string( More,          @"更多" )
+@def_string( Delete,                @"删除" )
+@def_string( More,                  @"更多" )
 
 #pragma mark - Module
 

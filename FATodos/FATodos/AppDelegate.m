@@ -38,7 +38,7 @@
     
     [self mapping];
     
-    [self test];
+//    [self test];
     
     return YES;
 }
