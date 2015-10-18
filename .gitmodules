@@ -1,0 +1,3 @@
+[submodule "FATodos/Framework/samurai-native"]
+	path = FATodos/Framework/samurai-native
+	url = https://github.com/fallending/samurai-native.git
