@@ -230,9 +230,6 @@ static void __uncaughtSignalHandler( int signal )
 + (void)classAutoLoad
 {
 #if __SAMURAI_DEBUG__
-    
-    #undef	signal
-    
 	NSSetUncaughtExceptionHandler( &__uncaughtExceptionHandler );
 	
 	signal( SIGABRT,	&__uncaughtSignalHandler );
