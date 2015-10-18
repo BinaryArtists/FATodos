@@ -6,6 +6,9 @@
 #import "MainVC.h"
 #import "MemoVC.h"
 #import "Memo.h"
+#import "FourQuadrantVC.h"
+#import "NoteVC.h"
+#import "PomodoroVC.h"
 
 @interface AppDelegate ()
 
@@ -86,6 +89,9 @@
     [[Routable sharedRouter] map:[self PUSHUP_VC] toController:[PushupVC class]];
     [[Routable sharedRouter] map:[self DIAGRAM_VC] toController:[DiagramVC class]];
     [[Routable sharedRouter] map:[self MEMO_VC] toController:[MemoVC class]];
+    [[Routable sharedRouter] map:[self NOTE_VC] toController:[NoteVC class]];
+    [[Routable sharedRouter] map:[self QUADRANT_VC] toController:[FourQuadrantVC class]];
+    [[Routable sharedRouter] map:[self POMODORO_VC] toController:[PomodoroVC class]];
 }
 
 @end
@@ -101,5 +107,6 @@
 @def_string( MEMO_VC,       @"vc.memo" )
 @def_string( NOTE_VC,       @"vc.note" )
 @def_string( QUADRANT_VC,   @"vc.quadrant" )
+@def_string( POMODORO_VC,   @"vc.pomodoro")
 
 @end

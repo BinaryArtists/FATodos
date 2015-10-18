@@ -61,4 +61,6 @@
 
 @string( QUADRANT_VC )
 
+@string( POMODORO_VC )
+
 @end

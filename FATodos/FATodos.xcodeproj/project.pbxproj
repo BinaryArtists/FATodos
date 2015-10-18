@@ -14,6 +14,12 @@
 		6A158E471B70B482007FE54F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A158E461B70B482007FE54F /* Images.xcassets */; };
 		6A158E4A1B70B482007FE54F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A158E481B70B482007FE54F /* LaunchScreen.xib */; };
 		6A158E561B70B482007FE54F /* FATodosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A158E551B70B482007FE54F /* FATodosTests.m */; };
+		6A6DA09D1BD343F400A359C0 /* FourQuadrantVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6DA09B1BD343F400A359C0 /* FourQuadrantVC.m */; settings = {ASSET_TAGS = (); }; };
+		6A6DA09E1BD343F400A359C0 /* FourQuadrantVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A6DA09C1BD343F400A359C0 /* FourQuadrantVC.xib */; settings = {ASSET_TAGS = (); }; };
+		6A6DA0A21BD3440500A359C0 /* NoteVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6DA0A01BD3440500A359C0 /* NoteVC.m */; settings = {ASSET_TAGS = (); }; };
+		6A6DA0A31BD3440500A359C0 /* NoteVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A6DA0A11BD3440500A359C0 /* NoteVC.xib */; settings = {ASSET_TAGS = (); }; };
+		6A6DA0AC1BD3445B00A359C0 /* PomodoroVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6DA0AA1BD3445B00A359C0 /* PomodoroVC.m */; settings = {ASSET_TAGS = (); }; };
+		6A6DA0AD1BD3445B00A359C0 /* PomodoroVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A6DA0AB1BD3445B00A359C0 /* PomodoroVC.xib */; settings = {ASSET_TAGS = (); }; };
 		6A95EC101BB992E300B14EA5 /* MemoEditVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A95EC0E1BB992E300B14EA5 /* MemoEditVC.m */; };
 		6A95EC111BB992E300B14EA5 /* MemoEditVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A95EC0F1BB992E300B14EA5 /* MemoEditVC.xib */; };
 		6A95EC1A1BBA391B00B14EA5 /* Component.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A95EC191BBA391B00B14EA5 /* Component.m */; };
@@ -525,6 +531,15 @@
 		6A158E4F1B70B482007FE54F /* FATodosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FATodosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A158E541B70B482007FE54F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A158E551B70B482007FE54F /* FATodosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FATodosTests.m; sourceTree = "<group>"; };
+		6A6DA09A1BD343F400A359C0 /* FourQuadrantVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourQuadrantVC.h; sourceTree = "<group>"; };
+		6A6DA09B1BD343F400A359C0 /* FourQuadrantVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourQuadrantVC.m; sourceTree = "<group>"; };
+		6A6DA09C1BD343F400A359C0 /* FourQuadrantVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FourQuadrantVC.xib; sourceTree = "<group>"; };
+		6A6DA09F1BD3440500A359C0 /* NoteVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteVC.h; sourceTree = "<group>"; };
+		6A6DA0A01BD3440500A359C0 /* NoteVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteVC.m; sourceTree = "<group>"; };
+		6A6DA0A11BD3440500A359C0 /* NoteVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoteVC.xib; sourceTree = "<group>"; };
+		6A6DA0A91BD3445B00A359C0 /* PomodoroVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PomodoroVC.h; sourceTree = "<group>"; };
+		6A6DA0AA1BD3445B00A359C0 /* PomodoroVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PomodoroVC.m; sourceTree = "<group>"; };
+		6A6DA0AB1BD3445B00A359C0 /* PomodoroVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PomodoroVC.xib; sourceTree = "<group>"; };
 		6A95EC0D1BB992E300B14EA5 /* MemoEditVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoEditVC.h; sourceTree = "<group>"; };
 		6A95EC0E1BB992E300B14EA5 /* MemoEditVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoEditVC.m; sourceTree = "<group>"; };
 		6A95EC0F1BB992E300B14EA5 /* MemoEditVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MemoEditVC.xib; sourceTree = "<group>"; };
@@ -1607,6 +1622,36 @@
 				6A158E541B70B482007FE54F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6A6DA0971BD343D300A359C0 /* FourQuadrant */ = {
+			isa = PBXGroup;
+			children = (
+				6A6DA09A1BD343F400A359C0 /* FourQuadrantVC.h */,
+				6A6DA09B1BD343F400A359C0 /* FourQuadrantVC.m */,
+				6A6DA09C1BD343F400A359C0 /* FourQuadrantVC.xib */,
+			);
+			path = FourQuadrant;
+			sourceTree = "<group>";
+		};
+		6A6DA0981BD343D300A359C0 /* Note */ = {
+			isa = PBXGroup;
+			children = (
+				6A6DA09F1BD3440500A359C0 /* NoteVC.h */,
+				6A6DA0A01BD3440500A359C0 /* NoteVC.m */,
+				6A6DA0A11BD3440500A359C0 /* NoteVC.xib */,
+			);
+			path = Note;
+			sourceTree = "<group>";
+		};
+		6A6DA0991BD343D300A359C0 /* Pomodoro */ = {
+			isa = PBXGroup;
+			children = (
+				6A6DA0A91BD3445B00A359C0 /* PomodoroVC.h */,
+				6A6DA0AA1BD3445B00A359C0 /* PomodoroVC.m */,
+				6A6DA0AB1BD3445B00A359C0 /* PomodoroVC.xib */,
+			);
+			path = Pomodoro;
 			sourceTree = "<group>";
 		};
 		6A95EC171BBA38B000B14EA5 /* Component */ = {
@@ -2932,9 +2977,10 @@
 		6ACFDDCE1B9C23FC0061DA35 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				6A6DA0971BD343D300A359C0 /* FourQuadrant */,
+				6A6DA0981BD343D300A359C0 /* Note */,
+				6A6DA0991BD343D300A359C0 /* Pomodoro */,
 				6AF4BD751BB3F5E30047A720 /* Memo */,
-				6AF4BD761BB3F5E30047A720 /* Note */,
-				6ACFE0061BA170720061DA35 /* FourQuadrant */,
 				6ACFE0071BA170720061DA35 /* Pushup */,
 				6ACFDFFF1BA16C380061DA35 /* Diagram */,
 				6ACFE01E1BA27BB20061DA35 /* MainVC.h */,
@@ -3155,13 +3201,6 @@
 			path = Diagram;
 			sourceTree = "<group>";
 		};
-		6ACFE0061BA170720061DA35 /* FourQuadrant */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = FourQuadrant;
-			sourceTree = "<group>";
-		};
 		6ACFE0071BA170720061DA35 /* Pushup */ = {
 			isa = PBXGroup;
 			children = (
@@ -3293,13 +3332,6 @@
 				6A95EC0F1BB992E300B14EA5 /* MemoEditVC.xib */,
 			);
 			path = Memo;
-			sourceTree = "<group>";
-		};
-		6AF4BD761BB3F5E30047A720 /* Note */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Note;
 			sourceTree = "<group>";
 		};
 		6AF4BD801BB441760047A720 /* Mantle */ = {
@@ -3523,13 +3555,16 @@
 				6AD283231BB17883008900FA /* Item_1_PickerCell.xib in Resources */,
 				6ACFDF181B9C23FD0061DA35 /* html.css in Resources */,
 				6AF4BDCA1BB52D040047A720 /* info.png in Resources */,
+				6A6DA09E1BD343F400A359C0 /* FourQuadrantVC.xib in Resources */,
 				6ACFE0321BA2C8630061DA35 /* Tock.wav in Resources */,
 				6ACFDF161B9C23FD0061DA35 /* html+native.css in Resources */,
 				6ACFE0221BA27BB20061DA35 /* MainVC.xib in Resources */,
 				6AF4BD731BB3E43B0047A720 /* ChinaCity.plist in Resources */,
 				6ACFDE581B9C23FD0061DA35 /* ServiceInspector.bundle in Resources */,
+				6A6DA0A31BD3440500A359C0 /* NoteVC.xib in Resources */,
 				6ACFDE551B9C23FD0061DA35 /* ServiceGrids.bundle in Resources */,
 				6AF4BDC81BB52D040047A720 /* crossMark.png in Resources */,
+				6A6DA0AD1BD3445B00A359C0 /* PomodoroVC.xib in Resources */,
 				6AF4BDC91BB52D040047A720 /* crossMark@2x.png in Resources */,
 				6A95EC111BB992E300B14EA5 /* MemoEditVC.xib in Resources */,
 				6AD47CB71BB772D600BBBC0F /* MemoCell.xib in Resources */,
@@ -3703,12 +3738,14 @@
 				6ACFDE7B1B9C23FD0061DA35 /* Samurai_CSSNumberDeg.m in Sources */,
 				6ACFDE671B9C23FD0061DA35 /* ServiceTapspotView.m in Sources */,
 				6ACFDEBF1B9C23FD0061DA35 /* Samurai_HtmlElementCaption.m in Sources */,
+				6A6DA0AC1BD3445B00A359C0 /* PomodoroVC.m in Sources */,
 				6ACFDEBC1B9C23FD0061DA35 /* Samurai_HtmlElementBr.m in Sources */,
 				6ACFDEA81B9C23FD0061DA35 /* UITextField+Html.m in Sources */,
 				6ACFDF301B9C23FD0061DA35 /* katana.tab.c in Sources */,
 				6ACFDFF91BA127660061DA35 /* NSDictionary+Params.m in Sources */,
 				6ACFDEA01B9C23FD0061DA35 /* UIPageControl+Html.m in Sources */,
 				6ACFDFAA1B9C2E740061DA35 /* ZIMSqlShowTablesStatement.m in Sources */,
+				6A6DA0A21BD3440500A359C0 /* NoteVC.m in Sources */,
 				6ACFDDF51B9C23FD0061DA35 /* Samurai_Signal.m in Sources */,
 				6ACFDFA31B9C2E740061DA35 /* ZIMSqlExpression.m in Sources */,
 				6ACFDECE1B9C23FD0061DA35 /* Samurai_HtmlElementH2.m in Sources */,
@@ -3822,6 +3859,7 @@
 				6ACFDE111B9C23FD0061DA35 /* Samurai_UICollectionViewCell.m in Sources */,
 				6ACFDE6A1B9C23FD0061DA35 /* UIViewController+DataBinding.m in Sources */,
 				6ACFDEE31B9C23FD0061DA35 /* Samurai_HtmlElementLegend.m in Sources */,
+				6A6DA09D1BD343F400A359C0 /* FourQuadrantVC.m in Sources */,
 				6ACFDEEB1B9C23FD0061DA35 /* Samurai_HtmlElementPre.m in Sources */,
 				6ACFDE031B9C23FD0061DA35 /* Samurai_ServiceInstance.m in Sources */,
 				6ACFDEDE1B9C23FD0061DA35 /* Samurai_HtmlElementInputRadio.m in Sources */,

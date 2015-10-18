@@ -21,6 +21,8 @@
 @property (nonatomic, strong) UserBoxView *         sitsupView;
 @property (nonatomic, strong) UserBoxView *         memoView;
 @property (nonatomic, strong) UserBoxView *         noteView;
+@property (nonatomic, strong) UserBoxView *         fourQuadrantView;
+@property (nonatomic, strong) UserBoxView *         pomodoroView;
 
 @property (nonatomic, strong) AFViewShaker *        viewShaker;
 
@@ -74,23 +76,23 @@
     
     [self.scrollView addUserView:self.noteView];
     
-    UserBoxView *boxView = [[UserBoxView alloc] init];
-    [boxView.displayTextLabel setText:[s FourQuadrant]];
-    [boxView.userImageView setImage:[UIImage imageNamed:@"userdefault.jpg"]];
+    self.fourQuadrantView = [[UserBoxView alloc] init];
+    [self.fourQuadrantView.displayTextLabel setText:[s FourQuadrant]];
+    [self.fourQuadrantView.userImageView setImage:[UIImage imageNamed:@"userdefault.jpg"]];
     
-    [self.scrollView addUserView:boxView];
+    [self.scrollView addUserView:self.fourQuadrantView];
     
-    boxView = [[UserBoxView alloc] init];
-    [boxView.displayTextLabel setText:[NSString stringWithFormat:@"啦啦啦啦啦"]];
-    [boxView.userImageView setImage:[UIImage imageNamed:@"userdefault.jpg"]];
+    self.pomodoroView = [[UserBoxView alloc] init];
+    [self.pomodoroView.displayTextLabel setText:[s Pomodoro]];
+    [self.pomodoroView.userImageView setImage:[UIImage imageNamed:@"userdefault.jpg"]];
     
-    [self.scrollView addUserView:boxView];
+    [self.scrollView addUserView:self.pomodoroView];
     
     [self.scrollView bringViewAtIndexToFront:3 animated:YES];
     
     {
         // Init view shaker
-
+        // fixme：应该再做一层封装，让动作的主体，直接表现，而不是通过动作行为，来包含主题，在执行动作。
         self.viewShaker     = [[AFViewShaker alloc] initWithView:self.noteView];
     }
 }
