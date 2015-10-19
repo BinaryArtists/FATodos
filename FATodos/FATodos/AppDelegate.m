@@ -9,6 +9,12 @@
 #import "FourQuadrantVC.h"
 #import "NoteVC.h"
 #import "PomodoroVC.h"
+#import "ServiceMonitor.h"
+#import "ServiceBorder.h"
+#import "ServiceGesture.h"
+#import "ServiceGrids.h"
+#import "ServiceInspector.h"
+#import "ServiceTapspot.h"
 
 @interface AppDelegate ()
 
@@ -16,11 +22,10 @@
 
 @implementation AppDelegate
 
-- (void)load {
-    [super load];
++ (void)initialize {
+    [super initialize];
     
-    // load classes
-    [SamuraiComponent load];
+    [self doConfig];
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -96,7 +101,7 @@
 
 @end
 
-#pragma mark -
+#pragma mark - AppDelegate (ViewRoutable)
 
 @implementation AppDelegate (ViewRoutable)
 
@@ -110,3 +115,26 @@
 @def_string( POMODORO_VC,   @"vc.pomodoro")
 
 @end
+
+#pragma mark - AppDelegate (configuration)
+
+@implementation AppDelegate (configuration)
+
++ (void)doConfig {
+    [self configSamuraiFramework];
+}
+
++ (void)configSamuraiFramework {
+    // load classes
+    [SamuraiComponent load];
+    
+    // fixme: 如下，为何会影响statusBar的显示情况
+    [[SamuraiServiceLoader sharedInstance] serviceExcept:[ServiceMonitor class]];
+    [[SamuraiServiceLoader sharedInstance] serviceExcept:[ServiceBorder class]];
+    [[SamuraiServiceLoader sharedInstance] serviceExcept:[ServiceGrids class]];
+    [[SamuraiServiceLoader sharedInstance] serviceExcept:[ServiceGesture class]];
+    [[SamuraiServiceLoader sharedInstance] serviceExcept:[ServiceInspector class]];
+}
+
+@end
+

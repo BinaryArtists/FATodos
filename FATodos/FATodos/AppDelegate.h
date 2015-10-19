@@ -45,7 +45,7 @@
 
 @end
 
-#pragma mark -
+#pragma mark - AppDelegate (ViewRoutable)
 
 @interface AppDelegate (ViewRoutable)
 
@@ -64,3 +64,14 @@
 @string( POMODORO_VC )
 
 @end
+
+#pragma mark - AppDelegate (configuration)
+
+@interface AppDelegate (configuration)
+
++ (void)doConfig;
+
++ (void)configSamuraiFramework;
+
+@end
+
