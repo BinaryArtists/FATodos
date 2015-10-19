@@ -23,8 +23,7 @@
 @implementation AppDelegate
 
 + (void)initialize {
-    [super initialize];
-    
+    // 应用配置
     [self doConfig];
 }
 
@@ -121,7 +120,24 @@
 @implementation AppDelegate (configuration)
 
 + (void)doConfig {
+    [self configNetwork];
+    
+    // 配置 samurai 框架
     [self configSamuraiFramework];
+    
+    // 配置 外观
+    [self configAppearance];
+    
+    // 配置 数据库
+    [self configDatabase];
+}
+
++ (void)configNetwork {
+    
+}
+
++ (void)configAppearance {
+    
 }
 
 + (void)configSamuraiFramework {
@@ -134,6 +150,10 @@
     [[SamuraiServiceLoader sharedInstance] serviceExcept:[ServiceGrids class]];
     [[SamuraiServiceLoader sharedInstance] serviceExcept:[ServiceGesture class]];
     [[SamuraiServiceLoader sharedInstance] serviceExcept:[ServiceInspector class]];
+}
+
++ (void)configDatabase {
+    
 }
 
 @end
