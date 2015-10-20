@@ -41,3 +41,5 @@ target :FATodosTests, :exclusive => true do
     pod 'Kiwi'
 end
 
+pod 'DateTools'
+

@@ -58,6 +58,7 @@ install_resource()
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_resource "DateTools/DateTools/DateTools.bundle"
   install_resource "FlatUIKit/Resources/flat-ui-icons-regular.ttf"
   install_resource "FlatUIKit/Resources/Lato-Bold.ttf"
   install_resource "FlatUIKit/Resources/Lato-Italic.ttf"
@@ -65,6 +66,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "FlatUIKit/Resources/Lato-Regular.ttf"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_resource "DateTools/DateTools/DateTools.bundle"
   install_resource "FlatUIKit/Resources/flat-ui-icons-regular.ttf"
   install_resource "FlatUIKit/Resources/Lato-Bold.ttf"
   install_resource "FlatUIKit/Resources/Lato-Italic.ttf"

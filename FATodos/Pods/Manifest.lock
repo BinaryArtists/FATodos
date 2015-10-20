@@ -23,6 +23,7 @@ PODS:
   - AFViewShaker (0.0.2)
   - AKPickerView (0.2.6)
   - ASCFlatUIColor (0.1.0)
+  - DateTools (1.7.0)
   - FlatUIKit (1.6.2)
   - FMDB (2.5):
     - FMDB/standard (= 2.5)
@@ -58,6 +59,7 @@ DEPENDENCIES:
   - AFViewShaker (~> 0.0.2)
   - AKPickerView
   - ASCFlatUIColor
+  - DateTools
   - FlatUIKit
   - FMDB
   - FMDBMigrationManager
@@ -80,6 +82,7 @@ SPEC CHECKSUMS:
   AFViewShaker: 7e4bc215ca3e92347b78da436fca74e1730b52e8
   AKPickerView: e31dcb9572c04d8439512315798862d9eb84b18f
   ASCFlatUIColor: 4219ca860d305a88f5240b9cd380e002d0e0b672
+  DateTools: 53288ee8b905fdc75897a1e6b5cc0144b14cba60
   FlatUIKit: 1b41f0d4952ce8d970d8479ce79df54a960242c4
   FMDB: 96e8f1bcc1329e269330f99770ad4285d9003e52
   FMDBMigrationManager: aa46d473c863b6ade5676c49b73f56540b358ad7
