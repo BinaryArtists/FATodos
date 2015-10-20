@@ -386,6 +386,7 @@
 		6A95EC311BBA596000B14EA5 /* SpeechComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A95EC301BBA596000B14EA5 /* SpeechComponent.m */; };
 		6A95EC3A1BBA65CF00B14EA5 /* IflyComponent_Config.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A95EC391BBA65CF00B14EA5 /* IflyComponent_Config.m */; };
 		6A95EC401BBA7F6700B14EA5 /* NSObject+FBKVOController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A95EC3F1BBA7F6700B14EA5 /* NSObject+FBKVOController.m */; };
+		6ACE61C51BD60B300026D315 /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACE61C41BD60B300026D315 /* Note.m */; settings = {ASSET_TAGS = (); }; };
 		6ACEBAF01BA94AD30011E3F7 /* UITableViewCell+Base.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACEBAEF1BA94AD30011E3F7 /* UITableViewCell+Base.m */; };
 		6ACEBAF71BA974810011E3F7 /* MGSwipeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACEBAF41BA974810011E3F7 /* MGSwipeButton.m */; };
 		6ACEBAF81BA974810011E3F7 /* MGSwipeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACEBAF61BA974810011E3F7 /* MGSwipeTableCell.m */; };
@@ -1270,6 +1271,8 @@
 		6A95EC391BBA65CF00B14EA5 /* IflyComponent_Config.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IflyComponent_Config.m; sourceTree = "<group>"; };
 		6A95EC3E1BBA7F6700B14EA5 /* NSObject+FBKVOController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+FBKVOController.h"; sourceTree = "<group>"; };
 		6A95EC3F1BBA7F6700B14EA5 /* NSObject+FBKVOController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+FBKVOController.m"; sourceTree = "<group>"; };
+		6ACE61C31BD60B300026D315 /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Note.h; sourceTree = "<group>"; };
+		6ACE61C41BD60B300026D315 /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Note.m; sourceTree = "<group>"; };
 		6ACEBAEE1BA94AD30011E3F7 /* UITableViewCell+Base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Base.h"; sourceTree = "<group>"; };
 		6ACEBAEF1BA94AD30011E3F7 /* UITableViewCell+Base.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Base.m"; sourceTree = "<group>"; };
 		6ACEBAF31BA974810011E3F7 /* MGSwipeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSwipeButton.h; sourceTree = "<group>"; };
@@ -3190,6 +3193,8 @@
 				6ACFDFD21B9E63DD0061DA35 /* Item1.m */,
 				6AD47CBD1BB77F9000BBBC0F /* Memo.h */,
 				6AD47CBE1BB77F9000BBBC0F /* Memo.m */,
+				6ACE61C31BD60B300026D315 /* Note.h */,
+				6ACE61C41BD60B300026D315 /* Note.m */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -3977,6 +3982,7 @@
 				6ACFDFCB1B9D40F40061DA35 /* MZDay.m in Sources */,
 				6A6DC7CF1BD3DFA800A359C0 /* ServiceGestureView.m in Sources */,
 				6A6DC7BA1BD3DFA800A359C0 /* Samurai_Image.m in Sources */,
+				6ACE61C51BD60B300026D315 /* Note.m in Sources */,
 				6A6DC7961BD3DFA800A359C0 /* Samurai_UISwitch.m in Sources */,
 				6A6DC7FA1BD3DFA800A359C0 /* Samurai_CSSNumberDpcm.m in Sources */,
 				6A6DC8381BD3DFA800A359C0 /* Samurai_HtmlElementBlockquote.m in Sources */,

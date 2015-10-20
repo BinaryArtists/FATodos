@@ -10,6 +10,21 @@
 
 @implementation Memo
 
-@def_string( fmt_Date, @"yyyy-MM-dd HH-mm" )
+@def_string( str_DateFormat, @"yyyy-MM-dd HH-mm" )
+
+@end
+
+#pragma mark - Item1 ( Utility )
+
+@implementation Memo ( Utility )
+
+- (NSDate *)dates {
+    return [NSDate dateWithString:self.date
+                     formatString:self.str_DateFormat];
+}
+
+- (void)setDates:(NSDate *)dates {
+    self.date   = [dates formattedDateWithFormat:self.str_DateFormat];
+}
 
 @end

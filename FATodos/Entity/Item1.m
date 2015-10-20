@@ -10,6 +10,8 @@
 
 @implementation Item1
 
+@def_string( str_DateFormat, @"yyyy-MM-dd" )
+
 #pragma mark - Property
 
 - (void)setType:(int32_t)type {
@@ -48,10 +50,24 @@
     }
 }
 
-#pragma mark - Utility
+@end
+
+#pragma mark - Item1 ( Utility )
+
+@implementation Item1 ( Utility )
 
 - (BOOL)isInit {
     return self.has_1 || self.has_2 || self.has_3 || self.name;
 }
 
+- (NSDate *)dates {
+    return [NSDate dateWithString:self.date
+                     formatString:self.str_DateFormat];
+}
+
+- (void)setDates:(NSDate *)dates {
+    self.date   = [dates formattedDateWithFormat:[self str_DateFormat]];
+}
+
 @end
+

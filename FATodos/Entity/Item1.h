@@ -12,8 +12,11 @@
 
 @interface Item1 : BaseEntity
 
+@string( str_DateFormat )
+
 @property (nonatomic, copy) NSString *      name;
 @property (nonatomic, assign) int32_t       type; // in
+@property (nonatomic, strong) NSString *    date;
 
 // has_x
 // 未设置、设置为0，都为NO
@@ -24,8 +27,15 @@
 @property (nonatomic, assign) BOOL          has_3;
 @property (nonatomic, assign) int32_t       num_3;
 
-#pragma mark - Utility
+@end
+
+#pragma mark - Item1 ( Utility )
+
+@interface Item1 ( Utility )
 
 @property (nonatomic, assign, readonly) BOOL isInit;
+
+- (NSDate *)dates; // Notice: 直接用复数形式，虽然不大好，但是方便。
+- (void)setDates:(NSDate *)dates;
 
 @end
