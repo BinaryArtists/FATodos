@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
+#import "NSDate+Compare.h"
+#import "NSDate+Format.h"
+
 @interface LibraryTime : NSObject
 
 @end

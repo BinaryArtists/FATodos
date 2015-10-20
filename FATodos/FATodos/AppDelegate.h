@@ -36,6 +36,10 @@
 //MSCDemo_UI
 //Voice2Note
 
+// todo:
+// pushup中日期管理
+// db 中加入日期的字段
+
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
 

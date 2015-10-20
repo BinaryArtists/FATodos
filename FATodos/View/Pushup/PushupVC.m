@@ -110,9 +110,19 @@
          *  or set up date range:
          */
         
-        [self.dayPicker setStartDate:[NSDate dateFromDay:28 month:9 year:2013] endDate:[NSDate dateFromDay:5 month:10 year:2013]];
+        // todo：这个应该是，纪录开始的那一天
         
-        [self.dayPicker setCurrentDate:[NSDate dateFromDay:3 month:10 year:2013] animated:NO];
+        // todo: 区间设置，不需要太大
+        [self.dayPicker setStartDate:[NSDate dateFromDay:7 month:9 year:2015]
+                             endDate:[NSDate dateFromDay:6 month:9 year:2016]];
+        
+        // todo:这个应该是当前天
+        NSDate *todayDate   = [NSDate new];
+        NSInteger year      = [todayDate year];
+        NSInteger month     = [todayDate month];
+        NSInteger day       = [todayDate day];
+        [self.dayPicker setCurrentDate:[NSDate dateFromDay:day month:month year:year]
+                              animated:NO];
     }
 
     // Need UITableViewController or...
