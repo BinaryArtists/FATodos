@@ -40,6 +40,8 @@
 // pushup中日期管理
 // db 中加入日期的字段
 // 重构LaunchScreen.xib
+// 根据http://www.cr173.com/html/18677_1.html这个重构storage模块
+// pushup 模块，删除不成功
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>

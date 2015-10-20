@@ -57,6 +57,10 @@
 @implementation Item1 ( Utility )
 
 - (BOOL)isInit {
+    if (!self.date) {
+        return NO;
+    }
+    
     return self.has_1 || self.has_2 || self.has_3 || self.name;
 }
 

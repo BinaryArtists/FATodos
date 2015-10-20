@@ -14,6 +14,7 @@
 
 @string( SQL_TABLE_NAME_ITEM1 )
 @string( SQL_TABLE_ELEMENT_NAME_TYPE )
+@string( SQL_TABLE_ELEMENT_NAME_DATE )
 @string( SQL_TABLE_ELEMENT_NAME_NUM1 )
 @string( SQL_TABLE_ELEMENT_NAME_NUM2 )
 @string( SQL_TABLE_ELEMENT_NAME_NUM3 )
@@ -28,6 +29,7 @@
 
 @def_string( SQL_TABLE_NAME_ITEM1, @"table_item1" )
 @def_string( SQL_TABLE_ELEMENT_NAME_TYPE, @"type" )
+@def_string( SQL_TABLE_ELEMENT_NAME_DATE, @"date" )
 @def_string( SQL_TABLE_ELEMENT_NAME_NUM1, @"num_1" )
 @def_string( SQL_TABLE_ELEMENT_NAME_NUM2, @"num_2" )
 @def_string( SQL_TABLE_ELEMENT_NAME_NUM3, @"num_3" )
@@ -46,6 +48,7 @@
                 NSString *sql = [NSString stringWithFormat:@"CREATE TABLE IF NOT EXISTS %@ ("
                                  @"id INTEGER PRIMARY KEY AUTOINCREMENT,"
                                  @"type INTEGER,"
+                                 @"date VARCHAR(255),"
                                  @"num_1 INTEGER,"
                                  @"num_2 INTEGER,"
                                  @"num_3 INTEGER"
@@ -83,16 +86,19 @@
 - (void)addObject:(id)obj withCompletionBlock:(void (^)(BOOL isSucceed, id inserted))completionHandler {
     Item1 *item = obj;
     
+    NSAssert([item isInit], @"item 没有初始化");
+    
     NSAssert(completionHandler, @"- (void)addObject:(id)obj withCompletionBlock:(void (^)(BOOL))completionHandler");
     
     [self.dbQueue inDatabase:^(FMDatabase *db) {
         NSString *sql   = [NSString stringWithFormat:@"INSERT INTO %@ ("
                            @"type,"
+                           @"date,"
                            @"num_1,"
                            @"num_2,"
                            @"num_3"
                            @") values (?, ?, ?, ?)", [self SQL_TABLE_NAME_ITEM1]];
-        BOOL ret        = [db executeUpdate:sql, @(item.type), @(item.num_1), @(item.num_2), @(item.num_3)];
+        BOOL ret        = [db executeUpdate:sql, @(item.type), item.date, @(item.num_1), @(item.num_2), @(item.num_3)];
         
         if (ret) {
             item.id     = [db lastInsertRowId];
@@ -112,11 +118,12 @@
     [self.dbQueue inDatabase:^(FMDatabase *db) {
         NSString *sql   = [NSString stringWithFormat:@"UPDATE %@ SET "
                            @"type=?, "
+                           @"date=?, "
                            @"num_1=?, "
                            @"num_2=?, "
                            @"num_3=? "
                            @"WHERE %@=?", [self SQL_TABLE_NAME_ITEM1], [BaseEntity SQL_TABLE_ELEMENT_NAME_ID]];
-        BOOL ret        = [db executeUpdate:sql, @(item.type), @(item.num_1), @(item.num_2), @(item.num_3), @(item.id)];
+        BOOL ret        = [db executeUpdate:sql, @(item.type), item.date, @(item.num_1), @(item.num_2), @(item.num_3), @(item.id)];
 
         
         if (!ret) {
@@ -195,6 +202,7 @@
             
             item.id         = [rs longLongIntForColumn:[BaseEntity SQL_TABLE_ELEMENT_NAME_ID]];
             item.type       = [rs intForColumn:[self SQL_TABLE_ELEMENT_NAME_TYPE]];
+            item.date       = [rs stringForColumn:[self SQL_TABLE_ELEMENT_NAME_DATE]];
             item.num_1      = [rs intForColumn:[self SQL_TABLE_ELEMENT_NAME_NUM1]];
             item.num_2      = [rs intForColumn:[self SQL_TABLE_ELEMENT_NAME_NUM2]];
             item.num_3      = [rs intForColumn:[self SQL_TABLE_ELEMENT_NAME_NUM3]];
