@@ -43,3 +43,5 @@ end
 
 pod 'DateTools'
 
+pod 'iOS7Colors', '~> 2.0.0'
+

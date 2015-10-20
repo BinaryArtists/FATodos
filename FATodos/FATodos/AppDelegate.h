@@ -39,6 +39,7 @@
 // todo:
 // pushup中日期管理
 // db 中加入日期的字段
+// 重构LaunchScreen.xib
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>

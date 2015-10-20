@@ -34,6 +34,7 @@ PODS:
     - FMDB/common (~> 2.3)
   - FTGNotificationController (1.0)
   - GCDObjC (0.2.0)
+  - iOS7Colors (2.0.0)
   - JDFPeekaboo (0.2.1)
   - Kiwi (2.4.0)
   - KVOController (1.0.3)
@@ -65,6 +66,7 @@ DEPENDENCIES:
   - FMDBMigrationManager
   - FTGNotificationController
   - GCDObjC
+  - iOS7Colors (~> 2.0.0)
   - JDFPeekaboo
   - Kiwi
   - KVOController
@@ -88,6 +90,7 @@ SPEC CHECKSUMS:
   FMDBMigrationManager: aa46d473c863b6ade5676c49b73f56540b358ad7
   FTGNotificationController: 753218bec2d8f2627ef44308479e9548f23c2f47
   GCDObjC: adcd9941029e3628de539347d3a6777470a65998
+  iOS7Colors: db76f4b1b58c2b9607618358667c21cb96de87c4
   JDFPeekaboo: 24baf48f53e51210919f8160c1c235ccc7055021
   Kiwi: f49c9d54b28917df5928fe44968a39ed198cb8a8
   KVOController: 9fd8f0343670994e4b6f9f0b31f5a45663f3e1cf

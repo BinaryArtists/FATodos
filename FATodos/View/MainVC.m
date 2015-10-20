@@ -48,42 +48,49 @@
 
     self.pushupView = [[UserBoxView alloc] init];
     [self.pushupView.displayTextLabel setText:[s Pushup]];
+    [self.pushupView.displayTextLabel setTextColor:[UIColor iOS7darkBlueColor]];
     [self.pushupView.userImageView setImage:[UIImage imageNamed:@"userdefault.jpg"]];
 
     [self.scrollView addUserView:self.pushupView];
 
     self.dumbellView = [[UserBoxView alloc] init];
     [self.dumbellView.displayTextLabel setText:[s Dumbell]];
+    [self.dumbellView.displayTextLabel setTextColor:[UIColor iOS7darkBlueColor]];
     [self.dumbellView.userImageView setImage:[UIImage imageNamed:@"userdefault.jpg"]];
     
     [self.scrollView addUserView:self.dumbellView];
 
     self.sitsupView = [[UserBoxView alloc] init];
     [self.sitsupView.displayTextLabel setText:[s SitsUp]];
+    [self.sitsupView.displayTextLabel setTextColor:[UIColor iOS7darkBlueColor]];
     [self.sitsupView.userImageView setImage:[UIImage imageNamed:@"userdefault.jpg"]];
     
     [self.scrollView addUserView:self.sitsupView];
 
     self.memoView = [[UserBoxView alloc] init];
     [self.memoView.displayTextLabel setText:[s Memo]];
+    [self.memoView.displayTextLabel setTextColor:[UIColor iOS7darkBlueColor]];
     [self.memoView.userImageView setImage:[UIImage imageNamed:@"userdefault.jpg"]];
     
     [self.scrollView addUserView:self.memoView];
     
     self.noteView = [[UserBoxView alloc] init];
     [self.noteView.displayTextLabel setText:[s Note]];
+    [self.noteView.displayTextLabel setTextColor:[UIColor iOS7darkBlueColor]];
     [self.noteView.userImageView setImage:[UIImage imageNamed:@"userdefault.jpg"]];
     
     [self.scrollView addUserView:self.noteView];
     
     self.fourQuadrantView = [[UserBoxView alloc] init];
     [self.fourQuadrantView.displayTextLabel setText:[s FourQuadrant]];
+    [self.fourQuadrantView.displayTextLabel setTextColor:[UIColor iOS7darkBlueColor]];
     [self.fourQuadrantView.userImageView setImage:[UIImage imageNamed:@"userdefault.jpg"]];
     
     [self.scrollView addUserView:self.fourQuadrantView];
     
     self.pomodoroView = [[UserBoxView alloc] init];
     [self.pomodoroView.displayTextLabel setText:[s Pomodoro]];
+    [self.pomodoroView.displayTextLabel setTextColor:[UIColor iOS7darkBlueColor]];
     [self.pomodoroView.userImageView setImage:[UIImage imageNamed:@"userdefault.jpg"]];
     
     [self.scrollView addUserView:self.pomodoroView];

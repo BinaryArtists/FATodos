@@ -68,6 +68,7 @@
 #import "FBKVOController.h"
 #import "AFViewShaker.h"
 #import "DateTools.h"
+#import "UIColor+iOS7Colors.h"
 
 // Vendor
 #import "Mantle.h"
