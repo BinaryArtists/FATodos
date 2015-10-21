@@ -2,7 +2,7 @@
 //  UINavigationItem+MultipleItems.m
 //  QQing
 //
-//  Created by 李杰 on 2/15/15.
+//  Created by fallen.ink on 2/15/15.
 //
 //
 

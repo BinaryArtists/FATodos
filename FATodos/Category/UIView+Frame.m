@@ -2,7 +2,7 @@
 //  UIView+Frame.m
 //  QQing
 //
-//  Created by 李杰 on 2/20/15.
+//  Created by fallen.ink on 2/20/15.
 //
 //
 

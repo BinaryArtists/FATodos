@@ -2,7 +2,7 @@
 //  UIButton+Theme.h
 //  QQing
 //
-//  Created by 李杰 on 4/20/15.
+//  Created by fallen.ink on 4/20/15.
 //
 //
 

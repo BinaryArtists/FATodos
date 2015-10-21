@@ -2,7 +2,7 @@
 //  NSString+Size.m
 //  QQing
 //
-//  Created by 李杰 on 2/13/15.
+//  Created by fallen.ink on 2/13/15.
 //
 //
 

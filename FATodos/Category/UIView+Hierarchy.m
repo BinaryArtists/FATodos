@@ -2,7 +2,7 @@
 //  UIView+Hierarchy.m
 //  QQing
 //
-//  Created by 李杰 on 2/22/15.
+//  Created by fallen.ink on 2/22/15.
 //
 //
 

@@ -2,7 +2,7 @@
 //  macrodef.h
 //  FATodos
 //
-//  Created by 李杰 on 9/9/15.
+//  Created by fallen.ink on 9/9/15.
 //  Copyright (c) 2015 fallen.ink. All rights reserved.
 //
 //  所有宏定义，都遵循下划线风格

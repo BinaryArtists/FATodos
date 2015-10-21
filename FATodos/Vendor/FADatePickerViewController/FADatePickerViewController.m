@@ -2,7 +2,7 @@
 //  QQDatePickerViewController.m
 //  QQing
 //
-//  Created by 李杰 on 5/4/15.
+//  Created by fallen.ink on 5/4/15.
 //
 //
 
