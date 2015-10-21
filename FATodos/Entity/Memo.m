@@ -10,8 +10,6 @@
 
 @implementation Memo
 
-@def_string( str_DateFormat, @"yyyy-MM-dd HH-mm" )
-
 @end
 
 #pragma mark - Item1 ( Utility )

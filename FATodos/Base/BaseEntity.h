@@ -12,9 +12,29 @@
 
 @string( SQL_TABLE_ELEMENT_NAME_ID )
 
-@property (nonatomic, assign) int64_t id;
+@string( str_DateFormat )
+@string( str_TimeFormat )
+
+@property (nonatomic, assign) int64_t       id;
+@property (nonatomic, copy) NSString *      name;
+@property (nonatomic, strong) NSString *    date;
+@property (nonatomic, strong) NSString *    time;
 
 // todo：利用 + (const char *)attributesForProperty:(NSString *)property
 
+
+@end
+
+#pragma mark - BaseEntity ( Database )
+
+#pragma mark - BaseEntity ( Utility )
+
+@interface BaseEntity ( Utility )
+
+- (NSDate *)dates; // Notice: 直接用复数形式，虽然不大好，但是方便。
+- (void)setDates:(NSDate *)dates;
+
+- (NSDate *)times;
+- (void)setTimes:(NSDate *)times;
 
 @end

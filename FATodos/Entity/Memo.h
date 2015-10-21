@@ -10,11 +10,8 @@
 
 @interface Memo : BaseEntity
 
-@string( str_DateFormat )
-
 @property (nonatomic, strong) NSString *    title;
 @property (nonatomic, strong) NSString *    content;
-@property (nonatomic, strong) NSString *    date;
 
 @end
 
