@@ -6,8 +6,8 @@
 //  Copyright (c) 2015 fallen.ink. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "RoutableVC.h"
 
-@interface DiagramVC : UIViewController <RoutableProt>
+@interface DiagramVC : RoutableVC
 
 @end

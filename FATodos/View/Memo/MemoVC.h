@@ -6,8 +6,8 @@
 //  Copyright (c) 2015 fallen.ink. All rights reserved.
 //
 
-#import "BaseView.h"
+#import "RoutableVC.h"
 
-@interface MemoVC : BaseView
+@interface MemoVC : RoutableVC
 
 @end

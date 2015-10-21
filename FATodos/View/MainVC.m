@@ -36,7 +36,6 @@
     [super viewDidLoad];
     
     self.title                              = [s APP_NAME];
-    self.edgesForExtendedLayout             = UIRectEdgeNone;
     
     [self.view setBackgroundColor:[UIColor bgGrayColor]];
 

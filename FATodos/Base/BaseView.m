@@ -44,6 +44,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.edgesForExtendedLayout         = UIRectEdgeNone;
+    
     // todo: load cache
     NSMutableDictionary *bundle    = [NSMutableDictionary new];
     [self onLoadInstanceState:bundle];

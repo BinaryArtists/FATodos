@@ -6,10 +6,10 @@
 //  Copyright (c) 2015 fallen.ink. All rights reserved.
 //
 
-#import "BaseView.h"
+#import "RoutableVC.h"
 
 // todo：同时支持 语音、文字
 
-@interface MemoEditVC : BaseView
+@interface MemoEditVC : RoutableVC
 
 @end

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RoutableVC : UIViewController <RoutableProt>
+@interface RoutableVC : BaseView <RoutableProt>
 
 @property (nonatomic, strong) NSDictionary *params;
 

@@ -6,8 +6,8 @@
 //  Copyright © 2015 fallen.ink. All rights reserved.
 //
 
-#import "BaseView.h"
+#import "RoutableVC.h"
 
-@interface PomodoroVC : BaseView
+@interface PomodoroVC : RoutableVC
 
 @end
