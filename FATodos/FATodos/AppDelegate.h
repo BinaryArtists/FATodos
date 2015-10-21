@@ -42,6 +42,8 @@
 // 重构LaunchScreen.xib
 // 根据http://www.cr173.com/html/18677_1.html这个重构storage模块
 // pushup 模块，删除不成功
+// pushup的条目，展开、收缩后，会有一条线没有了。
+// pushup的条目，展开选择个数的时候，没有立即反馈，还需要重置。
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>

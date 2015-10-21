@@ -86,8 +86,6 @@
 - (void)addObject:(id)obj withCompletionBlock:(void (^)(BOOL isSucceed, id inserted))completionHandler {
     Item1 *item = obj;
     
-    NSAssert([item isInit], @"item 没有初始化");
-    
     NSAssert(completionHandler, @"- (void)addObject:(id)obj withCompletionBlock:(void (^)(BOOL))completionHandler");
     
     [self.dbQueue inDatabase:^(FMDatabase *db) {
