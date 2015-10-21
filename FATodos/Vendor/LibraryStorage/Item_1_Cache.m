@@ -95,7 +95,7 @@
                            @"num_1,"
                            @"num_2,"
                            @"num_3"
-                           @") values (?, ?, ?, ?)", [self SQL_TABLE_NAME_ITEM1]];
+                           @") values (?, ?, ?, ?, ?)", [self SQL_TABLE_NAME_ITEM1]];
         BOOL ret        = [db executeUpdate:sql, @(item.type), item.date, @(item.num_1), @(item.num_2), @(item.num_3)];
         
         if (ret) {
@@ -125,7 +125,7 @@
 
         
         if (!ret) {
-            NSLog(@"- (void)removeObjectById:(int64_t)id_");
+            NSLog(@"- (void)updateObject:(id)obj");
         }
     }];
 }
