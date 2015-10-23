@@ -22,6 +22,10 @@
 
 // todo：利用 + (const char *)attributesForProperty:(NSString *)property
 
+#pragma mark - Template method
+
+- (BOOL)isInit;
+- (BOOL)isComplete;
 
 @end
 
@@ -36,5 +40,10 @@
 
 - (NSDate *)times;
 - (void)setTimes:(NSDate *)times;
+
+/**
+ *  判断entity的生日
+ */
+- (BOOL)isBorn:(NSDate *)date;
 
 @end

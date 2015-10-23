@@ -40,6 +40,16 @@
     
 }
 
+#pragma mark - Template method
+
+- (BOOL)isInit {
+    return YES;
+}
+
+- (BOOL)isComplete {
+    return YES;
+}
+
 @end
 
 #pragma mark - BaseEntity ( Database )
@@ -64,6 +74,10 @@
 
 - (void)setTimes:(NSDate *)times {
     self.time   = [times formattedDateWithFormat:self.str_TimeFormat];
+}
+
+- (BOOL)isBorn:(NSDate *)date {
+    return [[self dates] isSameDay:date];
 }
 
 @end

@@ -6,6 +6,20 @@ Many app about TODO, but it is my own.
 走走：计划点什么
 停停：写下点什么
 
+## 日志
+
+1. 卡片式，可以很长，可参考如下：
+    a. https://github.com/cwRichardKim/TinderSimpleSwipeCards
+    b. https://github.com/zhxnlai/ZLSwipeableView
+2. 往右滑动：上一天；往左：下一天；往下：当天较早；往上：当天较晚；
+    tap
+    二指展开
+    (3dtouch下，选中，重按进入)
+        进入编辑状态；
+    二指收缩
+        推出编辑状态；
+
+
 TODO：
 1. need 4 quadrant
 2. need sqlite

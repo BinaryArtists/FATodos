@@ -111,7 +111,8 @@
         // todo：这个应该是，纪录开始的那一天
         
         // todo: 区间设置，不需要太大
-        [self.dayPicker setStartDate:[NSDate dateFromDay:7 month:9 year:2015]
+        [self.dayPicker setStartDate:[NSDate dateFromDay:7 month:9 year:2015] // fixme: 接口内部能处理的，
+                                                                            // 外部就应该保持简单，比如直接传入nsdate对象，不进行约束
                              endDate:[NSDate dateFromDay:6 month:9 year:2016]];
         
         // todo:这个应该是当前天
@@ -137,13 +138,7 @@
         [self setNavRightItemWithName:@"新增" target:self action:@selector(OnNavigationBarRightItem:)];
     }
     
-    [[Item_1_Cache sharedInstance] allObjectsUsingBlock:^(NSArray *allobjects) {
-        [self.tableData addObjectsFromArray:allobjects];
-        
-        // fixme: 删除无效的
-        
-        [self.tableView reloadData];
-    }];
+    [self selectItemsWithDate:[NSDate new]];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -197,12 +192,13 @@
 
 - (void)dayPicker:(MZDayPicker *)dayPicker didSelectDay:(MZDay *)day {
     NSLog(@"Did select day %@", day.day);
+    NSLog(@"date = %@", day.date);
 
-    [self.tableView reloadData];
+    [self selectItemsWithDate:day.date];
 }
 
 - (void)dayPicker:(MZDayPicker *)dayPicker willSelectDay:(MZDay *)day {
-    NSLog(@"Will select day %@",day.day);
+    NSLog(@"Will select day %@", day);
 }
 
 #pragma mark - UITableViewDelegate & UITableViewDataSource
@@ -419,7 +415,7 @@
     return YES;
 }
 
-#pragma mark - Utility
+#pragma mark - Private method
 
 - (BOOL)isListEditing {
     __block BOOL is = NO;
@@ -447,6 +443,27 @@
     }];
     
     return idx_;
+}
+
+- (void)selectItemsWithDate:(NSDate *)date {
+    [[Item_1_Cache sharedInstance] allObjectsUsingBlock:^(NSArray *allobjects) {
+        // 移除所有
+        [self.tableData removeAllObjects];
+        
+        // 过滤出今天的
+        [allobjects enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            Item1 *item = obj;
+            if ([item isBorn:date]) {
+                [self.tableData addObject:obj];
+            }
+        }];
+        
+        // fixme: 删除无效的
+        
+        
+        // 重新加载列表视图
+        [self.tableView reloadData];
+    }];
 }
 
 #pragma mark - Property
