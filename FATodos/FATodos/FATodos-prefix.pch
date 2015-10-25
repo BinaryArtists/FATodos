@@ -69,6 +69,10 @@
 #import "AFViewShaker.h"
 #import "DateTools.h"
 #import "UIColor+iOS7Colors.h"
+#import "UIColor+MLPFlatColors.h"
+#import "ASCFlatUIColor.h"
+#import "ZLSwipeableView.h"
+#import "ZLPanGestureRecognizer.h"
 
 // Vendor
 #import "Mantle.h"

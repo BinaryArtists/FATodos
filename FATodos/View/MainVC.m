@@ -126,6 +126,8 @@
     } else if (selectedview == self.memoView) {
         [[Routable sharedRouter] open:[AppDelegate MEMO_VC] animated:YES];
     } else if (selectedview == self.noteView) {
+        [[Routable sharedRouter] open:[AppDelegate NOTE_VC] animated:YES];
+    } else {
         // bug: fixme，动画有问题！会先回到中间，然后震动.
         [self.viewShaker shakeWithDuration:0.6
                                 completion:^{
@@ -134,12 +136,6 @@
                                                                                                        forAlertType:AlertInfo];
                                     [alert show];
                                 }];
-    } else {
-        // fixme: 这个alert需要优化
-        AMSmoothAlertView *alert    = [[AMSmoothAlertView alloc] initFadeAlertWithTitle:@"Notice!"
-                                                                                andText:@"店铺还未开张!" andCancelButton:YES
-                                                                           forAlertType:AlertInfo];
-        [alert show];
     }
 }
 

@@ -375,6 +375,8 @@
 		6A6DC8B21BD3DFA900A359C0 /* tokenizer.c in Sources */ = {isa = PBXBuildFile; fileRef = 6A6DB8441BD3DFA500A359C0 /* tokenizer.c */; };
 		6A6DC8D21BD497DF00A359C0 /* AppAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6DC8D11BD497DF00A359C0 /* AppAppearance.m */; };
 		6A84CF781BDA3E5200B61858 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A84CF771BDA3E5200B61858 /* BaseTableViewCell.m */; };
+		6A84CF7F1BDD0F8300B61858 /* CardContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A84CF7C1BDD0F8300B61858 /* CardContentView.xib */; };
+		6A84CF801BDD0F8300B61858 /* CardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A84CF7E1BDD0F8300B61858 /* CardView.m */; };
 		6A95EC101BB992E300B14EA5 /* MemoEditVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A95EC0E1BB992E300B14EA5 /* MemoEditVC.m */; };
 		6A95EC111BB992E300B14EA5 /* MemoEditVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A95EC0F1BB992E300B14EA5 /* MemoEditVC.xib */; };
 		6A95EC1A1BBA391B00B14EA5 /* Component.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A95EC191BBA391B00B14EA5 /* Component.m */; };
@@ -1256,6 +1258,9 @@
 		6A6DC8D11BD497DF00A359C0 /* AppAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppAppearance.m; sourceTree = "<group>"; };
 		6A84CF761BDA3E5200B61858 /* BaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
 		6A84CF771BDA3E5200B61858 /* BaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
+		6A84CF7C1BDD0F8300B61858 /* CardContentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardContentView.xib; sourceTree = "<group>"; };
+		6A84CF7D1BDD0F8300B61858 /* CardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardView.h; sourceTree = "<group>"; };
+		6A84CF7E1BDD0F8300B61858 /* CardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardView.m; sourceTree = "<group>"; };
 		6A95EC0D1BB992E300B14EA5 /* MemoEditVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoEditVC.h; sourceTree = "<group>"; };
 		6A95EC0E1BB992E300B14EA5 /* MemoEditVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoEditVC.m; sourceTree = "<group>"; };
 		6A95EC0F1BB992E300B14EA5 /* MemoEditVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MemoEditVC.xib; sourceTree = "<group>"; };
@@ -1660,6 +1665,8 @@
 		6A6DA0981BD343D300A359C0 /* Note */ = {
 			isa = PBXGroup;
 			children = (
+				6A84CF7A1BDD0E6500B61858 /* cell */,
+				6A84CF7B1BDD0E6500B61858 /* view */,
 				6A6DA09F1BD3440500A359C0 /* NoteVC.h */,
 				6A6DA0A01BD3440500A359C0 /* NoteVC.m */,
 				6A6DA0A11BD3440500A359C0 /* NoteVC.xib */,
@@ -2876,6 +2883,23 @@
 			path = cell;
 			sourceTree = "<group>";
 		};
+		6A84CF7A1BDD0E6500B61858 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		6A84CF7B1BDD0E6500B61858 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				6A84CF7C1BDD0F8300B61858 /* CardContentView.xib */,
+				6A84CF7D1BDD0F8300B61858 /* CardView.h */,
+				6A84CF7E1BDD0F8300B61858 /* CardView.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		6A95EC171BBA38B000B14EA5 /* Component */ = {
 			isa = PBXGroup;
 			children = (
@@ -3653,6 +3677,7 @@
 				6AD47CBC1BB7732300BBBC0F /* MemoVC.xib in Resources */,
 				6AF4BDC71BB52D040047A720 /* checkMark@2x.png in Resources */,
 				6ACFDFE41BA0207F0061DA35 /* check@2x.png in Resources */,
+				6A84CF7F1BDD0F8300B61858 /* CardContentView.xib in Resources */,
 				6A6DC8971BD3DFA900A359C0 /* html.css in Resources */,
 				6ACFE0101BA170720061DA35 /* Item_1_Cell.xib in Resources */,
 				6AF4BDA81BB441760047A720 /* Info.plist in Resources */,
@@ -4186,6 +4211,7 @@
 				6A6DC8081BD3DFA800A359C0 /* Samurai_CSSNumberPt.m in Sources */,
 				6ACFDF941B9C2E740061DA35 /* ZIMOrmSelectStatement.m in Sources */,
 				6A6DC8611BD3DFA900A359C0 /* Samurai_HtmlElementLegend.m in Sources */,
+				6A84CF801BDD0F8300B61858 /* CardView.m in Sources */,
 				6A6DC7A81BD3DFA800A359C0 /* Samurai_DomWritter.m in Sources */,
 				6A6DC8AA1BD3DFA900A359C0 /* utf8.c in Sources */,
 				6AD47CBB1BB7732300BBBC0F /* MemoVC.m in Sources */,
