@@ -10,6 +10,8 @@
 #import "UIView+Frame.h"
 #import "NSString+Size.h"
 
+static const CGFloat kNavigationItemFontSize = 16.0f;
+
 @implementation UIViewController (UINavigationBar)
 @dynamic navTitleString;
 @dynamic navTitleView;
@@ -26,7 +28,7 @@
                   lineBreakMode:NSLineBreakByWordWrapping];  //一行宽度最大为 100 高度1000
 }
 
-#pragma mark - Settings
+#pragma mark - Navigation Titles
 
 - (NSString *)navTitleString {
     return self.navigationItem.title ? self.navigationItem.title : self.title;
@@ -76,6 +78,57 @@
         }
     }
 }
+
+#pragma mark - Navigation color
+
+- (void)setNavBarColor:(UIColor *)navBarColor {
+    self.navigationController.navigationBar.barTintColor = navBarColor;
+}
+
+- (UIColor*)navBarColor {
+    return self.navigationController.navigationBar.barTintColor;
+}
+
+- (void)setNavTitleColor:(UIColor *)navTitleColor {
+    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:navTitleColor}];
+    NSArray* titleLabels = [self.navigationItem.titleView allViewOfClass:[UILabel class]];
+    for (UILabel* label in titleLabels) {
+        label.textColor = navTitleColor;
+    }
+}
+
+- (UIColor*)navTitleColor {
+    UIColor* titleColor = [self.navigationController.navigationBar.titleTextAttributes objectForKey:NSForegroundColorAttributeName];
+    if (titleColor == nil) {
+        UILabel* titleLabel = (UILabel*)[self.navigationItem.titleView firstSubviewOfClass:[UILabel class]];
+        if (titleLabel) {
+            titleColor = titleLabel.textColor;
+        }
+    }
+    return titleColor;
+}
+
+- (void)setNavLeftItemTitleColor:(UIColor *)navItemTitleColor {
+    for (UIBarButtonItem* item in self.navigationItem.leftBarButtonItems) {
+        [item setTitleTextAttributes:@{NSForegroundColorAttributeName:navItemTitleColor} forState:UIControlStateNormal];
+        NSArray* allButtons = [item.customView allViewOfClass:[UIButton class]];
+        for (UIButton* tmpButton in allButtons) {
+            [tmpButton setTitleColor:navItemTitleColor];
+        }
+    }
+}
+
+- (UIColor*)navLeftItemTitleColor {
+    NSArray* buttonItems = self.navigationItem.leftBarButtonItems;
+    if (buttonItems.count > 0) {
+        UIBarButtonItem* item = [buttonItems firstObject];
+        return [[item titleTextAttributesForState:UIControlStateNormal] objectForKey:NSForegroundColorAttributeName];
+    } else {
+        return nil;
+    }
+}
+
+#pragma mark - Navigation button item
 
 - (void)setNavLeftItemWithImage:(NSString *)image target:(id)target action:(SEL)action {
     // 左边按钮
@@ -154,6 +207,34 @@
     } else {
         [self.navigationItem setRightBarButtonItem:rightBtn animated:NO];
     }
+}
+
+- (void)addNavRightItemWithImage:(NSString*)image position:(UINavigationItemPosition)position target:(id)target action:(SEL)action {
+    UIImage *nimg = [UIImage imageNamed:image];
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [btn setFrame:CGRectMake(0, 0, nimg.size.width, nimg.size.height)];
+    [btn setImage:nimg forState:UIControlStateNormal];
+    [btn addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *rightBtn = [[UIBarButtonItem alloc] initWithCustomView:btn];
+    
+    [self.navigationItem addRightBarButtonItem:rightBtn atPosition:position];
+}
+
+- (void)addNavRightItemWithName:(NSString*)name position:(UINavigationItemPosition)position target:(id)target action:(SEL)action {
+    NSString *rightTitle = name;
+    UIFont *titleLabelFont = [UIFont systemFontOfSize:kNavigationItemFontSize];
+    CGSize titleSize = [rightTitle sizeWithFont:titleLabelFont constrainedToSize:CGSizeMake(100, 1000) lineBreakMode:NSLineBreakByWordWrapping];  //一行宽度最大为 100 高度1000
+    
+    UIButton *t = [UIButton buttonWithType:UIButtonTypeCustom];
+    [t setFrame:CGRectMake(0, 0, titleSize.width, self.navigationController.navigationBar.frame.size.height)];
+    t.titleLabel.font = titleLabelFont;
+    [t setTitle:rightTitle forState:UIControlStateNormal];
+    [t setTitleColor:[UIColor colorWithRed:51.0/255 green:51.0/255 blue:51.0/255 alpha:1] forState:UIControlStateNormal];
+    [t addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
+    [t setBackgroundColor:[UIColor clearColor]];
+    UIBarButtonItem *rightBtn = [[UIBarButtonItem alloc] initWithCustomView:t];
+    
+    [self.navigationItem addRightBarButtonItem:rightBtn atPosition:position];
 }
 
 @end

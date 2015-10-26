@@ -30,8 +30,12 @@
 - (BOOL)containsSubView:(UIView *)subView;
 - (BOOL)containsSubViewOfClassType:(Class)classt;
 
--(UIView*)firstSubviewOfClass:(Class)classObj;
+//按类型取第一个子视图（所有层次，深度优先，不包含自身）
+- (UIView*)firstSubviewOfClass:(Class)classObj;
 
--(UIViewController*)firstTopViewController;
+//按类型过滤所有视图（所有层次，深度优先，包含自身）
+- (NSMutableArray*)allViewOfClass:(Class)viewClass;
+
+- (UIViewController*)firstTopViewController;
 
 @end

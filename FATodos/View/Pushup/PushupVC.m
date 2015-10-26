@@ -37,6 +37,8 @@
 
 @property (nonatomic, strong) JDFPeekabooCoordinator *scrollCoordinator;
 
+@property (nonatomic, assign) BOOL                          newItemButtonHidden;
+
 @end
 
 @implementation PushupVC
@@ -135,7 +137,7 @@
     }
     
     {
-        [self setNavRightItemWithName:@"新增" target:self action:@selector(OnNavigationBarRightItem:)];
+        self.newItemButtonHidden    = NO;
     }
     
     [self selectItemsWithDate:[NSDate new]];
@@ -484,6 +486,16 @@
                             backgroundColor:[UIColor green_1_color]],
              [MGSwipeButton buttonWithTitle:[s SitsUp]
                             backgroundColor:[UIColor blue_1_color]]];
+}
+
+- (void)setNewItemButtonHidden:(BOOL)newItemButtonHidden {
+    _newItemButtonHidden    = newItemButtonHidden;
+    
+    if (_newItemButtonHidden) {
+        [self setNavRightItemWithName:nil target:nil action:nil];
+    } else {
+        [self setNavRightItemWithName:@"新增" target:self action:@selector(OnNavigationBarRightItem:)];
+    }
 }
 
 @end

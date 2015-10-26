@@ -88,7 +88,7 @@
     return NO;
 }
 
--(UIView*)firstSubviewOfClass:(Class)classObj{
+- (UIView*)firstSubviewOfClass:(Class)classObj {
     for (UIView* subview in self.subviews) {
         if ([subview isKindOfClass:classObj]) {
             return subview;
@@ -97,7 +97,7 @@
     return nil;
 }
 
--(UIViewController*)firstTopViewController{
+- (UIViewController*)firstTopViewController {
     UIWindow* window = [UIApplication sharedApplication].keyWindow;
     for (UIResponder* responder = self.nextResponder; responder != window; responder = responder.nextResponder) {
         if ([responder isKindOfClass:[UIViewController class]]) {
@@ -105,6 +105,34 @@
         }
     }
     return nil;
+}
+
+//递归查找所有子视图（包含自身）
+- (void)findAllViewWithRootView:(UIView *)rootView resultArray:(NSMutableArray*)resultArray {
+    if (rootView == nil) {
+        return;
+    }
+    
+    [resultArray addObject:rootView];
+    for (UIView *aview in [rootView subviews]) {
+        [self findAllViewWithRootView:aview resultArray:resultArray];
+    }
+}
+
+- (NSMutableArray*)allViewOfClass:(Class)viewClass {
+    NSMutableArray* resultArray = [NSMutableArray new];
+    [self findAllViewWithRootView:self resultArray:resultArray];
+    if (viewClass) {
+        NSMutableArray* filteredArray = [NSMutableArray new];
+        for (UIView* view in resultArray) {
+            if ([view isMemberOfClass:viewClass]) {
+                [filteredArray addObject:view];
+            }
+        }
+        return filteredArray;
+    } else {
+        return resultArray;
+    }
 }
 
 @end
