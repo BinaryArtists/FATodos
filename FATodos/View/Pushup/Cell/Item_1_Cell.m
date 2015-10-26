@@ -17,6 +17,84 @@
 
 @implementation Item_1_Cell
 
+#pragma mark - Animate
+
+- (void)pushCellWithAnimation:(BOOL)animated direction:(const NSString *)direction {
+    [self pushCellWithAnimation:animated duration:kAnimateDuration direction:direction];
+}
+
+- (void)pushCellWithAnimation:(BOOL)animated duration:(NSTimeInterval)duration direction:(const NSString *)direction {
+    [self pushCellWithAnimation:animated duration:duration direction:direction completionBlock:nil];
+}
+
+- (void)pushCellWithAnimation:(BOOL)animated duration:(NSTimeInterval)duration direction:(const NSString *)direction completionBlock:(Block)completionHandler {
+    if ([direction isEqualToString:(NSString *)kAnimationDirectionUp]) {
+        NSAssert(NO, @"未实现");
+    } else if ([direction isEqualToString:(NSString *)kAnimationDirectionDown]) {
+        NSAssert(NO, @"未实现");
+    } else if ([direction isEqualToString:(NSString *)kAnimationDirectionLeft]) {
+        self.volatileConstantValue  = kScreenWidth;
+    } else if ([direction isEqualToString:(NSString *)kAnimationDirectionRight]) {
+        self.volatileConstantValue  = -kScreenWidth;
+    } else {
+        NSAssert(NO, @"不支持");
+    }
+    
+//    self.animateHorizontalConstraint.constant   = self.volatileConstantValue;
+    
+//    [self updateConstraintsIfNeeded];
+    
+    if (!animated) duration = 0.f;
+    
+    [UIView animateWithDuration:100.f
+                          delay:100.f
+                        options: UIViewAnimationOptionCurveEaseInOut
+                     animations:^{
+                         self.volatileConstantValue = 0;
+                         self.animateHorizontalConstraint.constant  = 0;
+                         
+//                         [self setNeedsUpdateConstraints];
+                     } completion:^(BOOL finished) {
+                         if (finished && completionHandler) {
+                             completionHandler();
+                         }
+                     }];
+}
+
+- (void)popCellWithAnimation:(BOOL)animated {
+    [self popCellWithAnimation:animated duration:kAnimateDuration];
+}
+
+- (void)popCellWithAnimation:(BOOL)animated duration:(NSTimeInterval)duration {
+    [self popCellWithAnimation:animated duration:duration completionBlock:nil];
+}
+
+- (void)popCellWithAnimation:(BOOL)animated duration:(NSTimeInterval)duration completionBlock:(Block)comletionHandler {
+    
+    if (!animated) duration = 0.f;
+    
+    [UIView animateWithDuration:duration
+                          delay:0.f
+                        options: UIViewAnimationOptionCurveEaseInOut
+                     animations:^{
+                         self.volatileConstantValue = kScreenWidth;
+                         
+                         [self setNeedsUpdateConstraints];
+                     } completion:^(BOOL finished) {
+                         if (finished && comletionHandler) {
+                             comletionHandler();
+                         }
+                     }];
+}
+
+- (void)updateConstraints {
+    [super updateConstraints];
+    
+//    self.animateHorizontalConstraint.constant   = kScreenWidth;//self.volatileConstantValue;
+}
+
+#pragma mark - Normal
+
 + (UINib *)nib {
     return [UINib nibWithNibName:NSStringFromClass([self class]) bundle:nil];
 }

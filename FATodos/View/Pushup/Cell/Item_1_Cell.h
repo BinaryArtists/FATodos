@@ -8,8 +8,30 @@
 
 #import <UIKit/UIKit.h>
 
+// 常量定义
+const static NSString *kAnimationDirectionLeft  = @"left"; // 向左
+const static NSString *kAnimationDirectionRight  = @"right"; // 向右
+const static NSString *kAnimationDirectionUp  = @"up";
+const static NSString *kAnimationDirectionDown  = @"down";
+
+const static NSTimeInterval kAnimateDuration    = 2.f;
+
 @interface Item_1_Cell : MGSwipeTableCell
 
+// Animation
+@property (weak, nonatomic) IBOutlet UIView *animateHolderView;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *animateHorizontalConstraint;
+@property (nonatomic, assign) CGFloat volatileConstantValue;
+
+- (void)pushCellWithAnimation:(BOOL)animated direction:(const NSString *)direction;
+- (void)pushCellWithAnimation:(BOOL)animated duration:(NSTimeInterval)duration direction:(const NSString *)direction;
+- (void)pushCellWithAnimation:(BOOL)animated duration:(NSTimeInterval)duration direction:(const NSString *)direction completionBlock:(Block)completionHandler;
+
+- (void)popCellWithAnimation:(BOOL)animated; // 默认：向右
+- (void)popCellWithAnimation:(BOOL)animated duration:(NSTimeInterval)duration;
+- (void)popCellWithAnimation:(BOOL)animated duration:(NSTimeInterval)duration completionBlock:(Block)comletionHandler;
+
+// Outlets
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *round_3_titleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *round_2_titleLabel;

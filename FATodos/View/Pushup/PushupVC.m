@@ -37,6 +37,7 @@
 
 @property (nonatomic, strong) JDFPeekabooCoordinator *scrollCoordinator;
 
+@property (nonatomic, assign) BOOL                          shouldAnimateTableView;
 @property (nonatomic, assign) BOOL                          newItemButtonHidden;
 @property (nonatomic, strong) NSDate *                      today;
 
@@ -255,6 +256,16 @@
         
         [cell setModel:item];
         
+        cell.animateHorizontalConstraint.constant   = kScreenWidth;
+        
+        // 当加载到最后一个的时候，开始动画
+        if(indexPath.row == ((NSIndexPath *)[[tableView indexPathsForVisibleRows] lastObject]).row){
+            
+            if (self.shouldAnimateTableView) {
+                [self animate:tableView];
+            }
+        }
+        
         return cell;
     } else if ([model isKindOfClass:[PickerModel class]]) {
         PickerModel *pickerModel        = model;
@@ -421,6 +432,19 @@
     return YES;
 }
 
+#pragma mark - Table view aniamte
+
+- (void)animate:(UITableView *)tableView {
+    self.shouldAnimateTableView = NO;
+    
+    for (Item_1_Cell *aCell in tableView.visibleCells) {
+        if ([tableView.visibleCells indexOfObject:aCell] % 2)
+            [aCell pushCellWithAnimation:YES direction:kAnimationDirectionLeft];
+        else
+            [aCell pushCellWithAnimation:YES direction:kAnimationDirectionRight];
+    }
+}
+
 #pragma mark - Private method
 
 - (BOOL)isListEditing {
@@ -469,6 +493,9 @@
         
         // 重新加载列表视图
         [self.tableView reloadData];
+        
+        // fixme：准备加载动画
+        self.shouldAnimateTableView = YES;
     }];
 }
 
