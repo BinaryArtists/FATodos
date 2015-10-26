@@ -14,14 +14,13 @@ const static NSString *kAnimationDirectionRight  = @"right"; // 向右
 const static NSString *kAnimationDirectionUp  = @"up";
 const static NSString *kAnimationDirectionDown  = @"down";
 
-const static NSTimeInterval kAnimateDuration    = 2.f;
+const static NSTimeInterval kAnimateDuration    = 0.7f;
 
 @interface Item_1_Cell : MGSwipeTableCell
 
 // Animation
 @property (weak, nonatomic) IBOutlet UIView *animateHolderView;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *animateHorizontalConstraint;
-@property (nonatomic, assign) CGFloat volatileConstantValue;
 
 - (void)pushCellWithAnimation:(BOOL)animated direction:(const NSString *)direction;
 - (void)pushCellWithAnimation:(BOOL)animated duration:(NSTimeInterval)duration direction:(const NSString *)direction;

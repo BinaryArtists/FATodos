@@ -256,13 +256,13 @@
         
         [cell setModel:item];
         
-        cell.animateHorizontalConstraint.constant   = kScreenWidth;
-        
-        // 当加载到最后一个的时候，开始动画
+        // 当加载完成，开始动画
         if(indexPath.row == ((NSIndexPath *)[[tableView indexPathsForVisibleRows] lastObject]).row){
             
             if (self.shouldAnimateTableView) {
-                [self animate:tableView];
+                self.shouldAnimateTableView = NO;
+                
+                [self performSelector:@selector(animate:) withObject:tableView afterDelay:0.1];
             }
         }
         
@@ -434,8 +434,14 @@
 
 #pragma mark - Table view aniamte
 
+/**
+ *  CGAffineTransformIdentity
+ 
+ *  todo: 研究下这个原因
+ */
+
 - (void)animate:(UITableView *)tableView {
-    self.shouldAnimateTableView = NO;
+    NSLog(@"cell.rows = %ld, indexpath.rows = %ld", [tableView.visibleCells count], [tableView.indexPathsForVisibleRows count]);
     
     for (Item_1_Cell *aCell in tableView.visibleCells) {
         if ([tableView.visibleCells indexOfObject:aCell] % 2)
@@ -444,6 +450,52 @@
             [aCell pushCellWithAnimation:YES direction:kAnimationDirectionRight];
     }
 }
+
+//- (IBAction)btnAction:(id)sender {
+//    //获取可见cells
+//    visibleCells = visibleTableView.visibleCells;
+//    NSLog(@"%@",visibleCells);
+//    
+//    UIButton *button = (UIButton*)sender;
+//    CGAffineTransform transform;
+//    double duration = 0.2;
+//    
+//    if (button.tag == 1) {
+//        transform = CGAffineTransformMakeTranslation(-320, 0);
+//    }else if(button.tag == 2){
+//        for (UITableViewCell *cell in visibleCells) {
+//            
+//            [UIView animateWithDuration:duration delay:0 options:0  animations:^
+//             {
+//                 cell.transform = CGAffineTransformIdentity;
+//                 
+//                 
+//             } completion:^(BOOL finished)
+//             {
+//                 
+//             }];
+//            duration+=0.1;
+//        }
+//        return;
+//    }else{
+//        transform = CGAffineTransformMakeTranslation(320, 0);
+//        
+//    }
+//    for (UITableViewCell *cell in visibleCells) {
+//        
+//        [UIView animateWithDuration:duration delay:0 options:0  animations:^
+//         {
+//             cell.transform = transform;
+//             
+//         } completion:^(BOOL finished)
+//         {
+//             
+//         }];
+//        duration+=0.1;
+//        
+//    }
+//    
+//}
 
 #pragma mark - Private method
 
