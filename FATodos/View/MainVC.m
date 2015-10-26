@@ -44,6 +44,7 @@
     
     self.scrollView.scrollViewDelegate      = self;
     self.scrollView.backgroundColor         = [UIColor clearColor];
+    self.scrollView.currentSize             = CGSizeMake(kScreenWidth, kScreenHeight-[UIUtils navigationBarHeight]-[UIUtils statusHeight]);
 
     self.pushupView = [[UserBoxView alloc] init];
     [self.pushupView.displayTextLabel setText:[s Pushup]];
@@ -94,12 +95,12 @@
     
     [self.scrollView addUserView:self.pomodoroView];
     
-    [self.scrollView bringViewAtIndexToFront:3 animated:YES];
+    [self.scrollView bringViewAtIndexToFront:5 animated:YES];
     
     {
         // Init view shaker
         // fixme：应该再做一层封装，让动作的主体，直接表现，而不是通过动作行为，来包含主题，在执行动作。
-        self.viewShaker     = [[AFViewShaker alloc] initWithView:self.noteView];
+        self.viewShaker     = [[AFViewShaker alloc] initWithViewsArray:@[self.fourQuadrantView, self.pomodoroView]];
     }
 }
 

@@ -15,7 +15,7 @@
 
 	NSMutableArray *views;
 
-	CGSize coverSize,currentSize;
+	CGSize coverSize;
 	float spaceFromCurrent;
 	
 	int  currentIndex, totalViews;
@@ -27,10 +27,13 @@
 	long velocity;
 	
     SystemSoundID soundID;
-
 }
 
 @property (nonatomic, unsafe_unretained) id <ScrollViewDelegate> scrollViewDelegate;
+
+// 默认为屏幕大小
+// 需要：实际的显示大小
+@property (nonatomic, assign) CGSize currentSize;
 
 - (void) bringViewAtIndexToFront:(int)index animated:(BOOL)animated;
 - (void) addUserView:(UserBoxView*)userBoxView;

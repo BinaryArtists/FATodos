@@ -24,6 +24,7 @@
 @implementation ScrollView
 
 @synthesize scrollViewDelegate;
+@synthesize currentSize;
 
 - (id)initWithCoder:(NSCoder *)aDecoder {
     if (self = [super initWithCoder:aDecoder]) {
