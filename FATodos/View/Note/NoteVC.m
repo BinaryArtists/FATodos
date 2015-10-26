@@ -128,35 +128,45 @@
         CardView *view = [[CardView alloc] initWithFrame:swipeableView.bounds];
         view.backgroundColor = [UIColor randomFlatColor];
         
+//        {
+//            UIView *contentView =
+//            [[[NSBundle mainBundle] loadNibNamed:@"CardContentView"
+//                                           owner:self
+//                                         options:nil] objectAtIndex:0];
+//            contentView.translatesAutoresizingMaskIntoConstraints = NO;
+//            [view addSubview:contentView];
+//            
+//            // This is important:
+//            // https://github.com/zhxnlai/ZLSwipeableView/issues/9
+//            
+//            // fixme: to use masonry
+//            NSDictionary *metrics = @{
+//                                      @"height" : @(view.bounds.size.height),
+//                                      @"width" : @(view.bounds.size.width)
+//                                      };
+//            NSDictionary *views = NSDictionaryOfVariableBindings(contentView);
+//            [view addConstraints:
+//             [NSLayoutConstraint
+//              constraintsWithVisualFormat:@"H:|[contentView(width)]"
+//              options:0
+//              metrics:metrics
+//              views:views]];
+//            [view addConstraints:[NSLayoutConstraint
+//                                  constraintsWithVisualFormat:
+//                                  @"V:|[contentView(height)]"
+//                                  options:0
+//                                  metrics:metrics
+//                                  views:views]];
+//        }
         {
-            UIView *contentView =
-            [[[NSBundle mainBundle] loadNibNamed:@"CardContentView"
-                                           owner:self
-                                         options:nil] objectAtIndex:0];
-            contentView.translatesAutoresizingMaskIntoConstraints = NO;
-            [view addSubview:contentView];
-            
-            // This is important:
-            // https://github.com/zhxnlai/ZLSwipeableView/issues/9
-            
-            // fixme: to use masonry
-            NSDictionary *metrics = @{
-                                      @"height" : @(view.bounds.size.height),
-                                      @"width" : @(view.bounds.size.width)
-                                      };
-            NSDictionary *views = NSDictionaryOfVariableBindings(contentView);
-            [view addConstraints:
-             [NSLayoutConstraint
-              constraintsWithVisualFormat:@"H:|[contentView(width)]"
-              options:0
-              metrics:metrics
-              views:views]];
-            [view addConstraints:[NSLayoutConstraint
-                                  constraintsWithVisualFormat:
-                                  @"V:|[contentView(height)]"
-                                  options:0
-                                  metrics:metrics
-                                  views:views]];
+            UITextView *textView =
+            [[UITextView alloc] initWithFrame:view.bounds];
+            textView.text = @"This UITextView was created programmatically.";
+            textView.backgroundColor = [UIColor clearColor];
+            textView.font = [UIFont systemFontOfSize:24];
+            textView.editable = NO;
+            textView.selectable = NO;
+            [view addSubview:textView];
         }
         
         return view;

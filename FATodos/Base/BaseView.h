@@ -10,4 +10,27 @@
 
 @interface BaseView : UIViewController <BaseViewProtocol>
 
+// onLoadInstanceState 提供数据恢复
+
+#pragma mark - Virtual method: Need to be overrided
+
+/**
+ *  Make constraints by code! Masonry is suggest.
+ 
+ *  Call it at viewDidLoad 's end.
+ */
+- (void)applyViewConstraints;
+
+/**
+ *  Update Xib's constraints when needed.
+ 
+ *  Call it where needed.
+ */
+- (void)updateVCviewsConstraints;
+
+/**
+ *  Just override api's method here.
+ */
+- (void)updateViewConstraints;
+
 @end

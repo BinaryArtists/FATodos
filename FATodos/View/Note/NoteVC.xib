@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9059"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NoteVC">
@@ -16,12 +16,18 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qce-GA-l1i" customClass="ZLSwipeableView">
-                    <rect key="frame" x="72" y="117" width="240" height="128"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qce-GA-l1i" customClass="ZLSwipeableView">
+                    <rect key="frame" x="40" y="40" width="240" height="488"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Qce-GA-l1i" secondAttribute="bottom" constant="40" id="IXo-V6-54L"/>
+                <constraint firstItem="Qce-GA-l1i" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="40" id="XbW-jE-0zG"/>
+                <constraint firstItem="Qce-GA-l1i" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="jRu-h2-2Ta"/>
+                <constraint firstAttribute="trailing" secondItem="Qce-GA-l1i" secondAttribute="trailing" constant="40" id="x6T-nc-fSo"/>
+            </constraints>
             <point key="canvasLocation" x="340" y="257"/>
         </view>
     </objects>

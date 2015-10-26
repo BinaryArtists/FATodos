@@ -71,6 +71,21 @@
     }
 }
 
+#pragma mark - Virtual methods
+
+- (void)applyViewConstraints {
+    // Do nothing...
+}
+
+- (void)updateVCviewsConstraints {
+    
+}
+
+- (void)updateViewConstraints {
+    [super updateViewConstraints];
+}
+
+
 #pragma mark - BaseViewProtocol
 
 /**
