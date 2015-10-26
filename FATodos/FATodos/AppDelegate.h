@@ -47,7 +47,6 @@
 // pushup的条目，如果超出屏幕了，‘新增’之后，需要直接定位到那里。
 // 作好db迁移
 // 这个https://github.com/tanis2000/MTLFMDBAdapter类似于sql-query-builder，哈哈
-// pushup 那边的首次加载动画，不成功
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
