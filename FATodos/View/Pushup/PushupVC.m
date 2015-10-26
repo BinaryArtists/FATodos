@@ -38,6 +38,7 @@
 @property (nonatomic, strong) JDFPeekabooCoordinator *scrollCoordinator;
 
 @property (nonatomic, assign) BOOL                          newItemButtonHidden;
+@property (nonatomic, strong) NSDate *                      today;
 
 @end
 
@@ -109,6 +110,7 @@
          *
          *  or set up date range:
          */
+        self.today  = [NSDate new];
         
         // todo：这个应该是，纪录开始的那一天
         
@@ -201,6 +203,8 @@
 
 - (void)dayPicker:(MZDayPicker *)dayPicker willSelectDay:(MZDay *)day {
     NSLog(@"Will select day %@", day);
+    
+    self.newItemButtonHidden    = [day.date isEarlierThan:self.today];
 }
 
 #pragma mark - UITableViewDelegate & UITableViewDataSource
