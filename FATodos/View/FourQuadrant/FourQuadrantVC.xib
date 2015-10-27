@@ -1,19 +1,65 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9059"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FourQuadrantVC">
             <connections>
+                <outlet property="firstQuadrantHeightConstrait" destination="RIT-Wp-wTj" id="MQA-a9-nUc"/>
+                <outlet property="firstQuadrantView" destination="cIM-13-8L7" id="vHv-g4-KdV"/>
+                <outlet property="firstQuadrantWidthConstrait" destination="Eij-wo-dvJ" id="1fe-a6-1e2"/>
+                <outlet property="forthQuadrantView" destination="r9l-HY-6M8" id="p1X-Gv-Xtl"/>
+                <outlet property="secondQuadrantView" destination="mwM-gw-fpZ" id="GmR-Yg-ZSw"/>
+                <outlet property="thirdQuadrantView" destination="g2a-Uh-5uA" id="zi8-AH-Nz1"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cIM-13-8L7">
+                    <rect key="frame" x="0.0" y="0.0" width="174" height="311"/>
+                    <color key="backgroundColor" red="0.13333333333333333" green="0.18431372549019609" blue="0.24705882352941178" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="174" id="Eij-wo-dvJ"/>
+                        <constraint firstAttribute="height" constant="311" id="RIT-Wp-wTj"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mwM-gw-fpZ">
+                    <rect key="frame" x="173" y="0.0" width="147" height="311"/>
+                    <color key="backgroundColor" red="0.87058823529411766" green="0.21176470588235294" blue="0.18431372549019609" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g2a-Uh-5uA">
+                    <rect key="frame" x="0.0" y="311" width="174" height="257"/>
+                    <color key="backgroundColor" red="0.13333333333333333" green="0.41568627450980394" blue="0.66274509803921566" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r9l-HY-6M8">
+                    <rect key="frame" x="173" y="311" width="147" height="257"/>
+                    <color key="backgroundColor" red="0.10196078431372549" green="0.56862745098039214" blue="0.45098039215686275" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="mwM-gw-fpZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="5mr-Be-37E"/>
+                <constraint firstAttribute="bottom" secondItem="r9l-HY-6M8" secondAttribute="bottom" id="CJb-O3-Pd6"/>
+                <constraint firstItem="mwM-gw-fpZ" firstAttribute="height" secondItem="cIM-13-8L7" secondAttribute="height" id="F3j-L5-tdP"/>
+                <constraint firstItem="mwM-gw-fpZ" firstAttribute="leading" secondItem="cIM-13-8L7" secondAttribute="trailing" constant="-1" id="G4d-wa-db9"/>
+                <constraint firstItem="cIM-13-8L7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="JGN-gO-xte"/>
+                <constraint firstItem="g2a-Uh-5uA" firstAttribute="width" secondItem="cIM-13-8L7" secondAttribute="width" id="KIG-HQ-ASE"/>
+                <constraint firstItem="r9l-HY-6M8" firstAttribute="width" secondItem="mwM-gw-fpZ" secondAttribute="width" id="LIU-2k-jQ8"/>
+                <constraint firstItem="g2a-Uh-5uA" firstAttribute="top" secondItem="cIM-13-8L7" secondAttribute="bottom" id="LtF-4M-bmK"/>
+                <constraint firstItem="cIM-13-8L7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="dcF-zk-6Ni"/>
+                <constraint firstItem="g2a-Uh-5uA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="gw4-Xo-dbs"/>
+                <constraint firstAttribute="bottom" secondItem="g2a-Uh-5uA" secondAttribute="bottom" id="ibD-zT-zxV"/>
+                <constraint firstItem="r9l-HY-6M8" firstAttribute="top" secondItem="mwM-gw-fpZ" secondAttribute="bottom" id="kow-DK-cFW"/>
+                <constraint firstAttribute="trailing" secondItem="mwM-gw-fpZ" secondAttribute="trailing" id="oaa-bq-zwE"/>
+                <constraint firstAttribute="trailing" secondItem="r9l-HY-6M8" secondAttribute="trailing" id="rfS-33-qqw"/>
+            </constraints>
+            <point key="canvasLocation" x="340" y="257"/>
         </view>
     </objects>
 </document>

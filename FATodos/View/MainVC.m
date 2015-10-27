@@ -128,6 +128,8 @@
         [[Routable sharedRouter] open:[AppDelegate MEMO_VC] animated:YES];
     } else if (selectedview == self.noteView) {
         [[Routable sharedRouter] open:[AppDelegate NOTE_VC] animated:YES];
+    } else if (selectedview == self.fourQuadrantView) {
+        [[Routable sharedRouter] open:[AppDelegate QUADRANT_VC] animated:YES];
     } else {
         // bug: fixme，动画有问题！会先回到中间，然后震动.
         [self.viewShaker shakeWithDuration:0.6

@@ -16,6 +16,14 @@ Many app about TODO, but it is my own.
 
 3. 去知乎查看
 
+1. 样式（模仿iOS app：Quad－基于四象限法则）：四种颜色：（左上：高灰色，右上：酒红，左下：蓝色，右下：绿色）
+    a. 事件管理，层级定义要浅
+    b. 四象限，默认象限或者被选中象限，应该偏大，将其他三个象限压缩小！！！！！！
+
+2. 事件的状态：created、completed、deleted，分别配色或样式
+
+3. 其他app（今日毕，）
+
 ## 日志
 
 1. 卡片式，可以很长，可参考如下：
@@ -33,8 +41,6 @@ Many app about TODO, but it is my own.
 
 TODO：
 1. need 4 quadrant
-2. need sqlite
-3. need cell customize
 4. 便签纪录, 卡片模式。。。（这里定义：便签中不再区分条目数目）
 5. app视图风格切换：demo、苹果扁平、meterial、winphone风格
 6. 本项目结束后，归纳出Kit，工具类（宏定义、一般性类型、等等）

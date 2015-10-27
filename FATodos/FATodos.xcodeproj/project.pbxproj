@@ -14,6 +14,8 @@
 		6A158E471B70B482007FE54F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A158E461B70B482007FE54F /* Images.xcassets */; };
 		6A158E4A1B70B482007FE54F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A158E481B70B482007FE54F /* LaunchScreen.xib */; };
 		6A158E561B70B482007FE54F /* FATodosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A158E551B70B482007FE54F /* FATodosTests.m */; };
+		6A674B521BDFBF3000562321 /* QuadrantView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A674B511BDFBF3000562321 /* QuadrantView.m */; };
+		6A674B541BDFBF4200562321 /* QuadrantView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A674B531BDFBF4200562321 /* QuadrantView.xib */; };
 		6A6DA09D1BD343F400A359C0 /* FourQuadrantVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6DA09B1BD343F400A359C0 /* FourQuadrantVC.m */; };
 		6A6DA09E1BD343F400A359C0 /* FourQuadrantVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A6DA09C1BD343F400A359C0 /* FourQuadrantVC.xib */; };
 		6A6DA0A21BD3440500A359C0 /* NoteVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6DA0A01BD3440500A359C0 /* NoteVC.m */; };
@@ -540,6 +542,9 @@
 		6A158E4F1B70B482007FE54F /* FATodosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FATodosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A158E541B70B482007FE54F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A158E551B70B482007FE54F /* FATodosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FATodosTests.m; sourceTree = "<group>"; };
+		6A674B501BDFBF3000562321 /* QuadrantView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuadrantView.h; sourceTree = "<group>"; };
+		6A674B511BDFBF3000562321 /* QuadrantView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuadrantView.m; sourceTree = "<group>"; };
+		6A674B531BDFBF4200562321 /* QuadrantView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuadrantView.xib; sourceTree = "<group>"; };
 		6A6DA09A1BD343F400A359C0 /* FourQuadrantVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourQuadrantVC.h; sourceTree = "<group>"; };
 		6A6DA09B1BD343F400A359C0 /* FourQuadrantVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourQuadrantVC.m; sourceTree = "<group>"; };
 		6A6DA09C1BD343F400A359C0 /* FourQuadrantVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FourQuadrantVC.xib; sourceTree = "<group>"; };
@@ -1655,9 +1660,20 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		6A674B4F1BDFBF1800562321 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				6A674B501BDFBF3000562321 /* QuadrantView.h */,
+				6A674B511BDFBF3000562321 /* QuadrantView.m */,
+				6A674B531BDFBF4200562321 /* QuadrantView.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		6A6DA0971BD343D300A359C0 /* FourQuadrant */ = {
 			isa = PBXGroup;
 			children = (
+				6A674B4F1BDFBF1800562321 /* view */,
 				6A6DA09A1BD343F400A359C0 /* FourQuadrantVC.h */,
 				6A6DA09B1BD343F400A359C0 /* FourQuadrantVC.m */,
 				6A6DA09C1BD343F400A359C0 /* FourQuadrantVC.xib */,
@@ -3674,6 +3690,7 @@
 				6A6DA0AD1BD3445B00A359C0 /* PomodoroVC.xib in Resources */,
 				6AF4BDC91BB52D040047A720 /* crossMark@2x.png in Resources */,
 				6A6DC7CB1BD3DFA800A359C0 /* ServiceGesture.bundle in Resources */,
+				6A674B541BDFBF4200562321 /* QuadrantView.xib in Resources */,
 				6A95EC111BB992E300B14EA5 /* MemoEditVC.xib in Resources */,
 				6AD47CB71BB772D600BBBC0F /* MemoCell.xib in Resources */,
 				6ACFE0341BA2C8630061DA35 /* userdefault.jpg in Resources */,
@@ -4192,6 +4209,7 @@
 				6AF4BDD61BB550420047A720 /* FAPopup.m in Sources */,
 				6A158E391B70B482007FE54F /* main.m in Sources */,
 				6A6DC7541BD3DFA800A359C0 /* NSBundle+Extension.m in Sources */,
+				6A674B521BDFBF3000562321 /* QuadrantView.m in Sources */,
 				6A6DC7FD1BD3DFA800A359C0 /* Samurai_CSSNumberEm.m in Sources */,
 				6A6DC86F1BD3DFA900A359C0 /* Samurai_HtmlElementSup.m in Sources */,
 				6A6DC7EE1BD3DFA800A359C0 /* Samurai_CSSRuleSet.m in Sources */,

@@ -73,4 +73,13 @@
 + (UIColor *)memoDarkPinkColor;
 
 + (UIColor *)memoLightRedColor;
+
+#pragma mark - 四象限 块颜色
+// 抄的Quad的，需要再设计，fixme
+
++ (UIColor *)quadrantGrayColor;
++ (UIColor *)quadrantRedColor;
++ (UIColor *)quadrantBlueColor;
++ (UIColor *)quadrantGreenColor;
+
 @end

@@ -8,22 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-#define kDefaultBorderWidth 0.5f // 0.5f 也是 系统导航栏 下部边线的宽度
-
-//=========================
-// 底边栏
-//=========================
-
-// 支付页面，按钮要靠右
-// 上下边距 8
-// 右边距 8
-
-// 下单页面，按钮居中
-// 边栏高 56
-// 按钮高 40
-// 上下边距 8
-// 左右边距 40
-
 #define PIXEL_2     2.f
 #define PIXEL_4     4.f
 #define PIXEL_8     8.f
@@ -33,8 +17,10 @@
 #define PIXEL_40    40.f
 #define PIXEL_56    56.f
 
-#define kScreenWidth  [UIUtils screenWidth]
-#define kScreenHeight [UIUtils screenHeight]
+#define kScreenWidth        [UIUtils screenWidth]
+#define kScreenHeight       [UIUtils screenHeight]
+#define kNavigationHeight   [UIUtils navigationBarHeight]
+#define kStatusHeight       [UIUtils statusHeight]
 
 @interface UIUtils : NSObject
 

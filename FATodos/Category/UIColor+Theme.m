@@ -137,4 +137,22 @@
     return [UIColor colorWithRGBHex:0xE1404D];
 }
 
+#pragma mark - 四象限 块颜色
+
++ (UIColor *)quadrantGrayColor {
+    return [UIColor colorWithRGBHex:0x222F3F];
+}
+
++ (UIColor *)quadrantRedColor {
+    return [UIColor colorWithRGBHex:0xDE362F];
+}
+
++ (UIColor *)quadrantBlueColor {
+    return [UIColor colorWithRGBHex:0x226AA9];
+}
+
++ (UIColor *)quadrantGreenColor {
+    return [UIColor colorWithRGBHex:0x1A9173];
+}
+
 @end
