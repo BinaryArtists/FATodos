@@ -41,6 +41,8 @@ const static NSTimeInterval kAnimateDuration    = 0.7f;
 
 - (void)setModel:(id)model;
 
+- (void)setModel:(id)model withAnimate:(BOOL)animate;
+
 - (CGFloat)cellHeight;
 
 @end

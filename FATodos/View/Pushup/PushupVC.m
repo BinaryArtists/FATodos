@@ -175,6 +175,10 @@
                                  [self.tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:ip]
                                                        withRowAnimation:UITableViewRowAnimationRight];
                                  
+                                 [self.tableView scrollToRowAtIndexPath:ip
+                                                       atScrollPosition:UITableViewScrollPositionBottom
+                                                               animated:YES];
+                                 
                              }];
     }
     else
@@ -254,7 +258,7 @@
             cell.rightSwipeSettings.transition = MGSwipeTransitionDrag;
         }
         
-        [cell setModel:item];
+        [cell setModel:item withAnimate:self.shouldAnimateTableView];
         
         // 当加载完成，开始动画
         if(indexPath.row == ((NSIndexPath *)[[tableView indexPathsForVisibleRows] lastObject]).row){
@@ -451,6 +455,7 @@
     }
 }
 
+// todo: 学习
 //- (IBAction)btnAction:(id)sender {
 //    //获取可见cells
 //    visibleCells = visibleTableView.visibleCells;

@@ -8,6 +8,13 @@
 
 #import "RoutableVC.h"
 
+// =================================
+// 图表绘制
+
+// 俯卧撑、仰卧起坐、哑铃：三条曲线
+
+// 
+
 @interface DiagramVC : RoutableVC
 
 @end

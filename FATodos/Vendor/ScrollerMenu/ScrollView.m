@@ -179,6 +179,7 @@
 	pos = yOffset;
 	
 	CGFloat num = totalViews;
+    // fallenink: 需要计算，当前第几个条目，在ScrollView有效显示区域的中央
 	CGFloat per = (scrollView.contentOffset.y) / (self.contentSize.height - (currentSize.height));
 	CGFloat ind = num * per;
 	CGFloat mi = ind / (totalViews/2);

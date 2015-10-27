@@ -107,9 +107,13 @@
 }
 
 - (void)setModel:(id)model {
+    [self setModel:model withAnimate:NO];
+}
+
+- (void)setModel:(id)model withAnimate:(BOOL)animate {
     Item1 *item         = model;
     
-    {
+    if (animate) {
         self.animateHorizontalConstraint.constant   = -kScreenWidth;
     }
     
@@ -167,7 +171,7 @@
         
         [[Item_1_Cache sharedInstance] updateObject:item];
     }];
-
+    
     self.item          = model;
 }
 

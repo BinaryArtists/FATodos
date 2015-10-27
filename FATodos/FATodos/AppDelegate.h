@@ -44,9 +44,9 @@
 // pushup 模块，删除不成功
 // pushup的条目，展开、收缩后，会有一条线没有了。
 // pushup的条目，展开选择个数的时候，没有立即反馈，还需要重置。
-// pushup的条目，如果超出屏幕了，‘新增’之后，需要直接定位到那里。
 // 作好db迁移
 // 这个https://github.com/tanis2000/MTLFMDBAdapter类似于sql-query-builder，哈哈
+// 注意swpeaView，https://github.com/zhxnlai/ZLSwipeableView/issues/9
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
