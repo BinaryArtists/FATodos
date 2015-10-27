@@ -10,9 +10,9 @@
 #import "FourQuadrantVC.h"
 
 const
-static CGFloat kQuadrantMinorWidth    = 44.f;
+static CGFloat kQuadrantMinorWidth    = 56.f;
 const
-static CGFloat kQuadrantMinorHeight   = 44.f;
+static CGFloat kQuadrantMinorHeight   = 56.f;
 static CGFloat kQuadrantMajorWidth    = 0.f;
 static CGFloat kQuadrantMajorHeight   = 0.f;
 
@@ -26,6 +26,13 @@ static CGFloat kQuadrantMajorHeight   = 0.f;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *firstQuadrantWidthConstrait;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *firstQuadrantHeightConstrait;
 
+@property (weak, nonatomic) UIView *selectedQuadrantView;
+
+@property (nonatomic, assign) BOOL firstQuadrantEnabled;
+@property (nonatomic, assign) BOOL secondQuadrantEnabled;
+@property (nonatomic, assign) BOOL thirdQuadrantEnabled;
+@property (nonatomic, assign) BOOL forthQuadrantEnabled;
+
 @end
 
 @implementation FourQuadrantVC
@@ -36,7 +43,10 @@ static CGFloat kQuadrantMajorHeight   = 0.f;
     kQuadrantMajorWidth = kScreenWidth - kQuadrantMinorWidth;
     kQuadrantMajorHeight= kScreenHeight-kNavigationHeight-kStatusHeight-kQuadrantMinorHeight;
     
-    //
+    [self.firstQuadrantView circular:PIXEL_4];
+    [self.secondQuadrantView circular:PIXEL_4];
+    [self.thirdQuadrantView circular:PIXEL_4];
+    [self.forthQuadrantView circular:PIXEL_4];
 }
 
 - (void)initQuadrantGestures {
@@ -51,6 +61,8 @@ static CGFloat kQuadrantMajorHeight   = 0.f;
     
     UITapGestureRecognizer *forthTap    = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onQuadrantSelected:)];
     [self.forthQuadrantView addGestureRecognizer:forthTap];
+    
+    self.selectedQuadrantView   = self.firstQuadrantView;
 }
 
 #pragma mark - Life cycle
@@ -73,8 +85,7 @@ static CGFloat kQuadrantMajorHeight   = 0.f;
     
     // 根据状态，来调整约束
     {
-        self.firstQuadrantWidthConstrait.constant   = kQuadrantMajorWidth;
-        self.firstQuadrantHeightConstrait.constant  = kQuadrantMajorHeight;
+        
     }
 }
 
@@ -99,6 +110,35 @@ static CGFloat kQuadrantMajorHeight   = 0.f;
         
     } else if (sender.view == self.forthQuadrantView) {
         
+    }
+    
+    [UIView animateWithDuration:1.f
+                     animations:^{
+                         self.selectedQuadrantView   = sender.view;
+                         
+                         [self.view layoutIfNeeded];
+                     } completion:^(BOOL finished) {
+                         //
+                     }];
+}
+
+#pragma mark - Property
+
+- (void)setSelectedQuadrantView:(UIView *)selectedQuadrantView {
+    _selectedQuadrantView = selectedQuadrantView;
+    
+    if (selectedQuadrantView == self.firstQuadrantView) {
+        self.firstQuadrantWidthConstrait.constant   = kQuadrantMajorWidth;
+        self.firstQuadrantHeightConstrait.constant  = kQuadrantMajorHeight;
+    } else if (selectedQuadrantView == self.secondQuadrantView) {
+        self.firstQuadrantWidthConstrait.constant   = kQuadrantMinorWidth;
+        self.firstQuadrantHeightConstrait.constant  = kQuadrantMajorHeight;
+    } else if (selectedQuadrantView == self.thirdQuadrantView) {
+        self.firstQuadrantWidthConstrait.constant   = kQuadrantMajorWidth;
+        self.firstQuadrantHeightConstrait.constant  = kQuadrantMinorHeight;
+    } else if (selectedQuadrantView == self.forthQuadrantView) {
+        self.firstQuadrantWidthConstrait.constant   = kQuadrantMinorWidth;
+        self.firstQuadrantHeightConstrait.constant  = kQuadrantMinorHeight;
     }
 }
 
