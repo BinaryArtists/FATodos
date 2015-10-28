@@ -145,13 +145,33 @@
     }
 }
 
-- (void)removeObjectById:(int64_t)id_ {
+- (void)removeObjectById:(int64_t)id_ withCompletionBlock:(void (^)())completionHandler {
+    NSAssert(completionHandler, @"");
+    
     [self.dbQueue inDatabase:^(FMDatabase *db) {
         NSString *sql   = [NSString stringWithFormat:@"DELETE FROM %@ WHERE %@=?", [self SQL_TABLE_NAME_ITEM1], [BaseEntity SQL_TABLE_ELEMENT_NAME_ID]];
         BOOL ret        = [db executeUpdate:sql, @(id_)];
         
         if (!ret) {
             NSLog(@"- (void)removeObjectById:(int64_t)id_");
+        } else {
+            // remove from memory array
+            __block NSInteger index = -1;
+            [_item1Array enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+                Item1 *item = obj;
+                
+                if (item.id == id_) {
+                    index   = (NSInteger)idx;
+                    
+                    *stop   = YES;
+                }
+            }];
+            
+            if (index > 0) {
+                [_item1Array removeObjectAtIndex:index];
+            }
+            
+            completionHandler();
         }
     }];
 }

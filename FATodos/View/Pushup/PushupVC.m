@@ -411,11 +411,13 @@
                 NSIndexPath *cellIndexPath = [self.tableView indexPathForCell:cell];
                 Item1 *item                 = [self.tableData objectAtIndex:cellIndexPath.row];
                 
-                [[Item_1_Cache sharedInstance] removeObjectById:item.id];
+                [[Item_1_Cache sharedInstance] removeObjectById:item.id
+                                            withCompletionBlock:^{
+                    [self.tableData removeObjectAtIndex:cellIndexPath.row];
+                    
+                    [self.tableView deleteRowsAtIndexPaths:@[cellIndexPath] withRowAnimation:UITableViewRowAnimationLeft];
+                }];
                 
-                [self.tableData removeObjectAtIndex:cellIndexPath.row];
-                
-                [self.tableView deleteRowsAtIndexPaths:@[cellIndexPath] withRowAnimation:UITableViewRowAnimationLeft];
                 break;
             }
                 

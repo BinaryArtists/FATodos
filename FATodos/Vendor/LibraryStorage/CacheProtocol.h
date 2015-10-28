@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-// Obj-C语言开发iOS项目使用反射减少代码工作:http://www.cr173.com/html/18677_1.html
+// fixme: Obj-C语言开发iOS项目使用反射减少代码工作:http://www.cr173.com/html/18677_1.html
 
 @protocol CacheProtocol <NSObject>
 
@@ -25,7 +25,7 @@
 
 - (void)allObjectsUsingBlock:(void (^) (NSArray *allobjects))handler;
 
-- (void)removeObjectById:(int64_t)id_;
+- (void)removeObjectById:(int64_t)id_ withCompletionBlock:(void (^)())completionHandler;
 
 @optional
 

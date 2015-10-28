@@ -13,7 +13,7 @@
 @def_string( SQL_TABLE_ELEMENT_NAME_ID, @"id" )
 
 @def_string( str_DateFormat, @"yyyy-MM-dd" )
-@def_string( str_TimeFormat, @"yyyy-MM-dd HH-mm" )
+@def_string( str_TimeFormat, @"yyyy-MM-dd HH-mm-ss" )
 
 #pragma mark - Initialize
 
