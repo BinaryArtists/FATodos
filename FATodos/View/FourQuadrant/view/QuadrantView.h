@@ -12,4 +12,7 @@
 
 @property (nonatomic, weak) id<UITableViewDelegate, UITableViewDataSource> delegate;
 
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+
 @end

@@ -22,7 +22,7 @@
                 </label>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wBP-qB-EBh">
                     <rect key="frame" x="1" y="36" width="240" height="317"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </tableView>
             </subviews>
             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -37,6 +37,10 @@
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="tableView" destination="wBP-qB-EBh" id="4Rh-AS-Q70"/>
+                <outlet property="titleLabel" destination="fIF-1x-Ree" id="b6q-TF-O4d"/>
+            </connections>
             <point key="canvasLocation" x="258.5" y="124.5"/>
         </view>
     </objects>

@@ -13,7 +13,7 @@
 
 - (void)awakeFromNib {
     [self.container circular:PIXEL_4];
-    [self.container setBackgroundColor:[UIColor red_1_color]];
+    [self.container setBackgroundColor:[UIColor randomColor]];
     
 }
 
@@ -29,7 +29,7 @@
     CGFloat preferHeight= [memo.content sizeWithFont:[UIFont systemFontOfSize:18.f]
                                                 size:CGSizeMake(screenSize.width-PIXEL_16, screenSize.height)];
     
-    return preferHeight+PIXEL_16;
+    return preferHeight+PIXEL_16+72;
 }
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "MemoVC.h"
+#import "Memo.h"
 #import "MemoCell.h"
 
 @interface MemoVC () <UITableViewDataSource, UITableViewDelegate>
@@ -46,11 +47,11 @@
     {
         self.tableData  = [NSMutableArray new];
         
-        [self.tableData addObject:[NSObject new]];
-        [self.tableData addObject:[NSObject new]];
-        [self.tableData addObject:[NSObject new]];
-        [self.tableData addObject:[NSObject new]];
-        [self.tableData addObject:[NSObject new]];
+        [self.tableData addObject:[Memo new]];
+        [self.tableData addObject:[Memo new]];
+        [self.tableData addObject:[Memo new]];
+        [self.tableData addObject:[Memo new]];
+        [self.tableData addObject:[Memo new]];
         
     }
     

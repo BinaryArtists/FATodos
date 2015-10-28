@@ -15,6 +15,10 @@
 
 @implementation QuadrantView
 
+- (void)awakeFromNib {
+    self.tableView.tableFooterView  = [UIView new];
+}
+
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.

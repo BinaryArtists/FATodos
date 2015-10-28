@@ -551,8 +551,12 @@
         // 重新加载列表视图
         [self.tableView reloadData];
         
-        // fixme：准备加载动画
-        self.shouldAnimateTableView = YES;
+        // 如果个数为0，则不需要动画
+        if ([allobjects count]) {
+            self.shouldAnimateTableView = YES;
+        } else {
+            self.shouldAnimateTableView = NO;
+        }
     }];
 }
 
