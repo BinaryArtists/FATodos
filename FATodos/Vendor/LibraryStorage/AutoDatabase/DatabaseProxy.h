@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol AutoDatabaseProtocol;
+#import "AutoDatabaseProtocol.h"
 
 @interface DatabaseProxy : NSObject <AutoDatabaseProtocol>
 

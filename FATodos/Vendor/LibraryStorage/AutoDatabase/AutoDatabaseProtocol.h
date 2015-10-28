@@ -17,13 +17,13 @@
  *  设置数据库文件名，默认：在一起 ad.stroage.sqlite
  */
 @required
-+ (BOOL)ad_setDatabaseName:(NSString *)databaseName;
+- (BOOL)ad_setDatabaseName:(NSString *)databaseName;
 
 /**
  *  创建表
  *  如果已经创建，返回YES
  */
-+ (BOOL)ad_createTable;
+- (BOOL)ad_createTable;
 
 #pragma mark - 通过实体，对数据库操作
 
@@ -43,7 +43,7 @@
 /**
  *  批量保存数据
  */
-+ (BOOL)ad_saveObjects:(NSArray *)array;
+- (BOOL)ad_saveObjects:(NSArray *)array;
 
 /**
  *  删除单个数据
@@ -53,38 +53,40 @@
 /**
  *  批量删除数据
  */
-+ (BOOL)ad_deleteObjects:(NSArray *)array;
+- (BOOL)ad_deleteObjects:(NSArray *)array;
 
 /**
  *  通过条件删除数据
  */
-+ (BOOL)ad_deleteObjectsByCriteria:(NSString *)criteria;
+- (BOOL)ad_deleteObjectsByCriteria:(NSString *)criteria;
 
 /**
  *  清空表
  */
-+ (BOOL)ad_clearTable;
+- (BOOL)ad_clearTable;
 
 /**
  *  查询所有数据
  */
-+ (NSArray *)ad_findAll;
+- (NSArray *)ad_findAll;
 
 /**
  *  通过主键查询
  */
-+ (instancetype)ad_findByMajorKey:(int)majorKey;
+- (instancetype)ad_findByMajorKey:(int)majorKey;
 
 /**
  *  查询某条数据
  */
-+ (instancetype)ad_findFirstByCriteria:(NSString *)criteria;
+- (instancetype)ad_findFirstByCriteria:(NSString *)criteria;
 
 /** 
  *  通过条件查找数据
  *  这样可以进行分页查询 @" WHERE pk > 5 limit 10"
  */
-+ (NSArray *)ad_findByCriteria:(NSString *)criteria;
+- (NSArray *)ad_findByCriteria:(NSString *)criteria;
+
+@optional
 
 #pragma mark - must be override method
 
@@ -95,7 +97,19 @@
  */
 + (NSArray *)transients;
 
-@optional
++ (BOOL)ad_setDatabaseName:(NSString *)databaseName;
++ (BOOL)ad_createTable;
+
++ (BOOL)ad_saveObjects:(NSArray *)array;
+
++ (BOOL)ad_deleteObjects:(NSArray *)array;
++ (BOOL)ad_deleteObjectsByCriteria:(NSString *)criteria;
++ (BOOL)ad_clearTable;
+
++ (NSArray *)ad_findAll;
++ (instancetype)ad_findByMajorKey:(int)majorKey;
++ (instancetype)ad_findFirstByCriteria:(NSString *)criteria;
++ (NSArray *)ad_findByCriteria:(NSString *)criteria;
 
 @end
 

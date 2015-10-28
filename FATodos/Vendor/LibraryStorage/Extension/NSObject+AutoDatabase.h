@@ -8,8 +8,21 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSObject (AutoDatabase)
+#import "AutoDatabaseProtocol.h"
 
+@interface NSObject (AutoDatabase) <AutoDatabaseProtocol>
+
+//
+
+
+//
+
+
+//
+
+
+
+//
 
 
 @end
