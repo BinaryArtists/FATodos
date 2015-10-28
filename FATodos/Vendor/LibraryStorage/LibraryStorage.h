@@ -63,6 +63,10 @@
  *
  */
 
+#import "NSObject+AutoDatabase.h"
+#import "NSObject+AutoArchive.h"
+
+//  实现思路
 
 
 #endif /* Library__h */

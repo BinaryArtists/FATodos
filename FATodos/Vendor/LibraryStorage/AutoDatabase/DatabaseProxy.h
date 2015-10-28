@@ -10,11 +10,9 @@
 
 #import "AutoDatabaseProtocol.h"
 
-@interface DatabaseProxy : NSObject <AutoDatabaseProtocol>
+@interface DatabaseProxy : NSObject
 
 @singleton( DatabaseProxy )
-
-@property (nonatomic, weak) id<AutoDatabaseProtocol> delegate;
 
 #pragma mark -
 

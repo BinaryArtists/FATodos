@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-@interface FMDBManager : NSObject
+#import "AutoDatabaseProtocol.h"
+
+@interface FMDBManager : NSObject <AutoDatabaseProtocol>
+
+@singleton( FMDBManager )
 
 @end

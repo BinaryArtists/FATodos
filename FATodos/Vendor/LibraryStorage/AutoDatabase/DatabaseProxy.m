@@ -7,10 +7,26 @@
 //
 
 #import "DatabaseProxy.h"
+#import "FMDBManager.h"
+#import "AutoDatabaseProtocol.h"
+
+@interface DatabaseProxy () <AutoDatabaseProtocol>
+
+@property (nonatomic, weak) id<AutoDatabaseProtocol> delegate;
+
+@end
 
 @implementation DatabaseProxy
 
 @def_singleton( DatabaseProxy )
+
+#pragma mark - Initialize
+
++ (void)initialize {
+    // 在代理中
+    // 设置实际的处理对象
+    [[DatabaseProxy sharedInstance] setDelegate:[FMDBManager sharedInstance]];
+}
 
 #pragma mark - AutoDatabaseProtocol
 

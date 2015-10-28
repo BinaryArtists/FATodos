@@ -95,7 +95,12 @@
  
  *  穿透的字段
  */
-+ (NSArray *)transients;
++ (NSArray *)transientField;
+
+/**
+ *  穿透的类
+ */
++ (Class)transientClass;
 
 + (BOOL)ad_setDatabaseName:(NSString *)databaseName;
 + (BOOL)ad_createTable;

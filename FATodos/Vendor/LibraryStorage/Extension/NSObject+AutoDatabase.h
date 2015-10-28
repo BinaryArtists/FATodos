@@ -12,17 +12,18 @@
 
 @interface NSObject (AutoDatabase) <AutoDatabaseProtocol>
 
-//
+// db
 
 
-//
+// add
 
 
-//
+// delete
 
 
 
-//
+// query
+
 
 
 @end

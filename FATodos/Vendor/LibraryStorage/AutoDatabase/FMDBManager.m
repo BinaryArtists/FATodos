@@ -7,7 +7,20 @@
 //
 
 #import "FMDBManager.h"
+#import "FMDB.h"
+#import "DatabaseTable.h"
+#import "AutoDatabaseProtocol.h"
+
+@interface FMDBManager ()
+
+@end
 
 @implementation FMDBManager
+
+@def_singleton( FMDBManager )
+
+#pragma mark - AutoDatabaseProtocol
+
+
 
 @end
