@@ -10,4 +10,6 @@
 
 @interface QuadrantView : UIView
 
+@property (nonatomic, weak) id<UITableViewDelegate, UITableViewDataSource> delegate;
+
 @end

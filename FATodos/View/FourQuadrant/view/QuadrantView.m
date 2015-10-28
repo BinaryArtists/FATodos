@@ -7,6 +7,11 @@
 //
 
 #import "QuadrantView.h"
+#import "QuadrantCell.h"
+
+@interface QuadrantView ()
+
+@end
 
 @implementation QuadrantView
 
@@ -17,5 +22,15 @@
     // Drawing code
 }
 */
+
+#pragma mark - Property
+
+- (void)setDelegate:(id<UITableViewDelegate,UITableViewDataSource>)delegate {
+    _delegate   = delegate;
+    
+    {
+        
+    }
+}
 
 @end

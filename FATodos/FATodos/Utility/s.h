@@ -42,4 +42,10 @@
 @string( Pushup ) // 俯卧撑
 @string( Dumbell ) // 哑铃
 
+// 四象限
+@string( Quadrant1Title )
+@string( Quadrant2Title )
+@string( Quadrant3Title )
+@string( Quadrant4Title )
+
 @end

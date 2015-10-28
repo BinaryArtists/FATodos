@@ -16,6 +16,10 @@
 		6A158E561B70B482007FE54F /* FATodosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A158E551B70B482007FE54F /* FATodosTests.m */; };
 		6A674B521BDFBF3000562321 /* QuadrantView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A674B511BDFBF3000562321 /* QuadrantView.m */; };
 		6A674B541BDFBF4200562321 /* QuadrantView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A674B531BDFBF4200562321 /* QuadrantView.xib */; };
+		6A674B591BE061B300562321 /* QuadrantCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A674B571BE061B300562321 /* QuadrantCell.m */; };
+		6A674B5A1BE061B300562321 /* QuadrantCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A674B581BE061B300562321 /* QuadrantCell.xib */; };
+		6A674B5D1BE0636F00562321 /* UIView+Base.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A674B5C1BE0636F00562321 /* UIView+Base.m */; };
+		6A674B601BE063B200562321 /* UIViewController+Base.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A674B5F1BE063B200562321 /* UIViewController+Base.m */; };
 		6A6DA09D1BD343F400A359C0 /* FourQuadrantVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6DA09B1BD343F400A359C0 /* FourQuadrantVC.m */; };
 		6A6DA09E1BD343F400A359C0 /* FourQuadrantVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A6DA09C1BD343F400A359C0 /* FourQuadrantVC.xib */; };
 		6A6DA0A21BD3440500A359C0 /* NoteVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6DA0A01BD3440500A359C0 /* NoteVC.m */; };
@@ -545,6 +549,13 @@
 		6A674B501BDFBF3000562321 /* QuadrantView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuadrantView.h; sourceTree = "<group>"; };
 		6A674B511BDFBF3000562321 /* QuadrantView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuadrantView.m; sourceTree = "<group>"; };
 		6A674B531BDFBF4200562321 /* QuadrantView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuadrantView.xib; sourceTree = "<group>"; };
+		6A674B561BE061B300562321 /* QuadrantCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuadrantCell.h; sourceTree = "<group>"; };
+		6A674B571BE061B300562321 /* QuadrantCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuadrantCell.m; sourceTree = "<group>"; };
+		6A674B581BE061B300562321 /* QuadrantCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuadrantCell.xib; sourceTree = "<group>"; };
+		6A674B5B1BE0636F00562321 /* UIView+Base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Base.h"; sourceTree = "<group>"; };
+		6A674B5C1BE0636F00562321 /* UIView+Base.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Base.m"; sourceTree = "<group>"; };
+		6A674B5E1BE063B200562321 /* UIViewController+Base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Base.h"; sourceTree = "<group>"; };
+		6A674B5F1BE063B200562321 /* UIViewController+Base.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Base.m"; sourceTree = "<group>"; };
 		6A6DA09A1BD343F400A359C0 /* FourQuadrantVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourQuadrantVC.h; sourceTree = "<group>"; };
 		6A6DA09B1BD343F400A359C0 /* FourQuadrantVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourQuadrantVC.m; sourceTree = "<group>"; };
 		6A6DA09C1BD343F400A359C0 /* FourQuadrantVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FourQuadrantVC.xib; sourceTree = "<group>"; };
@@ -1670,9 +1681,20 @@
 			path = view;
 			sourceTree = "<group>";
 		};
+		6A674B551BE0618600562321 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				6A674B561BE061B300562321 /* QuadrantCell.h */,
+				6A674B571BE061B300562321 /* QuadrantCell.m */,
+				6A674B581BE061B300562321 /* QuadrantCell.xib */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
 		6A6DA0971BD343D300A359C0 /* FourQuadrant */ = {
 			isa = PBXGroup;
 			children = (
+				6A674B551BE0618600562321 /* cell */,
 				6A674B4F1BDFBF1800562321 /* view */,
 				6A6DA09A1BD343F400A359C0 /* FourQuadrantVC.h */,
 				6A6DA09B1BD343F400A359C0 /* FourQuadrantVC.m */,
@@ -2977,6 +2999,10 @@
 				6ACEBAEF1BA94AD30011E3F7 /* UITableViewCell+Base.m */,
 				6AF4BD7D1BB3FEB20047A720 /* NSObject+Base.h */,
 				6AF4BD7E1BB3FEB20047A720 /* NSObject+Base.m */,
+				6A674B5B1BE0636F00562321 /* UIView+Base.h */,
+				6A674B5C1BE0636F00562321 /* UIView+Base.m */,
+				6A674B5E1BE063B200562321 /* UIViewController+Base.h */,
+				6A674B5F1BE063B200562321 /* UIViewController+Base.m */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -3690,6 +3716,7 @@
 				6A6DA0AD1BD3445B00A359C0 /* PomodoroVC.xib in Resources */,
 				6AF4BDC91BB52D040047A720 /* crossMark@2x.png in Resources */,
 				6A6DC7CB1BD3DFA800A359C0 /* ServiceGesture.bundle in Resources */,
+				6A674B5A1BE061B300562321 /* QuadrantCell.xib in Resources */,
 				6A674B541BDFBF4200562321 /* QuadrantView.xib in Resources */,
 				6A95EC111BB992E300B14EA5 /* MemoEditVC.xib in Resources */,
 				6AD47CB71BB772D600BBBC0F /* MemoCell.xib in Resources */,
@@ -4092,6 +4119,7 @@
 				6ACFDF931B9C2E740061DA35 /* ZIMOrmModel.m in Sources */,
 				6A6DC7BE1BD3DFA800A359C0 /* Samurai_View.m in Sources */,
 				6A6DC8461BD3DFA800A359C0 /* Samurai_HtmlElementDt.m in Sources */,
+				6A674B5D1BE0636F00562321 /* UIView+Base.m in Sources */,
 				6A6DC82A1BD3DFA800A359C0 /* UIWebView+Html.m in Sources */,
 				6A6DC8151BD3DFA800A359C0 /* Samurai_CSSString.m in Sources */,
 				6ACFE0111BA170720061DA35 /* PushupVC.m in Sources */,
@@ -4162,6 +4190,7 @@
 				6A6DC7A31BD3DFA800A359C0 /* Samurai_Intent.m in Sources */,
 				6A6DC76D1BD3DFA800A359C0 /* Samurai_CoreConfig.m in Sources */,
 				6A6DC7D41BD3DFA800A359C0 /* ServiceGrids.m in Sources */,
+				6A674B601BE063B200562321 /* UIViewController+Base.m in Sources */,
 				6A6DC79F1BD3DFA800A359C0 /* Samurai_Activity.m in Sources */,
 				6A6DC7AE1BD3DFA800A359C0 /* Samurai_StyleSheet.m in Sources */,
 				6A6DC7D71BD3DFA800A359C0 /* ServiceInspector.m in Sources */,
@@ -4235,6 +4264,7 @@
 				6A6DC8081BD3DFA800A359C0 /* Samurai_CSSNumberPt.m in Sources */,
 				6ACFDF941B9C2E740061DA35 /* ZIMOrmSelectStatement.m in Sources */,
 				6A6DC8611BD3DFA900A359C0 /* Samurai_HtmlElementLegend.m in Sources */,
+				6A674B591BE061B300562321 /* QuadrantCell.m in Sources */,
 				6A84CF801BDD0F8300B61858 /* CardView.m in Sources */,
 				6A6DC7A81BD3DFA800A359C0 /* Samurai_DomWritter.m in Sources */,
 				6A6DC8AA1BD3DFA900A359C0 /* utf8.c in Sources */,

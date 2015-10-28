@@ -16,12 +16,20 @@ static CGFloat kQuadrantMinorHeight   = 56.f;
 static CGFloat kQuadrantMajorWidth    = 0.f;
 static CGFloat kQuadrantMajorHeight   = 0.f;
 
-@interface FourQuadrantVC ()
+@interface FourQuadrantVC () <
+    UITableViewDataSource,
+    UITableViewDelegate
+>
 
 @property (weak, nonatomic) IBOutlet UIView *firstQuadrantView;     // left up
 @property (weak, nonatomic) IBOutlet UIView *secondQuadrantView;    // right up
 @property (weak, nonatomic) IBOutlet UIView *thirdQuadrantView;     // left down
 @property (weak, nonatomic) IBOutlet UIView *forthQuadrantView;     // right down
+
+@property (weak, nonatomic) UIView *firstQuadrantContentView;     // left up
+@property (weak, nonatomic) UIView *secondQuadrantContentView;    // right up
+@property (weak, nonatomic) UIView *thirdQuadrantContentView;     // left down
+@property (weak, nonatomic) UIView *forthQuadrantContentView;     // right down
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *firstQuadrantWidthConstrait;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *firstQuadrantHeightConstrait;
@@ -47,6 +55,8 @@ static CGFloat kQuadrantMajorHeight   = 0.f;
     [self.secondQuadrantView circular:PIXEL_4];
     [self.thirdQuadrantView circular:PIXEL_4];
     [self.forthQuadrantView circular:PIXEL_4];
+    
+    
 }
 
 - (void)initQuadrantGestures {
@@ -112,7 +122,7 @@ static CGFloat kQuadrantMajorHeight   = 0.f;
         
     }
     
-    [UIView animateWithDuration:1.f
+    [UIView animateWithDuration:0.5f
                      animations:^{
                          self.selectedQuadrantView   = sender.view;
                          
@@ -121,6 +131,10 @@ static CGFloat kQuadrantMajorHeight   = 0.f;
                          //
                      }];
 }
+
+#pragma mark - UITableViewDataSource, UITableViewDelegate
+
+
 
 #pragma mark - Property
 

@@ -33,6 +33,8 @@
 #import "UITableViewCell+Base.h"
 #import "NSObject+FBKVOController.h"
 #import "NSObject+Base.h"
+#import "UIView+Base.h"
+#import "UIViewController+Base.h"
 
 #import "BaseEntity.h"
 #import "BaseView.h"
