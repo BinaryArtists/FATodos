@@ -29,7 +29,7 @@
     CGFloat preferHeight= [memo.content sizeWithFont:[UIFont systemFontOfSize:18.f]
                                                 size:CGSizeMake(screenSize.width-PIXEL_16, screenSize.height)];
     
-    return preferHeight+PIXEL_16+72;
+    return preferHeight+PIXEL_16+90;
 }
 
 @end
