@@ -408,7 +408,7 @@
                 [self setTableViewEditStyle:UITableViewCellEditingStyleDelete];
                 
                 // Delete button was pressed
-                NSIndexPath *cellIndexPath = [self.tableView indexPathForCell:cell];
+                NSIndexPath *cellIndexPath  = [self.tableView indexPathForCell:cell];
                 Item1 *item                 = [self.tableData objectAtIndex:cellIndexPath.row];
                 
                 [[Item_1_Cache sharedInstance] removeObjectById:item.id

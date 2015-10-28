@@ -50,7 +50,7 @@
 // 这个https://github.com/tanis2000/MTLFMDBAdapter类似于sql-query-builder，哈哈
 // 注意swpeaView，https://github.com/zhxnlai/ZLSwipeableView/issues/9
 // 对四象限变换的时候，使用pop的抖动效果
-
+// 集成，手机端可以报bug的sdk。
 
 // 便签开始之前：要做好db那部分，自动归档
 
