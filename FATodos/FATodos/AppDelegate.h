@@ -41,8 +41,6 @@
 // pushup中日期管理
 // db 中加入日期的字段
 // 重构LaunchScreen.xib
-//［提前］根据http://www.cr173.com/html/18677_1.html这个重构storage模块,https://github.com/Joker-King/JKDBModel
-//                                                          https://github.com/iKingsly/iKYerialization
 // pushup 模块，删除不成功
 // pushup的条目，展开、收缩后，会有一条线没有了。
 // pushup的条目，展开选择个数的时候，没有立即反馈，还需要重置。
