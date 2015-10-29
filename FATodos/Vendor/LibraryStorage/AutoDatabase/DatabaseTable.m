@@ -6,9 +6,10 @@
 //  Copyright © 2015 fallen.ink. All rights reserved.
 //
 
-//  两层
-//  runtime － 实体的属性、属性的类型
-//  database＝ 实体的表，字段，值
+//  三层
+//  runtime     － 实体的属性、属性的类型（property）
+//  database    － 实体的表，字段，值（table）
+//  operation   － 实体的操作（sentence）
 
 #import "DatabaseTable.h"
 

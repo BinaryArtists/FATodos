@@ -25,6 +25,7 @@
 		6A674B701BE0BFAD00562321 /* DatabaseProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A674B6F1BE0BFAD00562321 /* DatabaseProxy.m */; };
 		6A674B731BE0C2AE00562321 /* FMDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A674B721BE0C2AE00562321 /* FMDBManager.m */; };
 		6A674B7B1BE0CF9E00562321 /* DatabaseTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A674B7A1BE0CF9E00562321 /* DatabaseTable.m */; };
+		6A674B7E1BE0E28500562321 /* DatabaseSentence.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A674B7D1BE0E28500562321 /* DatabaseSentence.m */; };
 		6A6DA09D1BD343F400A359C0 /* FourQuadrantVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6DA09B1BD343F400A359C0 /* FourQuadrantVC.m */; };
 		6A6DA09E1BD343F400A359C0 /* FourQuadrantVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A6DA09C1BD343F400A359C0 /* FourQuadrantVC.xib */; };
 		6A6DA0A21BD3440500A359C0 /* NoteVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6DA0A01BD3440500A359C0 /* NoteVC.m */; };
@@ -574,6 +575,8 @@
 		6A674B721BE0C2AE00562321 /* FMDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDBManager.m; sourceTree = "<group>"; };
 		6A674B791BE0CF9E00562321 /* DatabaseTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseTable.h; sourceTree = "<group>"; };
 		6A674B7A1BE0CF9E00562321 /* DatabaseTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseTable.m; sourceTree = "<group>"; };
+		6A674B7C1BE0E28500562321 /* DatabaseSentence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseSentence.h; sourceTree = "<group>"; };
+		6A674B7D1BE0E28500562321 /* DatabaseSentence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseSentence.m; sourceTree = "<group>"; };
 		6A6DA09A1BD343F400A359C0 /* FourQuadrantVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourQuadrantVC.h; sourceTree = "<group>"; };
 		6A6DA09B1BD343F400A359C0 /* FourQuadrantVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourQuadrantVC.m; sourceTree = "<group>"; };
 		6A6DA09C1BD343F400A359C0 /* FourQuadrantVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FourQuadrantVC.xib; sourceTree = "<group>"; };
@@ -1727,6 +1730,8 @@
 				6A674B721BE0C2AE00562321 /* FMDBManager.m */,
 				6A674B791BE0CF9E00562321 /* DatabaseTable.h */,
 				6A674B7A1BE0CF9E00562321 /* DatabaseTable.m */,
+				6A674B7C1BE0E28500562321 /* DatabaseSentence.h */,
+				6A674B7D1BE0E28500562321 /* DatabaseSentence.m */,
 			);
 			path = AutoDatabase;
 			sourceTree = "<group>";
@@ -4029,6 +4034,7 @@
 				6A6DC8451BD3DFA800A359C0 /* Samurai_HtmlElementDl.m in Sources */,
 				6A6DC77D1BD3DFA800A359C0 /* Samurai_DockerProtocol.m in Sources */,
 				6ACFDF341B9C23FD0061DA35 /* Routable.m in Sources */,
+				6A674B7E1BE0E28500562321 /* DatabaseSentence.m in Sources */,
 				6A6DC7FE1BD3DFA800A359C0 /* Samurai_CSSNumberEx.m in Sources */,
 				6A6DC87C1BD3DFA900A359C0 /* Samurai_HtmlElementViewport.m in Sources */,
 				6A6DC7741BD3DFA800A359C0 /* Samurai_SignalKVO.m in Sources */,
