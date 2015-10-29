@@ -10,6 +10,10 @@
 
 #import "AutoDatabaseProtocol.h"
 
+/**
+ *  这一层，会额外创建一些表，存储用户的自定制信息
+ */
+
 @interface DatabaseProxy : NSObject
 
 @singleton( DatabaseProxy )

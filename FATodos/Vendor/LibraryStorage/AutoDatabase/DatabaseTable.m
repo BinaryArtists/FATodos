@@ -12,6 +12,7 @@
 //  operation   － 实体的操作（sentence）
 
 #import "DatabaseTable.h"
+#import "Samurai_Property.h"
 
 #undef  SN
 #define SN  @"name"

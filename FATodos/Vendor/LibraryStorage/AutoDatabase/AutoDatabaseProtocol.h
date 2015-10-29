@@ -20,6 +20,11 @@
 - (BOOL)ad_setDatabaseName:(NSString *)databaseName;
 
 /**
+ * 设置数据表名称，默认：string from class
+ */
+- (BOOL)ad_setTableName:(NSString *)tableName;
+
+/**
  *  创建表
  *  如果已经创建，返回YES
  */
@@ -57,6 +62,8 @@
 
 /**
  *  通过条件删除数据
+ 
+ *  fixme: 换做使用谓词
  */
 - (BOOL)ad_deleteObjectsByCriteria:(NSString *)criteria;
 
@@ -77,12 +84,16 @@
 
 /**
  *  查询某条数据
+ 
+ *  fixme: 换做使用谓词
  */
 - (instancetype)ad_findFirstByCriteria:(NSString *)criteria;
 
 /** 
  *  通过条件查找数据
  *  这样可以进行分页查询 @" WHERE pk > 5 limit 10"
+ 
+ *  fixme: 换做使用谓词
  */
 - (NSArray *)ad_findByCriteria:(NSString *)criteria;
 
