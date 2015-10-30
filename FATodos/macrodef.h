@@ -12,12 +12,12 @@
 
 #ifdef DEBUG
 
-#   define _assert_ NSAssert(__condition, NSStringFromSelector(_cmd));
+#   define _assert_( __condition ) NSAssert(__condition, NSStringFromSelector(_cmd));
 #   define debugCode( __code_fragment ) { __code_fragment }
 
 #else
 
-#   define _assert_ NSAssert(__condition, NSStringFromSelector(_cmd));
+#   define _assert_(..)
 #   define debugCode( __code_fragment )
 
 #endif
