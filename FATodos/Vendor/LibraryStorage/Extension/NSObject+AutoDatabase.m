@@ -12,4 +12,26 @@
 
 @implementation NSObject (AutoDatabase)
 
+#pragma mark - support
+
++ (BOOL)ad_enabled {
+    return NO;
+}
+
++ (NSArray *)transientField {
+    return nil;
+}
+
++ (Class)transientClass {
+    return [NSObject class];
+}
+
+#pragma mark - add
+
+
+#pragma mark - delete
+
+
+#pragma mark - query
+
 @end

@@ -387,6 +387,7 @@
 		6A6DC8B11BD3DFA900A359C0 /* selector.c in Sources */ = {isa = PBXBuildFile; fileRef = 6A6DB8421BD3DFA500A359C0 /* selector.c */; };
 		6A6DC8B21BD3DFA900A359C0 /* tokenizer.c in Sources */ = {isa = PBXBuildFile; fileRef = 6A6DB8441BD3DFA500A359C0 /* tokenizer.c */; };
 		6A6DC8D21BD497DF00A359C0 /* AppAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6DC8D11BD497DF00A359C0 /* AppAppearance.m */; };
+		6A74330B1BE3459300A21481 /* NSObject+LS_Entity.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A74330A1BE3459300A21481 /* NSObject+LS_Entity.m */; };
 		6A84CF781BDA3E5200B61858 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A84CF771BDA3E5200B61858 /* BaseTableViewCell.m */; };
 		6A84CF7F1BDD0F8300B61858 /* CardContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A84CF7C1BDD0F8300B61858 /* CardContentView.xib */; };
 		6A84CF801BDD0F8300B61858 /* CardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A84CF7E1BDD0F8300B61858 /* CardView.m */; };
@@ -1297,6 +1298,8 @@
 		6A6DC8CF1BD497C500A359C0 /* LibraryApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryApplication.h; sourceTree = "<group>"; };
 		6A6DC8D01BD497DF00A359C0 /* AppAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppAppearance.h; sourceTree = "<group>"; };
 		6A6DC8D11BD497DF00A359C0 /* AppAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppAppearance.m; sourceTree = "<group>"; };
+		6A7433091BE3459300A21481 /* NSObject+LS_Entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+LS_Entity.h"; sourceTree = "<group>"; };
+		6A74330A1BE3459300A21481 /* NSObject+LS_Entity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LS_Entity.m"; sourceTree = "<group>"; };
 		6A84CF761BDA3E5200B61858 /* BaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
 		6A84CF771BDA3E5200B61858 /* BaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
 		6A84CF7C1BDD0F8300B61858 /* CardContentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardContentView.xib; sourceTree = "<group>"; };
@@ -1748,6 +1751,8 @@
 				6A674B6C1BE0BE9500562321 /* NSObject+AutoDatabase.m */,
 				6A674B831BE2140100562321 /* NSObject+LS_Extension.h */,
 				6A674B841BE2140100562321 /* NSObject+LS_Extension.m */,
+				6A7433091BE3459300A21481 /* NSObject+LS_Entity.h */,
+				6A74330A1BE3459300A21481 /* NSObject+LS_Entity.m */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -4315,6 +4320,7 @@
 				6A6DC86F1BD3DFA900A359C0 /* Samurai_HtmlElementSup.m in Sources */,
 				6A6DC7EE1BD3DFA800A359C0 /* Samurai_CSSRuleSet.m in Sources */,
 				6A6DC7C31BD3DFA800A359C0 /* Samurai_Package.m in Sources */,
+				6A74330B1BE3459300A21481 /* NSObject+LS_Entity.m in Sources */,
 				6AF4BDE21BB553190047A720 /* UIView+Hierarchy.m in Sources */,
 				6A6DC8871BD3DFA900A359C0 /* Samurai_HtmlRenderObject.m in Sources */,
 				6A6DC79E1BD3DFA800A359C0 /* Samurai_ViewComponent.m in Sources */,

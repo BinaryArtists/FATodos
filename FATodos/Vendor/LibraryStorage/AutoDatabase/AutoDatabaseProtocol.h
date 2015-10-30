@@ -11,6 +11,12 @@
 
 @protocol AutoDatabaseProtocol <NSObject>
 
+/**
+ *  是否启用支持AutoDatabase
+ */
+@required
++ (BOOL)ad_enabled;
+
 #pragma mark - 数据库文件操作
 
 /** 

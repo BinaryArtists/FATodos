@@ -45,7 +45,7 @@
 // CocoaLumerjack define
 #ifdef DEBUG
 
-#   define ddLogLevel DDLogFlagVerbose
+#   define ddLogLevel DDLogLevelAll
 
 #   define logv        DDLogVerbose
 #   define logd        DDLogDebug
@@ -55,7 +55,7 @@
 
 #else
 
-#   define ddLogLevel DDLogFlagError
+#   define ddLogLevel DDLogLevelError
 
 #define logv(...)
 #define logd(...)
