@@ -34,63 +34,79 @@
 
 - (BOOL)ad_setDatabaseName:(NSString *)databaseName {
     
-    return YES;
+    return [self.delegate ad_setDatabaseName:databaseName];
+}
+
+- (BOOL)ad_setTableName:(NSString *)tableName {
+    
+    return [self.delegate ad_setTableName:tableName];
 }
 
 - (BOOL)ad_createTable {
-    return YES;
+    
+    return [self.delegate ad_createTable];
 }
 
 /////////////////////// 增
 
 - (BOOL)ad_save {
-    return YES;
+    
+    return [self.delegate ad_save];
 }
 
 - (BOOL)ad_saveObjects:(NSArray *)array {
-    return YES;
+    
+    return [self.delegate ad_saveObjects:array];
 }
 
 /////////////////////// 删
 
 - (BOOL)ad_deleteObject {
-    return YES;
+    
+    return [self.delegate ad_deleteObject];
 }
 
 - (BOOL)ad_deleteObjects:(NSArray *)array {
-    return YES;
+    
+    return [self.delegate ad_deleteObjects:array];
 }
 
 - (BOOL)ad_deleteObjectsByCriteria:(NSString *)criteria {
-    return YES;
+    
+    return [self.delegate ad_deleteObjectsByCriteria:criteria];
 }
 
 - (BOOL)ad_clearTable {
-    return YES;
+    
+    return [self.delegate ad_clearTable];
 }
 
 /////////////////////// 改
 
 - (BOOL)ad_saveOrUpdate {
-    return YES;
+    
+    return [self.delegate ad_saveOrUpdate];
 }
 
 /////////////////////// 查
 
 - (NSArray *)ad_findAll {
-    return nil;
+    
+    return [self.delegate ad_findAll];
 }
 
 - (instancetype)ad_findByMajorKey:(int)majorKey {
-    return nil;
+    
+    return [self.delegate ad_findByMajorKey:majorKey];
 }
 
 - (instancetype)ad_findFirstByCriteria:(NSString *)criteria {
-    return nil;
+    
+    return [self.delegate ad_findFirstByCriteria:criteria];
 }
 
 - (NSArray *)ad_findByCriteria:(NSString *)criteria {
-    return nil;
+    return [self ad_findByCriteria:criteria];
 }
 
 @end

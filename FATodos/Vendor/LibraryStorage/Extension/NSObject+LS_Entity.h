@@ -14,11 +14,24 @@
 
 @interface NSObject (LS_Entity)
 
-/** 主键 id */
-@property (nonatomic, assign)   int        pk;
-/** 列名 */
-@property (retain, readonly, nonatomic) NSMutableArray         *columeNames;
-/** 列类型 */
-@property (retain, readonly, nonatomic) NSMutableArray         *columeTypes;
+/**
+ *  主键 id
+ */
+@property (nonatomic, assign) int         primiryKey;
+
+/** 
+ *  列名
+ */
+@property (nonatomic, strong) NSArray *      columeNames;
+
+/**
+ *  列objc类型
+ */
+@property (nonatomic, strong) NSArray *      columeObjctypes;
+
+/**
+ *  列sql类型
+ */
+@property (nonatomic, strong) NSArray *      columeSqltypes;
 
 @end
