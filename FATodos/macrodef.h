@@ -12,22 +12,12 @@
 
 #ifdef DEBUG
 
-#   define debugLog(...) NSLog(__VA_ARGS__)
-#   define debugMethod() NSLog(@"%s", __func__)
-
-#   define FAssert( __condition ) NSAssert(__condition, NSStringFromSelector(_cmd));
-#   define _assert_ FAssert
-
+#   define _assert_ NSAssert(__condition, NSStringFromSelector(_cmd));
 #   define debugCode( __code_fragment ) { __code_fragment }
 
 #else
 
-#   define debugLog(...)
-#   define debugMethod()
-
-#   define FAssert( __condition )
-#   define _assert_ FAssert
-
+#   define _assert_ NSAssert(__condition, NSStringFromSelector(_cmd));
 #   define debugCode( __code_fragment )
 
 #endif
@@ -51,5 +41,32 @@
 #define app_version         [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"]
 
 #define _ self
+
+// CocoaLumerjack define
+#ifdef DEBUG
+
+#   define ddLogLevel DDLogFlagVerbose
+
+#   define logv        DDLogVerbose
+#   define logd        DDLogDebug
+#   define logi        DDLogInfo
+#   define logw        DDLogWarn
+#   define loge        DDLogError
+
+#else
+
+#   define ddLogLevel DDLogFlagError
+
+#define logv(...)
+#define logd(...)
+#define logi(...)
+#define logw(...)
+#define loge(...)
+
+#endif
+
+
+
+
 
 #endif

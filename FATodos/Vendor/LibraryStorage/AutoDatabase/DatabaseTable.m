@@ -114,6 +114,7 @@
         sqlitetype      = nil;
         
         // should be logged.
+        loge(@"type (%@) not supported!", objctype);
     }
     
     return sqlitetype;
