@@ -16,6 +16,7 @@
 #   define debugMethod() NSLog(@"%s", __func__)
 
 #   define FAssert( __condition ) NSAssert(__condition, NSStringFromSelector(_cmd));
+#   define _assert_ FAssert
 
 #   define debugCode( __code_fragment ) { __code_fragment }
 
@@ -25,6 +26,7 @@
 #   define debugMethod()
 
 #   define FAssert( __condition )
+#   define _assert_ FAssert
 
 #   define debugCode( __code_fragment )
 
@@ -37,6 +39,9 @@
 #define empty_string        @""
 
 #define str(key)            NSLocalizedString(key, nil)
+
+#define str_of_charPtr( __charPtr ) [NSString stringWithUTF8String:__charPtr]
+#define str_of_type( __type )       str_of_charPtr( @encode(__type) )
 
 #define path_of_app_home    NSHomeDirectory()
 #define path_of_temp        NSTemporaryDirectory()

@@ -26,6 +26,7 @@
 		6A674B731BE0C2AE00562321 /* FMDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A674B721BE0C2AE00562321 /* FMDBManager.m */; };
 		6A674B7B1BE0CF9E00562321 /* DatabaseTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A674B7A1BE0CF9E00562321 /* DatabaseTable.m */; };
 		6A674B7E1BE0E28500562321 /* DatabaseSentence.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A674B7D1BE0E28500562321 /* DatabaseSentence.m */; };
+		6A674B851BE2140100562321 /* NSObject+LS_Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A674B841BE2140100562321 /* NSObject+LS_Extension.m */; };
 		6A6DA09D1BD343F400A359C0 /* FourQuadrantVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6DA09B1BD343F400A359C0 /* FourQuadrantVC.m */; };
 		6A6DA09E1BD343F400A359C0 /* FourQuadrantVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A6DA09C1BD343F400A359C0 /* FourQuadrantVC.xib */; };
 		6A6DA0A21BD3440500A359C0 /* NoteVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6DA0A01BD3440500A359C0 /* NoteVC.m */; };
@@ -577,6 +578,8 @@
 		6A674B7A1BE0CF9E00562321 /* DatabaseTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseTable.m; sourceTree = "<group>"; };
 		6A674B7C1BE0E28500562321 /* DatabaseSentence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseSentence.h; sourceTree = "<group>"; };
 		6A674B7D1BE0E28500562321 /* DatabaseSentence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseSentence.m; sourceTree = "<group>"; };
+		6A674B831BE2140100562321 /* NSObject+LS_Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+LS_Extension.h"; sourceTree = "<group>"; };
+		6A674B841BE2140100562321 /* NSObject+LS_Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LS_Extension.m"; sourceTree = "<group>"; };
 		6A6DA09A1BD343F400A359C0 /* FourQuadrantVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourQuadrantVC.h; sourceTree = "<group>"; };
 		6A6DA09B1BD343F400A359C0 /* FourQuadrantVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourQuadrantVC.m; sourceTree = "<group>"; };
 		6A6DA09C1BD343F400A359C0 /* FourQuadrantVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FourQuadrantVC.xib; sourceTree = "<group>"; };
@@ -1743,6 +1746,8 @@
 				6A674B691BE0BE8700562321 /* NSObject+AutoArchive.m */,
 				6A674B6B1BE0BE9500562321 /* NSObject+AutoDatabase.h */,
 				6A674B6C1BE0BE9500562321 /* NSObject+AutoDatabase.m */,
+				6A674B831BE2140100562321 /* NSObject+LS_Extension.h */,
+				6A674B841BE2140100562321 /* NSObject+LS_Extension.m */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -4246,6 +4251,7 @@
 				6A6DC7CC1BD3DFA800A359C0 /* ServiceGesture.m in Sources */,
 				6ACFDFCC1B9D40F40061DA35 /* MZDayPicker.m in Sources */,
 				6A6DC84B1BD3DFA800A359C0 /* Samurai_HtmlElementH1.m in Sources */,
+				6A674B851BE2140100562321 /* NSObject+LS_Extension.m in Sources */,
 				6AD47CB61BB772D600BBBC0F /* MemoCell.m in Sources */,
 				6A6DC8781BD3DFA900A359C0 /* Samurai_HtmlElementThead.m in Sources */,
 				6A6DC8221BD3DFA800A359C0 /* UIStepper+Html.m in Sources */,

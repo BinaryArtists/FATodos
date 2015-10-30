@@ -47,3 +47,5 @@ pod 'iOS7Colors', '~> 2.0.0'
 
 pod 'ZLSwipeableView'
 
+pod 'CocoaLumberjack'
+

@@ -76,6 +76,7 @@
 #import "ZLSwipeableView.h"
 #import "ZLPanGestureRecognizer.h"
 #import "Masonry.h"
+#import "CocoaLumberjack.h"
 
 // Vendor
 #import "Mantle.h"

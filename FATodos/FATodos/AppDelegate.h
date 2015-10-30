@@ -52,6 +52,15 @@
 
 // 便签开始之前：要做好db那部分，自动归档
 
+
+
+/////////////////////////////////totototodo。
+
+//  ！！！！！类似extobjc库，将写法也抽出来一种，也就是samurai中的各种简化写法，extobjccodingstyle
+
+
+
+
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
 
