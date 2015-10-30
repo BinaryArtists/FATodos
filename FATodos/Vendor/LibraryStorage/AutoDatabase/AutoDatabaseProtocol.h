@@ -10,7 +10,7 @@
 //  @optional 需要看准使用的前置条件
 
 /**
- *  ST  single thread 单线程，阻塞型的
+ *  ST  single thread 单线程，同步
  */
 
 @protocol AutoDatabaseProtocol <NSObject>
