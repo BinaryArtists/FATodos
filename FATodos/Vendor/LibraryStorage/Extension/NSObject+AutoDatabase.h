@@ -54,3 +54,17 @@
 + (NSArray *)ad_findByCriteria:(NSString *)criteria;
 
 @end
+
+@interface NSObject ( AutoDatabaseMT ) <AutoDatabaseMTProtocol>
+
+// add
+
+
+// delete
+
+
+// query
+
+
+
+@end

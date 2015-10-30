@@ -9,6 +9,10 @@
 //  @required 可以放心使用
 //  @optional 需要看准使用的前置条件
 
+/**
+ *  ST  single thread 单线程，阻塞型的
+ */
+
 @protocol AutoDatabaseProtocol <NSObject>
 
 /**
@@ -132,6 +136,16 @@
 + (instancetype)ad_findByMajorKey:(int)majorKey;
 + (instancetype)ad_findFirstByCriteria:(NSString *)criteria;
 + (NSArray *)ad_findByCriteria:(NSString *)criteria;
+
+@end
+
+/**
+ *  MT  multi thread 多线程，异步
+ */
+
+@protocol AutoDatabaseMTProtocol <NSObject>
+
+
 
 @end
 

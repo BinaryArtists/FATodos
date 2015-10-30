@@ -23,7 +23,6 @@
 		6A674B6A1BE0BE8700562321 /* NSObject+AutoArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A674B691BE0BE8700562321 /* NSObject+AutoArchive.m */; };
 		6A674B6D1BE0BE9500562321 /* NSObject+AutoDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A674B6C1BE0BE9500562321 /* NSObject+AutoDatabase.m */; };
 		6A674B701BE0BFAD00562321 /* DatabaseProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A674B6F1BE0BFAD00562321 /* DatabaseProxy.m */; };
-		6A674B731BE0C2AE00562321 /* FMDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A674B721BE0C2AE00562321 /* FMDBManager.m */; };
 		6A674B7B1BE0CF9E00562321 /* DatabaseTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A674B7A1BE0CF9E00562321 /* DatabaseTable.m */; };
 		6A674B7E1BE0E28500562321 /* DatabaseSentence.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A674B7D1BE0E28500562321 /* DatabaseSentence.m */; };
 		6A674B851BE2140100562321 /* NSObject+LS_Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A674B841BE2140100562321 /* NSObject+LS_Extension.m */; };
@@ -388,6 +387,7 @@
 		6A6DC8B21BD3DFA900A359C0 /* tokenizer.c in Sources */ = {isa = PBXBuildFile; fileRef = 6A6DB8441BD3DFA500A359C0 /* tokenizer.c */; };
 		6A6DC8D21BD497DF00A359C0 /* AppAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6DC8D11BD497DF00A359C0 /* AppAppearance.m */; };
 		6A74330B1BE3459300A21481 /* NSObject+LS_Entity.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A74330A1BE3459300A21481 /* NSObject+LS_Entity.m */; };
+		6A74330F1BE3486400A21481 /* FMDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A74330E1BE3486400A21481 /* FMDBManager.m */; };
 		6A84CF781BDA3E5200B61858 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A84CF771BDA3E5200B61858 /* BaseTableViewCell.m */; };
 		6A84CF7F1BDD0F8300B61858 /* CardContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A84CF7C1BDD0F8300B61858 /* CardContentView.xib */; };
 		6A84CF801BDD0F8300B61858 /* CardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A84CF7E1BDD0F8300B61858 /* CardView.m */; };
@@ -573,8 +573,6 @@
 		6A674B6C1BE0BE9500562321 /* NSObject+AutoDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AutoDatabase.m"; sourceTree = "<group>"; };
 		6A674B6E1BE0BFAD00562321 /* DatabaseProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseProxy.h; sourceTree = "<group>"; };
 		6A674B6F1BE0BFAD00562321 /* DatabaseProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseProxy.m; sourceTree = "<group>"; };
-		6A674B711BE0C2AE00562321 /* FMDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBManager.h; sourceTree = "<group>"; };
-		6A674B721BE0C2AE00562321 /* FMDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDBManager.m; sourceTree = "<group>"; };
 		6A674B791BE0CF9E00562321 /* DatabaseTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseTable.h; sourceTree = "<group>"; };
 		6A674B7A1BE0CF9E00562321 /* DatabaseTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseTable.m; sourceTree = "<group>"; };
 		6A674B7C1BE0E28500562321 /* DatabaseSentence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseSentence.h; sourceTree = "<group>"; };
@@ -1300,6 +1298,8 @@
 		6A6DC8D11BD497DF00A359C0 /* AppAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppAppearance.m; sourceTree = "<group>"; };
 		6A7433091BE3459300A21481 /* NSObject+LS_Entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+LS_Entity.h"; sourceTree = "<group>"; };
 		6A74330A1BE3459300A21481 /* NSObject+LS_Entity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LS_Entity.m"; sourceTree = "<group>"; };
+		6A74330D1BE3486400A21481 /* FMDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBManager.h; sourceTree = "<group>"; };
+		6A74330E1BE3486400A21481 /* FMDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDBManager.m; sourceTree = "<group>"; };
 		6A84CF761BDA3E5200B61858 /* BaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
 		6A84CF771BDA3E5200B61858 /* BaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
 		6A84CF7C1BDD0F8300B61858 /* CardContentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardContentView.xib; sourceTree = "<group>"; };
@@ -1729,11 +1729,10 @@
 		6A674B641BE0B0D700562321 /* AutoDatabase */ = {
 			isa = PBXGroup;
 			children = (
+				6A74330C1BE3486400A21481 /* Adapter */,
 				6A674B661BE0B11C00562321 /* AutoDatabaseProtocol.h */,
 				6A674B6E1BE0BFAD00562321 /* DatabaseProxy.h */,
 				6A674B6F1BE0BFAD00562321 /* DatabaseProxy.m */,
-				6A674B711BE0C2AE00562321 /* FMDBManager.h */,
-				6A674B721BE0C2AE00562321 /* FMDBManager.m */,
 				6A674B791BE0CF9E00562321 /* DatabaseTable.h */,
 				6A674B7A1BE0CF9E00562321 /* DatabaseTable.m */,
 				6A674B7C1BE0E28500562321 /* DatabaseSentence.h */,
@@ -2973,6 +2972,15 @@
 			path = LibraryApplication;
 			sourceTree = "<group>";
 		};
+		6A74330C1BE3486400A21481 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				6A74330D1BE3486400A21481 /* FMDBManager.h */,
+				6A74330E1BE3486400A21481 /* FMDBManager.m */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
 		6A84CF751BDA3E2E00B61858 /* view */ = {
 			isa = PBXGroup;
 			children = (
@@ -3948,6 +3956,7 @@
 				6A6DC7B01BD3DFA800A359C0 /* Samurai_ViewCore.m in Sources */,
 				6A6DC78E1BD3DFA800A359C0 /* Samurai_UICollectionViewCell.m in Sources */,
 				6A6DC84F1BD3DFA800A359C0 /* Samurai_HtmlElementH5.m in Sources */,
+				6A74330F1BE3486400A21481 /* FMDBManager.m in Sources */,
 				6A6DC8691BD3DFA900A359C0 /* Samurai_HtmlElementPre.m in Sources */,
 				6A6DC78F1BD3DFA800A359C0 /* Samurai_UIImageView.m in Sources */,
 				6A6DC7891BD3DFA800A359C0 /* UIViewController+SignalHandling.m in Sources */,
@@ -4266,7 +4275,6 @@
 				6A6DC7A31BD3DFA800A359C0 /* Samurai_Intent.m in Sources */,
 				6A6DC76D1BD3DFA800A359C0 /* Samurai_CoreConfig.m in Sources */,
 				6A6DC7D41BD3DFA800A359C0 /* ServiceGrids.m in Sources */,
-				6A674B731BE0C2AE00562321 /* FMDBManager.m in Sources */,
 				6A674B601BE063B200562321 /* UIViewController+Base.m in Sources */,
 				6A6DC79F1BD3DFA800A359C0 /* Samurai_Activity.m in Sources */,
 				6A6DC7AE1BD3DFA800A359C0 /* Samurai_StyleSheet.m in Sources */,
