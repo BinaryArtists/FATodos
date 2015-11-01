@@ -33,7 +33,7 @@
 }
 
 - (BOOL)ad_setTableName:(NSString *)tableName {
-    return YES;
+    return [[DatabaseProxy sharedInstance] ad_setTableName:tableName];
 }
 
 - (BOOL)ad_createTable {
