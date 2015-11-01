@@ -9,7 +9,7 @@
 #import "FMDBManager.h"
 #import "FMDB.h"
 #import "DatabaseTable.h"
-#import "AutoDatabaseProtocol.h"
+#import "DatabaseSentence.h"
 
 @interface FMDBManager ()
 
@@ -19,7 +19,22 @@
 
 @def_singleton( FMDBManager )
 
-#pragma mark - AutoDatabaseProtocol
+#pragma mark - AutoDatabaseProxyProtocol
+
+#pragma mark - db
+
+
+
+#pragma mark - add
+
+
+
+
+#pragma mark - delete
+
+
+
+#pragma mark - query
 
 
 

@@ -8,9 +8,8 @@
 
 #import "DatabaseProxy.h"
 #import "FMDBManager.h"
-#import "AutoDatabaseProtocol.h"
 
-@interface DatabaseProxy () <AutoDatabaseProxyProtocol>
+@interface DatabaseProxy ()
 
 @property (nonatomic, weak) id<AutoDatabaseProxyProtocol> delegate;
 
@@ -32,81 +31,66 @@
 
 /////////////////////// db
 
-- (BOOL)ad_setDatabaseName:(NSString *)databaseName {
-    
-    return [self.delegate ad_setDatabaseName:databaseName];
+- (BOOL)set:(Class)entityClass withDatabaseName:(NSString *)databaseName {
+    return [self.delegate set:entityClass withDatabaseName:databaseName];
 }
 
-- (BOOL)ad_setTableName:(NSString *)tableName {
-    
-    return [self.delegate ad_setTableName:tableName];
+- (BOOL)set:(Class)entityClass withTableName:(NSString *)tableName {
+    return [self.delegate set:entityClass withTableName:tableName];
 }
 
-- (BOOL)ad_createTable {
-    
-    return [self.delegate ad_createTable];
+- (BOOL)createTable:(Class)entityClass {
+    return [self.delegate createTable:entityClass];
 }
 
 /////////////////////// 增
 
-- (BOOL)ad_save {
-    
-    return [self.delegate ad_save];
+- (BOOL)saveOrUpdateEntity:(id)entity {
+    return [self.delegate saveOrUpdateEntity:entity];
 }
 
-- (BOOL)ad_saveObjects:(NSArray *)array {
-    
-    return [self.delegate ad_saveObjects:array];
+- (BOOL)saveEntity:(id)entity {
+    return [self saveEntity:entity];
+}
+
+- (BOOL)saveEntities:(NSArray *)entities {
+    return [self.delegate saveEntities:entities];
 }
 
 /////////////////////// 删
 
-- (BOOL)ad_deleteObject {
-    
-    return [self.delegate ad_deleteObject];
+- (BOOL)deleteEntity:(id)entity {
+    return [self.delegate deleteEntity:entity];
 }
 
-- (BOOL)ad_deleteObjects:(NSArray *)array {
-    
-    return [self.delegate ad_deleteObjects:array];
+- (BOOL)deleteEntities:(NSArray *)entities {
+    return [self.delegate deleteEntities:entities];
 }
 
-- (BOOL)ad_deleteObjectsByCriteria:(NSString *)criteria {
-    
-    return [self.delegate ad_deleteObjectsByCriteria:criteria];
+- (BOOL)deleteEntitiesByCriteria:(NSString *)criteria {
+    return [self.delegate deleteEntitiesByCriteria:criteria];
 }
 
-- (BOOL)ad_clearTable {
-    
-    return [self.delegate ad_clearTable];
-}
-
-/////////////////////// 改
-
-- (BOOL)ad_saveOrUpdate {
-    
-    return [self.delegate ad_saveOrUpdate];
+- (BOOL)clearTable:(Class)entityClass {
+    return [self.delegate clearTable:entityClass];
 }
 
 /////////////////////// 查
 
-- (NSArray *)ad_findAll {
-    
-    return [self.delegate ad_findAll];
+- (NSArray *)findAll:(Class)entityClass {
+    return [self.delegate findAll:entityClass];
 }
 
-- (instancetype)ad_findByMajorKey:(int)majorKey {
-    
-    return [self.delegate ad_findByMajorKey:majorKey];
+- (instancetype)findByPrimiryKey:(int)primiryKey {
+    return [self.delegate findByPrimiryKey:primiryKey];
 }
 
-- (instancetype)ad_findFirstByCriteria:(NSString *)criteria {
-    
-    return [self.delegate ad_findFirstByCriteria:criteria];
+- (instancetype)findFirstByCriteria:(NSString *)criteria {
+    return [self.delegate findFirstByCriteria:criteria];
 }
 
-- (NSArray *)ad_findByCriteria:(NSString *)criteria {
-    return [self ad_findByCriteria:criteria];
+- (NSArray *)findByCriteria:(NSString *)criteria {
+    return [self.delegate findByCriteria:criteria];
 }
 
 @end

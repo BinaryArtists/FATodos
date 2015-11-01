@@ -140,8 +140,8 @@
 @protocol AutoDatabaseProxyProtocol <NSObject>
 
 // db
-- (BOOL)setEntity:(id)entity withDatabaseName:(NSString *)databaseName;
-- (BOOL)setEntity:(id)entity withTableName:(NSString *)tableName;
+- (BOOL)set:(Class)entityClass withDatabaseName:(NSString *)databaseName;
+- (BOOL)set:(Class)entityClass withTableName:(NSString *)tableName;
 - (BOOL)createTable:(Class)entityClass;
 
 // add
