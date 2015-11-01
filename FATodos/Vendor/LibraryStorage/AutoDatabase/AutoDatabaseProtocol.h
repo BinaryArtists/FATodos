@@ -149,3 +149,13 @@
 
 @end
 
+/**
+ *  Proxy Protocol
+ */
+@protocol AutoDatabaseProxyProtocol <NSObject>
+
+
+
+@end
+
+
