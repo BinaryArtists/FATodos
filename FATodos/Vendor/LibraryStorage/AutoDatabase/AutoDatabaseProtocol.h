@@ -6,10 +6,9 @@
 //  Copyright © 2015 fallen.ink. All rights reserved.
 //
 
-//  @required 可以放心使用
-//  @optional 需要看准使用的前置条件
-
 /**
+ *  Entity's interface protocol
+ 
  *  ST  single thread 单线程，同步
  */
 
@@ -136,20 +135,15 @@
 @end
 
 /**
- *  Proxy Protocol
+ *  Proxy Protocol of auto-entity's implementaion
  */
 @protocol AutoDatabaseProxyProtocol <NSObject>
 
-@required
 // db
 - (BOOL)setEntity:(id)entity withDatabaseName:(NSString *)databaseName;
 - (BOOL)setEntity:(id)entity withTableName:(NSString *)tableName;
 - (BOOL)createTable:(Class)entityClass;
 
-@optional
-- (BOOL)createTableForEntity:(id)entity;
-
-@required
 // add
 - (BOOL)saveOrUpdateEntity:(id)entity;
 - (BOOL)saveEntity:(id)entity;
@@ -161,18 +155,11 @@
 - (BOOL)deleteEntitiesByCriteria:(NSString *)criteria;
 - (BOOL)clearTable:(Class)entityClass;
 
-@optional
-- (BOOL)clearTableForEntity:(id)entity;
-
-@required
 // query
 - (NSArray *)findAll:(Class)entityClass;
 - (instancetype)findByPrimiryKey:(int)primiryKey;
 - (instancetype)findFirstByCriteria:(NSString *)criteria;
 - (NSArray *)findByCriteria:(NSString *)criteria;
-
-@optional
-- (NSArray *)findAllWithEntity:(id)entity;
 
 @end
 

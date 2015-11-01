@@ -10,9 +10,9 @@
 #import "FMDBManager.h"
 #import "AutoDatabaseProtocol.h"
 
-@interface DatabaseProxy () <AutoDatabaseProtocol>
+@interface DatabaseProxy () <AutoDatabaseProxyProtocol>
 
-@property (nonatomic, weak) id<AutoDatabaseProtocol> delegate;
+@property (nonatomic, weak) id<AutoDatabaseProxyProtocol> delegate;
 
 @end
 
