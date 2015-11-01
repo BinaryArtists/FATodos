@@ -27,18 +27,18 @@
  *  设置数据库文件名，默认：在一起 ad.stroage.sqlite
  */
 @required
-- (BOOL)ad_setDatabaseName:(NSString *)databaseName;
++ (BOOL)ad_setDatabaseName:(NSString *)databaseName;
 
 /**
  * 设置数据表名称，默认：string from class
  */
-- (BOOL)ad_setTableName:(NSString *)tableName;
++ (BOOL)ad_setTableName:(NSString *)tableName;
 
 /**
  *  创建表
  *  如果已经创建，返回YES
  */
-- (BOOL)ad_createTable;
++ (BOOL)ad_createTable;
 
 #pragma mark - 通过实体，对数据库操作
 
@@ -58,7 +58,7 @@
 /**
  *  批量保存数据
  */
-- (BOOL)ad_saveObjects:(NSArray *)array;
++ (BOOL)ad_saveObjects:(NSArray *)array;
 
 /**
  *  删除单个数据
@@ -68,36 +68,36 @@
 /**
  *  批量删除数据
  */
-- (BOOL)ad_deleteObjects:(NSArray *)array;
++ (BOOL)ad_deleteObjects:(NSArray *)array;
 
 /**
  *  通过条件删除数据
  
  *  fixme: 换做使用谓词
  */
-- (BOOL)ad_deleteObjectsByCriteria:(NSString *)criteria;
++ (BOOL)ad_deleteObjectsByCriteria:(NSString *)criteria;
 
 /**
  *  清空表
  */
-- (BOOL)ad_clearTable;
++ (BOOL)ad_clearTable;
 
 /**
  *  查询所有数据
  */
-- (NSArray *)ad_findAll;
++ (NSArray *)ad_findAll;
 
 /**
  *  通过主键查询
  */
-- (instancetype)ad_findByMajorKey:(int)majorKey;
++ (instancetype)ad_findByMajorKey:(int)majorKey;
 
 /**
  *  查询某条数据
  
  *  fixme: 换做使用谓词
  */
-- (instancetype)ad_findFirstByCriteria:(NSString *)criteria;
++ (instancetype)ad_findFirstByCriteria:(NSString *)criteria;
 
 /** 
  *  通过条件查找数据
@@ -105,7 +105,7 @@
  
  *  fixme: 换做使用谓词
  */
-- (NSArray *)ad_findByCriteria:(NSString *)criteria;
++ (NSArray *)ad_findByCriteria:(NSString *)criteria;
 
 @optional
 
@@ -122,20 +122,6 @@
  *  穿透的类
  */
 + (Class)transientClass;
-
-+ (BOOL)ad_setDatabaseName:(NSString *)databaseName;
-+ (BOOL)ad_createTable;
-
-+ (BOOL)ad_saveObjects:(NSArray *)array;
-
-+ (BOOL)ad_deleteObjects:(NSArray *)array;
-+ (BOOL)ad_deleteObjectsByCriteria:(NSString *)criteria;
-+ (BOOL)ad_clearTable;
-
-+ (NSArray *)ad_findAll;
-+ (instancetype)ad_findByMajorKey:(int)majorKey;
-+ (instancetype)ad_findFirstByCriteria:(NSString *)criteria;
-+ (NSArray *)ad_findByCriteria:(NSString *)criteria;
 
 @end
 
@@ -154,7 +140,39 @@
  */
 @protocol AutoDatabaseProxyProtocol <NSObject>
 
+@required
+// db
+- (BOOL)setEntity:(id)entity withDatabaseName:(NSString *)databaseName;
+- (BOOL)setEntity:(id)entity withTableName:(NSString *)tableName;
+- (BOOL)createTable:(Class)entityClass;
 
+@optional
+- (BOOL)createTableForEntity:(id)entity;
+
+@required
+// add
+- (BOOL)saveOrUpdateEntity:(id)entity;
+- (BOOL)saveEntity:(id)entity;
+- (BOOL)saveEntities:(NSArray *)entities;
+
+// delete
+- (BOOL)deleteEntity:(id)entity;
+- (BOOL)deleteEntities:(NSArray *)entities;
+- (BOOL)deleteEntitiesByCriteria:(NSString *)criteria;
+- (BOOL)clearTable:(Class)entityClass;
+
+@optional
+- (BOOL)clearTableForEntity:(id)entity;
+
+@required
+// query
+- (NSArray *)findAll:(Class)entityClass;
+- (instancetype)findByPrimiryKey:(int)primiryKey;
+- (instancetype)findFirstByCriteria:(NSString *)criteria;
+- (NSArray *)findByCriteria:(NSString *)criteria;
+
+@optional
+- (NSArray *)findAllWithEntity:(id)entity;
 
 @end
 

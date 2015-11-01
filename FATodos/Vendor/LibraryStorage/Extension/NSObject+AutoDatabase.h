@@ -10,6 +10,8 @@
 
 #import "AutoDatabaseProtocol.h"
 
+// 占用当前线程
+
 @interface NSObject (AutoDatabase) <AutoDatabaseProtocol>
 
 // support
@@ -54,6 +56,8 @@
 + (NSArray *)ad_findByCriteria:(NSString *)criteria;
 
 @end
+
+// 线程分发，回调在主线程
 
 @interface NSObject ( AutoDatabaseMT ) <AutoDatabaseMTProtocol>
 
