@@ -18,8 +18,6 @@
 
 @singleton( DatabaseProxy )
 
-#pragma mark -
-
 // db
 - (BOOL)set:(Class)entityClass withDatabaseName:(NSString *)databaseName;
 - (BOOL)set:(Class)entityClass withTableName:(NSString *)tableName;

@@ -130,7 +130,43 @@
 
 @protocol AutoDatabaseMTProtocol <NSObject>
 
+//
++ (void)ad_createTableWithCompletion:(void (^)(BOOL succeed))handler;
 
+//
+- (BOOL)ad_saveOrUpdateWithCompletion:(void (^)(BOOL succeed))handler;
+
+- (BOOL)ad_saveWithComletion:(void (^)(BOOL succeed))handler;
+
++ (BOOL)ad_saveObjects:(NSArray *)array withCompletion:(void (^)(BOOL succeed))handler;
+
+//
+- (BOOL)ad_deleteObjectWithCompletion:(void (^)(BOOL succeed))handler;
++ (BOOL)ad_deleteObjects:(NSArray *)array withCompletion:(void (^)(BOOL succeed))handler;
++ (BOOL)ad_deleteObjectsByCriteria:(NSString *)criteria withCompletion:(void (^)(BOOL succeed))handler;
+
+//
++ (void)ad_findAllWithCompletion:(void (^)(BOOL succeed, NSArray *objects))handler;
+
+/**
+ *  通过主键查询
+ */
++ (void)ad_findByMajorKey:(int)majorKey withCompletion:(void (^)(BOOL succeed, id object))handler;
+
+/**
+ *  查询某条数据
+ 
+ *  fixme: 换做使用谓词
+ */
++ (void)ad_findFirstByCriteria:(NSString *)criteria withCompletion:(void (^)(BOOL succeed, id object))handler;
+
+/**
+ *  通过条件查找数据
+ *  这样可以进行分页查询 @" WHERE pk > 5 limit 10"
+ 
+ *  fixme: 换做使用谓词
+ */
++ (void)ad_findByCriteria:(NSString *)criteria withCompletion:(void (^)(BOOL succeed, NSArray *object))handler;
 
 @end
 
@@ -163,4 +199,8 @@
 
 @end
 
+@protocol AutoDatabaseProxyMTProtocol <NSObject>
 
+
+
+@end
