@@ -15,6 +15,11 @@
 @interface NSObject (LS_Entity)
 
 /**
+ *  model的状态时机代理
+ */
+@property (nonatomic, weak) id     ad_delegate;
+
+/**
  *  主键 id
  */
 @property (nonatomic, assign) int         primiryKey;

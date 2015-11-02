@@ -410,41 +410,6 @@
 		6ACEBAF81BA974810011E3F7 /* MGSwipeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACEBAF61BA974810011E3F7 /* MGSwipeTableCell.m */; };
 		6ACEBB001BA9B7CE0011E3F7 /* s.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACEBAFF1BA9B7CE0011E3F7 /* s.m */; };
 		6ACFDF341B9C23FD0061DA35 /* Routable.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFDDCD1B9C23FC0061DA35 /* Routable.m */; };
-		6ACFDF8F1B9C2E740061DA35 /* db.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6ACFDF3A1B9C2E740061DA35 /* db.plist */; };
-		6ACFDF901B9C2E740061DA35 /* ZIMDbConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFDF3E1B9C2E740061DA35 /* ZIMDbConnection.m */; };
-		6ACFDF911B9C2E740061DA35 /* ZIMDbConnectionPool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFDF401B9C2E740061DA35 /* ZIMDbConnectionPool.m */; };
-		6ACFDF921B9C2E740061DA35 /* NSString+ZIMString.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFDF441B9C2E740061DA35 /* NSString+ZIMString.m */; };
-		6ACFDF931B9C2E740061DA35 /* ZIMOrmModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFDF471B9C2E740061DA35 /* ZIMOrmModel.m */; };
-		6ACFDF941B9C2E740061DA35 /* ZIMOrmSelectStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFDF4B1B9C2E740061DA35 /* ZIMOrmSelectStatement.m */; };
-		6ACFDF951B9C2E740061DA35 /* ZIMSqlAlterTableStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFDF4E1B9C2E740061DA35 /* ZIMSqlAlterTableStatement.m */; };
-		6ACFDF961B9C2E740061DA35 /* ZIMSqlAnalyzeStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFDF501B9C2E740061DA35 /* ZIMSqlAnalyzeStatement.m */; };
-		6ACFDF971B9C2E740061DA35 /* ZIMSqlAttachStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFDF521B9C2E740061DA35 /* ZIMSqlAttachStatement.m */; };
-		6ACFDF981B9C2E740061DA35 /* ZIMSqlCreateIndexStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFDF541B9C2E740061DA35 /* ZIMSqlCreateIndexStatement.m */; };
-		6ACFDF991B9C2E740061DA35 /* ZIMSqlCreateTableStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFDF561B9C2E740061DA35 /* ZIMSqlCreateTableStatement.m */; };
-		6ACFDF9A1B9C2E740061DA35 /* ZIMSqlCreateTriggerStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFDF581B9C2E740061DA35 /* ZIMSqlCreateTriggerStatement.m */; };
-		6ACFDF9B1B9C2E740061DA35 /* ZIMSqlCreateViewStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFDF5A1B9C2E740061DA35 /* ZIMSqlCreateViewStatement.m */; };
-		6ACFDF9C1B9C2E740061DA35 /* ZIMSqlDeleteStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFDF5F1B9C2E740061DA35 /* ZIMSqlDeleteStatement.m */; };
-		6ACFDF9D1B9C2E740061DA35 /* ZIMSqlDetachStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFDF611B9C2E740061DA35 /* ZIMSqlDetachStatement.m */; };
-		6ACFDF9E1B9C2E740061DA35 /* ZIMSqlDropIndexStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFDF631B9C2E740061DA35 /* ZIMSqlDropIndexStatement.m */; };
-		6ACFDF9F1B9C2E740061DA35 /* ZIMSqlDropTableStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFDF651B9C2E740061DA35 /* ZIMSqlDropTableStatement.m */; };
-		6ACFDFA01B9C2E740061DA35 /* ZIMSqlDropTriggerStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFDF671B9C2E740061DA35 /* ZIMSqlDropTriggerStatement.m */; };
-		6ACFDFA11B9C2E740061DA35 /* ZIMSqlDropViewStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFDF691B9C2E740061DA35 /* ZIMSqlDropViewStatement.m */; };
-		6ACFDFA21B9C2E740061DA35 /* ZIMSqlExplainStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFDF6B1B9C2E740061DA35 /* ZIMSqlExplainStatement.m */; };
-		6ACFDFA31B9C2E740061DA35 /* ZIMSqlExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFDF6D1B9C2E740061DA35 /* ZIMSqlExpression.m */; };
-		6ACFDFA41B9C2E740061DA35 /* ZIMSqlInsertStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFDF6F1B9C2E740061DA35 /* ZIMSqlInsertStatement.m */; };
-		6ACFDFA51B9C2E740061DA35 /* ZIMSqlPreparedStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFDF711B9C2E740061DA35 /* ZIMSqlPreparedStatement.m */; };
-		6ACFDFA61B9C2E740061DA35 /* ZIMSqlReindexStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFDF731B9C2E740061DA35 /* ZIMSqlReindexStatement.m */; };
-		6ACFDFA71B9C2E740061DA35 /* ZIMSqlSelectStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFDF761B9C2E740061DA35 /* ZIMSqlSelectStatement.m */; };
-		6ACFDFA81B9C2E740061DA35 /* ZIMSqlShowColumnsStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFDF781B9C2E740061DA35 /* ZIMSqlShowColumnsStatement.m */; };
-		6ACFDFA91B9C2E740061DA35 /* ZIMSqlShowGrantsStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFDF7A1B9C2E740061DA35 /* ZIMSqlShowGrantsStatement.m */; };
-		6ACFDFAA1B9C2E740061DA35 /* ZIMSqlShowTablesStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFDF7C1B9C2E740061DA35 /* ZIMSqlShowTablesStatement.m */; };
-		6ACFDFAB1B9C2E740061DA35 /* ZIMSqlShowTriggersStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFDF7E1B9C2E740061DA35 /* ZIMSqlShowTriggersStatement.m */; };
-		6ACFDFAC1B9C2E740061DA35 /* ZIMSqlShowViewsStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFDF801B9C2E740061DA35 /* ZIMSqlShowViewsStatement.m */; };
-		6ACFDFAD1B9C2E740061DA35 /* ZIMSqlTokenizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFDF831B9C2E740061DA35 /* ZIMSqlTokenizer.m */; };
-		6ACFDFAE1B9C2E740061DA35 /* ZIMSqlTruncateTableStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFDF861B9C2E740061DA35 /* ZIMSqlTruncateTableStatement.m */; };
-		6ACFDFAF1B9C2E740061DA35 /* ZIMSqlUpdateStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFDF881B9C2E740061DA35 /* ZIMSqlUpdateStatement.m */; };
-		6ACFDFB01B9C2E740061DA35 /* ZIMSqlUpsertStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFDF8A1B9C2E740061DA35 /* ZIMSqlUpsertStatement.m */; };
-		6ACFDFB11B9C2E740061DA35 /* ZIMMessageDigest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFDF8D1B9C2E740061DA35 /* ZIMMessageDigest.m */; };
 		6ACFDFB81B9C3CC30061DA35 /* UIViewController+UINavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFDFB71B9C3CC30061DA35 /* UIViewController+UINavigationBar.m */; };
 		6ACFDFBB1B9C85A90061DA35 /* NSString+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFDFBA1B9C85A90061DA35 /* NSString+Size.m */; };
 		6ACFDFBE1B9C85FB0061DA35 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFDFBD1B9C85FB0061DA35 /* UIView+Frame.m */; };
@@ -1337,84 +1302,6 @@
 		6ACEBAFF1BA9B7CE0011E3F7 /* s.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = s.m; sourceTree = "<group>"; };
 		6ACFDDCC1B9C23FC0061DA35 /* Routable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Routable.h; sourceTree = "<group>"; };
 		6ACFDDCD1B9C23FC0061DA35 /* Routable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Routable.m; sourceTree = "<group>"; };
-		6ACFDF3A1B9C2E740061DA35 /* db.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = db.plist; sourceTree = "<group>"; };
-		6ACFDF3D1B9C2E740061DA35 /* ZIMDbConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIMDbConnection.h; sourceTree = "<group>"; };
-		6ACFDF3E1B9C2E740061DA35 /* ZIMDbConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZIMDbConnection.m; sourceTree = "<group>"; };
-		6ACFDF3F1B9C2E740061DA35 /* ZIMDbConnectionPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIMDbConnectionPool.h; sourceTree = "<group>"; };
-		6ACFDF401B9C2E740061DA35 /* ZIMDbConnectionPool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZIMDbConnectionPool.m; sourceTree = "<group>"; };
-		6ACFDF411B9C2E740061DA35 /* ZIMDbSdk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIMDbSdk.h; sourceTree = "<group>"; };
-		6ACFDF431B9C2E740061DA35 /* NSString+ZIMString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ZIMString.h"; sourceTree = "<group>"; };
-		6ACFDF441B9C2E740061DA35 /* NSString+ZIMString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ZIMString.m"; sourceTree = "<group>"; };
-		6ACFDF461B9C2E740061DA35 /* ZIMOrmModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIMOrmModel.h; sourceTree = "<group>"; };
-		6ACFDF471B9C2E740061DA35 /* ZIMOrmModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZIMOrmModel.m; sourceTree = "<group>"; };
-		6ACFDF481B9C2E740061DA35 /* ZIMOrmModelDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIMOrmModelDelegate.h; sourceTree = "<group>"; };
-		6ACFDF491B9C2E740061DA35 /* ZIMOrmSdk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIMOrmSdk.h; sourceTree = "<group>"; };
-		6ACFDF4A1B9C2E740061DA35 /* ZIMOrmSelectStatement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIMOrmSelectStatement.h; sourceTree = "<group>"; };
-		6ACFDF4B1B9C2E740061DA35 /* ZIMOrmSelectStatement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZIMOrmSelectStatement.m; sourceTree = "<group>"; };
-		6ACFDF4D1B9C2E740061DA35 /* ZIMSqlAlterTableStatement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIMSqlAlterTableStatement.h; sourceTree = "<group>"; };
-		6ACFDF4E1B9C2E740061DA35 /* ZIMSqlAlterTableStatement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZIMSqlAlterTableStatement.m; sourceTree = "<group>"; };
-		6ACFDF4F1B9C2E740061DA35 /* ZIMSqlAnalyzeStatement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIMSqlAnalyzeStatement.h; sourceTree = "<group>"; };
-		6ACFDF501B9C2E740061DA35 /* ZIMSqlAnalyzeStatement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZIMSqlAnalyzeStatement.m; sourceTree = "<group>"; };
-		6ACFDF511B9C2E740061DA35 /* ZIMSqlAttachStatement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIMSqlAttachStatement.h; sourceTree = "<group>"; };
-		6ACFDF521B9C2E740061DA35 /* ZIMSqlAttachStatement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZIMSqlAttachStatement.m; sourceTree = "<group>"; };
-		6ACFDF531B9C2E740061DA35 /* ZIMSqlCreateIndexStatement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIMSqlCreateIndexStatement.h; sourceTree = "<group>"; };
-		6ACFDF541B9C2E740061DA35 /* ZIMSqlCreateIndexStatement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZIMSqlCreateIndexStatement.m; sourceTree = "<group>"; };
-		6ACFDF551B9C2E740061DA35 /* ZIMSqlCreateTableStatement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIMSqlCreateTableStatement.h; sourceTree = "<group>"; };
-		6ACFDF561B9C2E740061DA35 /* ZIMSqlCreateTableStatement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZIMSqlCreateTableStatement.m; sourceTree = "<group>"; };
-		6ACFDF571B9C2E740061DA35 /* ZIMSqlCreateTriggerStatement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIMSqlCreateTriggerStatement.h; sourceTree = "<group>"; };
-		6ACFDF581B9C2E740061DA35 /* ZIMSqlCreateTriggerStatement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZIMSqlCreateTriggerStatement.m; sourceTree = "<group>"; };
-		6ACFDF591B9C2E740061DA35 /* ZIMSqlCreateViewStatement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIMSqlCreateViewStatement.h; sourceTree = "<group>"; };
-		6ACFDF5A1B9C2E740061DA35 /* ZIMSqlCreateViewStatement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZIMSqlCreateViewStatement.m; sourceTree = "<group>"; };
-		6ACFDF5B1B9C2E740061DA35 /* ZIMSqlDataControlCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIMSqlDataControlCommand.h; sourceTree = "<group>"; };
-		6ACFDF5C1B9C2E740061DA35 /* ZIMSqlDataDefinitionCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIMSqlDataDefinitionCommand.h; sourceTree = "<group>"; };
-		6ACFDF5D1B9C2E740061DA35 /* ZIMSqlDataManipulationCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIMSqlDataManipulationCommand.h; sourceTree = "<group>"; };
-		6ACFDF5E1B9C2E740061DA35 /* ZIMSqlDeleteStatement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIMSqlDeleteStatement.h; sourceTree = "<group>"; };
-		6ACFDF5F1B9C2E740061DA35 /* ZIMSqlDeleteStatement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZIMSqlDeleteStatement.m; sourceTree = "<group>"; };
-		6ACFDF601B9C2E740061DA35 /* ZIMSqlDetachStatement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIMSqlDetachStatement.h; sourceTree = "<group>"; };
-		6ACFDF611B9C2E740061DA35 /* ZIMSqlDetachStatement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZIMSqlDetachStatement.m; sourceTree = "<group>"; };
-		6ACFDF621B9C2E740061DA35 /* ZIMSqlDropIndexStatement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIMSqlDropIndexStatement.h; sourceTree = "<group>"; };
-		6ACFDF631B9C2E740061DA35 /* ZIMSqlDropIndexStatement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZIMSqlDropIndexStatement.m; sourceTree = "<group>"; };
-		6ACFDF641B9C2E740061DA35 /* ZIMSqlDropTableStatement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIMSqlDropTableStatement.h; sourceTree = "<group>"; };
-		6ACFDF651B9C2E740061DA35 /* ZIMSqlDropTableStatement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZIMSqlDropTableStatement.m; sourceTree = "<group>"; };
-		6ACFDF661B9C2E740061DA35 /* ZIMSqlDropTriggerStatement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIMSqlDropTriggerStatement.h; sourceTree = "<group>"; };
-		6ACFDF671B9C2E740061DA35 /* ZIMSqlDropTriggerStatement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZIMSqlDropTriggerStatement.m; sourceTree = "<group>"; };
-		6ACFDF681B9C2E740061DA35 /* ZIMSqlDropViewStatement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIMSqlDropViewStatement.h; sourceTree = "<group>"; };
-		6ACFDF691B9C2E740061DA35 /* ZIMSqlDropViewStatement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZIMSqlDropViewStatement.m; sourceTree = "<group>"; };
-		6ACFDF6A1B9C2E740061DA35 /* ZIMSqlExplainStatement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIMSqlExplainStatement.h; sourceTree = "<group>"; };
-		6ACFDF6B1B9C2E740061DA35 /* ZIMSqlExplainStatement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZIMSqlExplainStatement.m; sourceTree = "<group>"; };
-		6ACFDF6C1B9C2E740061DA35 /* ZIMSqlExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIMSqlExpression.h; sourceTree = "<group>"; };
-		6ACFDF6D1B9C2E740061DA35 /* ZIMSqlExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZIMSqlExpression.m; sourceTree = "<group>"; };
-		6ACFDF6E1B9C2E740061DA35 /* ZIMSqlInsertStatement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIMSqlInsertStatement.h; sourceTree = "<group>"; };
-		6ACFDF6F1B9C2E740061DA35 /* ZIMSqlInsertStatement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZIMSqlInsertStatement.m; sourceTree = "<group>"; };
-		6ACFDF701B9C2E740061DA35 /* ZIMSqlPreparedStatement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIMSqlPreparedStatement.h; sourceTree = "<group>"; };
-		6ACFDF711B9C2E740061DA35 /* ZIMSqlPreparedStatement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZIMSqlPreparedStatement.m; sourceTree = "<group>"; };
-		6ACFDF721B9C2E740061DA35 /* ZIMSqlReindexStatement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIMSqlReindexStatement.h; sourceTree = "<group>"; };
-		6ACFDF731B9C2E740061DA35 /* ZIMSqlReindexStatement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZIMSqlReindexStatement.m; sourceTree = "<group>"; };
-		6ACFDF741B9C2E740061DA35 /* ZIMSqlSdk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIMSqlSdk.h; sourceTree = "<group>"; };
-		6ACFDF751B9C2E740061DA35 /* ZIMSqlSelectStatement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIMSqlSelectStatement.h; sourceTree = "<group>"; };
-		6ACFDF761B9C2E740061DA35 /* ZIMSqlSelectStatement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZIMSqlSelectStatement.m; sourceTree = "<group>"; };
-		6ACFDF771B9C2E740061DA35 /* ZIMSqlShowColumnsStatement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIMSqlShowColumnsStatement.h; sourceTree = "<group>"; };
-		6ACFDF781B9C2E740061DA35 /* ZIMSqlShowColumnsStatement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZIMSqlShowColumnsStatement.m; sourceTree = "<group>"; };
-		6ACFDF791B9C2E740061DA35 /* ZIMSqlShowGrantsStatement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIMSqlShowGrantsStatement.h; sourceTree = "<group>"; };
-		6ACFDF7A1B9C2E740061DA35 /* ZIMSqlShowGrantsStatement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZIMSqlShowGrantsStatement.m; sourceTree = "<group>"; };
-		6ACFDF7B1B9C2E740061DA35 /* ZIMSqlShowTablesStatement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIMSqlShowTablesStatement.h; sourceTree = "<group>"; };
-		6ACFDF7C1B9C2E740061DA35 /* ZIMSqlShowTablesStatement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZIMSqlShowTablesStatement.m; sourceTree = "<group>"; };
-		6ACFDF7D1B9C2E740061DA35 /* ZIMSqlShowTriggersStatement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIMSqlShowTriggersStatement.h; sourceTree = "<group>"; };
-		6ACFDF7E1B9C2E740061DA35 /* ZIMSqlShowTriggersStatement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZIMSqlShowTriggersStatement.m; sourceTree = "<group>"; };
-		6ACFDF7F1B9C2E740061DA35 /* ZIMSqlShowViewsStatement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIMSqlShowViewsStatement.h; sourceTree = "<group>"; };
-		6ACFDF801B9C2E740061DA35 /* ZIMSqlShowViewsStatement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZIMSqlShowViewsStatement.m; sourceTree = "<group>"; };
-		6ACFDF811B9C2E740061DA35 /* ZIMSqlStatement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIMSqlStatement.h; sourceTree = "<group>"; };
-		6ACFDF821B9C2E740061DA35 /* ZIMSqlTokenizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIMSqlTokenizer.h; sourceTree = "<group>"; };
-		6ACFDF831B9C2E740061DA35 /* ZIMSqlTokenizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZIMSqlTokenizer.m; sourceTree = "<group>"; };
-		6ACFDF841B9C2E740061DA35 /* ZIMSqlTransactionControlCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIMSqlTransactionControlCommand.h; sourceTree = "<group>"; };
-		6ACFDF851B9C2E740061DA35 /* ZIMSqlTruncateTableStatement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIMSqlTruncateTableStatement.h; sourceTree = "<group>"; };
-		6ACFDF861B9C2E740061DA35 /* ZIMSqlTruncateTableStatement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZIMSqlTruncateTableStatement.m; sourceTree = "<group>"; };
-		6ACFDF871B9C2E740061DA35 /* ZIMSqlUpdateStatement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIMSqlUpdateStatement.h; sourceTree = "<group>"; };
-		6ACFDF881B9C2E740061DA35 /* ZIMSqlUpdateStatement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZIMSqlUpdateStatement.m; sourceTree = "<group>"; };
-		6ACFDF891B9C2E740061DA35 /* ZIMSqlUpsertStatement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIMSqlUpsertStatement.h; sourceTree = "<group>"; };
-		6ACFDF8A1B9C2E740061DA35 /* ZIMSqlUpsertStatement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZIMSqlUpsertStatement.m; sourceTree = "<group>"; };
-		6ACFDF8C1B9C2E740061DA35 /* ZIMMessageDigest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIMMessageDigest.h; sourceTree = "<group>"; };
-		6ACFDF8D1B9C2E740061DA35 /* ZIMMessageDigest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZIMMessageDigest.m; sourceTree = "<group>"; };
 		6ACFDFB61B9C3CC30061DA35 /* UIViewController+UINavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+UINavigationBar.h"; sourceTree = "<group>"; };
 		6ACFDFB71B9C3CC30061DA35 /* UIViewController+UINavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+UINavigationBar.m"; sourceTree = "<group>"; };
 		6ACFDFB91B9C85A90061DA35 /* NSString+Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Size.h"; sourceTree = "<group>"; };
@@ -1729,6 +1616,7 @@
 		6A674B641BE0B0D700562321 /* AutoDatabase */ = {
 			isa = PBXGroup;
 			children = (
+				6A74331C1BE6FBC000A21481 /* SqlQueryBuilder */,
 				6A74330C1BE3486400A21481 /* Adapter */,
 				6A674B661BE0B11C00562321 /* AutoDatabaseProtocol.h */,
 				6A674B6E1BE0BFAD00562321 /* DatabaseProxy.h */,
@@ -2981,6 +2869,13 @@
 			path = Adapter;
 			sourceTree = "<group>";
 		};
+		6A74331C1BE6FBC000A21481 /* SqlQueryBuilder */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SqlQueryBuilder;
+			sourceTree = "<group>";
+		};
 		6A84CF751BDA3E2E00B61858 /* view */ = {
 			isa = PBXGroup;
 			children = (
@@ -3178,7 +3073,6 @@
 				6ACFE03C1BA2D98F0061DA35 /* FBShimmering */,
 				6ACFE02A1BA2C8630061DA35 /* ScrollerMenu */,
 				6ACFDFC41B9D40F40061DA35 /* MZDayPicker */,
-				6ACFDF371B9C2E740061DA35 /* sql-query-builder */,
 				6ACFDDCB1B9C23FC0061DA35 /* Routable */,
 			);
 			path = Vendor;
@@ -3208,147 +3102,6 @@
 				6ACFE0201BA27BB20061DA35 /* MainVC.xib */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		6ACFDF371B9C2E740061DA35 /* sql-query-builder */ = {
-			isa = PBXGroup;
-			children = (
-				6ACFDF391B9C2E740061DA35 /* cfg */,
-				6ACFDF3B1B9C2E740061DA35 /* src */,
-			);
-			path = "sql-query-builder";
-			sourceTree = "<group>";
-		};
-		6ACFDF391B9C2E740061DA35 /* cfg */ = {
-			isa = PBXGroup;
-			children = (
-				6ACFDF3A1B9C2E740061DA35 /* db.plist */,
-			);
-			path = cfg;
-			sourceTree = "<group>";
-		};
-		6ACFDF3B1B9C2E740061DA35 /* src */ = {
-			isa = PBXGroup;
-			children = (
-				6ACFDF3C1B9C2E740061DA35 /* db */,
-				6ACFDF421B9C2E740061DA35 /* ext */,
-				6ACFDF451B9C2E740061DA35 /* orm */,
-				6ACFDF4C1B9C2E740061DA35 /* sql */,
-				6ACFDF8B1B9C2E740061DA35 /* util */,
-			);
-			path = src;
-			sourceTree = "<group>";
-		};
-		6ACFDF3C1B9C2E740061DA35 /* db */ = {
-			isa = PBXGroup;
-			children = (
-				6ACFDF3D1B9C2E740061DA35 /* ZIMDbConnection.h */,
-				6ACFDF3E1B9C2E740061DA35 /* ZIMDbConnection.m */,
-				6ACFDF3F1B9C2E740061DA35 /* ZIMDbConnectionPool.h */,
-				6ACFDF401B9C2E740061DA35 /* ZIMDbConnectionPool.m */,
-				6ACFDF411B9C2E740061DA35 /* ZIMDbSdk.h */,
-			);
-			path = db;
-			sourceTree = "<group>";
-		};
-		6ACFDF421B9C2E740061DA35 /* ext */ = {
-			isa = PBXGroup;
-			children = (
-				6ACFDF431B9C2E740061DA35 /* NSString+ZIMString.h */,
-				6ACFDF441B9C2E740061DA35 /* NSString+ZIMString.m */,
-			);
-			path = ext;
-			sourceTree = "<group>";
-		};
-		6ACFDF451B9C2E740061DA35 /* orm */ = {
-			isa = PBXGroup;
-			children = (
-				6ACFDF461B9C2E740061DA35 /* ZIMOrmModel.h */,
-				6ACFDF471B9C2E740061DA35 /* ZIMOrmModel.m */,
-				6ACFDF481B9C2E740061DA35 /* ZIMOrmModelDelegate.h */,
-				6ACFDF491B9C2E740061DA35 /* ZIMOrmSdk.h */,
-				6ACFDF4A1B9C2E740061DA35 /* ZIMOrmSelectStatement.h */,
-				6ACFDF4B1B9C2E740061DA35 /* ZIMOrmSelectStatement.m */,
-			);
-			path = orm;
-			sourceTree = "<group>";
-		};
-		6ACFDF4C1B9C2E740061DA35 /* sql */ = {
-			isa = PBXGroup;
-			children = (
-				6ACFDF4D1B9C2E740061DA35 /* ZIMSqlAlterTableStatement.h */,
-				6ACFDF4E1B9C2E740061DA35 /* ZIMSqlAlterTableStatement.m */,
-				6ACFDF4F1B9C2E740061DA35 /* ZIMSqlAnalyzeStatement.h */,
-				6ACFDF501B9C2E740061DA35 /* ZIMSqlAnalyzeStatement.m */,
-				6ACFDF511B9C2E740061DA35 /* ZIMSqlAttachStatement.h */,
-				6ACFDF521B9C2E740061DA35 /* ZIMSqlAttachStatement.m */,
-				6ACFDF531B9C2E740061DA35 /* ZIMSqlCreateIndexStatement.h */,
-				6ACFDF541B9C2E740061DA35 /* ZIMSqlCreateIndexStatement.m */,
-				6ACFDF551B9C2E740061DA35 /* ZIMSqlCreateTableStatement.h */,
-				6ACFDF561B9C2E740061DA35 /* ZIMSqlCreateTableStatement.m */,
-				6ACFDF571B9C2E740061DA35 /* ZIMSqlCreateTriggerStatement.h */,
-				6ACFDF581B9C2E740061DA35 /* ZIMSqlCreateTriggerStatement.m */,
-				6ACFDF591B9C2E740061DA35 /* ZIMSqlCreateViewStatement.h */,
-				6ACFDF5A1B9C2E740061DA35 /* ZIMSqlCreateViewStatement.m */,
-				6ACFDF5B1B9C2E740061DA35 /* ZIMSqlDataControlCommand.h */,
-				6ACFDF5C1B9C2E740061DA35 /* ZIMSqlDataDefinitionCommand.h */,
-				6ACFDF5D1B9C2E740061DA35 /* ZIMSqlDataManipulationCommand.h */,
-				6ACFDF5E1B9C2E740061DA35 /* ZIMSqlDeleteStatement.h */,
-				6ACFDF5F1B9C2E740061DA35 /* ZIMSqlDeleteStatement.m */,
-				6ACFDF601B9C2E740061DA35 /* ZIMSqlDetachStatement.h */,
-				6ACFDF611B9C2E740061DA35 /* ZIMSqlDetachStatement.m */,
-				6ACFDF621B9C2E740061DA35 /* ZIMSqlDropIndexStatement.h */,
-				6ACFDF631B9C2E740061DA35 /* ZIMSqlDropIndexStatement.m */,
-				6ACFDF641B9C2E740061DA35 /* ZIMSqlDropTableStatement.h */,
-				6ACFDF651B9C2E740061DA35 /* ZIMSqlDropTableStatement.m */,
-				6ACFDF661B9C2E740061DA35 /* ZIMSqlDropTriggerStatement.h */,
-				6ACFDF671B9C2E740061DA35 /* ZIMSqlDropTriggerStatement.m */,
-				6ACFDF681B9C2E740061DA35 /* ZIMSqlDropViewStatement.h */,
-				6ACFDF691B9C2E740061DA35 /* ZIMSqlDropViewStatement.m */,
-				6ACFDF6A1B9C2E740061DA35 /* ZIMSqlExplainStatement.h */,
-				6ACFDF6B1B9C2E740061DA35 /* ZIMSqlExplainStatement.m */,
-				6ACFDF6C1B9C2E740061DA35 /* ZIMSqlExpression.h */,
-				6ACFDF6D1B9C2E740061DA35 /* ZIMSqlExpression.m */,
-				6ACFDF6E1B9C2E740061DA35 /* ZIMSqlInsertStatement.h */,
-				6ACFDF6F1B9C2E740061DA35 /* ZIMSqlInsertStatement.m */,
-				6ACFDF701B9C2E740061DA35 /* ZIMSqlPreparedStatement.h */,
-				6ACFDF711B9C2E740061DA35 /* ZIMSqlPreparedStatement.m */,
-				6ACFDF721B9C2E740061DA35 /* ZIMSqlReindexStatement.h */,
-				6ACFDF731B9C2E740061DA35 /* ZIMSqlReindexStatement.m */,
-				6ACFDF741B9C2E740061DA35 /* ZIMSqlSdk.h */,
-				6ACFDF751B9C2E740061DA35 /* ZIMSqlSelectStatement.h */,
-				6ACFDF761B9C2E740061DA35 /* ZIMSqlSelectStatement.m */,
-				6ACFDF771B9C2E740061DA35 /* ZIMSqlShowColumnsStatement.h */,
-				6ACFDF781B9C2E740061DA35 /* ZIMSqlShowColumnsStatement.m */,
-				6ACFDF791B9C2E740061DA35 /* ZIMSqlShowGrantsStatement.h */,
-				6ACFDF7A1B9C2E740061DA35 /* ZIMSqlShowGrantsStatement.m */,
-				6ACFDF7B1B9C2E740061DA35 /* ZIMSqlShowTablesStatement.h */,
-				6ACFDF7C1B9C2E740061DA35 /* ZIMSqlShowTablesStatement.m */,
-				6ACFDF7D1B9C2E740061DA35 /* ZIMSqlShowTriggersStatement.h */,
-				6ACFDF7E1B9C2E740061DA35 /* ZIMSqlShowTriggersStatement.m */,
-				6ACFDF7F1B9C2E740061DA35 /* ZIMSqlShowViewsStatement.h */,
-				6ACFDF801B9C2E740061DA35 /* ZIMSqlShowViewsStatement.m */,
-				6ACFDF811B9C2E740061DA35 /* ZIMSqlStatement.h */,
-				6ACFDF821B9C2E740061DA35 /* ZIMSqlTokenizer.h */,
-				6ACFDF831B9C2E740061DA35 /* ZIMSqlTokenizer.m */,
-				6ACFDF841B9C2E740061DA35 /* ZIMSqlTransactionControlCommand.h */,
-				6ACFDF851B9C2E740061DA35 /* ZIMSqlTruncateTableStatement.h */,
-				6ACFDF861B9C2E740061DA35 /* ZIMSqlTruncateTableStatement.m */,
-				6ACFDF871B9C2E740061DA35 /* ZIMSqlUpdateStatement.h */,
-				6ACFDF881B9C2E740061DA35 /* ZIMSqlUpdateStatement.m */,
-				6ACFDF891B9C2E740061DA35 /* ZIMSqlUpsertStatement.h */,
-				6ACFDF8A1B9C2E740061DA35 /* ZIMSqlUpsertStatement.m */,
-			);
-			path = sql;
-			sourceTree = "<group>";
-		};
-		6ACFDF8B1B9C2E740061DA35 /* util */ = {
-			isa = PBXGroup;
-			children = (
-				6ACFDF8C1B9C2E740061DA35 /* ZIMMessageDigest.h */,
-				6ACFDF8D1B9C2E740061DA35 /* ZIMMessageDigest.m */,
-			);
-			path = util;
 			sourceTree = "<group>";
 		};
 		6ACFDFB21B9C2EF70061DA35 /* Entity */ = {
@@ -3775,7 +3528,6 @@
 				6ACFDFE51BA0207F0061DA35 /* clock@2x.png in Resources */,
 				6AF4BDC61BB52D040047A720 /* checkMark.png in Resources */,
 				6A6DC7D31BD3DFA800A359C0 /* ServiceGrids.bundle in Resources */,
-				6ACFDF8F1B9C2E740061DA35 /* db.plist in Resources */,
 				6A158E4A1B70B482007FE54F /* LaunchScreen.xib in Resources */,
 				6AD283471BB2C893008900FA /* 图量表-2-背景色参考.jpg in Resources */,
 				6ACFDFE61BA0207F0061DA35 /* cross@2x.png in Resources */,
@@ -3897,12 +3649,10 @@
 				6AF4BDAD1BB441760047A720 /* MTLTransformerErrorHandling.m in Sources */,
 				6A6DC74E1BD3DFA800A359C0 /* Samurai_Config(Phone).m in Sources */,
 				6A6DC8261BD3DFA800A359C0 /* UITextField+Html.m in Sources */,
-				6ACFDFA21B9C2E740061DA35 /* ZIMSqlExplainStatement.m in Sources */,
 				6A6DC8031BD3DFA800A359C0 /* Samurai_CSSNumberKhz.m in Sources */,
 				6A674B6A1BE0BE8700562321 /* NSObject+AutoArchive.m in Sources */,
 				6A6DC7A01BD3DFA800A359C0 /* Samurai_ActivityRouter.m in Sources */,
 				6A6DC8941BD3DFA900A359C0 /* Samurai_HtmlUserAgent.m in Sources */,
-				6ACFDFB01B9C2E740061DA35 /* ZIMSqlUpsertStatement.m in Sources */,
 				6A6DC8071BD3DFA800A359C0 /* Samurai_CSSNumberPercentage.m in Sources */,
 				6A6DC7521BD3DFA800A359C0 /* Samurai_Predefine.m in Sources */,
 				6A6DC8181BD3DFA800A359C0 /* UIActivityIndicatorView+Html.m in Sources */,
@@ -3910,14 +3660,11 @@
 				6A6DC7DF1BD3DFA800A359C0 /* ServiceMonitorMemoryModel.m in Sources */,
 				6ACEBAF01BA94AD30011E3F7 /* UITableViewCell+Base.m in Sources */,
 				6A6DC8751BD3DFA900A359C0 /* Samurai_HtmlElementTextarea.m in Sources */,
-				6ACFDF901B9C2E740061DA35 /* ZIMDbConnection.m in Sources */,
-				6ACFDFAE1B9C2E740061DA35 /* ZIMSqlTruncateTableStatement.m in Sources */,
 				6A6DC75D1BD3DFA800A359C0 /* Samurai_Assert.m in Sources */,
 				6A6DC7971BD3DFA800A359C0 /* Samurai_UITableView.m in Sources */,
 				6A6DC8591BD3DFA900A359C0 /* Samurai_HtmlElementInputHidden.m in Sources */,
 				6A6DC76B1BD3DFA800A359C0 /* Samurai_Validator.m in Sources */,
 				6A6DC77C1BD3DFA800A359C0 /* Samurai_DockerManager.m in Sources */,
-				6ACFDF911B9C2E740061DA35 /* ZIMDbConnectionPool.m in Sources */,
 				6A6DC7D01BD3DFA800A359C0 /* ServiceGestureViewClick.m in Sources */,
 				6AF4BCC31BB2D5540047A720 /* UIColor+Expanded.m in Sources */,
 				6A6DC76F1BD3DFA800A359C0 /* Samurai_Notification.m in Sources */,
@@ -3925,14 +3672,11 @@
 				6A6DC8641BD3DFA900A359C0 /* Samurai_HtmlElementMeter.m in Sources */,
 				6A6DC80E1BD3DFA800A359C0 /* Samurai_CSSNumberTurn.m in Sources */,
 				6A6DC8061BD3DFA800A359C0 /* Samurai_CSSNumberPc.m in Sources */,
-				6ACFDFA11B9C2E740061DA35 /* ZIMSqlDropViewStatement.m in Sources */,
 				6A6DC75A1BD3DFA800A359C0 /* NSMutableSet+Extension.m in Sources */,
 				6A6DC86E1BD3DFA900A359C0 /* Samurai_HtmlElementSub.m in Sources */,
 				6ACFDFB81B9C3CC30061DA35 /* UIViewController+UINavigationBar.m in Sources */,
 				6A6DC7F81BD3DFA800A359C0 /* Samurai_CSSNumberConstant.m in Sources */,
 				6A6DC8011BD3DFA800A359C0 /* Samurai_CSSNumberHz.m in Sources */,
-				6ACFDFA41B9C2E740061DA35 /* ZIMSqlInsertStatement.m in Sources */,
-				6ACFDFB11B9C2E740061DA35 /* ZIMMessageDigest.m in Sources */,
 				6A95EC401BBA7F6700B14EA5 /* NSObject+FBKVOController.m in Sources */,
 				6A6DC8311BD3DFA800A359C0 /* Samurai_HtmlDocumentWorklet_50MergeDomTree.m in Sources */,
 				6AF4BDAB1BB441760047A720 /* MTLModel.m in Sources */,
@@ -3968,24 +3712,20 @@
 				6A6DC8001BD3DFA800A359C0 /* Samurai_CSSNumberGRad.m in Sources */,
 				6A6DC8671BD3DFA900A359C0 /* Samurai_HtmlElementOutput.m in Sources */,
 				6ACFDFF91BA127660061DA35 /* NSDictionary+Params.m in Sources */,
-				6ACFDFAA1B9C2E740061DA35 /* ZIMSqlShowTablesStatement.m in Sources */,
 				6A6DC84E1BD3DFA800A359C0 /* Samurai_HtmlElementH4.m in Sources */,
 				6A6DC82E1BD3DFA800A359C0 /* Samurai_HtmlDocumentWorklet_20ParseDomTree.m in Sources */,
 				6A6DA0A21BD3440500A359C0 /* NoteVC.m in Sources */,
 				6A6DC8021BD3DFA800A359C0 /* Samurai_CSSNumberIn.m in Sources */,
 				6A6DC7991BD3DFA800A359C0 /* Samurai_UITextField.m in Sources */,
 				6A6DC83C1BD3DFA800A359C0 /* Samurai_HtmlElementCanvas.m in Sources */,
-				6ACFDFA31B9C2E740061DA35 /* ZIMSqlExpression.m in Sources */,
 				6A6DC7CD1BD3DFA800A359C0 /* ServiceGestureHook.m in Sources */,
 				6A6DC7821BD3DFA800A359C0 /* Samurai_Service.m in Sources */,
-				6ACFDFAC1B9C2E740061DA35 /* ZIMSqlShowViewsStatement.m in Sources */,
 				6AD47CBF1BB77F9000BBBC0F /* Memo.m in Sources */,
 				6A6DC78B1BD3DFA800A359C0 /* Samurai_UIActivityIndicatorView.m in Sources */,
 				6A6DC7841BD3DFA800A359C0 /* Signal+View.m in Sources */,
 				6A6DC8981BD3DFA900A359C0 /* Samurai_WebCore.m in Sources */,
 				6A6DC79A1BD3DFA800A359C0 /* Samurai_UITextView.m in Sources */,
 				6A6DC7901BD3DFA800A359C0 /* Samurai_UILabel.m in Sources */,
-				6ACFDF981B9C2E740061DA35 /* ZIMSqlCreateIndexStatement.m in Sources */,
 				6A6DC7701BD3DFA800A359C0 /* Samurai_NotificationBus.m in Sources */,
 				6A6DC81A1BD3DFA800A359C0 /* UICollectionView+Html.m in Sources */,
 				6A6DC8791BD3DFA900A359C0 /* Samurai_HtmlElementTime.m in Sources */,
@@ -3995,7 +3735,6 @@
 				6A6DC7641BD3DFA800A359C0 /* Samurai_Runtime.m in Sources */,
 				6ACFDFBE1B9C85FB0061DA35 /* UIView+Frame.m in Sources */,
 				6A6DC8931BD3DFA900A359C0 /* Samurai_HtmlRenderWorklet_50Finish.m in Sources */,
-				6ACFDF9E1B9C2E740061DA35 /* ZIMSqlDropIndexStatement.m in Sources */,
 				6A6DC8291BD3DFA800A359C0 /* UIView+Html.m in Sources */,
 				6A6DA0B31BD378DA00A359C0 /* LibraryAPI.m in Sources */,
 				6AD283221BB17883008900FA /* Item_1_PickerCell.m in Sources */,
@@ -4065,7 +3804,6 @@
 				6A6DC7651BD3DFA800A359C0 /* Samurai_Sandbox.m in Sources */,
 				6A6DC7C11BD3DFA800A359C0 /* Samurai_App.m in Sources */,
 				6A6DC8581BD3DFA900A359C0 /* Samurai_HtmlElementInputFile.m in Sources */,
-				6ACFDFA51B9C2E740061DA35 /* ZIMSqlPreparedStatement.m in Sources */,
 				6AF4BDB61BB441760047A720 /* NSValueTransformer+MTLPredefinedTransformerAdditions.m in Sources */,
 				6A6DC8541BD3DFA900A359C0 /* Samurai_HtmlElementHtml.m in Sources */,
 				6A6DC88F1BD3DFA900A359C0 /* Samurai_HtmlRenderWorklet_10Begin.m in Sources */,
@@ -4077,7 +3815,6 @@
 				6A6DC8241BD3DFA800A359C0 /* UITableView+Html.m in Sources */,
 				6A6DC7F71BD3DFA800A359C0 /* Samurai_CSSNumberCm.m in Sources */,
 				6A6DC8411BD3DFA800A359C0 /* Samurai_HtmlElementDatalist.m in Sources */,
-				6ACFDF9A1B9C2E740061DA35 /* ZIMSqlCreateTriggerStatement.m in Sources */,
 				6A6DC87B1BD3DFA900A359C0 /* Samurai_HtmlElementUl.m in Sources */,
 				6A6DC7B31BD3DFA800A359C0 /* Samurai_EventPanGesture.m in Sources */,
 				6A6DC8551BD3DFA900A359C0 /* Samurai_HtmlElementImg.m in Sources */,
@@ -4106,22 +3843,17 @@
 				6A6DC7A71BD3DFA800A359C0 /* Samurai_DomNode.m in Sources */,
 				6A6DC8A61BD3DFA900A359C0 /* string_buffer.c in Sources */,
 				6A6DC7781BD3DFA800A359C0 /* Samurai_ModelInstance.m in Sources */,
-				6ACFDF951B9C2E740061DA35 /* ZIMSqlAlterTableStatement.m in Sources */,
 				6A6DC8621BD3DFA900A359C0 /* Samurai_HtmlElementLi.m in Sources */,
 				6A6DC7F41BD3DFA800A359C0 /* Samurai_CSSNumber.m in Sources */,
-				6ACFDFAB1B9C2E740061DA35 /* ZIMSqlShowTriggersStatement.m in Sources */,
 				6A6DC8171BD3DFA800A359C0 /* Samurai_CSSValue.m in Sources */,
 				6AD438291BC36EDF000DA4D0 /* UINavigationItem+MultipleItems.m in Sources */,
-				6ACFDF921B9C2E740061DA35 /* NSString+ZIMString.m in Sources */,
 				6A6DC86D1BD3DFA900A359C0 /* Samurai_HtmlElementSpan.m in Sources */,
 				6A6DC8A21BD3DFA900A359C0 /* attribute.c in Sources */,
 				6A6DC77E1BD3DFA800A359C0 /* Samurai_DockerView.m in Sources */,
-				6ACFDFAF1B9C2E740061DA35 /* ZIMSqlUpdateStatement.m in Sources */,
 				6A6DC85B1BD3DFA900A359C0 /* Samurai_HtmlElementInputPassword.m in Sources */,
 				6A6DC82B1BD3DFA800A359C0 /* Samurai_HtmlDocument.m in Sources */,
 				6A6DC7DE1BD3DFA800A359C0 /* ServiceMonitorFPSModel.m in Sources */,
 				6A6DC8881BD3DFA900A359C0 /* Samurai_HtmlRenderText.m in Sources */,
-				6ACFDF9D1B9C2E740061DA35 /* ZIMSqlDetachStatement.m in Sources */,
 				6ACFE00F1BA170720061DA35 /* Item_1_Cell.m in Sources */,
 				6A6DC87A1BD3DFA900A359C0 /* Samurai_HtmlElementTr.m in Sources */,
 				6A6DC8661BD3DFA900A359C0 /* Samurai_HtmlElementOl.m in Sources */,
@@ -4142,7 +3874,6 @@
 				6A6DC7E91BD3DFA800A359C0 /* Samurai_CSSMediaQuery.m in Sources */,
 				6A6DC7791BD3DFA800A359C0 /* Samurai_ModelManager.m in Sources */,
 				6A6DC7F91BD3DFA800A359C0 /* Samurai_CSSNumberDeg.m in Sources */,
-				6ACFDF9C1B9C2E740061DA35 /* ZIMSqlDeleteStatement.m in Sources */,
 				6A6DC7D11BD3DFA800A359C0 /* ServiceGestureViewPinch.m in Sources */,
 				6A6DC8821BD3DFA900A359C0 /* Samurai_HtmlLayoutObject.m in Sources */,
 				6A6DC8651BD3DFA900A359C0 /* Samurai_HtmlElementNav.m in Sources */,
@@ -4157,7 +3888,6 @@
 				6A6DC7751BD3DFA800A359C0 /* Samurai_Event.m in Sources */,
 				6A6DC7911BD3DFA800A359C0 /* Samurai_UIPageControl.m in Sources */,
 				6A6DC8201BD3DFA800A359C0 /* UIScrollView+Html.m in Sources */,
-				6ACFDFA91B9C2E740061DA35 /* ZIMSqlShowGrantsStatement.m in Sources */,
 				6ACFE0431BA2D98F0061DA35 /* FBShimmeringLayer.m in Sources */,
 				6ACFDFCB1B9D40F40061DA35 /* MZDay.m in Sources */,
 				6A6DC7CF1BD3DFA800A359C0 /* ServiceGestureView.m in Sources */,
@@ -4183,9 +3913,7 @@
 				6A6DC7AA1BD3DFA800A359C0 /* Samurai_RenderStyle.m in Sources */,
 				6A6DC7581BD3DFA800A359C0 /* NSMutableArray+Extension.m in Sources */,
 				6A6DC84D1BD3DFA800A359C0 /* Samurai_HtmlElementH3.m in Sources */,
-				6ACFDFA61B9C2E740061DA35 /* ZIMSqlReindexStatement.m in Sources */,
 				6A6DC7A51BD3DFA800A359C0 /* Samurai_ViewController.m in Sources */,
-				6ACFDF9F1B9C2E740061DA35 /* ZIMSqlDropTableStatement.m in Sources */,
 				6A6DC8741BD3DFA900A359C0 /* Samurai_HtmlElementText.m in Sources */,
 				6A6DC8631BD3DFA900A359C0 /* Samurai_HtmlElementMain.m in Sources */,
 				6A6DC7AC1BD3DFA800A359C0 /* Samurai_ResourceFetcher.m in Sources */,
@@ -4200,16 +3928,13 @@
 				6A6DC74F1BD3DFA800A359C0 /* Samurai_Config(Simulator).m in Sources */,
 				6A6DC8B01BD3DFA900A359C0 /* parser.c in Sources */,
 				6A6DC8211BD3DFA800A359C0 /* UISlider+Html.m in Sources */,
-				6ACFDF931B9C2E740061DA35 /* ZIMOrmModel.m in Sources */,
 				6A6DC7BE1BD3DFA800A359C0 /* Samurai_View.m in Sources */,
 				6A6DC8461BD3DFA800A359C0 /* Samurai_HtmlElementDt.m in Sources */,
 				6A674B5D1BE0636F00562321 /* UIView+Base.m in Sources */,
 				6A6DC82A1BD3DFA800A359C0 /* UIWebView+Html.m in Sources */,
 				6A6DC8151BD3DFA800A359C0 /* Samurai_CSSString.m in Sources */,
 				6ACFE0111BA170720061DA35 /* PushupVC.m in Sources */,
-				6ACFDFA01B9C2E740061DA35 /* ZIMSqlDropTriggerStatement.m in Sources */,
 				6AF4BDB01BB441760047A720 /* NSDictionary+MTLJSONKeyPath.m in Sources */,
-				6ACFDFAD1B9C2E740061DA35 /* ZIMSqlTokenizer.m in Sources */,
 				6ACFE0311BA2C8630061DA35 /* ScrollView.m in Sources */,
 				6A6DC7851BD3DFA800A359C0 /* Signal+ViewController.m in Sources */,
 				6A6DC80A1BD3DFA800A359C0 /* Samurai_CSSNumberQem.m in Sources */,
@@ -4250,7 +3975,6 @@
 				6A6DC88D1BD3DFA900A359C0 /* Samurai_HtmlRenderStyle.m in Sources */,
 				6A6DC7E31BD3DFA800A359C0 /* ServiceTapspotHook.m in Sources */,
 				6AF4BDA71BB441760047A720 /* EXTScope.m in Sources */,
-				6ACFDF991B9C2E740061DA35 /* ZIMSqlCreateTableStatement.m in Sources */,
 				6ACFDFD31B9E63DD0061DA35 /* Item1.m in Sources */,
 				6A6DC7D91BD3DFA800A359C0 /* JBBarChartView.m in Sources */,
 				6A6DC7591BD3DFA800A359C0 /* NSMutableDictionary+Extension.m in Sources */,
@@ -4271,7 +3995,6 @@
 				6A6DC8221BD3DFA800A359C0 /* UIStepper+Html.m in Sources */,
 				6A6DC7721BD3DFA800A359C0 /* Samurai_Signal.m in Sources */,
 				6A6DC8401BD3DFA800A359C0 /* Samurai_HtmlElementColGroup.m in Sources */,
-				6ACFDF9B1B9C2E740061DA35 /* ZIMSqlCreateViewStatement.m in Sources */,
 				6A6DC7A31BD3DFA800A359C0 /* Samurai_Intent.m in Sources */,
 				6A6DC76D1BD3DFA800A359C0 /* Samurai_CoreConfig.m in Sources */,
 				6A6DC7D41BD3DFA800A359C0 /* ServiceGrids.m in Sources */,
@@ -4296,7 +4019,6 @@
 				6ACFE0441BA2D98F0061DA35 /* FBShimmeringView.m in Sources */,
 				6A6DC7DC1BD3DFA800A359C0 /* ServiceMonitor.m in Sources */,
 				6A6DC79C1BD3DFA800A359C0 /* Samurai_UIView.m in Sources */,
-				6ACFDFA71B9C2E740061DA35 /* ZIMSqlSelectStatement.m in Sources */,
 				6A6DC8121BD3DFA800A359C0 /* Samurai_CSSNumberVw.m in Sources */,
 				6A6DC8491BD3DFA800A359C0 /* Samurai_HtmlElementFooter.m in Sources */,
 				6ACFE0211BA27BB20061DA35 /* MainVC.m in Sources */,
@@ -4306,14 +4028,12 @@
 				6A6DC8891BD3DFA900A359C0 /* Samurai_HtmlRenderViewport.m in Sources */,
 				6A6DC8561BD3DFA900A359C0 /* Samurai_HtmlElementInputButton.m in Sources */,
 				6A6DC80F1BD3DFA800A359C0 /* Samurai_CSSNumberVh.m in Sources */,
-				6ACFDF961B9C2E740061DA35 /* ZIMSqlAnalyzeStatement.m in Sources */,
 				6ACEBB001BA9B7CE0011E3F7 /* s.m in Sources */,
 				6A6DC7AF1BD3DFA800A359C0 /* Samurai_Template.m in Sources */,
 				6AF4BDB11BB441760047A720 /* NSDictionary+MTLManipulationAdditions.m in Sources */,
 				6AF4BDB21BB441760047A720 /* NSDictionary+MTLMappingAdditions.m in Sources */,
 				6A6DC7871BD3DFA800A359C0 /* UIView+TemplateLoading.m in Sources */,
 				6A6DC8A31BD3DFA900A359C0 /* char_ref.c in Sources */,
-				6ACFDFA81B9C2E740061DA35 /* ZIMSqlShowColumnsStatement.m in Sources */,
 				6A6DC8D21BD497DF00A359C0 /* AppAppearance.m in Sources */,
 				6A6DC8251BD3DFA800A359C0 /* UITableViewCell+Html.m in Sources */,
 				6A6DC8521BD3DFA900A359C0 /* Samurai_HtmlElementHgroup.m in Sources */,
@@ -4334,7 +4054,6 @@
 				6A6DC79E1BD3DFA800A359C0 /* Samurai_ViewComponent.m in Sources */,
 				6A6DC7DD1BD3DFA800A359C0 /* ServiceMonitorCPUModel.m in Sources */,
 				6A6DC7AD1BD3DFA800A359C0 /* Samurai_Script.m in Sources */,
-				6ACFDF971B9C2E740061DA35 /* ZIMSqlAttachStatement.m in Sources */,
 				6A6DC8681BD3DFA900A359C0 /* Samurai_HtmlElementP.m in Sources */,
 				6A6DA0BB1BD37A8D00A359C0 /* NSDate+Format.m in Sources */,
 				6A95EC311BBA596000B14EA5 /* SpeechComponent.m in Sources */,
@@ -4348,7 +4067,6 @@
 				6A6DC8511BD3DFA900A359C0 /* Samurai_HtmlElementHeader.m in Sources */,
 				6A6DC8A91BD3DFA900A359C0 /* tokenizer.c in Sources */,
 				6A6DC8081BD3DFA800A359C0 /* Samurai_CSSNumberPt.m in Sources */,
-				6ACFDF941B9C2E740061DA35 /* ZIMOrmSelectStatement.m in Sources */,
 				6A6DC8611BD3DFA900A359C0 /* Samurai_HtmlElementLegend.m in Sources */,
 				6A674B591BE061B300562321 /* QuadrantCell.m in Sources */,
 				6A84CF801BDD0F8300B61858 /* CardView.m in Sources */,
