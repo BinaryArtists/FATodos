@@ -1,3 +1,6 @@
 [submodule "FATodos/Framework/samurai-native"]
 	path = FATodos/Framework/samurai-native
 	url = https://github.com/fallending/samurai-native.git
+[submodule "FATodos/Vendor/LibraryStorage/AutoDatabase/objective-c-sql-query-builder"]
+	path = FATodos/Vendor/LibraryStorage/AutoDatabase/objective-c-sql-query-builder
+	url = https://github.com/fallending/objective-c-sql-query-builder.git
