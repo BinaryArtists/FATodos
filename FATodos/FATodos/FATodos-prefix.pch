@@ -94,6 +94,7 @@
 
 // Inner
 #import "s.h" // string
+#import "app.h"
 
 #endif
 

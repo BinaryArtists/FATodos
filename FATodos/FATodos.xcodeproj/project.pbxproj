@@ -14,6 +14,10 @@
 		6A158E471B70B482007FE54F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A158E461B70B482007FE54F /* Images.xcassets */; };
 		6A158E4A1B70B482007FE54F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A158E481B70B482007FE54F /* LaunchScreen.xib */; };
 		6A158E561B70B482007FE54F /* FATodosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A158E551B70B482007FE54F /* FATodosTests.m */; };
+		6A3E5F951C0DCC8E0075EA98 /* Launch.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 6A3E5F941C0DCC8E0075EA98 /* Launch.m4v */; };
+		6A3E5F981C0DCCD50075EA98 /* LaunchMediaVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A3E5F971C0DCCD50075EA98 /* LaunchMediaVC.m */; };
+		6A3E5F9A1C0DE34C0075EA98 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A3E5F991C0DE34C0075EA98 /* MediaPlayer.framework */; };
+		6A3E5F9D1C0DEEF00075EA98 /* app.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A3E5F9C1C0DEEF00075EA98 /* app.m */; };
 		6A674B521BDFBF3000562321 /* QuadrantView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A674B511BDFBF3000562321 /* QuadrantView.m */; };
 		6A674B541BDFBF4200562321 /* QuadrantView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A674B531BDFBF4200562321 /* QuadrantView.xib */; };
 		6A674B591BE061B300562321 /* QuadrantCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A674B571BE061B300562321 /* QuadrantCell.m */; };
@@ -554,6 +558,12 @@
 		6A158E4F1B70B482007FE54F /* FATodosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FATodosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A158E541B70B482007FE54F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A158E551B70B482007FE54F /* FATodosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FATodosTests.m; sourceTree = "<group>"; };
+		6A3E5F941C0DCC8E0075EA98 /* Launch.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Launch.m4v; sourceTree = "<group>"; };
+		6A3E5F961C0DCCD50075EA98 /* LaunchMediaVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchMediaVC.h; sourceTree = "<group>"; };
+		6A3E5F971C0DCCD50075EA98 /* LaunchMediaVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchMediaVC.m; sourceTree = "<group>"; };
+		6A3E5F991C0DE34C0075EA98 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		6A3E5F9B1C0DEEF00075EA98 /* app.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = app.h; sourceTree = "<group>"; };
+		6A3E5F9C1C0DEEF00075EA98 /* app.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = app.m; sourceTree = "<group>"; };
 		6A674B501BDFBF3000562321 /* QuadrantView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuadrantView.h; sourceTree = "<group>"; };
 		6A674B511BDFBF3000562321 /* QuadrantView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuadrantView.m; sourceTree = "<group>"; };
 		6A674B531BDFBF4200562321 /* QuadrantView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuadrantView.xib; sourceTree = "<group>"; };
@@ -1585,6 +1595,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A3E5F9A1C0DE34C0075EA98 /* MediaPlayer.framework in Frameworks */,
 				6A6DA0AF1BD3584600A359C0 /* GPUImage.framework in Frameworks */,
 				6A95EC2B1BBA45B500B14EA5 /* CoreLocation.framework in Frameworks */,
 				6A95EC291BBA45AD00B14EA5 /* CoreTelephony.framework in Frameworks */,
@@ -1626,6 +1637,7 @@
 		6A158E2A1B70B482007FE54F = {
 			isa = PBXGroup;
 			children = (
+				6A3E5F931C0DCC8E0075EA98 /* Resource */,
 				6A95EC171BBA38B000B14EA5 /* Component */,
 				6AD2832D1BB19341008900FA /* AppModel */,
 				6ACFE0471BA3C72C0061DA35 /* Base */,
@@ -1696,6 +1708,14 @@
 				6A158E541B70B482007FE54F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6A3E5F931C0DCC8E0075EA98 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				6A3E5F941C0DCC8E0075EA98 /* Launch.m4v */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		6A674B4F1BDFBF1800562321 /* view */ = {
@@ -3239,6 +3259,8 @@
 			children = (
 				6ACEBAFE1BA9B7CE0011E3F7 /* s.h */,
 				6ACEBAFF1BA9B7CE0011E3F7 /* s.m */,
+				6A3E5F9B1C0DEEF00075EA98 /* app.h */,
+				6A3E5F9C1C0DEEF00075EA98 /* app.m */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -3347,6 +3369,8 @@
 				6ACFE01E1BA27BB20061DA35 /* MainVC.h */,
 				6ACFE01F1BA27BB20061DA35 /* MainVC.m */,
 				6ACFE0201BA27BB20061DA35 /* MainVC.xib */,
+				6A3E5F961C0DCCD50075EA98 /* LaunchMediaVC.h */,
+				6A3E5F971C0DCCD50075EA98 /* LaunchMediaVC.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -3671,6 +3695,7 @@
 		D9A204C453E856BEF0A3F158 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6A3E5F991C0DE34C0075EA98 /* MediaPlayer.framework */,
 				6A95EC2A1BBA45B500B14EA5 /* CoreLocation.framework */,
 				6A95EC281BBA45AD00B14EA5 /* CoreTelephony.framework */,
 				6A95EC261BBA459800B14EA5 /* SystemConfiguration.framework */,
@@ -3806,6 +3831,7 @@
 				6ACFDFE41BA0207F0061DA35 /* check@2x.png in Resources */,
 				6A84CF7F1BDD0F8300B61858 /* CardContentView.xib in Resources */,
 				6A6DC8971BD3DFA900A359C0 /* html.css in Resources */,
+				6A3E5F951C0DCC8E0075EA98 /* Launch.m4v in Resources */,
 				6ACFE0101BA170720061DA35 /* Item_1_Cell.xib in Resources */,
 				6AF4BDA81BB441760047A720 /* Info.plist in Resources */,
 				6ACFDFE71BA0207F0061DA35 /* list@2x.png in Resources */,
@@ -3930,6 +3956,7 @@
 				6A6DC8311BD3DFA800A359C0 /* Samurai_HtmlDocumentWorklet_50MergeDomTree.m in Sources */,
 				6AF4BDAB1BB441760047A720 /* MTLModel.m in Sources */,
 				6A6DC85D1BD3DFA900A359C0 /* Samurai_HtmlElementInputReset.m in Sources */,
+				6A3E5F981C0DCCD50075EA98 /* LaunchMediaVC.m in Sources */,
 				6A6DC7761BD3DFA800A359C0 /* Samurai_EventConfig.m in Sources */,
 				6A6DC8351BD3DFA800A359C0 /* Samurai_HtmlDomNode.m in Sources */,
 				6A6DC7951BD3DFA800A359C0 /* Samurai_UIStepper.m in Sources */,
@@ -3961,6 +3988,7 @@
 				6A6DC83A1BD3DFA800A359C0 /* Samurai_HtmlElementBr.m in Sources */,
 				6A6DC8001BD3DFA800A359C0 /* Samurai_CSSNumberGRad.m in Sources */,
 				6A7436A31BE705C200A21481 /* ZIMSqlUpsertStatement.m in Sources */,
+				6A3E5F9D1C0DEEF00075EA98 /* app.m in Sources */,
 				6A6DC8671BD3DFA900A359C0 /* Samurai_HtmlElementOutput.m in Sources */,
 				6ACFDFF91BA127660061DA35 /* NSDictionary+Params.m in Sources */,
 				6A6DC84E1BD3DFA800A359C0 /* Samurai_HtmlElementH4.m in Sources */,

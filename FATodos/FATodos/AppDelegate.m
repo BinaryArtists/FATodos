@@ -9,6 +9,7 @@
 #import "FourQuadrantVC.h"
 #import "NoteVC.h"
 #import "PomodoroVC.h"
+#import "LaunchMediaVC.h"
 #import "ServiceMonitor.h"
 #import "ServiceBorder.h"
 #import "ServiceGesture.h"
@@ -16,11 +17,15 @@
 #import "ServiceInspector.h"
 #import "ServiceTapspot.h"
 
-@interface AppDelegate ()
+@interface AppDelegate () <
+    LaunchMediaViewControllerDelegate
+>
 
 @end
 
 @implementation AppDelegate
+
+#pragma mark - Life cycle
 
 + (void)initialize {
     // 应用配置
@@ -31,18 +36,8 @@
     self.window                 = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
     
-    UINavigationController *aNavController = [[UINavigationController alloc] initWithNibName:nil bundle:nil];
-    [[Routable sharedRouter] map:[self MAIN_VC] toController:[MainVC class]];
-    [[Routable sharedRouter] setNavigationController:aNavController];
-    
-    [self.window setRootViewController:aNavController];
+    [self.window setRootViewController:[self launchMediaVC]];
     [self.window makeKeyAndVisible];
-    
-    [[Routable sharedRouter] open:[self MAIN_VC]];
-    
-    [self mapping];
-    
-//    [self test];
     
     return YES;
 }
@@ -69,6 +64,12 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+#pragma mark - LaunchMediaViewControllerDelegate
+
+- (void)launchMediaViewController:(LaunchMediaVC *)viewController didMoviePlayerPlaybackDidFinish:(BOOL)finish {
+    [self loadMainVC];
+}
+
 #pragma mark -
 
 - (void)test {
@@ -87,7 +88,24 @@
     [av speakUtterance:utterance];
 }
 
-#pragma mark - VC mapping
+#pragma mark - VC manager
+
+- (UIViewController *)launchMediaVC {
+    LaunchMediaVC *launchMediaVC    = [[LaunchMediaVC alloc] initWithResourceMediaFile:@"Launch.m4v" delegate:self];
+    return launchMediaVC;
+}
+
+- (void)loadMainVC {
+    UINavigationController *aNavController = [[UINavigationController alloc] initWithNibName:nil bundle:nil];
+    [[Routable sharedRouter] map:[self MAIN_VC] toController:[MainVC class]];
+    [[Routable sharedRouter] setNavigationController:aNavController];
+    
+    self.window.rootViewController  = aNavController;
+    
+    [[Routable sharedRouter] open:[self MAIN_VC]];
+    
+    [self mapping];
+}
 
 - (void)mapping {
     [[Routable sharedRouter] map:[self PUSHUP_VC] toController:[PushupVC class]];
