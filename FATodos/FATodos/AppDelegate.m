@@ -39,6 +39,8 @@
     [self.window setRootViewController:[self launchMediaVC]];
     [self.window makeKeyAndVisible];
     
+    [self test];
+    
     return YES;
 }
 
@@ -77,7 +79,16 @@
     
     NSLog(@"%@", dict);
     
-    [self test_speech];
+//    [self test_speech];
+    
+//    [self test_gcd];
+}
+
+- (void)test_gcd {
+    dispatch_sync(dispatch_get_main_queue(), ^{
+        //
+        NSLog(@"dead or not ?");
+    });
 }
 
 - (void)test_speech {

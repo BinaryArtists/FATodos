@@ -11,8 +11,9 @@
 #import "MainVC.h"
 #import "UserBoxView.h"
 #import "ScrollView.h"
+#import "FASourcePickerVC.h"
 
-@interface MainVC () <ScrollViewDelegate>
+@interface MainVC () <ScrollViewDelegate, FASourcePickerVCDelegate>
 
 @property (weak, nonatomic) IBOutlet ScrollView *   scrollView;
 
@@ -112,7 +113,14 @@
 #pragma mark - Action handle
 
 - (void)clickOnAddNewContact:(id)sender {
-    // Add function.....
+    FASourcePickerVC *pickerVC = [[FASourcePickerVC alloc] _initWithNib];
+    pickerVC.dataSource = [@[@"ddd", @"ddd"] mutableCopy];
+    pickerVC.initialIndex   = 0;
+    pickerVC.toolBarHidden  = YES;
+    
+    pickerVC.delegate = self;
+    
+    [pickerVC show];
 }
 
 #pragma mark - ScrollViewDelegate
@@ -140,6 +148,12 @@
                                     [alert show];
                                 }];
     }
+}
+
+#pragma mark - FASourcePickerVCDeleagte
+
+- (void)FASourcePickerVC:(FASourcePickerVC *)vc didSelectAtIndex:(int32_t)index {
+    
 }
 
 @end

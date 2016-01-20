@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44D9BA7A1C4F83A1002E0A49 /* FADatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D9BA771C4F83A1002E0A49 /* FADatePickerViewController.m */; };
+		44D9BA8A1C4F8862002E0A49 /* FASourcePickerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D9BA881C4F8862002E0A49 /* FASourcePickerVC.m */; };
+		44D9BA8B1C4F8862002E0A49 /* FASourcePickerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44D9BA891C4F8862002E0A49 /* FASourcePickerVC.xib */; };
 		4EEBF9F8D8348519901DEC48 /* libPods-FATodosTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4958D1F04CC182351417F64 /* libPods-FATodosTests.a */; };
 		534CB05A2535D65788892768 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18CA0A1539FBCF69D8C82F1E /* libPods.a */; };
 		6A158E391B70B482007FE54F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A158E381B70B482007FE54F /* main.m */; };
@@ -498,7 +501,6 @@
 		6AD47CC21BB782C400BBBC0F /* UIButton+Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD47CC11BB782C400BBBC0F /* UIButton+Theme.m */; };
 		6AD47CC71BB7832F00BBBC0F /* UIImage+Blur.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD47CC41BB7832F00BBBC0F /* UIImage+Blur.m */; };
 		6AD47CC81BB7832F00BBBC0F /* UIImage+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD47CC61BB7832F00BBBC0F /* UIImage+Utility.m */; };
-		6AF4BCAF1BB2D4280047A720 /* FADatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF4BC881BB2D4280047A720 /* FADatePickerViewController.m */; };
 		6AF4BCC31BB2D5540047A720 /* UIColor+Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF4BCC21BB2D5540047A720 /* UIColor+Expanded.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		6AF4BD721BB3E43B0047A720 /* CatDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF4BD701BB3E43B0047A720 /* CatDetailViewController.m */; };
 		6AF4BD731BB3E43B0047A720 /* ChinaCity.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6AF4BD711BB3E43B0047A720 /* ChinaCity.plist */; };
@@ -548,6 +550,11 @@
 /* Begin PBXFileReference section */
 		18CA0A1539FBCF69D8C82F1E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D659119DE5A3C514B68F1F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		44D9BA761C4F83A1002E0A49 /* FADatePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FADatePickerViewController.h; sourceTree = "<group>"; };
+		44D9BA771C4F83A1002E0A49 /* FADatePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FADatePickerViewController.m; sourceTree = "<group>"; };
+		44D9BA871C4F8862002E0A49 /* FASourcePickerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FASourcePickerVC.h; sourceTree = "<group>"; };
+		44D9BA881C4F8862002E0A49 /* FASourcePickerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FASourcePickerVC.m; sourceTree = "<group>"; };
+		44D9BA891C4F8862002E0A49 /* FASourcePickerVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FASourcePickerVC.xib; sourceTree = "<group>"; };
 		6A158E331B70B482007FE54F /* FATodos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FATodos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A158E371B70B482007FE54F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A158E381B70B482007FE54F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -1518,8 +1525,6 @@
 		6AD47CC41BB7832F00BBBC0F /* UIImage+Blur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Blur.m"; sourceTree = "<group>"; };
 		6AD47CC51BB7832F00BBBC0F /* UIImage+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Utility.h"; sourceTree = "<group>"; };
 		6AD47CC61BB7832F00BBBC0F /* UIImage+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Utility.m"; sourceTree = "<group>"; };
-		6AF4BC871BB2D4280047A720 /* FADatePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FADatePickerViewController.h; sourceTree = "<group>"; };
-		6AF4BC881BB2D4280047A720 /* FADatePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FADatePickerViewController.m; sourceTree = "<group>"; };
 		6AF4BCC11BB2D5540047A720 /* UIColor+Expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Expanded.h"; sourceTree = "<group>"; };
 		6AF4BCC21BB2D5540047A720 /* UIColor+Expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Expanded.m"; sourceTree = "<group>"; };
 		6AF4BD6F1BB3E43B0047A720 /* CatDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatDetailViewController.h; sourceTree = "<group>"; };
@@ -1632,6 +1637,42 @@
 				9B16E1206F253B4579B0BD13 /* Pods-FATodosTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		44D9BA741C4F83A1002E0A49 /* FAPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				44D9BA861C4F8862002E0A49 /* FASourcePickerView */,
+				44D9BA751C4F83A1002E0A49 /* FADatePickerViewController */,
+				44D9BA791C4F83A1002E0A49 /* FASourcePickerViewV2 */,
+			);
+			path = FAPickerView;
+			sourceTree = "<group>";
+		};
+		44D9BA751C4F83A1002E0A49 /* FADatePickerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				44D9BA761C4F83A1002E0A49 /* FADatePickerViewController.h */,
+				44D9BA771C4F83A1002E0A49 /* FADatePickerViewController.m */,
+			);
+			path = FADatePickerViewController;
+			sourceTree = "<group>";
+		};
+		44D9BA791C4F83A1002E0A49 /* FASourcePickerViewV2 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FASourcePickerViewV2;
+			sourceTree = "<group>";
+		};
+		44D9BA861C4F8862002E0A49 /* FASourcePickerView */ = {
+			isa = PBXGroup;
+			children = (
+				44D9BA871C4F8862002E0A49 /* FASourcePickerVC.h */,
+				44D9BA881C4F8862002E0A49 /* FASourcePickerVC.m */,
+				44D9BA891C4F8862002E0A49 /* FASourcePickerVC.xib */,
+			);
+			path = FASourcePickerView;
 			sourceTree = "<group>";
 		};
 		6A158E2A1B70B482007FE54F = {
@@ -3328,6 +3369,7 @@
 		6ACFDDCA1B9C23FC0061DA35 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				44D9BA741C4F83A1002E0A49 /* FAPickerView */,
 				6A6DC8CE1BD4976100A359C0 /* LibraryApplication */,
 				6A6DA0B01BD3789200A359C0 /* LibraryTime */,
 				6AF4BDD71BB551EF0047A720 /* LibraryStorage */,
@@ -3337,7 +3379,6 @@
 				6AF4BD801BB441760047A720 /* Mantle */,
 				6AF4BD6E1BB3E43B0047A720 /* CatDetailViewController */,
 				6AF4BCC71BB2E9690047A720 /* LibraryAPI */,
-				6AF4BC861BB2D4280047A720 /* FADatePickerViewController */,
 				6ACEBAF21BA974810011E3F7 /* MGSwipeTableCell */,
 				6ACFE03C1BA2D98F0061DA35 /* FBShimmering */,
 				6ACFE02A1BA2C8630061DA35 /* ScrollerMenu */,
@@ -3539,15 +3580,6 @@
 				6AD47CB51BB772D600BBBC0F /* MemoCell.xib */,
 			);
 			path = Cell;
-			sourceTree = "<group>";
-		};
-		6AF4BC861BB2D4280047A720 /* FADatePickerViewController */ = {
-			isa = PBXGroup;
-			children = (
-				6AF4BC871BB2D4280047A720 /* FADatePickerViewController.h */,
-				6AF4BC881BB2D4280047A720 /* FADatePickerViewController.m */,
-			);
-			path = FADatePickerViewController;
 			sourceTree = "<group>";
 		};
 		6AF4BCC71BB2E9690047A720 /* LibraryAPI */ = {
@@ -3818,6 +3850,7 @@
 				6AF4BDC81BB52D040047A720 /* crossMark.png in Resources */,
 				6A6DA0AD1BD3445B00A359C0 /* PomodoroVC.xib in Resources */,
 				6AF4BDC91BB52D040047A720 /* crossMark@2x.png in Resources */,
+				44D9BA8B1C4F8862002E0A49 /* FASourcePickerVC.xib in Resources */,
 				6A6DC7CB1BD3DFA800A359C0 /* ServiceGesture.bundle in Resources */,
 				6A674B5A1BE061B300562321 /* QuadrantCell.xib in Resources */,
 				6A674B541BDFBF4200562321 /* QuadrantView.xib in Resources */,
@@ -4065,7 +4098,9 @@
 				6A6DC8771BD3DFA900A359C0 /* Samurai_HtmlElementTh.m in Sources */,
 				6AF4BDDE1BB551EF0047A720 /* Item_1_Cache.m in Sources */,
 				6A6DC81F1BD3DFA800A359C0 /* UIProgressView+Html.m in Sources */,
+				44D9BA8A1C4F8862002E0A49 /* FASourcePickerVC.m in Sources */,
 				6A6DC78C1BD3DFA800A359C0 /* Samurai_UIButton.m in Sources */,
+				44D9BA7A1C4F83A1002E0A49 /* FADatePickerViewController.m in Sources */,
 				6AF4BDB41BB441760047A720 /* NSObject+MTLComparisonAdditions.m in Sources */,
 				6A7436A11BE705C200A21481 /* ZIMSqlTruncateTableStatement.m in Sources */,
 				6A6DC7C21BD3DFA800A359C0 /* Samurai_ClassLoader.m in Sources */,
@@ -4217,7 +4252,6 @@
 				6A6DC8741BD3DFA900A359C0 /* Samurai_HtmlElementText.m in Sources */,
 				6A6DC8631BD3DFA900A359C0 /* Samurai_HtmlElementMain.m in Sources */,
 				6A6DC7AC1BD3DFA800A359C0 /* Samurai_ResourceFetcher.m in Sources */,
-				6AF4BCAF1BB2D4280047A720 /* FADatePickerViewController.m in Sources */,
 				6A6DC8831BD3DFA900A359C0 /* Samurai_HtmlLayoutText.m in Sources */,
 				6A6DC8341BD3DFA800A359C0 /* Samurai_HtmlDocumentWorklet_80Finish.m in Sources */,
 				6A6DC7A91BD3DFA800A359C0 /* Samurai_RenderObject.m in Sources */,
