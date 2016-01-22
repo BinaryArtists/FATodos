@@ -10,7 +10,6 @@
 		44D9BA7A1C4F83A1002E0A49 /* FADatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D9BA771C4F83A1002E0A49 /* FADatePickerViewController.m */; };
 		44D9BA8A1C4F8862002E0A49 /* FASourcePickerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D9BA881C4F8862002E0A49 /* FASourcePickerVC.m */; };
 		44D9BA8B1C4F8862002E0A49 /* FASourcePickerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44D9BA891C4F8862002E0A49 /* FASourcePickerVC.xib */; };
-		44D9BAC61C51D3F7002E0A49 /* NSAlert+MKNKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D9BAAC1C51D3F7002E0A49 /* NSAlert+MKNKAdditions.m */; };
 		44D9BAC71C51D3F7002E0A49 /* NSDate+RFC1123.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D9BAAE1C51D3F7002E0A49 /* NSDate+RFC1123.m */; };
 		44D9BAC81C51D3F7002E0A49 /* NSDictionary+MKNKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D9BAB01C51D3F7002E0A49 /* NSDictionary+MKNKAdditions.m */; };
 		44D9BAC91C51D3F7002E0A49 /* NSHTTPURLResponse+MKNKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D9BAB21C51D3F7002E0A49 /* NSHTTPURLResponse+MKNKAdditions.m */; };
@@ -568,8 +567,6 @@
 		44D9BA871C4F8862002E0A49 /* FASourcePickerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FASourcePickerVC.h; sourceTree = "<group>"; };
 		44D9BA881C4F8862002E0A49 /* FASourcePickerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FASourcePickerVC.m; sourceTree = "<group>"; };
 		44D9BA891C4F8862002E0A49 /* FASourcePickerVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FASourcePickerVC.xib; sourceTree = "<group>"; };
-		44D9BAAB1C51D3F7002E0A49 /* NSAlert+MKNKAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAlert+MKNKAdditions.h"; sourceTree = "<group>"; };
-		44D9BAAC1C51D3F7002E0A49 /* NSAlert+MKNKAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAlert+MKNKAdditions.m"; sourceTree = "<group>"; };
 		44D9BAAD1C51D3F7002E0A49 /* NSDate+RFC1123.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+RFC1123.h"; sourceTree = "<group>"; };
 		44D9BAAE1C51D3F7002E0A49 /* NSDate+RFC1123.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+RFC1123.m"; sourceTree = "<group>"; };
 		44D9BAAF1C51D3F7002E0A49 /* NSDictionary+MKNKAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+MKNKAdditions.h"; sourceTree = "<group>"; };
@@ -1743,8 +1740,6 @@
 		44D9BAAA1C51D3F7002E0A49 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				44D9BAAB1C51D3F7002E0A49 /* NSAlert+MKNKAdditions.h */,
-				44D9BAAC1C51D3F7002E0A49 /* NSAlert+MKNKAdditions.m */,
 				44D9BAAD1C51D3F7002E0A49 /* NSDate+RFC1123.h */,
 				44D9BAAE1C51D3F7002E0A49 /* NSDate+RFC1123.m */,
 				44D9BAAF1C51D3F7002E0A49 /* NSDictionary+MKNKAdditions.h */,
@@ -4176,7 +4171,6 @@
 				6A6DC7DB1BD3DFA800A359C0 /* JBLineChartView.m in Sources */,
 				6A6DC8041BD3DFA800A359C0 /* Samurai_CSSNumberMm.m in Sources */,
 				6AF4BDDF1BB551EF0047A720 /* UIUtils.m in Sources */,
-				44D9BAC61C51D3F7002E0A49 /* NSAlert+MKNKAdditions.m in Sources */,
 				6A6DC76C1BD3DFA800A359C0 /* Samurai_Core.m in Sources */,
 				6A6DC77F1BD3DFA800A359C0 /* Samurai_DockerWindow.m in Sources */,
 				6A6DC8811BD3DFA900A359C0 /* Samurai_HtmlLayoutElement.m in Sources */,
