@@ -48,4 +48,7 @@
 @string( Quadrant3Title )
 @string( Quadrant4Title )
 
+// others
+@string( PhotoComment )
+
 @end

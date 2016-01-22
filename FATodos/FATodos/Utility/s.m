@@ -47,4 +47,8 @@
 @def_string( Quadrant3Title, @"不重要 紧急" )
 @def_string( Quadrant4Title, @"不重要 不紧急" )
 
+#pragma mark - Others
+
+@def_string( PhotoComment,  @"摄影点评" )
+
 @end

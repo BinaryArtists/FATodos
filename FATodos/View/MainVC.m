@@ -24,6 +24,7 @@
 @property (nonatomic, strong) UserBoxView *         noteView;
 @property (nonatomic, strong) UserBoxView *         fourQuadrantView;
 @property (nonatomic, strong) UserBoxView *         pomodoroView;
+@property (nonatomic, strong) UserBoxView *         photoCommentView;
 
 @property (nonatomic, strong) AFViewShaker *        viewShaker;
 
@@ -96,6 +97,13 @@
     
     [self.scrollView addUserView:self.pomodoroView];
     
+    self.photoCommentView = [[UserBoxView alloc] init];
+    [self.photoCommentView.displayTextLabel setText:[s PhotoComment]];
+    [self.photoCommentView.displayTextLabel setTextColor:[UIColor iOS7darkBlueColor]];
+    [self.photoCommentView.userImageView setImage:[UIImage imageNamed:@"userdefault.jpg"]];
+    
+    [self.scrollView addUserView:self.photoCommentView];
+    
     [self.scrollView bringViewAtIndexToFront:5 animated:YES];
     
     {
@@ -138,6 +146,8 @@
         [[Routable sharedRouter] open:[AppDelegate NOTE_VC] animated:YES];
     } else if (selectedview == self.fourQuadrantView) {
         [[Routable sharedRouter] open:[AppDelegate QUADRANT_VC] animated:YES];
+    } else if (selectedview == self.photoCommentView) {
+        [[Routable sharedRouter] open:[AppDelegate PHOTO_COMMENT_VC]];
     } else {
         // bug: fixme，动画有问题！会先回到中间，然后震动.
         [self.viewShaker shakeWithDuration:0.6

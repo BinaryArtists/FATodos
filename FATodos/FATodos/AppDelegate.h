@@ -88,6 +88,8 @@
 
 @string( POMODORO_VC )
 
+@string( PHOTO_COMMENT_VC )
+
 @end
 
 #pragma mark - AppDelegate (configuration)

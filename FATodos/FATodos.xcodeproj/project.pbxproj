@@ -22,6 +22,8 @@
 		44D9BAD01C51D3F7002E0A49 /* MKNetworkRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D9BAC11C51D3F7002E0A49 /* MKNetworkRequest.m */; };
 		44D9BAD11C51D3F7002E0A49 /* MKObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D9BAC31C51D3F7002E0A49 /* MKObject.m */; };
 		44D9BAD21C51D3F7002E0A49 /* README.mdown in Sources */ = {isa = PBXBuildFile; fileRef = 44D9BAC41C51D3F7002E0A49 /* README.mdown */; };
+		44D9BADA1C520768002E0A49 /* PhotoCommentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D9BAD81C520768002E0A49 /* PhotoCommentVC.m */; };
+		44D9BADB1C520768002E0A49 /* PhotoCommentVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44D9BAD91C520768002E0A49 /* PhotoCommentVC.xib */; };
 		4EEBF9F8D8348519901DEC48 /* libPods-FATodosTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4958D1F04CC182351417F64 /* libPods-FATodosTests.a */; };
 		534CB05A2535D65788892768 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18CA0A1539FBCF69D8C82F1E /* libPods.a */; };
 		6A158E391B70B482007FE54F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A158E381B70B482007FE54F /* main.m */; };
@@ -591,6 +593,9 @@
 		44D9BAC21C51D3F7002E0A49 /* MKObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKObject.h; sourceTree = "<group>"; };
 		44D9BAC31C51D3F7002E0A49 /* MKObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKObject.m; sourceTree = "<group>"; };
 		44D9BAC41C51D3F7002E0A49 /* README.mdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.mdown; sourceTree = "<group>"; };
+		44D9BAD71C520768002E0A49 /* PhotoCommentVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCommentVC.h; sourceTree = "<group>"; };
+		44D9BAD81C520768002E0A49 /* PhotoCommentVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCommentVC.m; sourceTree = "<group>"; };
+		44D9BAD91C520768002E0A49 /* PhotoCommentVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoCommentVC.xib; sourceTree = "<group>"; };
 		6A158E331B70B482007FE54F /* FATodos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FATodos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A158E371B70B482007FE54F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A158E381B70B482007FE54F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -1756,6 +1761,24 @@
 				44D9BABA1C51D3F7002E0A49 /* UIImageView+MKNKAdditions.m */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		44D9BAD51C52070D002E0A49 /* PhotographKit */ = {
+			isa = PBXGroup;
+			children = (
+				44D9BAD61C52070D002E0A49 /* TestPage */,
+			);
+			path = PhotographKit;
+			sourceTree = "<group>";
+		};
+		44D9BAD61C52070D002E0A49 /* TestPage */ = {
+			isa = PBXGroup;
+			children = (
+				44D9BAD71C520768002E0A49 /* PhotoCommentVC.h */,
+				44D9BAD81C520768002E0A49 /* PhotoCommentVC.m */,
+				44D9BAD91C520768002E0A49 /* PhotoCommentVC.xib */,
+			);
+			path = TestPage;
 			sourceTree = "<group>";
 		};
 		6A158E2A1B70B482007FE54F = {
@@ -3485,6 +3508,7 @@
 		6ACFDDCE1B9C23FC0061DA35 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				44D9BAD51C52070D002E0A49 /* PhotographKit */,
 				6A6DA0971BD343D300A359C0 /* FourQuadrant */,
 				6A6DA0981BD343D300A359C0 /* Note */,
 				6A6DA0991BD343D300A359C0 /* Pomodoro */,
@@ -3932,6 +3956,7 @@
 				6AF4BD731BB3E43B0047A720 /* ChinaCity.plist in Resources */,
 				6A6DA0A31BD3440500A359C0 /* NoteVC.xib in Resources */,
 				6AF4BDC81BB52D040047A720 /* crossMark.png in Resources */,
+				44D9BADB1C520768002E0A49 /* PhotoCommentVC.xib in Resources */,
 				6A6DA0AD1BD3445B00A359C0 /* PomodoroVC.xib in Resources */,
 				6AF4BDC91BB52D040047A720 /* crossMark@2x.png in Resources */,
 				44D9BA8B1C4F8862002E0A49 /* FASourcePickerVC.xib in Resources */,
@@ -4219,6 +4244,7 @@
 				6AF4BDB61BB441760047A720 /* NSValueTransformer+MTLPredefinedTransformerAdditions.m in Sources */,
 				6A6DC8541BD3DFA900A359C0 /* Samurai_HtmlElementHtml.m in Sources */,
 				6A6DC88F1BD3DFA900A359C0 /* Samurai_HtmlRenderWorklet_10Begin.m in Sources */,
+				44D9BADA1C520768002E0A49 /* PhotoCommentVC.m in Sources */,
 				6A6DC7861BD3DFA800A359C0 /* UIView+SignalHandling.m in Sources */,
 				6A6DC7B71BD3DFA800A359C0 /* Samurai_ViewEvent.m in Sources */,
 				6A6DC7A11BD3DFA800A359C0 /* Samurai_ActivityStack.m in Sources */,

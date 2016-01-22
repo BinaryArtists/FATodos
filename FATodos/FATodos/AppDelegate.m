@@ -10,6 +10,9 @@
 #import "NoteVC.h"
 #import "PomodoroVC.h"
 #import "LaunchMediaVC.h"
+#import "PhotoCommentVC.h"
+
+
 #import "ServiceMonitor.h"
 #import "ServiceBorder.h"
 #import "ServiceGesture.h"
@@ -125,6 +128,7 @@
     [[Routable sharedRouter] map:[self NOTE_VC] toController:[NoteVC class]];
     [[Routable sharedRouter] map:[self QUADRANT_VC] toController:[FourQuadrantVC class]];
     [[Routable sharedRouter] map:[self POMODORO_VC] toController:[PomodoroVC class]];
+    [[Routable sharedRouter] map:[self PHOTO_COMMENT_VC] toController:[PhotoCommentVC class]];
 }
 
 @end
@@ -141,6 +145,8 @@
 @def_string( NOTE_VC,       @"vc.note" )
 @def_string( QUADRANT_VC,   @"vc.quadrant" )
 @def_string( POMODORO_VC,   @"vc.pomodoro")
+
+@def_string( PHOTO_COMMENT_VC, @"vc.photo.comment" )
 
 @end
 
