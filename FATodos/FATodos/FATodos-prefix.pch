@@ -19,6 +19,7 @@
 
 // Framework
 #import "Samurai_Property.h"
+#import "MKNetworkKit.h"
 
 // Defines
 #import "macrodef.h"

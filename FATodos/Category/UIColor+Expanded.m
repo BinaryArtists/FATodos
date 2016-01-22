@@ -376,7 +376,7 @@ static NSLock *colorNameCacheLock;
 		[colors addObject:[UIColor colorWithHue:h2 saturation:s brightness:v alpha:a]];
 	}
 	
-	return [[colors copy] autorelease];
+	return [colors copy];
 }
 
 #pragma mark String utilities
@@ -436,7 +436,7 @@ static NSLock *colorNameCacheLock;
 	for (name = bestPos-1; *name != ','; --name)
 		;
 	++name;
-	NSString *result = [[[NSString alloc] initWithBytes:name length:bestPos - name encoding:NSUTF8StringEncoding] autorelease];
+	NSString *result = [[NSString alloc] initWithBytes:name length:bestPos - name encoding:NSUTF8StringEncoding];
 
 	return result;
 }
@@ -707,7 +707,6 @@ static const char *colorNameDB = ","
 		[cache setObject:[self colorWithRGBHex:hex] forKey:name];
 		
 		// Cleanup and move to the next item
-		[name release];
 		entry = h + increment;
 	}
 	colorNameCache = [cache copy];
