@@ -40,6 +40,12 @@
          */
     }
     
+    /**
+     * html parser
+     
+     https://github.com/topfunky/hpple/tree/master/Example
+     */
+    
     {
         NSURL *url  = [[NSURL alloc] initWithString:@"http://photo.poco.cn/dianping/"];
 //        NSURL *url  = [[NSURL alloc] initWithString:@"http://www.baidu.com"];
@@ -76,7 +82,7 @@
 #pragma mark - Network
 
 - (void)loadHtml {
-    MKNetworkHost *host = [[MKNetworkHost alloc] initWithHostName:@"photo.poco.cn"];
+    MKNetworkHost *host = [MKNetworkHost new];
     MKNetworkRequest *request   = [host requestWithURLString:@"http://photo.poco.cn/dianping/"];
     [request addCompletionHandler:^(MKNetworkRequest *completedRequest) {
         NSLog(@"%@", completedRequest.responseAsString);
