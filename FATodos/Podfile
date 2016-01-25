@@ -49,3 +49,7 @@ pod 'ZLSwipeableView'
 
 pod 'CocoaLumberjack'
 
+pod 'XHRealTimeBlur'
+
+pod 'PopMenu'
+

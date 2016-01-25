@@ -5,6 +5,9 @@ ZLSwipeableView
 
 A simple view for building card like interface like [Tinder](http://www.gotinder.com/) and [Potluck](https://www.potluck.it/). ZLSwipeableView was originally developed for [Murmur](http://zhxnlai.github.io/#/murmur).
 
+**Notice:** The Objective-C version of ZLSwipeableView is no longer actively maintained. 
+### Please checkout the swift version: https://github.com/zhxnlai/ZLSwipeableViewSwift
+
 Preview
 ---
 ###Swipe
@@ -51,18 +54,9 @@ self.swipeableView.delegate = self;
 
 #pragma mark - ZLSwipeableViewDelegate
 - (void)swipeableView:(ZLSwipeableView *)swipeableView
-           didSwipeUp:(UIView *)view {
-    NSLog(@"did swipe up");
-}
-- (void)swipeableView:(ZLSwipeableView *)swipeableView
-         didSwipeDown:(UIView *)view {
-    NSLog(@"did swipe down");
-}
-- (void)swipeableView:(ZLSwipeableView *)swipeableView didSwipeLeft:(UIView *)view {
-    NSLog(@"did swipe left");
-}
-- (void)swipeableView:(ZLSwipeableView *)swipeableView didSwipeRight:(UIView *)view {
-    NSLog(@"did swipe right");
+         didSwipeView:(UIView *)view
+          inDirection:(ZLSwipeableViewDirection)direction {
+    NSLog(@"did swipe in direction: %zd", direction);
 }
 - (void)swipeableView:(ZLSwipeableView *)swipeableView didCancelSwipe:(UIView *)view {
   NSLog(@"did cancel swipe");
