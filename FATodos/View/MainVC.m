@@ -147,7 +147,8 @@
     } else if (selectedview == self.fourQuadrantView) {
         [[Routable sharedRouter] open:[AppDelegate QUADRANT_VC] animated:YES];
     } else if (selectedview == self.photoCommentView) {
-        [[Routable sharedRouter] open:[AppDelegate PHOTO_COMMENT_VC]];
+//        [[Routable sharedRouter] open:[AppDelegate PHOTO_COMMENT_VC]];
+        [[Routable sharedRouter] open:[AppDelegate POCO_HOME_VC]];
     } else {
         // bug: fixme，动画有问题！会先回到中间，然后震动.
         [self.viewShaker shakeWithDuration:0.6

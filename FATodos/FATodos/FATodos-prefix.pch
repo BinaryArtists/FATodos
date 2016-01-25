@@ -90,6 +90,7 @@
 #import "MGSwipeTableCell.h"
 #import "AMSmoothAlertView.h"
 #import "UIUtils.h"
+#import "FAPopup.h"
 
 // Entity
 #import "Item1.h"

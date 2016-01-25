@@ -115,6 +115,8 @@
 
 @string( PHOTO_COMMENT_VC )
 
+@string( POCO_HOME_VC )
+
 @end
 
 #pragma mark - AppDelegate (configuration)

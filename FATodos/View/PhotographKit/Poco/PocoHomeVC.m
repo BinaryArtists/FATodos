@@ -26,7 +26,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    [self initData];
+    
+    {
+        UIBarButtonItem *addContactBarButton    = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(onMenu)];
+        self.navigationItem.rightBarButtonItem  = addContactBarButton;
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,14 +40,46 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
+#pragma mark - Action handler
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)onMenu {
+    NSMutableArray *items = [[NSMutableArray alloc] initWithCapacity:3];
+    MenuItem *menuItem = [[MenuItem alloc] initWithTitle:self.commentTitles[0]
+                                                iconName:@"post_type_bubble_flickr" glowColor:[UIColor grayColor] index:0];
+    [items addObject:menuItem];
+    
+    menuItem = [[MenuItem alloc] initWithTitle:self.commentTitles[1]
+                                      iconName:@"post_type_bubble_googleplus" glowColor:[UIColor colorWithRed:0.000 green:0.840 blue:0.000 alpha:1.000] index:0];
+    [items addObject:menuItem];
+    
+    menuItem = [[MenuItem alloc] initWithTitle:self.commentTitles[2]
+                                      iconName:@"post_type_bubble_instagram" glowColor:[UIColor colorWithRed:0.687 green:0.000 blue:0.000 alpha:1.000] index:0];
+    [items addObject:menuItem];
+    
+    menuItem = [[MenuItem alloc] initWithTitle:self.commentTitles[3]
+                                      iconName:@"post_type_bubble_twitter" glowColor:[UIColor colorWithRed:0.687 green:0.000 blue:0.000 alpha:1.000] index:0];
+    [items addObject:menuItem];
+    
+    menuItem = [[MenuItem alloc] initWithTitle:self.commentTitles[4]
+                                      iconName:@"post_type_bubble_youtube" glowColor:[UIColor colorWithRed:0.687 green:0.000 blue:0.000 alpha:1.000] index:0];
+    [items addObject:menuItem];
+    
+    menuItem = [[MenuItem alloc] initWithTitle:self.commentTitles[5]
+                                      iconName:@"post_type_bubble_facebook" glowColor:[UIColor colorWithRed:0.687 green:0.000 blue:0.000 alpha:1.000] index:0];
+    [items addObject:menuItem];
+    
+    menuItem = [[MenuItem alloc] initWithTitle:self.commentTitles[6]
+                                      iconName:@"post_type_bubble_facebook" glowColor:[UIColor colorWithRed:0.687 green:0.000 blue:0.000 alpha:1.000] index:0];
+    [items addObject:menuItem];
+    
+    menuItem = [[MenuItem alloc] initWithTitle:self.commentTitles[7]
+                                      iconName:@"post_type_bubble_facebook" glowColor:[UIColor colorWithRed:0.687 green:0.000 blue:0.000 alpha:1.000] index:0];
+    [items addObject:menuItem];
+
+    [FAPopup showPopMenuWithItems:items
+             didSelectedItemBlock:^(MenuItem *selectedItem) {
+                 ///
+             }];
 }
-*/
 
 @end

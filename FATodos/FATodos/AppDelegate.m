@@ -11,7 +11,7 @@
 #import "PomodoroVC.h"
 #import "LaunchMediaVC.h"
 #import "PhotoCommentVC.h"
-
+#import "PocoHomeVC.h"
 
 #import "ServiceMonitor.h"
 #import "ServiceBorder.h"
@@ -129,6 +129,8 @@
     [[Routable sharedRouter] map:[self QUADRANT_VC] toController:[FourQuadrantVC class]];
     [[Routable sharedRouter] map:[self POMODORO_VC] toController:[PomodoroVC class]];
     [[Routable sharedRouter] map:[self PHOTO_COMMENT_VC] toController:[PhotoCommentVC class]];
+    
+    [[Routable sharedRouter] map:self.POCO_HOME_VC toController:PocoHomeVC.class];
 }
 
 @end
@@ -147,6 +149,7 @@
 @def_string( POMODORO_VC,   @"vc.pomodoro")
 
 @def_string( PHOTO_COMMENT_VC, @"vc.photo.comment" )
+@def_string( POCO_HOME_VC, @"vc.poco.home")
 
 @end
 

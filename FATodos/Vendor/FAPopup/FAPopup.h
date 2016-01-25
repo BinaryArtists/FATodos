@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+@class MenuItem;
+
 @interface FAPopup : NSObject
 
 @singleton( FAPopup )
@@ -29,5 +31,8 @@
 + (void)setShowedPopupOriginY:(CGFloat)originY;
 + (void)resetShowedPopupOriginY;
 + (void)setDismissCompletionBlock:(void (^) ())complectionBlock;
+
+// 弹出菜单
++ (void)showPopMenuWithItems:(NSArray *)items didSelectedItemBlock:(DidSelectedItemBlock)block;
 
 @end

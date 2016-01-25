@@ -171,4 +171,16 @@ static const NSUInteger kCoverViewTag = 99999;
     util.dismissCompletionBlock = complectionBlock;
 }
 
+#pragma mark - Pop menu
+
++ (void)showPopMenuWithItems:(NSArray *)items didSelectedItemBlock:(DidSelectedItemBlock)block {
+    UIWindow *window = [[UIApplication sharedApplication] keyWindow];
+    
+    PopMenu *popMenu = [[PopMenu alloc] initWithFrame:window.bounds items:items];
+    popMenu.menuAnimationType = kPopMenuAnimationTypeNetEase; // kPopMenuAnimationTypeSina
+    popMenu.perRowItemCount = 3; // or 2
+    popMenu.didSelectedItemCompletion   = block;
+    [popMenu showMenuAtView:window];
+}
+
 @end
