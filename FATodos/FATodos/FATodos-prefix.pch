@@ -75,9 +75,10 @@
 #import "UIColor+MLPFlatColors.h"
 #import "ASCFlatUIColor.h"
 #import "ZLSwipeableView.h"
-#import "ZLPanGestureRecognizer.h"
 #import "Masonry.h"
 #import "CocoaLumberjack.h"
+#import "XHRealTimeBlur.h"
+#import "PopMenu.h"
 
 // Vendor
 #import "Mantle.h"
