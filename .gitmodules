@@ -7,3 +7,6 @@
 [submodule "FATodos/Framework/MKNetworkKit"]
 	path = FATodos/Framework/MKNetworkKit
 	url = https://github.com/MugunthKumar/MKNetworkKit.git
+[submodule "FATodos/Framework/tool.oc"]
+	path = FATodos/Framework/tool.oc
+	url = https://github.com/fallending/tool.oc.git
