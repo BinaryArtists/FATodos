@@ -20,9 +20,10 @@
 // Framework
 #import "Samurai_Property.h"
 #import "MKNetworkKit.h"
+#import "NSString+Localizable.h" // tool.oc
+#import "MacroUtils.h" // tool.oc
 
 // Defines
-#import "macrodef.h"
 #import "typedef.h"
 
 // Base

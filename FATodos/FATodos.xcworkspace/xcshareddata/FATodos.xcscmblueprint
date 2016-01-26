@@ -5,6 +5,7 @@
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
     "F56050D6C4C6E494F282866CB10FD48541DC49B1" : 0,
+    "5D13B55CADE06A075FE8782BB68A1BAB556C8B27" : 0,
     "93F03B4FB16C51878D80E41F4AE50E27A356E32B" : 0,
     "1480C2462FBE636FBF129122450B8E3FDDA526FD" : 0,
     "2FF848319764E0EFB4BD54544F7E2E2A0760261A" : 0
@@ -12,6 +13,7 @@
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "80BD0016-4690-4BD0-B883-E1E0B9007016",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
     "F56050D6C4C6E494F282866CB10FD48541DC49B1" : "FATodos\/",
+    "5D13B55CADE06A075FE8782BB68A1BAB556C8B27" : "FATodos\/FATodos\/Framework\/tool.oc\/",
     "93F03B4FB16C51878D80E41F4AE50E27A356E32B" : "FATodos\/FATodos\/Vendor\/LibraryStorage\/AutoDatabase\/objective-c-sql-query-builder\/",
     "1480C2462FBE636FBF129122450B8E3FDDA526FD" : "FATodos\/FATodos\/Framework\/samurai-native\/",
     "2FF848319764E0EFB4BD54544F7E2E2A0760261A" : "FATodos\/FATodos\/Framework\/MKNetworkKit\/"
@@ -29,6 +31,11 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/MugunthKumar\/MKNetworkKit.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2FF848319764E0EFB4BD54544F7E2E2A0760261A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/fallending\/tool.oc.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5D13B55CADE06A075FE8782BB68A1BAB556C8B27"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/fallending\/objective-c-sql-query-builder.git",

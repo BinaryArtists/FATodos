@@ -33,7 +33,7 @@
 #pragma mark - On UITableView
 
 + (void)registerOn:(UITableView *)tableView {
-    _assert_( tableView )
+    NSAssert(tableView, @"tableView nil");
     
     [tableView registerNib:[self nib]
     forCellReuseIdentifier:[self identifier]];
