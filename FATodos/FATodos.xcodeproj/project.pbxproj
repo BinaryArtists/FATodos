@@ -29,6 +29,7 @@
 		44D9BAF81C55F6E3002E0A49 /* PocoApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D9BAF71C55F6E3002E0A49 /* PocoApi.m */; };
 		44D9BBBA1C55F7E9002E0A49 /* PocoHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D9BBB81C55F7E9002E0A49 /* PocoHomeVC.m */; };
 		44D9BBBB1C55F7EA002E0A49 /* PocoHomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44D9BBB91C55F7E9002E0A49 /* PocoHomeVC.xib */; };
+		44D9BBDB1C575ADC002E0A49 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 44D9BBDD1C575ADC002E0A49 /* Localizable.strings */; };
 		4EEBF9F8D8348519901DEC48 /* libPods-FATodosTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4958D1F04CC182351417F64 /* libPods-FATodosTests.a */; };
 		534CB05A2535D65788892768 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18CA0A1539FBCF69D8C82F1E /* libPods.a */; };
 		6A158E391B70B482007FE54F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A158E381B70B482007FE54F /* main.m */; };
@@ -609,6 +610,8 @@
 		44D9BBB71C55F7E9002E0A49 /* PocoHomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PocoHomeVC.h; sourceTree = "<group>"; };
 		44D9BBB81C55F7E9002E0A49 /* PocoHomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PocoHomeVC.m; sourceTree = "<group>"; };
 		44D9BBB91C55F7E9002E0A49 /* PocoHomeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PocoHomeVC.xib; sourceTree = "<group>"; };
+		44D9BBDF1C575AF1002E0A49 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		44D9BBE01C575B76002E0A49 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		6A158E331B70B482007FE54F /* FATodos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FATodos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A158E371B70B482007FE54F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A158E381B70B482007FE54F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -1880,6 +1883,7 @@
 				6A158E371B70B482007FE54F /* Info.plist */,
 				6A158E381B70B482007FE54F /* main.m */,
 				6ACFDFE81BA0296A0061DA35 /* FATodos-prefix.pch */,
+				44D9BBDD1C575ADC002E0A49 /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -3967,6 +3971,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 6A158E2A1B70B482007FE54F;
 			productRefGroup = 6A158E341B70B482007FE54F /* Products */;
@@ -4024,6 +4029,7 @@
 				6A6DC8971BD3DFA900A359C0 /* html.css in Resources */,
 				6A3E5F951C0DCC8E0075EA98 /* Launch.m4v in Resources */,
 				6ACFE0101BA170720061DA35 /* Item_1_Cell.xib in Resources */,
+				44D9BBDB1C575ADC002E0A49 /* Localizable.strings in Resources */,
 				6AF4BDA81BB441760047A720 /* Info.plist in Resources */,
 				6ACFDFE71BA0207F0061DA35 /* list@2x.png in Resources */,
 				6A6DC8961BD3DFA900A359C0 /* html+samurai.css in Resources */,
@@ -4647,6 +4653,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		44D9BBDD1C575ADC002E0A49 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44D9BBDF1C575AF1002E0A49 /* en */,
+				44D9BBE01C575B76002E0A49 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		6A158E481B70B482007FE54F /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
