@@ -88,10 +88,10 @@
 #undef  is_type
 #define is_type( __type ) [str_of_type(__type) contains:objctype]
     
-    _assert_(! is_type(void)/** 'v' */);
+    NSAssert(! is_type(void)/** 'v' */, nil);
 //    _assert_(! is_type(char *)/** '*' */);
-    _assert_(! is_type(Class)/** '#' */);
-    _assert_(! is_type(SEL)/** ':' */);
+    NSAssert(! is_type(Class)/** '#' */, nil);
+    NSAssert(! is_type(SEL)/** ':' */, nil);
     
     if (is_type(char)               ||              // char
         is_type(int)                ||              // int int32_t

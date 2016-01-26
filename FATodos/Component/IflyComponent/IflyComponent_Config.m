@@ -13,7 +13,7 @@
 @def_singleton( IflyComponent_Config )
 
 - (void)setPcmFile:(NSString *)pcmFile {
-    _assert_( pcmFile )
+    NSAssert(pcmFile, @"pcmFile nil");
     
     _pcmFile    = pcmFile;
     

@@ -30,7 +30,6 @@
 		44D9BBBA1C55F7E9002E0A49 /* PocoHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D9BBB81C55F7E9002E0A49 /* PocoHomeVC.m */; };
 		44D9BBBB1C55F7EA002E0A49 /* PocoHomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44D9BBB91C55F7E9002E0A49 /* PocoHomeVC.xib */; };
 		44D9BBDB1C575ADC002E0A49 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 44D9BBDD1C575ADC002E0A49 /* Localizable.strings */; };
-		44D9BC431C5766D6002E0A49 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D9BC011C5766D6002E0A49 /* NSData+Base64.m */; };
 		44D9BC451C5766D6002E0A49 /* allwarning.md in Sources */ = {isa = PBXBuildFile; fileRef = 44D9BC041C5766D6002E0A49 /* allwarning.md */; };
 		44D9BC461C5766D6002E0A49 /* NSStringWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D9BC0C1C5766D6002E0A49 /* NSStringWrapper.m */; };
 		44D9BC531C5766D6002E0A49 /* UITableViewCell+.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D9BC1C1C5766D6002E0A49 /* UITableViewCell+.m */; };
@@ -620,8 +619,6 @@
 		44D9BBB91C55F7E9002E0A49 /* PocoHomeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PocoHomeVC.xib; sourceTree = "<group>"; };
 		44D9BBDF1C575AF1002E0A49 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		44D9BBE01C575B76002E0A49 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		44D9BC001C5766D6002E0A49 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
-		44D9BC011C5766D6002E0A49 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
 		44D9BC041C5766D6002E0A49 /* allwarning.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = allwarning.md; sourceTree = "<group>"; };
 		44D9BC051C5766D6002E0A49 /* ColorContants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorContants.h; sourceTree = "<group>"; };
 		44D9BC061C5766D6002E0A49 /* MacroUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacroUtils.h; sourceTree = "<group>"; };
@@ -1859,22 +1856,12 @@
 		44D9BBE21C5766D6002E0A49 /* tool.oc */ = {
 			isa = PBXGroup;
 			children = (
-				44D9BBFF1C5766D6002E0A49 /* Encoding */,
 				44D9BC031C5766D6002E0A49 /* Macros */,
 				44D9BC0A1C5766D6002E0A49 /* NSString+ */,
 				44D9BC1A1C5766D6002E0A49 /* Templates */,
 				44D9BC251C5766D6002E0A49 /* UIImage+ */,
 			);
 			path = tool.oc;
-			sourceTree = "<group>";
-		};
-		44D9BBFF1C5766D6002E0A49 /* Encoding */ = {
-			isa = PBXGroup;
-			children = (
-				44D9BC001C5766D6002E0A49 /* NSData+Base64.h */,
-				44D9BC011C5766D6002E0A49 /* NSData+Base64.m */,
-			);
-			path = Encoding;
 			sourceTree = "<group>";
 		};
 		44D9BC031C5766D6002E0A49 /* Macros */ = {
@@ -4367,7 +4354,6 @@
 				6A6DC8B21BD3DFA900A359C0 /* tokenizer.c in Sources */,
 				6A6DC77A1BD3DFA800A359C0 /* Samurai_Model.m in Sources */,
 				6A6DC7B81BD3DFA800A359C0 /* Samurai_Color.m in Sources */,
-				44D9BC431C5766D6002E0A49 /* NSData+Base64.m in Sources */,
 				6A6DC8AC1BD3DFA900A359C0 /* vector.c in Sources */,
 				6A6DC7A21BD3DFA800A359C0 /* Samurai_ActivityStackGroup.m in Sources */,
 				6A6DC7E51BD3DFA800A359C0 /* ServiceTapspotView.m in Sources */,
