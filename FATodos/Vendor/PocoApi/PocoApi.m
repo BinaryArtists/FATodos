@@ -7,9 +7,50 @@
 //
 
 #import "PocoApi.h"
+#import "CommentListRequest.h"
+
+@interface PocoApi ()
+
+@property (nonatomic, strong) MKNetworkHost *netHost;
+
+@end
 
 @implementation PocoApi
 
 @def_singleton( PocoApi )
+
+#pragma mark - 
+
+- (instancetype)init {
+    if (self = [super init]) {
+        self.netHost    = [MKNetworkHost new];
+    }
+    
+    return self;
+}
+
+#pragma mark - Apis
+
+- (void)portraitListWithSuccessHandler:(ObjectBlock)successHandler
+                        failureHandler:(ErrorBlock)failureHandler {
+    CommentListRequest *request = [CommentListRequest instance];
+    request.typeId              = type_id_portrait;
+
+    MKNetworkRequest *urlRequest= [self.netHost requestWithPath:ApiPocoPortraitListURL
+                                                         params:[request params]];
+    [urlRequest addCompletionHandler:^(MKNetworkRequest *completedRequest) {
+        NSLog(@"%@", completedRequest.responseAsString);
+        
+        // 1. Has a error?
+        
+        
+        // 2. Parse response -> Json dictionary
+        
+        
+        // 3. Json dictionary -> Specific response
+    }];
+    
+    [self.netHost startRequest:urlRequest];
+}
 
 @end

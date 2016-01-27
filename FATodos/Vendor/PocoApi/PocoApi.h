@@ -55,6 +55,7 @@
 
 @singleton( PocoApi )
 
-/// 使用
+- (void)portraitListWithSuccessHandler:(ObjectBlock)successHandler
+                        failureHandler:(ErrorBlock)failureHandler;
 
 @end

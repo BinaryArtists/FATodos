@@ -22,7 +22,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    self.title  = [s PhotoComment];
+    self.title  = L(@"test.zhenguo.title");
     
     {
         /**
@@ -46,14 +46,30 @@
      https://github.com/topfunky/hpple/tree/master/Example
      */
     
+    /**
+     相约佳人
+     
+     {
+        http://oa.shhyy.net/admin/weixin/
+     
+        网页登录进入的是后台
+        微信里进入的OA
+     
+        网页中，微信登录，进入是后台
+        再次load，是oa
+     }
+     
+     {
+        http://oa.shhyy.net/admin/app/
+     }
+     
+     */
+    
     {
-        NSURL *url  = [[NSURL alloc] initWithString:@"http://photo.poco.cn/dianping/"];
-//        NSURL *url  = [[NSURL alloc] initWithString:@"http://www.baidu.com"];
+        NSURL *url  = [[NSURL alloc] initWithString:@"http://oa.shhyy.net/admin/app/"];
         NSURLRequest *request   = [NSURLRequest requestWithURL:url];
         [self.webView loadRequest:request];
     }
-    
-    [self loadHtml];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -77,18 +93,6 @@
 
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
     return YES;
-}
-
-#pragma mark - Network
-
-- (void)loadHtml {
-    MKNetworkHost *host = [MKNetworkHost new];
-    MKNetworkRequest *request   = [host requestWithURLString:@"http://photo.poco.cn/dianping/"];
-    [request addCompletionHandler:^(MKNetworkRequest *completedRequest) {
-        NSLog(@"%@", completedRequest.responseAsString);
-    }];
-    
-    [host startRequest:request];
 }
 
 @end

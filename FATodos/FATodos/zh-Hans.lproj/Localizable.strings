@@ -5,3 +5,13 @@
   Created by qingqing on 16/1/26.
   Copyright © 2016年 fallen.ink. All rights reserved.
 */
+
+/**
+ *  测试部分
+ */
+"test.zhenguo.title"  = "相约佳人";
+
+/**
+ *  poco部分
+ */
+"poco."  = "llaal";

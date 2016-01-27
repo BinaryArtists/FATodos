@@ -25,6 +25,7 @@
 @property (nonatomic, strong) UserBoxView *         fourQuadrantView;
 @property (nonatomic, strong) UserBoxView *         pomodoroView;
 @property (nonatomic, strong) UserBoxView *         photoCommentView;
+@property (nonatomic, strong) UserBoxView *         test_zhenguo_view;
 
 @property (nonatomic, strong) AFViewShaker *        viewShaker;
 
@@ -104,6 +105,13 @@
     
     [self.scrollView addUserView:self.photoCommentView];
     
+    self.test_zhenguo_view = [[UserBoxView alloc] init];
+    [self.test_zhenguo_view.displayTextLabel setText:L(@"test.zhenguo.title")];
+    [self.test_zhenguo_view.displayTextLabel setTextColor:[UIColor iOS7darkBlueColor]];
+    [self.test_zhenguo_view.userImageView setImage:[UIImage imageNamed:@"userdefault.jpg"]];
+    
+    [self.scrollView addUserView:self.test_zhenguo_view];
+    
     [self.scrollView bringViewAtIndexToFront:5 animated:YES];
     
     {
@@ -147,9 +155,11 @@
     } else if (selectedview == self.fourQuadrantView) {
         [[Routable sharedRouter] open:[AppDelegate QUADRANT_VC] animated:YES];
     } else if (selectedview == self.photoCommentView) {
-//        [[Routable sharedRouter] open:[AppDelegate PHOTO_COMMENT_VC]];
         [[Routable sharedRouter] open:[AppDelegate POCO_HOME_VC]];
-    } else {
+    } else if (selectedview == self.test_zhenguo_view) {
+        [[Routable sharedRouter] open:[AppDelegate PHOTO_COMMENT_VC]];
+    }
+    else {
         // bug: fixme，动画有问题！会先回到中间，然后震动.
         [self.viewShaker shakeWithDuration:0.6
                                 completion:^{
