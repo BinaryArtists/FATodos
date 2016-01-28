@@ -17,11 +17,13 @@
 @end
 
 /**
- *
+ *  
  */
 @protocol PocoHomeMenuDelegate <NSObject>
 
 - (NSArray<NSString *> *)titlesOfPocoHomeMenu:(PocoHomeMenuVC *)viewController;
+
+- (NSArray<NSString *> *)imagesOfPocoHomeMenu:(PocoHomeMenuVC *)viewController;
 
 - (void)pocoHomeMenu:(PocoHomeMenuVC *)viewController didClickAtIndex:(int32_t)index;
 

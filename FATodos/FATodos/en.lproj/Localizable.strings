@@ -7,6 +7,20 @@
 */
 
 /**
+ *  Poco
+ */
+"poco.comment.home.title"   = "Poco点评";
+
+"poco.comment.subject.portrait"     = "人像";
+"poco.comment.subject.scenery"      = "风景";
+"poco.comment.subject.ecology"      = "生态";
+"poco.comment.subject.documentary"  = "纪实";
+"poco.comment.subject.lomo"         = "Lomo";
+"poco.comment.subject.conception"   = "观念";
+"poco.comment.subject.commercy"     = "商业";
+"poco.comment.subject.other"        = "其他";
+
+/**
  *  测试部分
  */
 "test.zhenguo.title"  = "相约佳人";

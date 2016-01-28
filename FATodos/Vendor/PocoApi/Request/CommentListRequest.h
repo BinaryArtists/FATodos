@@ -22,6 +22,8 @@ typedef enum : NSUInteger {
     type_id_other       = 8,
 } eTypeId;
 
+#define is_type_id_valid( _value_ ) ( type_id_portrait <= _value_ && _value_ <= type_id_other )
+
 // 根据article_last_update_time=1453881222，单位秒，往前拉取数据
 
 @interface CommentListRequest : MTLModel

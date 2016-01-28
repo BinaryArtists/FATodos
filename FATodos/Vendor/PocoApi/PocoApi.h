@@ -55,7 +55,8 @@
 
 @singleton( PocoApi )
 
-- (void)portraitListWithSuccessHandler:(ObjectBlock)successHandler
-                        failureHandler:(ErrorBlock)failureHandler;
+- (void)commentListWithTypeId:(eTypeId)typeId
+               successHandler:(ObjectBlock)successHandler
+               failureHandler:(ErrorBlock)failureHandler;
 
 @end

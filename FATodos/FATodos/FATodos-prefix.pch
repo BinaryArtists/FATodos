@@ -81,6 +81,17 @@
 #import "XHRealTimeBlur.h"
 #import "PopMenu.h"
 
+// Entity
+#import "Item1.h"
+
+#import "CommentArticle.h"
+#import "CommentFlow.h"
+#import "CommentSkill.h"
+
+// Request & response
+
+#import "CommentListRequest.h"
+
 // Vendor
 #import "Mantle.h"
 #import "NSDictionary+Params.h"
@@ -93,9 +104,6 @@
 #import "UIUtils.h"
 #import "FAPopup.h"
 #import "PocoApi.h"
-
-// Entity
-#import "Item1.h"
 
 // Inner
 #import "s.h" // string

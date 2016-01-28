@@ -10,4 +10,6 @@
 
 @interface PocoHomeContentVC : BaseView
 
+- (void)loadListWithCommentTypeId:(eTypeId)typeId;
+
 @end

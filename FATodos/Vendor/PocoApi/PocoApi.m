@@ -31,10 +31,11 @@
 
 #pragma mark - Apis
 
-- (void)portraitListWithSuccessHandler:(ObjectBlock)successHandler
-                        failureHandler:(ErrorBlock)failureHandler {
+- (void)commentListWithTypeId:(eTypeId)typeId
+               successHandler:(ObjectBlock)successHandler
+               failureHandler:(ErrorBlock)failureHandler {
     CommentListRequest *request = [CommentListRequest instance];
-    request.typeId              = type_id_portrait;
+    request.typeId              = typeId;
 
     MKNetworkRequest *urlRequest= [self.netHost requestWithPath:ApiPocoPortraitListURL
                                                          params:[request params]];
