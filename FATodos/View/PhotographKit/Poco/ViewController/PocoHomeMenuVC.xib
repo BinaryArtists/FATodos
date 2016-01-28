@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PocoHomeMenuVC">
+            <connections>
+                <outlet property="tableView" destination="oFb-ui-baj" id="gaM-Sz-A2s"/>
+                <outlet property="tableViewTopSpaceConstaint" destination="fCN-us-FfF" id="z20-C3-SJ1"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oFb-ui-baj">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="568"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="oFb-ui-baj" secondAttribute="trailing" constant="80" id="Mzq-lV-8IU"/>
+                <constraint firstItem="oFb-ui-baj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="XiK-fw-q3X"/>
+                <constraint firstItem="oFb-ui-baj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="fCN-us-FfF"/>
+                <constraint firstAttribute="bottom" secondItem="oFb-ui-baj" secondAttribute="bottom" id="rn6-rk-WaO"/>
+            </constraints>
+            <point key="canvasLocation" x="273" y="197"/>
+        </view>
+    </objects>
+</document>

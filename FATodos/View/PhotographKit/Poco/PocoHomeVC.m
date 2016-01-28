@@ -8,9 +8,16 @@
 
 #import "PocoHomeVC.h"
 
-@interface PocoHomeVC ()
+/**
+ 1. 大图模式
+ 参考：http://code4app.com/ios/%E9%AB%98%E4%BB%BF%E6%9C%80%E7%BE%8E%E5%BA%94%E7%94%A8%EF%BC%BB%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%E4%B8%AD%EF%BC%BD/567aa793594b907e7a8b4a5b
+ 
+ 
+ 2. 评论模式
+ 参考：微信的看图，切换评论
+ */
 
-@property (nonatomic, strong) NSArray *commentTitles; // 点评下的各个系列
+@interface PocoHomeVC ()
 
 @end
 
@@ -19,7 +26,7 @@
 #pragma mark - Initialize
 
 - (void)initData {
-    self.commentTitles  = @[@"人像", @"风景", @"生态", @"纪实", @"Lomo", @"观念", @"商业", @"其他"];
+   
 }
 
 #pragma mark - Life cycle
@@ -29,57 +36,28 @@
     
     [self initData];
     
-    {
-        UIBarButtonItem *addContactBarButton    = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(onMenu)];
-        self.navigationItem.rightBarButtonItem  = addContactBarButton;
-    }
+    [[PocoApi sharedInstance] portraitListWithSuccessHandler:^(id obj) {
+        //
+    } failureHandler:^(NSError *error) {
+        //
+    }];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    self.navigationController.navigationBarHidden   = YES;
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    
+    self.navigationController.navigationBarHidden   = NO;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-#pragma mark - Action handler
-
-- (void)onMenu {
-    NSMutableArray *items = [[NSMutableArray alloc] initWithCapacity:3];
-    MenuItem *menuItem = [[MenuItem alloc] initWithTitle:self.commentTitles[0]
-                                                iconName:@"post_type_bubble_flickr" glowColor:[UIColor grayColor] index:0];
-    [items addObject:menuItem];
-    
-    menuItem = [[MenuItem alloc] initWithTitle:self.commentTitles[1]
-                                      iconName:@"post_type_bubble_googleplus" glowColor:[UIColor colorWithRed:0.000 green:0.840 blue:0.000 alpha:1.000] index:0];
-    [items addObject:menuItem];
-    
-    menuItem = [[MenuItem alloc] initWithTitle:self.commentTitles[2]
-                                      iconName:@"post_type_bubble_instagram" glowColor:[UIColor colorWithRed:0.687 green:0.000 blue:0.000 alpha:1.000] index:0];
-    [items addObject:menuItem];
-    
-    menuItem = [[MenuItem alloc] initWithTitle:self.commentTitles[3]
-                                      iconName:@"post_type_bubble_twitter" glowColor:[UIColor colorWithRed:0.687 green:0.000 blue:0.000 alpha:1.000] index:0];
-    [items addObject:menuItem];
-    
-    menuItem = [[MenuItem alloc] initWithTitle:self.commentTitles[4]
-                                      iconName:@"post_type_bubble_youtube" glowColor:[UIColor colorWithRed:0.687 green:0.000 blue:0.000 alpha:1.000] index:0];
-    [items addObject:menuItem];
-    
-    menuItem = [[MenuItem alloc] initWithTitle:self.commentTitles[5]
-                                      iconName:@"post_type_bubble_facebook" glowColor:[UIColor colorWithRed:0.687 green:0.000 blue:0.000 alpha:1.000] index:0];
-    [items addObject:menuItem];
-    
-    menuItem = [[MenuItem alloc] initWithTitle:self.commentTitles[6]
-                                      iconName:@"post_type_bubble_facebook" glowColor:[UIColor colorWithRed:0.687 green:0.000 blue:0.000 alpha:1.000] index:0];
-    [items addObject:menuItem];
-    
-    menuItem = [[MenuItem alloc] initWithTitle:self.commentTitles[7]
-                                      iconName:@"post_type_bubble_facebook" glowColor:[UIColor colorWithRed:0.687 green:0.000 blue:0.000 alpha:1.000] index:0];
-    [items addObject:menuItem];
-
-    [FAPopup showPopMenuWithItems:items
-             didSelectedItemBlock:^(MenuItem *selectedItem) {
-                 ///
-             }];
 }
 
 @end

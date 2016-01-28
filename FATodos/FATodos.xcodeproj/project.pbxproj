@@ -41,6 +41,12 @@
 		44D9BC821C58A692002E0A49 /* CommentArticle.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D9BC811C58A691002E0A49 /* CommentArticle.m */; };
 		44D9BC851C58A6D0002E0A49 /* CommentFlow.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D9BC841C58A6D0002E0A49 /* CommentFlow.m */; };
 		44D9BC881C58A6E8002E0A49 /* CommentSkill.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D9BC871C58A6E8002E0A49 /* CommentSkill.m */; };
+		44D9BC8D1C58DF18002E0A49 /* PocoCommentDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D9BC8B1C58DF18002E0A49 /* PocoCommentDetailVC.m */; };
+		44D9BC8E1C58DF18002E0A49 /* PocoCommentDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44D9BC8C1C58DF18002E0A49 /* PocoCommentDetailVC.xib */; };
+		44DEE0C31C59FEA700C1C24A /* PocoHomeContentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 44DEE0C11C59FEA700C1C24A /* PocoHomeContentVC.m */; };
+		44DEE0C41C59FEA700C1C24A /* PocoHomeContentVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44DEE0C21C59FEA700C1C24A /* PocoHomeContentVC.xib */; };
+		44DEE0C81C59FEBD00C1C24A /* PocoHomeMenuVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 44DEE0C61C59FEBD00C1C24A /* PocoHomeMenuVC.m */; };
+		44DEE0C91C59FEBD00C1C24A /* PocoHomeMenuVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44DEE0C71C59FEBD00C1C24A /* PocoHomeMenuVC.xib */; };
 		4EEBF9F8D8348519901DEC48 /* libPods-FATodosTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4958D1F04CC182351417F64 /* libPods-FATodosTests.a */; };
 		534CB05A2535D65788892768 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18CA0A1539FBCF69D8C82F1E /* libPods.a */; };
 		6A158E391B70B482007FE54F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A158E381B70B482007FE54F /* main.m */; };
@@ -650,6 +656,15 @@
 		44D9BC841C58A6D0002E0A49 /* CommentFlow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentFlow.m; sourceTree = "<group>"; };
 		44D9BC861C58A6E8002E0A49 /* CommentSkill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentSkill.h; sourceTree = "<group>"; };
 		44D9BC871C58A6E8002E0A49 /* CommentSkill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentSkill.m; sourceTree = "<group>"; };
+		44D9BC8A1C58DF18002E0A49 /* PocoCommentDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PocoCommentDetailVC.h; sourceTree = "<group>"; };
+		44D9BC8B1C58DF18002E0A49 /* PocoCommentDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PocoCommentDetailVC.m; sourceTree = "<group>"; };
+		44D9BC8C1C58DF18002E0A49 /* PocoCommentDetailVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PocoCommentDetailVC.xib; sourceTree = "<group>"; };
+		44DEE0C01C59FEA700C1C24A /* PocoHomeContentVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PocoHomeContentVC.h; sourceTree = "<group>"; };
+		44DEE0C11C59FEA700C1C24A /* PocoHomeContentVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PocoHomeContentVC.m; sourceTree = "<group>"; };
+		44DEE0C21C59FEA700C1C24A /* PocoHomeContentVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PocoHomeContentVC.xib; sourceTree = "<group>"; };
+		44DEE0C51C59FEBD00C1C24A /* PocoHomeMenuVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PocoHomeMenuVC.h; sourceTree = "<group>"; };
+		44DEE0C61C59FEBD00C1C24A /* PocoHomeMenuVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PocoHomeMenuVC.m; sourceTree = "<group>"; };
+		44DEE0C71C59FEBD00C1C24A /* PocoHomeMenuVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PocoHomeMenuVC.xib; sourceTree = "<group>"; };
 		6A158E331B70B482007FE54F /* FATodos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FATodos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A158E371B70B482007FE54F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A158E381B70B482007FE54F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -1853,9 +1868,14 @@
 		44D9BAF91C55F70E002E0A49 /* Poco */ = {
 			isa = PBXGroup;
 			children = (
+				44DEE0BE1C59FE9000C1C24A /* View */,
+				44DEE0BF1C59FE9000C1C24A /* ViewController */,
 				44D9BBB71C55F7E9002E0A49 /* PocoHomeVC.h */,
 				44D9BBB81C55F7E9002E0A49 /* PocoHomeVC.m */,
 				44D9BBB91C55F7E9002E0A49 /* PocoHomeVC.xib */,
+				44D9BC8A1C58DF18002E0A49 /* PocoCommentDetailVC.h */,
+				44D9BC8B1C58DF18002E0A49 /* PocoCommentDetailVC.m */,
+				44D9BC8C1C58DF18002E0A49 /* PocoCommentDetailVC.xib */,
 			);
 			path = Poco;
 			sourceTree = "<group>";
@@ -1945,6 +1965,26 @@
 				44D9BC871C58A6E8002E0A49 /* CommentSkill.m */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		44DEE0BE1C59FE9000C1C24A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		44DEE0BF1C59FE9000C1C24A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				44DEE0C01C59FEA700C1C24A /* PocoHomeContentVC.h */,
+				44DEE0C11C59FEA700C1C24A /* PocoHomeContentVC.m */,
+				44DEE0C21C59FEA700C1C24A /* PocoHomeContentVC.xib */,
+				44DEE0C51C59FEBD00C1C24A /* PocoHomeMenuVC.h */,
+				44DEE0C61C59FEBD00C1C24A /* PocoHomeMenuVC.m */,
+				44DEE0C71C59FEBD00C1C24A /* PocoHomeMenuVC.xib */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		6A158E2A1B70B482007FE54F = {
@@ -4119,6 +4159,7 @@
 				6A7435011BE705C100A21481 /* db.plist in Resources */,
 				44D9BAE81C5234DA002E0A49 /* PhotoCommentListVC.xib in Resources */,
 				6AD283231BB17883008900FA /* Item_1_PickerCell.xib in Resources */,
+				44DEE0C91C59FEBD00C1C24A /* PocoHomeMenuVC.xib in Resources */,
 				6AF4BDCA1BB52D040047A720 /* info.png in Resources */,
 				6A6DC7C71BD3DFA800A359C0 /* ServiceBorder.bundle in Resources */,
 				6A6DA09E1BD343F400A359C0 /* FourQuadrantVC.xib in Resources */,
@@ -4126,6 +4167,7 @@
 				6ACFE0321BA2C8630061DA35 /* Tock.wav in Resources */,
 				6ACFE0221BA27BB20061DA35 /* MainVC.xib in Resources */,
 				6AF4BD731BB3E43B0047A720 /* ChinaCity.plist in Resources */,
+				44D9BC8E1C58DF18002E0A49 /* PocoCommentDetailVC.xib in Resources */,
 				6A6DA0A31BD3440500A359C0 /* NoteVC.xib in Resources */,
 				6AF4BDC81BB52D040047A720 /* crossMark.png in Resources */,
 				44D9BADB1C520768002E0A49 /* PhotoCommentVC.xib in Resources */,
@@ -4144,6 +4186,7 @@
 				6AF4BDC71BB52D040047A720 /* checkMark@2x.png in Resources */,
 				44D9BBBB1C55F7EA002E0A49 /* PocoHomeVC.xib in Resources */,
 				6ACFDFE41BA0207F0061DA35 /* check@2x.png in Resources */,
+				44DEE0C41C59FEA700C1C24A /* PocoHomeContentVC.xib in Resources */,
 				6A84CF7F1BDD0F8300B61858 /* CardContentView.xib in Resources */,
 				6A6DC8971BD3DFA900A359C0 /* html.css in Resources */,
 				6A3E5F951C0DCC8E0075EA98 /* Launch.m4v in Resources */,
@@ -4318,6 +4361,7 @@
 				44D9BACA1C51D3F7002E0A49 /* NSMutableDictionary+MKNKAdditions.m in Sources */,
 				6A6DC8231BD3DFA800A359C0 /* UISwitch+Html.m in Sources */,
 				6ACFE0031BA16C380061DA35 /* DiagramVC.m in Sources */,
+				44DEE0C81C59FEBD00C1C24A /* PocoHomeMenuVC.m in Sources */,
 				6A6DC85A1BD3DFA900A359C0 /* Samurai_HtmlElementInputImage.m in Sources */,
 				6A6DC7571BD3DFA800A359C0 /* NSDictionary+Extension.m in Sources */,
 				6A6DC8721BD3DFA900A359C0 /* Samurai_HtmlElementTd.m in Sources */,
@@ -4575,6 +4619,7 @@
 				6A6DC7581BD3DFA800A359C0 /* NSMutableArray+Extension.m in Sources */,
 				6A6DC84D1BD3DFA800A359C0 /* Samurai_HtmlElementH3.m in Sources */,
 				6A6DC7A51BD3DFA800A359C0 /* Samurai_ViewController.m in Sources */,
+				44DEE0C31C59FEA700C1C24A /* PocoHomeContentVC.m in Sources */,
 				6A74368F1BE705C200A21481 /* ZIMSqlDeleteStatement.m in Sources */,
 				6A6DC8741BD3DFA900A359C0 /* Samurai_HtmlElementText.m in Sources */,
 				6A6DC8631BD3DFA900A359C0 /* Samurai_HtmlElementMain.m in Sources */,
@@ -4758,6 +4803,7 @@
 				6A6DC8AA1BD3DFA900A359C0 /* utf8.c in Sources */,
 				6AD47CBB1BB7732300BBBC0F /* MemoVC.m in Sources */,
 				6AF4BDB31BB441760047A720 /* NSError+MTLModelException.m in Sources */,
+				44D9BC8D1C58DF18002E0A49 /* PocoCommentDetailVC.m in Sources */,
 				6A6DC8331BD3DFA800A359C0 /* Samurai_HtmlDocumentWorklet_70BuildRenderTree.m in Sources */,
 				6A6DC7501BD3DFA800A359C0 /* Samurai_Config.m in Sources */,
 				6A6DC8301BD3DFA800A359C0 /* Samurai_HtmlDocumentWorklet_40MergeStyleTree.m in Sources */,

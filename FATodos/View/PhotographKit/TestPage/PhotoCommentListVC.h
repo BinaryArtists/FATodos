@@ -8,6 +8,8 @@
 
 #import "BaseView.h"
 
+// 用微博评论展示方式实现
+
 @interface PhotoCommentListVC : BaseView
 
 @end
