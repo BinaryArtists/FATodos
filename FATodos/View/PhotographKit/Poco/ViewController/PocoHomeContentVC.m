@@ -8,7 +8,7 @@
 
 #import "PocoHomeContentVC.h"
 #import "CommentBottomCollectionView.h"
-#import "CommentItemView.h"
+#import "CommentContentCell.h"
 #import "CommentBottomCollectionViewFlowLayout.h"
 #import "CommentContentCollectionViewFlowLayout.h"
 
