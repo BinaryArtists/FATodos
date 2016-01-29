@@ -57,7 +57,7 @@
     
     // TableView setting
     {
-        [MemoCell registerOn:self.tableView];
+        [MemoCell registerOnNib:self.tableView];
         
         self.tableView.tableFooterView  = [UIView new];
     }

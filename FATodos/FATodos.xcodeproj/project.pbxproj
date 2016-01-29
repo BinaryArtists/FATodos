@@ -12,6 +12,9 @@
 		44048D9A1C5B0F2F0007C7EF /* CommentContentCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 44048D991C5B0F2F0007C7EF /* CommentContentCollectionViewFlowLayout.m */; };
 		44048D9F1C5B137C0007C7EF /* CommentContentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 44048D9D1C5B137C0007C7EF /* CommentContentCell.m */; };
 		44048DA01C5B137C0007C7EF /* CommentContentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44048D9E1C5B137C0007C7EF /* CommentContentCell.xib */; };
+		44048DA41C5B4CC60007C7EF /* CommentBottomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 44048DA21C5B4CC60007C7EF /* CommentBottomCell.m */; };
+		44048DA51C5B4CC60007C7EF /* CommentBottomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44048DA31C5B4CC60007C7EF /* CommentBottomCell.xib */; };
+		44048DA81C5B55910007C7EF /* UICollectionViewCell+.m in Sources */ = {isa = PBXBuildFile; fileRef = 44048DA71C5B55910007C7EF /* UICollectionViewCell+.m */; };
 		44D9BA7A1C4F83A1002E0A49 /* FADatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D9BA771C4F83A1002E0A49 /* FADatePickerViewController.m */; };
 		44D9BA8A1C4F8862002E0A49 /* FASourcePickerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D9BA881C4F8862002E0A49 /* FASourcePickerVC.m */; };
 		44D9BA8B1C4F8862002E0A49 /* FASourcePickerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44D9BA891C4F8862002E0A49 /* FASourcePickerVC.xib */; };
@@ -489,7 +492,6 @@
 		6A95EC3A1BBA65CF00B14EA5 /* IflyComponent_Config.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A95EC391BBA65CF00B14EA5 /* IflyComponent_Config.m */; };
 		6A95EC401BBA7F6700B14EA5 /* NSObject+FBKVOController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A95EC3F1BBA7F6700B14EA5 /* NSObject+FBKVOController.m */; };
 		6ACE61C51BD60B300026D315 /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACE61C41BD60B300026D315 /* Note.m */; };
-		6ACEBAF01BA94AD30011E3F7 /* UITableViewCell+Base.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACEBAEF1BA94AD30011E3F7 /* UITableViewCell+Base.m */; };
 		6ACEBAF71BA974810011E3F7 /* MGSwipeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACEBAF41BA974810011E3F7 /* MGSwipeButton.m */; };
 		6ACEBAF81BA974810011E3F7 /* MGSwipeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACEBAF61BA974810011E3F7 /* MGSwipeTableCell.m */; };
 		6ACEBB001BA9B7CE0011E3F7 /* s.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACEBAFF1BA9B7CE0011E3F7 /* s.m */; };
@@ -546,7 +548,6 @@
 		6AF4BCC31BB2D5540047A720 /* UIColor+Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF4BCC21BB2D5540047A720 /* UIColor+Expanded.m */; };
 		6AF4BD721BB3E43B0047A720 /* CatDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF4BD701BB3E43B0047A720 /* CatDetailViewController.m */; };
 		6AF4BD731BB3E43B0047A720 /* ChinaCity.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6AF4BD711BB3E43B0047A720 /* ChinaCity.plist */; };
-		6AF4BD7F1BB3FEB20047A720 /* NSObject+Base.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF4BD7E1BB3FEB20047A720 /* NSObject+Base.m */; };
 		6AF4BDA61BB441760047A720 /* EXTRuntimeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF4BD841BB441760047A720 /* EXTRuntimeExtensions.m */; };
 		6AF4BDA71BB441760047A720 /* EXTScope.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF4BD861BB441760047A720 /* EXTScope.m */; };
 		6AF4BDA81BB441760047A720 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6AF4BD881BB441760047A720 /* Info.plist */; };
@@ -601,6 +602,11 @@
 		44048D9C1C5B137C0007C7EF /* CommentContentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentContentCell.h; sourceTree = "<group>"; };
 		44048D9D1C5B137C0007C7EF /* CommentContentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentContentCell.m; sourceTree = "<group>"; };
 		44048D9E1C5B137C0007C7EF /* CommentContentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentContentCell.xib; sourceTree = "<group>"; };
+		44048DA11C5B4CC60007C7EF /* CommentBottomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentBottomCell.h; sourceTree = "<group>"; };
+		44048DA21C5B4CC60007C7EF /* CommentBottomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentBottomCell.m; sourceTree = "<group>"; };
+		44048DA31C5B4CC60007C7EF /* CommentBottomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentBottomCell.xib; sourceTree = "<group>"; };
+		44048DA61C5B55910007C7EF /* UICollectionViewCell+.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewCell+.h"; sourceTree = "<group>"; };
+		44048DA71C5B55910007C7EF /* UICollectionViewCell+.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewCell+.m"; sourceTree = "<group>"; };
 		44D9BA761C4F83A1002E0A49 /* FADatePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FADatePickerViewController.h; sourceTree = "<group>"; };
 		44D9BA771C4F83A1002E0A49 /* FADatePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FADatePickerViewController.m; sourceTree = "<group>"; };
 		44D9BA871C4F8862002E0A49 /* FASourcePickerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FASourcePickerVC.h; sourceTree = "<group>"; };
@@ -1546,8 +1552,6 @@
 		6A95EC3F1BBA7F6700B14EA5 /* NSObject+FBKVOController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+FBKVOController.m"; sourceTree = "<group>"; };
 		6ACE61C31BD60B300026D315 /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Note.h; sourceTree = "<group>"; };
 		6ACE61C41BD60B300026D315 /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Note.m; sourceTree = "<group>"; };
-		6ACEBAEE1BA94AD30011E3F7 /* UITableViewCell+Base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Base.h"; sourceTree = "<group>"; };
-		6ACEBAEF1BA94AD30011E3F7 /* UITableViewCell+Base.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Base.m"; sourceTree = "<group>"; };
 		6ACEBAF31BA974810011E3F7 /* MGSwipeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSwipeButton.h; sourceTree = "<group>"; };
 		6ACEBAF41BA974810011E3F7 /* MGSwipeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSwipeButton.m; sourceTree = "<group>"; };
 		6ACEBAF51BA974810011E3F7 /* MGSwipeTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSwipeTableCell.h; sourceTree = "<group>"; };
@@ -1653,8 +1657,6 @@
 		6AF4BD6F1BB3E43B0047A720 /* CatDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatDetailViewController.h; sourceTree = "<group>"; };
 		6AF4BD701BB3E43B0047A720 /* CatDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatDetailViewController.m; sourceTree = "<group>"; };
 		6AF4BD711BB3E43B0047A720 /* ChinaCity.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ChinaCity.plist; sourceTree = "<group>"; };
-		6AF4BD7D1BB3FEB20047A720 /* NSObject+Base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Base.h"; sourceTree = "<group>"; };
-		6AF4BD7E1BB3FEB20047A720 /* NSObject+Base.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Base.m"; sourceTree = "<group>"; };
 		6AF4BD821BB441760047A720 /* EXTKeyPathCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTKeyPathCoding.h; sourceTree = "<group>"; };
 		6AF4BD831BB441760047A720 /* EXTRuntimeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTRuntimeExtensions.h; sourceTree = "<group>"; };
 		6AF4BD841BB441760047A720 /* EXTRuntimeExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXTRuntimeExtensions.m; sourceTree = "<group>"; };
@@ -1939,6 +1941,8 @@
 				44D9BC1E1C5766D6002E0A49 /* UIView+.m */,
 				44D9BC1F1C5766D6002E0A49 /* UIViewController+.h */,
 				44D9BC201C5766D6002E0A49 /* UIViewController+.m */,
+				44048DA61C5B55910007C7EF /* UICollectionViewCell+.h */,
+				44048DA71C5B55910007C7EF /* UICollectionViewCell+.m */,
 			);
 			path = Templates;
 			sourceTree = "<group>";
@@ -1993,6 +1997,9 @@
 				44048D9C1C5B137C0007C7EF /* CommentContentCell.h */,
 				44048D9D1C5B137C0007C7EF /* CommentContentCell.m */,
 				44048D9E1C5B137C0007C7EF /* CommentContentCell.xib */,
+				44048DA11C5B4CC60007C7EF /* CommentBottomCell.h */,
+				44048DA21C5B4CC60007C7EF /* CommentBottomCell.m */,
+				44048DA31C5B4CC60007C7EF /* CommentBottomCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -3607,10 +3614,6 @@
 			children = (
 				6A95EC3E1BBA7F6700B14EA5 /* NSObject+FBKVOController.h */,
 				6A95EC3F1BBA7F6700B14EA5 /* NSObject+FBKVOController.m */,
-				6ACEBAEE1BA94AD30011E3F7 /* UITableViewCell+Base.h */,
-				6ACEBAEF1BA94AD30011E3F7 /* UITableViewCell+Base.m */,
-				6AF4BD7D1BB3FEB20047A720 /* NSObject+Base.h */,
-				6AF4BD7E1BB3FEB20047A720 /* NSObject+Base.m */,
 				6A674B5B1BE0636F00562321 /* UIView+Base.h */,
 				6A674B5C1BE0636F00562321 /* UIView+Base.m */,
 				6A674B5E1BE063B200562321 /* UIViewController+Base.h */,
@@ -4211,6 +4214,7 @@
 				44D9BBBB1C55F7EA002E0A49 /* PocoHomeVC.xib in Resources */,
 				6ACFDFE41BA0207F0061DA35 /* check@2x.png in Resources */,
 				44DEE0C41C59FEA700C1C24A /* PocoHomeContentVC.xib in Resources */,
+				44048DA51C5B4CC60007C7EF /* CommentBottomCell.xib in Resources */,
 				6A84CF7F1BDD0F8300B61858 /* CardContentView.xib in Resources */,
 				6A6DC8971BD3DFA900A359C0 /* html.css in Resources */,
 				6A3E5F951C0DCC8E0075EA98 /* Launch.m4v in Resources */,
@@ -4346,7 +4350,6 @@
 				6A6DC8181BD3DFA800A359C0 /* UIActivityIndicatorView+Html.m in Sources */,
 				6A6DC84A1BD3DFA800A359C0 /* Samurai_HtmlElementForm.m in Sources */,
 				6A6DC7DF1BD3DFA800A359C0 /* ServiceMonitorMemoryModel.m in Sources */,
-				6ACEBAF01BA94AD30011E3F7 /* UITableViewCell+Base.m in Sources */,
 				6A6DC8751BD3DFA900A359C0 /* Samurai_HtmlElementTextarea.m in Sources */,
 				6A6DC75D1BD3DFA800A359C0 /* Samurai_Assert.m in Sources */,
 				6A6DC7971BD3DFA800A359C0 /* Samurai_UITableView.m in Sources */,
@@ -4439,7 +4442,6 @@
 				6A74369C1BE705C200A21481 /* ZIMSqlShowGrantsStatement.m in Sources */,
 				6A6DA0B31BD378DA00A359C0 /* LibraryAPI.m in Sources */,
 				6AD283221BB17883008900FA /* Item_1_PickerCell.m in Sources */,
-				6AF4BD7F1BB3FEB20047A720 /* NSObject+Base.m in Sources */,
 				6AD47CC81BB7832F00BBBC0F /* UIImage+Utility.m in Sources */,
 				6AF4BD721BB3E43B0047A720 /* CatDetailViewController.m in Sources */,
 				6A6DC7881BD3DFA800A359C0 /* UIViewController+NavigationBar.m in Sources */,
@@ -4480,6 +4482,7 @@
 				6A6DC8811BD3DFA900A359C0 /* Samurai_HtmlLayoutElement.m in Sources */,
 				6AD283401BB2C754008900FA /* BaseEntity.m in Sources */,
 				6AF4BDAC1BB441760047A720 /* MTLReflection.m in Sources */,
+				44048DA41C5B4CC60007C7EF /* CommentBottomCell.m in Sources */,
 				6A674B6D1BE0BE9500562321 /* NSObject+AutoDatabase.m in Sources */,
 				6A6DC8191BD3DFA800A359C0 /* UIButton+Html.m in Sources */,
 				6A6DC85E1BD3DFA900A359C0 /* Samurai_HtmlElementInputSubmit.m in Sources */,
@@ -4801,6 +4804,7 @@
 				6A6DC86F1BD3DFA900A359C0 /* Samurai_HtmlElementSup.m in Sources */,
 				6A6DC7EE1BD3DFA800A359C0 /* Samurai_CSSRuleSet.m in Sources */,
 				6A6DC7C31BD3DFA800A359C0 /* Samurai_Package.m in Sources */,
+				44048DA81C5B55910007C7EF /* UICollectionViewCell+.m in Sources */,
 				6A74330B1BE3459300A21481 /* NSObject+LS_Entity.m in Sources */,
 				6AF4BDE21BB553190047A720 /* UIView+Hierarchy.m in Sources */,
 				6A6DC8871BD3DFA900A359C0 /* Samurai_HtmlRenderObject.m in Sources */,

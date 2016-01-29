@@ -32,9 +32,9 @@
 #import "BaseInteractorProtocol.h"
 #import "BaseEntityProtocol.h"
 
-#import "UITableViewCell+Base.h"
+#import "UITableViewCell+.h"
+#import "UICollectionViewCell+.h"
 #import "NSObject+FBKVOController.h"
-#import "NSObject+Base.h"
 #import "UIView+Base.h"
 #import "UIViewController+Base.h"
 
