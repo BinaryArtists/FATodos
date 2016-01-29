@@ -19,7 +19,7 @@
  参考：微信的看图，切换评论
  */
 
-@interface PocoHomeVC () <PocoHomeMenuDelegate>
+@interface PocoHomeVC () <PocoHomeMenuDelegate, PocoHomeHeaderDelegate>
 
 @property (nonatomic, strong) PocoHomeMenuVC *menuVC;
 @property (nonatomic, strong) PocoHomeContentVC *contentVC;
@@ -55,6 +55,7 @@
     self.contentVC  = [[PocoHomeContentVC alloc] _initWithNib];
     
     self.menuVC.delegate    = self;
+    self.contentVC.delegate = self;
     
     [self addChildViewController:self.menuVC];
     [self addChildViewController:self.contentVC];
@@ -62,6 +63,7 @@
 
 - (void)initView {
     [self.view addSubview:self.menuVC.view];
+    [self.view addSubview:self.contentVC.view];
 }
 
 - (void)initAction {
@@ -111,6 +113,13 @@
         make.bottom.equalTo(self.view.mas_bottom);
         make.trailing.equalTo(self.view.mas_trailing);
     }];
+    
+    [self.contentVC.view mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.view.mas_top);
+        make.leading.equalTo(self.view.mas_leading);
+        make.bottom.equalTo(self.view.mas_bottom);
+        make.trailing.equalTo(self.view.mas_trailing);
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -118,21 +127,16 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Data accesser
-
-- (void)loadListWithCommentTypeId:(eTypeId)typeId {
-    [[PocoApi sharedInstance] commentListWithTypeId:typeId
-                                     successHandler:^(id obj) {
-                                         //
-                                     } failureHandler:^(NSError *error) {
-                                         //
-                                     }];
-}
-
 #pragma mark - Action handler
 
 - (void)onDoubleClicked:(UIGestureRecognizer *)gesture {
     [self setNavigationBarShown:!self.navigationBarShown];
+}
+
+#pragma mark - PocoHomeHeaderDelegate
+
+- (void)pocoHomeConent:(UIViewController *)viewController didClickedOnMenuButton:(id)sender {
+    
 }
 
 #pragma mark - PocoHomeMenuDelegate
@@ -154,11 +158,15 @@
     self.commentTypeId  = !is_type_id_valid(index) ? : index; // ...
     
     [self hideMenuViewWithCompletionHandler:^{
-        [self loadListWithCommentTypeId:self.commentTypeId];
+        // do when typeId changed
     }];
 }
 
 #pragma mark - View mode transite
+
+/**
+ *  Menu 与 content 之间的切换动画
+ */
 
 - (void)showMenuViewWithCompletionHandler:(Block)completionHandler {
     NSAssert(completionHandler, @"");

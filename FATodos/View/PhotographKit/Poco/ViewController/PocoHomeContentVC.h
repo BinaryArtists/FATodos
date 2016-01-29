@@ -8,8 +8,25 @@
 
 #import "BaseView.h"
 
+@protocol PocoHomeHeaderDelegate;
+
 @interface PocoHomeContentVC : BaseView
 
-- (void)loadListWithCommentTypeId:(eTypeId)typeId;
+@property (nonatomic, assign, readonly) eTypeId typeId;
+
+@property (nonatomic, weak) id<PocoHomeHeaderDelegate> delegate;
+
+/**
+ *  @desc typeid有效，且变化了，才reload
+ 
+ *  @desc 加载更多，在PocoHomeContentVC中产生
+ */
+- (void)reloadWithTypeId:(eTypeId)typeId;
+
+@end
+
+@protocol PocoHomeHeaderDelegate <NSObject>
+
+- (void)pocoHomeConent:(UIViewController *)viewController didClickedOnMenuButton:(id)sender;
 
 @end
