@@ -10,4 +10,13 @@
 
 @implementation CommentBottomCollectionViewFlowLayout
 
+- (void)prepareLayout {
+    [super prepareLayout];
+    
+    self.itemSize = CGSizeMake(screen_width/8-2, 60);
+    self.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+    self.sectionInset = UIEdgeInsetsMake(0, 2, 0, 2);
+    self.minimumLineSpacing = 2;
+}
+
 @end

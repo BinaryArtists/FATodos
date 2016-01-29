@@ -7,6 +7,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PocoHomeContentVC">
             <connections>
+                <outlet property="bottomCollectionView" destination="UJU-2V-7sE" id="nbA-6A-dQA"/>
+                <outlet property="contentCollectionView" destination="0eU-DG-sbi" id="l2b-hB-tCV"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -35,7 +37,7 @@
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
                 </collectionView>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="UJU-2V-7sE">
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="UJU-2V-7sE" customClass="CommentBottomCollectionView">
                     <rect key="frame" x="0.0" y="517" width="320" height="51"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="51" id="824-QE-HLk"/>
