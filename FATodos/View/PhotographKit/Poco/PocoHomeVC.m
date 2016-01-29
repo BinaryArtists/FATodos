@@ -64,13 +64,19 @@
     [self.view addSubview:self.menuVC.view];
 }
 
+- (void)initAction {
+    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onDoubleClicked:)];
+    tapGesture.numberOfTapsRequired = 2;
+    [self.view addGestureRecognizer:tapGesture];
+}
+
 #pragma mark - Life cycle
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     self.title  = L(@"poco.comment.home.title");
-    
+    self.edgesForExtendedLayout         = UIRectEdgeAll; // fixme：加了这个，menu还是不剧中？？？？
     self.view.backgroundColor   = [UIColor randomFlatColor];
     
     [self initData];
@@ -78,6 +84,8 @@
     [self initViewController];
     
     [self initView];
+    
+    [self initAction];
     
     [self applyViewConstraints];
 }
@@ -119,6 +127,12 @@
                                      } failureHandler:^(NSError *error) {
                                          //
                                      }];
+}
+
+#pragma mark - Action handler
+
+- (void)onDoubleClicked:(UIGestureRecognizer *)gesture {
+    [self setNavigationBarShown:!self.navigationBarShown];
 }
 
 #pragma mark - PocoHomeMenuDelegate

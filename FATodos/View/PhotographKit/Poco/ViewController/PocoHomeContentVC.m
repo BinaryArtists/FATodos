@@ -7,6 +7,8 @@
 //
 
 #import "PocoHomeContentVC.h"
+#import "CommentContentCollectionView.h"
+#import "CommentItemView.h"
 
 @interface PocoHomeContentVC ()
 

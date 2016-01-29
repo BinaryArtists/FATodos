@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44048D8F1C5A6C8A0007C7EF /* CommentItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 44048D8E1C5A6C8A0007C7EF /* CommentItemView.m */; };
+		44048D911C5A6CAB0007C7EF /* CommentItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44048D901C5A6CAB0007C7EF /* CommentItemView.xib */; };
+		44048D941C5B0DAB0007C7EF /* CommentBottomCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 44048D931C5B0DAB0007C7EF /* CommentBottomCollectionView.m */; };
+		44048D971C5B0F140007C7EF /* CommentBottomCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 44048D961C5B0F140007C7EF /* CommentBottomCollectionViewFlowLayout.m */; };
+		44048D9A1C5B0F2F0007C7EF /* CommentContentCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 44048D991C5B0F2F0007C7EF /* CommentContentCollectionViewFlowLayout.m */; };
 		44D9BA7A1C4F83A1002E0A49 /* FADatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D9BA771C4F83A1002E0A49 /* FADatePickerViewController.m */; };
 		44D9BA8A1C4F8862002E0A49 /* FASourcePickerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D9BA881C4F8862002E0A49 /* FASourcePickerVC.m */; };
 		44D9BA8B1C4F8862002E0A49 /* FASourcePickerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44D9BA891C4F8862002E0A49 /* FASourcePickerVC.xib */; };
@@ -587,6 +592,15 @@
 /* Begin PBXFileReference section */
 		18CA0A1539FBCF69D8C82F1E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D659119DE5A3C514B68F1F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		44048D8D1C5A6C8A0007C7EF /* CommentItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentItemView.h; sourceTree = "<group>"; };
+		44048D8E1C5A6C8A0007C7EF /* CommentItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentItemView.m; sourceTree = "<group>"; };
+		44048D901C5A6CAB0007C7EF /* CommentItemView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentItemView.xib; sourceTree = "<group>"; };
+		44048D921C5B0DAB0007C7EF /* CommentBottomCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentBottomCollectionView.h; sourceTree = "<group>"; };
+		44048D931C5B0DAB0007C7EF /* CommentBottomCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentBottomCollectionView.m; sourceTree = "<group>"; };
+		44048D951C5B0F140007C7EF /* CommentBottomCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentBottomCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		44048D961C5B0F140007C7EF /* CommentBottomCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentBottomCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		44048D981C5B0F2F0007C7EF /* CommentContentCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentContentCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		44048D991C5B0F2F0007C7EF /* CommentContentCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentContentCollectionViewFlowLayout.m; sourceTree = "<group>"; };
 		44D9BA761C4F83A1002E0A49 /* FADatePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FADatePickerViewController.h; sourceTree = "<group>"; };
 		44D9BA771C4F83A1002E0A49 /* FADatePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FADatePickerViewController.m; sourceTree = "<group>"; };
 		44D9BA871C4F8862002E0A49 /* FASourcePickerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FASourcePickerVC.h; sourceTree = "<group>"; };
@@ -1970,6 +1984,15 @@
 		44DEE0BE1C59FE9000C1C24A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				44048D8D1C5A6C8A0007C7EF /* CommentItemView.h */,
+				44048D8E1C5A6C8A0007C7EF /* CommentItemView.m */,
+				44048D901C5A6CAB0007C7EF /* CommentItemView.xib */,
+				44048D921C5B0DAB0007C7EF /* CommentBottomCollectionView.h */,
+				44048D931C5B0DAB0007C7EF /* CommentBottomCollectionView.m */,
+				44048D951C5B0F140007C7EF /* CommentBottomCollectionViewFlowLayout.h */,
+				44048D961C5B0F140007C7EF /* CommentBottomCollectionViewFlowLayout.m */,
+				44048D981C5B0F2F0007C7EF /* CommentContentCollectionViewFlowLayout.h */,
+				44048D991C5B0F2F0007C7EF /* CommentContentCollectionViewFlowLayout.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -4184,6 +4207,7 @@
 				6A158E471B70B482007FE54F /* Images.xcassets in Resources */,
 				6AD47CBC1BB7732300BBBC0F /* MemoVC.xib in Resources */,
 				6AF4BDC71BB52D040047A720 /* checkMark@2x.png in Resources */,
+				44048D911C5A6CAB0007C7EF /* CommentItemView.xib in Resources */,
 				44D9BBBB1C55F7EA002E0A49 /* PocoHomeVC.xib in Resources */,
 				6ACFDFE41BA0207F0061DA35 /* check@2x.png in Resources */,
 				44DEE0C41C59FEA700C1C24A /* PocoHomeContentVC.xib in Resources */,
@@ -4349,6 +4373,7 @@
 				6A3E5F981C0DCCD50075EA98 /* LaunchMediaVC.m in Sources */,
 				6A6DC7761BD3DFA800A359C0 /* Samurai_EventConfig.m in Sources */,
 				6A6DC8351BD3DFA800A359C0 /* Samurai_HtmlDomNode.m in Sources */,
+				44048D8F1C5A6C8A0007C7EF /* CommentItemView.m in Sources */,
 				6A6DC7951BD3DFA800A359C0 /* Samurai_UIStepper.m in Sources */,
 				6A6DC8271BD3DFA800A359C0 /* UITextView+Html.m in Sources */,
 				6A6DC7691BD3DFA800A359C0 /* Samurai_Trigger.m in Sources */,
@@ -4426,6 +4451,7 @@
 				6A6DC7921BD3DFA800A359C0 /* Samurai_UIProgressView.m in Sources */,
 				6A6DC8AF1BD3DFA900A359C0 /* katana.tab.c in Sources */,
 				6A6DC8901BD3DFA900A359C0 /* Samurai_HtmlRenderWorklet_20UpdateStyle.m in Sources */,
+				44048D9A1C5B0F2F0007C7EF /* CommentContentCollectionViewFlowLayout.m in Sources */,
 				44D9BC581C5766D6002E0A49 /* UIImage+Extension.m in Sources */,
 				6A6DC7E01BD3DFA800A359C0 /* ServiceMonitorNetworkModel.m in Sources */,
 				6A6DC8131BD3DFA800A359C0 /* Samurai_CSSObject.m in Sources */,
@@ -4479,6 +4505,7 @@
 				6A6DC76E1BD3DFA800A359C0 /* Samurai_Error.m in Sources */,
 				6ACFE01C1BA19AD20061DA35 /* RoutableVC.m in Sources */,
 				6A6DC8451BD3DFA800A359C0 /* Samurai_HtmlElementDl.m in Sources */,
+				44048D941C5B0DAB0007C7EF /* CommentBottomCollectionView.m in Sources */,
 				6A6DC77D1BD3DFA800A359C0 /* Samurai_DockerProtocol.m in Sources */,
 				6ACFDF341B9C23FD0061DA35 /* Routable.m in Sources */,
 				6A674B7E1BE0E28500562321 /* DatabaseSentence.m in Sources */,
@@ -4583,6 +4610,7 @@
 				44D9BC851C58A6D0002E0A49 /* CommentFlow.m in Sources */,
 				6A6DC8501BD3DFA800A359C0 /* Samurai_HtmlElementH6.m in Sources */,
 				6A6DC7EA1BD3DFA800A359C0 /* Samurai_CSSParser.m in Sources */,
+				44048D971C5B0F140007C7EF /* CommentBottomCollectionViewFlowLayout.m in Sources */,
 				6A6DC87D1BD3DFA900A359C0 /* Samurai_HtmlLayoutContainer.m in Sources */,
 				6A6DC7811BD3DFA800A359C0 /* Samurai_ServiceLoader.m in Sources */,
 				6A6DC86A1BD3DFA900A359C0 /* Samurai_HtmlElementProgress.m in Sources */,
