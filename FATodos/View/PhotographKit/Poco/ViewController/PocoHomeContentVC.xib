@@ -8,7 +8,9 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PocoHomeContentVC">
             <connections>
                 <outlet property="bottomCollectionView" destination="UJU-2V-7sE" id="nbA-6A-dQA"/>
+                <outlet property="bottomCollectionViewHeightConstraint" destination="824-QE-HLk" id="2g4-Ur-rMi"/>
                 <outlet property="contentCollectionView" destination="0eU-DG-sbi" id="l2b-hB-tCV"/>
+                <outlet property="contentCollectionViewHeightConstraint" destination="kAi-Mh-MS4" id="8Qz-l5-xBY"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,48 +20,59 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kat-4N-eX9">
-                    <rect key="frame" x="8" y="23" width="56" height="30"/>
+                    <rect key="frame" x="8" y="23" width="26" height="16"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="30" id="B93-No-CHa"/>
-                        <constraint firstAttribute="width" constant="56" id="I1x-b2-t8G"/>
+                        <constraint firstAttribute="height" constant="16" id="B93-No-CHa"/>
+                        <constraint firstAttribute="width" constant="26" id="I1x-b2-t8G"/>
                     </constraints>
                     <state key="normal" title="Button" image="setting_icon"/>
+                    <connections>
+                        <action selector="onMenu:" destination="-1" eventType="touchUpInside" id="g89-pg-el9"/>
+                    </connections>
                 </button>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="0eU-DG-sbi">
-                    <rect key="frame" x="0.0" y="91" width="320" height="385"/>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="0eU-DG-sbi">
+                    <rect key="frame" x="0.0" y="64" width="320" height="420"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="385" id="kAi-Mh-MS4"/>
+                        <constraint firstAttribute="height" constant="420" id="kAi-Mh-MS4"/>
                     </constraints>
-                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dOU-H7-8ZO">
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="PkN-59-Wc9">
                         <size key="itemSize" width="50" height="50"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="4wb-nq-e1n"/>
+                        <outlet property="delegate" destination="-1" id="qsJ-Ye-ksc"/>
+                    </connections>
                 </collectionView>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="UJU-2V-7sE" customClass="CommentBottomCollectionView">
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="UJU-2V-7sE" customClass="CommentBottomCollectionView">
                     <rect key="frame" x="0.0" y="517" width="320" height="51"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="51" id="824-QE-HLk"/>
                     </constraints>
-                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="34b-Z9-s5j">
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="34b-Z9-s5j">
                         <size key="itemSize" width="50" height="50"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="YX4-dL-bOY"/>
+                        <outlet property="delegate" destination="-1" id="VN2-d4-Y9j"/>
+                    </connections>
                 </collectionView>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="0eU-DG-sbi" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="0p2-rH-VHD"/>
                 <constraint firstItem="Kat-4N-eX9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="23" id="BKR-dM-wVE"/>
                 <constraint firstAttribute="trailing" secondItem="UJU-2V-7sE" secondAttribute="trailing" id="DE2-jD-0Ky"/>
                 <constraint firstAttribute="trailing" secondItem="0eU-DG-sbi" secondAttribute="trailing" id="I1d-Yd-lhc"/>
                 <constraint firstItem="Kat-4N-eX9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="Rcn-aN-Z9e"/>
                 <constraint firstAttribute="bottom" secondItem="UJU-2V-7sE" secondAttribute="bottom" id="mCc-6c-8ab"/>
-                <constraint firstItem="0eU-DG-sbi" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="pZd-h3-QSb"/>
                 <constraint firstItem="0eU-DG-sbi" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="rUb-ff-kXF"/>
                 <constraint firstItem="UJU-2V-7sE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ySv-jo-l0J"/>
             </constraints>

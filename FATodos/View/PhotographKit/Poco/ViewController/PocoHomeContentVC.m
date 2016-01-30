@@ -20,6 +20,8 @@
 
 @property (weak, nonatomic) IBOutlet UICollectionView *contentCollectionView;
 @property (weak, nonatomic) IBOutlet CommentBottomCollectionView *bottomCollectionView;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *contentCollectionViewHeightConstraint;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *bottomCollectionViewHeightConstraint;
 
 @property (nonatomic, strong) NSMutableArray *dataSource;
 
@@ -50,11 +52,15 @@
     // init content collection view
     {
         self.contentCollectionView.collectionViewLayout = [CommentContentCollectionViewFlowLayout new];
+        [self.contentCollectionView registerNib:[CommentContentCell nib]
+                     forCellWithReuseIdentifier:[CommentContentCell identifier]];
     }
     
     // init bottom collection  view
     {
         self.bottomCollectionView.collectionViewLayout = [CommentBottomCollectionViewFlowLayout new];
+        [self.bottomCollectionView registerNib:[CommentBottomCell nib]
+                    forCellWithReuseIdentifier:[CommentBottomCell identifier]];
     }
 }
 
@@ -63,15 +69,35 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    {
+        self.view.backgroundColor   = [UIColor lightGrayColor];
+    }
+    
     [self initData];
     
     [self initView];
     
+    [self.dataSource addObject:[NSString new]];
+//    [self.dataSource addObject:[NSString new]];
+//    [self.dataSource addObject:[NSString new]];
+}
+
+- (void)updateViewConstraints {
+    [super updateViewConstraints];
+    
+    self.contentCollectionViewHeightConstraint.constant = screen_height*440/iphone5_screen_height;
+    self.bottomCollectionViewHeightConstraint.constant  = screen_height*60/iphone5_screen_height;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - Action handler
+
+- (IBAction)onMenu:(id)sender {
+    [self.delegate pocoHomeConent:self didClickedOnMenuButton:sender];
 }
 
 #pragma mark - UI data
@@ -127,13 +153,29 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
+    NSObject *model = [self.dataSource objectAtIndex:indexPath.row];
+    
     if (self.contentCollectionView == collectionView) {
+        CommentContentCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:[CommentContentCell identifier] forIndexPath:indexPath];
         
+        [cell setModel:model];
+        
+        return cell;
     } else if (self.bottomCollectionView == collectionView) {
+        CommentBottomCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:[CommentBottomCell identifier] forIndexPath:indexPath];
         
+        [cell setModel:model];
+        
+        return cell;
+    } else {
+        NSAssert(NO, @"");
     }
     
     return nil;
+}
+
+- (BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    return YES;
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {

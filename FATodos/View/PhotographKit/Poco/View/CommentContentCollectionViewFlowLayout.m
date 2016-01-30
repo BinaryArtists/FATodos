@@ -8,15 +8,12 @@
 
 #import "CommentContentCollectionViewFlowLayout.h"
 
-#define     IPHONE5_WIDTH   320
-#define     IPHONE5_HEIGHT  568
-
 @implementation CommentContentCollectionViewFlowLayout
 
 - (void)prepareLayout {
     [super prepareLayout];
     
-    self.itemSize   = CGSizeMake(screen_width-2*PIXEL_4, screen_height*420/IPHONE5_HEIGHT);
+    self.itemSize   = CGSizeMake(screen_width-2*PIXEL_4, screen_height*420/iphone5_screen_height);
     
     self.scrollDirection    = UICollectionViewScrollDirectionHorizontal;
     

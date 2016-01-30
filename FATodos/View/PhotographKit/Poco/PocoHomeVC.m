@@ -62,7 +62,9 @@
 }
 
 - (void)initView {
+    self.menuVC.view.hidden = YES;
     [self.view addSubview:self.menuVC.view];
+    
     [self.view addSubview:self.contentVC.view];
 }
 
@@ -136,7 +138,11 @@
 #pragma mark - PocoHomeHeaderDelegate
 
 - (void)pocoHomeConent:(UIViewController *)viewController didClickedOnMenuButton:(id)sender {
-    
+    if (self.menuVC.view.hidden) {
+        [self showMenuViewWithCompletionHandler:nil];
+    } else {
+        [self hideMenuViewWithCompletionHandler:nil];
+    }
 }
 
 #pragma mark - PocoHomeMenuDelegate
@@ -169,11 +175,66 @@
  */
 
 - (void)showMenuViewWithCompletionHandler:(Block)completionHandler {
-    NSAssert(completionHandler, @"");
+    self.menuVC.view.hidden     = NO;
+    self.menuVC.view.transform  = CGAffineTransformMakeScale(0.5, 0.5);
+    
+    [UIView animateWithDuration:0.2
+                     animations:^{
+                         [self.contentVC.view mas_updateConstraints:^(MASConstraintMaker *make) {
+                             make.leading.equalTo(self.view.mas_leading).offset(240.f);
+                         }];
+                         
+                         [self.view layoutIfNeeded];
+                         
+                         self.menuVC.view.transform  = CGAffineTransformIdentity;
+                         
+                     } completion:^(BOOL finished) {
+                         if (completionHandler) completionHandler();
+                     }];
 }
 
 - (void)hideMenuViewWithCompletionHandler:(Block)completionHandler {
-    NSAssert(completionHandler, @"");
+    self.menuVC.view.transform  = CGAffineTransformIdentity;
+    
+    [UIView animateWithDuration:0.2
+                     animations:^{
+                         [self.contentVC.view mas_updateConstraints:^(MASConstraintMaker *make) {
+                             make.leading.equalTo(self.view.mas_leading);
+                         }];
+                         
+                         [self.view layoutIfNeeded];
+                         
+                         self.menuVC.view.transform  = CGAffineTransformMakeScale(0.5, 0.5);
+                     } completion:^(BOOL finished) {
+                         
+                         self.menuVC.view.hidden     = YES;
+                         
+                         if (completionHandler) completionHandler();
+                     }];
 }
+
+
+/**
+
+func leftMenuShowAnimate() {
+    UIView.animateWithDuration(animationDuration, animations: { [unowned self]() -> Void in
+        self.centerController!.view.x = self.menuWith
+        self.leftController.view.transform = CGAffineTransformMakeScale(1.0, 1.0)
+        self.cover.hidden = false
+    })
+}
+
+func leftMenuHiddenAnimate () {
+    
+    UIView.animateWithDuration(animationDuration, animations: { [unowned self]() -> Void in
+        self.centerController!.view.x = 0
+        self.cover.hidden = true
+    }) { (finish) -> Void in
+        self.leftController.view.transform = CGAffineTransformMakeScale(0.5, 0.5)
+    }
+}
+
+
+ */
 
 @end
