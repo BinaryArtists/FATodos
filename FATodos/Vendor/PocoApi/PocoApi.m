@@ -23,7 +23,7 @@
 
 - (instancetype)init {
     if (self = [super init]) {
-        self.netHost    = [MKNetworkHost new];
+        self.netHost    = [[MKNetworkHost alloc] initWithHostName:UrlPocoHostname];
     }
     
     return self;
@@ -42,7 +42,7 @@
     /**
      *  default: httpMethod is GET
      */
-    MKNetworkRequest *urlRequest   = [self.netHost requestWithPath:ApiPocoPortraitListURL
+    MKNetworkRequest *urlRequest   = [self.netHost requestWithPath:UrlPocoCommentList
                                                          params:[request params]];
     [urlRequest addCompletionHandler:^(MKNetworkRequest *completedRequest) {
         NSLog(@"%@", completedRequest.response);

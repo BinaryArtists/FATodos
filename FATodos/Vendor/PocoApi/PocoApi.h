@@ -55,7 +55,8 @@
  *  Poco 摄影社区点评板块的接口
  *
  */
-#define UrlPocoCommentList  @"http://photo.poco.cn/dianping/module/get_data_ajax.php?"
+#define UrlPocoHostname     @"http://photo.poco.cn"
+#define UrlPocoCommentList  @"http://photo.poco.cn/dianping/module/get_data_ajax.php"
 
 
 @interface PocoApi : NSObject
