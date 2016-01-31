@@ -39,6 +39,9 @@
     request.typeId              = typeId;
     request.timestamp           = lastUpdateTime;
     
+    /**
+     *  default: httpMethod is GET
+     */
     MKNetworkRequest *urlRequest   = [self.netHost requestWithPath:ApiPocoPortraitListURL
                                                          params:[request params]];
     [urlRequest addCompletionHandler:^(MKNetworkRequest *completedRequest) {

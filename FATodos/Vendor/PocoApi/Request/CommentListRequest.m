@@ -46,6 +46,10 @@
              };
 }
 
+/**
+ *  MTLModel:dictionaryValue, supported by KeyValueCoding!!!
+ */
+
 - (NSDictionary *)params {
     return [self dictionaryValue];
 }
