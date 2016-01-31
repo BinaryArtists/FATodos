@@ -15,6 +15,7 @@
 		44048DA41C5B4CC60007C7EF /* CommentBottomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 44048DA21C5B4CC60007C7EF /* CommentBottomCell.m */; };
 		44048DA51C5B4CC60007C7EF /* CommentBottomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44048DA31C5B4CC60007C7EF /* CommentBottomCell.xib */; };
 		44048DA81C5B55910007C7EF /* UICollectionViewCell+.m in Sources */ = {isa = PBXBuildFile; fileRef = 44048DA71C5B55910007C7EF /* UICollectionViewCell+.m */; };
+		44048DAB1C5DE07A0007C7EF /* CommentListResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 44048DAA1C5DE07A0007C7EF /* CommentListResponse.m */; };
 		44D9BA7A1C4F83A1002E0A49 /* FADatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D9BA771C4F83A1002E0A49 /* FADatePickerViewController.m */; };
 		44D9BA8A1C4F8862002E0A49 /* FASourcePickerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D9BA881C4F8862002E0A49 /* FASourcePickerVC.m */; };
 		44D9BA8B1C4F8862002E0A49 /* FASourcePickerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44D9BA891C4F8862002E0A49 /* FASourcePickerVC.xib */; };
@@ -607,6 +608,8 @@
 		44048DA31C5B4CC60007C7EF /* CommentBottomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentBottomCell.xib; sourceTree = "<group>"; };
 		44048DA61C5B55910007C7EF /* UICollectionViewCell+.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewCell+.h"; sourceTree = "<group>"; };
 		44048DA71C5B55910007C7EF /* UICollectionViewCell+.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewCell+.m"; sourceTree = "<group>"; };
+		44048DA91C5DE07A0007C7EF /* CommentListResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentListResponse.h; sourceTree = "<group>"; };
+		44048DAA1C5DE07A0007C7EF /* CommentListResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentListResponse.m; sourceTree = "<group>"; };
 		44D9BA761C4F83A1002E0A49 /* FADatePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FADatePickerViewController.h; sourceTree = "<group>"; };
 		44D9BA771C4F83A1002E0A49 /* FADatePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FADatePickerViewController.m; sourceTree = "<group>"; };
 		44D9BA871C4F8862002E0A49 /* FASourcePickerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FASourcePickerVC.h; sourceTree = "<group>"; };
@@ -1968,6 +1971,8 @@
 		44D9BC5F1C57C3CB002E0A49 /* Response */ = {
 			isa = PBXGroup;
 			children = (
+				44048DA91C5DE07A0007C7EF /* CommentListResponse.h */,
+				44048DAA1C5DE07A0007C7EF /* CommentListResponse.m */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -4592,6 +4597,7 @@
 				6A6DC7FF1BD3DFA800A359C0 /* Samurai_CSSNumberFr.m in Sources */,
 				6A6DC8AD1BD3DFA900A359C0 /* foundation.c in Sources */,
 				6A6DC83D1BD3DFA800A359C0 /* Samurai_HtmlElementCaption.m in Sources */,
+				44048DAB1C5DE07A0007C7EF /* CommentListResponse.m in Sources */,
 				6A6DC8161BD3DFA800A359C0 /* Samurai_CSSUri.m in Sources */,
 				6ACFDFEB1BA02A3E0061DA35 /* UIColor+Theme.m in Sources */,
 				6A74369D1BE705C200A21481 /* ZIMSqlShowTablesStatement.m in Sources */,

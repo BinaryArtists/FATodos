@@ -32,15 +32,17 @@
 #pragma mark - Apis
 
 - (void)commentListWithTypeId:(eTypeId)typeId
+                      lastTag:(int64_t)lastUpdateTime
                successHandler:(ObjectBlock)successHandler
                failureHandler:(ErrorBlock)failureHandler {
     CommentListRequest *request = [CommentListRequest instance];
     request.typeId              = typeId;
-
-    MKNetworkRequest *urlRequest= [self.netHost requestWithPath:ApiPocoPortraitListURL
+    request.timestamp           = lastUpdateTime;
+    
+    MKNetworkRequest *urlRequest   = [self.netHost requestWithPath:ApiPocoPortraitListURL
                                                          params:[request params]];
     [urlRequest addCompletionHandler:^(MKNetworkRequest *completedRequest) {
-        NSLog(@"%@", completedRequest.responseAsString);
+        NSLog(@"%@", completedRequest.response);
         
         // 1. Has a error?
         

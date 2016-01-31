@@ -76,16 +76,6 @@
     [self initData];
     
     [self initView];
-    
-    [self.dataSource addObject:[NSString new]];
-    [self.dataSource addObject:[NSString new]];
-    [self.dataSource addObject:[NSString new]];
-    [self.dataSource addObject:[NSString new]];
-    [self.dataSource addObject:[NSString new]];
-    [self.dataSource addObject:[NSString new]];
-    [self.dataSource addObject:[NSString new]];
-    [self.dataSource addObject:[NSString new]];
-    [self.dataSource addObject:[NSString new]];
 }
 
 - (void)updateViewConstraints {
@@ -131,6 +121,7 @@
     }
     
     [[PocoApi sharedInstance] commentListWithTypeId:typeId
+                                            lastTag:self.loadTag
                                      successHandler:^(id obj) {
                                          //
                                          

@@ -92,6 +92,8 @@
     [self initAction];
     
     [self applyViewConstraints];
+    
+    [self.contentVC reloadWithTypeId:self.commentTypeId];
 }
 
 - (void)viewWillAppear:(BOOL)animated {

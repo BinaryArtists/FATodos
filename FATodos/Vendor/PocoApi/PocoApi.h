@@ -51,12 +51,36 @@
 #define ApiPocoOtherListURL  @"http://photo.poco.cn/dianping/module/get_data_ajax.php?action=get_article&article_page=10&type=theme&type_id=8&data_type=list&show_type=show&struction=index&article_last_update_time=1437499820&zero_type=0&_no_cache=1&_=1453736485787"
 #define ApiPocoCommentOtherPageAtURL @"http://photo.poco.cn/dianping/index.htx&p=2&type=theme&type_id=8&data_type=list&show_type=show"
 
+/**
+ *  Poco 摄影社区点评板块的接口
+ *
+ */
+#define UrlPocoCommentList  @"http://photo.poco.cn/dianping/module/get_data_ajax.php?"
+
+
 @interface PocoApi : NSObject
 
 @singleton( PocoApi )
 
 - (void)commentListWithTypeId:(eTypeId)typeId
+                      lastTag:(int64_t)lastUpdateTime
                successHandler:(ObjectBlock)successHandler
                failureHandler:(ErrorBlock)failureHandler;
+
+@end
+
+/**
+ *
+ */
+@protocol RequestProtocol <NSObject>
+
+// 打包属性
+- (NSDictionary *)params;
+
+@end
+
+@protocol ResponseProtocol <NSObject>
+
+- (void)parse:(NSData *)data;
 
 @end
