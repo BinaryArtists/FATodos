@@ -11,7 +11,11 @@
 @implementation CommentBottomCell
 
 - (void)awakeFromNib {
-    // Initialization code
+    self.layer.cornerRadius = PIXEL_8;
+    self.layer.masksToBounds= YES;
+    
+    self.imageView.layer.cornerRadius = PIXEL_8;
+    self.imageView.layer.masksToBounds= YES;
 }
 
 @end

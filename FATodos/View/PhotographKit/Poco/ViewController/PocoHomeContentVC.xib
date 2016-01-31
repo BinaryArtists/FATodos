@@ -20,10 +20,10 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kat-4N-eX9">
-                    <rect key="frame" x="8" y="23" width="26" height="16"/>
+                    <rect key="frame" x="8" y="32" width="23" height="16"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="16" id="B93-No-CHa"/>
-                        <constraint firstAttribute="width" constant="26" id="I1x-b2-t8G"/>
+                        <constraint firstAttribute="width" constant="23" id="I1x-b2-t8G"/>
                     </constraints>
                     <state key="normal" title="Button" image="setting_icon"/>
                     <connections>
@@ -48,7 +48,7 @@
                     </connections>
                 </collectionView>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="UJU-2V-7sE" customClass="CommentBottomCollectionView">
-                    <rect key="frame" x="0.0" y="517" width="320" height="51"/>
+                    <rect key="frame" x="2" y="517" width="318" height="51"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="51" id="824-QE-HLk"/>
@@ -68,13 +68,13 @@
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="0eU-DG-sbi" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="0p2-rH-VHD"/>
-                <constraint firstItem="Kat-4N-eX9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="23" id="BKR-dM-wVE"/>
+                <constraint firstItem="Kat-4N-eX9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="32" id="BKR-dM-wVE"/>
                 <constraint firstAttribute="trailing" secondItem="UJU-2V-7sE" secondAttribute="trailing" id="DE2-jD-0Ky"/>
                 <constraint firstAttribute="trailing" secondItem="0eU-DG-sbi" secondAttribute="trailing" id="I1d-Yd-lhc"/>
                 <constraint firstItem="Kat-4N-eX9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="Rcn-aN-Z9e"/>
                 <constraint firstAttribute="bottom" secondItem="UJU-2V-7sE" secondAttribute="bottom" id="mCc-6c-8ab"/>
                 <constraint firstItem="0eU-DG-sbi" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="rUb-ff-kXF"/>
-                <constraint firstItem="UJU-2V-7sE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ySv-jo-l0J"/>
+                <constraint firstItem="UJU-2V-7sE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="2" id="ySv-jo-l0J"/>
             </constraints>
             <point key="canvasLocation" x="216" y="198"/>
         </view>

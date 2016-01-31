@@ -70,7 +70,7 @@
     [super viewDidLoad];
     
     {
-        self.view.backgroundColor   = [UIColor lightGrayColor];
+        self.view.backgroundColor   = [UIColor purpleColor];
     }
     
     [self initData];
@@ -78,14 +78,20 @@
     [self initView];
     
     [self.dataSource addObject:[NSString new]];
-//    [self.dataSource addObject:[NSString new]];
-//    [self.dataSource addObject:[NSString new]];
+    [self.dataSource addObject:[NSString new]];
+    [self.dataSource addObject:[NSString new]];
+    [self.dataSource addObject:[NSString new]];
+    [self.dataSource addObject:[NSString new]];
+    [self.dataSource addObject:[NSString new]];
+    [self.dataSource addObject:[NSString new]];
+    [self.dataSource addObject:[NSString new]];
+    [self.dataSource addObject:[NSString new]];
 }
 
 - (void)updateViewConstraints {
     [super updateViewConstraints];
     
-    self.contentCollectionViewHeightConstraint.constant = screen_height*440/iphone5_screen_height;
+    self.contentCollectionViewHeightConstraint.constant = screen_height*421/iphone5_screen_height;
     self.bottomCollectionViewHeightConstraint.constant  = screen_height*60/iphone5_screen_height;
 }
 
