@@ -8,6 +8,10 @@
 
 #import "CommentListRequest.h"
 
+@interface CommentListRequest () <RequestProtocol>
+
+@end
+
 @implementation CommentListRequest
 
 //@"http://photo.poco.cn/dianping/module/get_data_ajax.php?action=get_article&article_page=10&type=theme&type_id=8&data_type=list&show_type=show&struction=index&article_last_update_time=1437499820&zero_type=0&_no_cache=1&_=1453736485787"
@@ -30,7 +34,9 @@
     return request;
 }
 
-+ (NSDictionary *)transitePropertyKeys {
+#pragma mark - RequestProtocol
+
++ (NSDictionary *)JSONKeyPathsByPropertyKey {
     return @{
              @"action":@"action",
              @"articlePage":@"article_page",

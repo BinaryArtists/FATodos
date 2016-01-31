@@ -73,7 +73,9 @@
 /**
  *
  */
-@protocol RequestProtocol <NSObject>
+@protocol RequestProtocol <MTLJSONSerializing>
+
+@required
 
 // 打包属性
 - (NSDictionary *)params;
