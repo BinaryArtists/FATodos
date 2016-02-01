@@ -10,3 +10,6 @@
 [submodule "FATodos/Framework/tool.oc"]
 	path = FATodos/Framework/tool.oc
 	url = https://github.com/fallending/tool.oc.git
+[submodule "FATodos/Framework/Mantle"]
+	path = FATodos/Framework/Mantle
+	url = https://github.com/fallending/Mantle.git
