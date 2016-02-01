@@ -5004,6 +5004,7 @@
 					"\"${PODS_ROOT}/Headers/Public/ZLSwipeableView\"",
 					"\"${PODS_ROOT}/Headers/Public/pop\"",
 					"${SRCROOT}/../**",
+					"\"${SRCROOT}/Framework\"/**",
 				);
 				INFOPLIST_FILE = FATodos/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -5048,6 +5049,7 @@
 					"\"${PODS_ROOT}/Headers/Public/ZLSwipeableView\"",
 					"\"${PODS_ROOT}/Headers/Public/pop\"",
 					"${SRCROOT}/../**",
+					"\"${SRCROOT}/Framework\"/**",
 				);
 				INFOPLIST_FILE = FATodos/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
