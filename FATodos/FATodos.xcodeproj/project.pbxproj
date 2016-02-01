@@ -549,23 +549,6 @@
 		6AF4BCC31BB2D5540047A720 /* UIColor+Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF4BCC21BB2D5540047A720 /* UIColor+Expanded.m */; };
 		6AF4BD721BB3E43B0047A720 /* CatDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF4BD701BB3E43B0047A720 /* CatDetailViewController.m */; };
 		6AF4BD731BB3E43B0047A720 /* ChinaCity.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6AF4BD711BB3E43B0047A720 /* ChinaCity.plist */; };
-		6AF4BDA61BB441760047A720 /* EXTRuntimeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF4BD841BB441760047A720 /* EXTRuntimeExtensions.m */; };
-		6AF4BDA71BB441760047A720 /* EXTScope.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF4BD861BB441760047A720 /* EXTScope.m */; };
-		6AF4BDA81BB441760047A720 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6AF4BD881BB441760047A720 /* Info.plist */; };
-		6AF4BDA91BB441760047A720 /* MTLJSONAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF4BD8B1BB441760047A720 /* MTLJSONAdapter.m */; };
-		6AF4BDAA1BB441760047A720 /* MTLModel+NSCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF4BD8D1BB441760047A720 /* MTLModel+NSCoding.m */; };
-		6AF4BDAB1BB441760047A720 /* MTLModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF4BD8F1BB441760047A720 /* MTLModel.m */; };
-		6AF4BDAC1BB441760047A720 /* MTLReflection.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF4BD911BB441760047A720 /* MTLReflection.m */; };
-		6AF4BDAD1BB441760047A720 /* MTLTransformerErrorHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF4BD931BB441760047A720 /* MTLTransformerErrorHandling.m */; };
-		6AF4BDAE1BB441760047A720 /* MTLValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF4BD951BB441760047A720 /* MTLValueTransformer.m */; };
-		6AF4BDAF1BB441760047A720 /* NSArray+MTLManipulationAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF4BD971BB441760047A720 /* NSArray+MTLManipulationAdditions.m */; };
-		6AF4BDB01BB441760047A720 /* NSDictionary+MTLJSONKeyPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF4BD991BB441760047A720 /* NSDictionary+MTLJSONKeyPath.m */; };
-		6AF4BDB11BB441760047A720 /* NSDictionary+MTLManipulationAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF4BD9B1BB441760047A720 /* NSDictionary+MTLManipulationAdditions.m */; };
-		6AF4BDB21BB441760047A720 /* NSDictionary+MTLMappingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF4BD9D1BB441760047A720 /* NSDictionary+MTLMappingAdditions.m */; };
-		6AF4BDB31BB441760047A720 /* NSError+MTLModelException.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF4BD9F1BB441760047A720 /* NSError+MTLModelException.m */; };
-		6AF4BDB41BB441760047A720 /* NSObject+MTLComparisonAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF4BDA11BB441760047A720 /* NSObject+MTLComparisonAdditions.m */; };
-		6AF4BDB51BB441760047A720 /* NSValueTransformer+MTLInversionAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF4BDA31BB441760047A720 /* NSValueTransformer+MTLInversionAdditions.m */; };
-		6AF4BDB61BB441760047A720 /* NSValueTransformer+MTLPredefinedTransformerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF4BDA51BB441760047A720 /* NSValueTransformer+MTLPredefinedTransformerAdditions.m */; };
 		6AF4BDC41BB52D040047A720 /* AMBouncingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF4BDB91BB52D040047A720 /* AMBouncingView.m */; };
 		6AF4BDC51BB52D040047A720 /* AMSmoothAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF4BDBC1BB52D040047A720 /* AMSmoothAlertView.m */; };
 		6AF4BDC61BB52D040047A720 /* checkMark.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AF4BDBE1BB52D040047A720 /* checkMark.png */; };
@@ -1660,42 +1643,6 @@
 		6AF4BD6F1BB3E43B0047A720 /* CatDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatDetailViewController.h; sourceTree = "<group>"; };
 		6AF4BD701BB3E43B0047A720 /* CatDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatDetailViewController.m; sourceTree = "<group>"; };
 		6AF4BD711BB3E43B0047A720 /* ChinaCity.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ChinaCity.plist; sourceTree = "<group>"; };
-		6AF4BD821BB441760047A720 /* EXTKeyPathCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTKeyPathCoding.h; sourceTree = "<group>"; };
-		6AF4BD831BB441760047A720 /* EXTRuntimeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTRuntimeExtensions.h; sourceTree = "<group>"; };
-		6AF4BD841BB441760047A720 /* EXTRuntimeExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXTRuntimeExtensions.m; sourceTree = "<group>"; };
-		6AF4BD851BB441760047A720 /* EXTScope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTScope.h; sourceTree = "<group>"; };
-		6AF4BD861BB441760047A720 /* EXTScope.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXTScope.m; sourceTree = "<group>"; };
-		6AF4BD871BB441760047A720 /* metamacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = metamacros.h; sourceTree = "<group>"; };
-		6AF4BD881BB441760047A720 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6AF4BD891BB441760047A720 /* Mantle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mantle.h; sourceTree = "<group>"; };
-		6AF4BD8A1BB441760047A720 /* MTLJSONAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTLJSONAdapter.h; sourceTree = "<group>"; };
-		6AF4BD8B1BB441760047A720 /* MTLJSONAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTLJSONAdapter.m; sourceTree = "<group>"; };
-		6AF4BD8C1BB441760047A720 /* MTLModel+NSCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MTLModel+NSCoding.h"; sourceTree = "<group>"; };
-		6AF4BD8D1BB441760047A720 /* MTLModel+NSCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MTLModel+NSCoding.m"; sourceTree = "<group>"; };
-		6AF4BD8E1BB441760047A720 /* MTLModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTLModel.h; sourceTree = "<group>"; };
-		6AF4BD8F1BB441760047A720 /* MTLModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTLModel.m; sourceTree = "<group>"; };
-		6AF4BD901BB441760047A720 /* MTLReflection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTLReflection.h; sourceTree = "<group>"; };
-		6AF4BD911BB441760047A720 /* MTLReflection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTLReflection.m; sourceTree = "<group>"; };
-		6AF4BD921BB441760047A720 /* MTLTransformerErrorHandling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTLTransformerErrorHandling.h; sourceTree = "<group>"; };
-		6AF4BD931BB441760047A720 /* MTLTransformerErrorHandling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTLTransformerErrorHandling.m; sourceTree = "<group>"; };
-		6AF4BD941BB441760047A720 /* MTLValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTLValueTransformer.h; sourceTree = "<group>"; };
-		6AF4BD951BB441760047A720 /* MTLValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTLValueTransformer.m; sourceTree = "<group>"; };
-		6AF4BD961BB441760047A720 /* NSArray+MTLManipulationAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MTLManipulationAdditions.h"; sourceTree = "<group>"; };
-		6AF4BD971BB441760047A720 /* NSArray+MTLManipulationAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MTLManipulationAdditions.m"; sourceTree = "<group>"; };
-		6AF4BD981BB441760047A720 /* NSDictionary+MTLJSONKeyPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+MTLJSONKeyPath.h"; sourceTree = "<group>"; };
-		6AF4BD991BB441760047A720 /* NSDictionary+MTLJSONKeyPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+MTLJSONKeyPath.m"; sourceTree = "<group>"; };
-		6AF4BD9A1BB441760047A720 /* NSDictionary+MTLManipulationAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+MTLManipulationAdditions.h"; sourceTree = "<group>"; };
-		6AF4BD9B1BB441760047A720 /* NSDictionary+MTLManipulationAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+MTLManipulationAdditions.m"; sourceTree = "<group>"; };
-		6AF4BD9C1BB441760047A720 /* NSDictionary+MTLMappingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+MTLMappingAdditions.h"; sourceTree = "<group>"; };
-		6AF4BD9D1BB441760047A720 /* NSDictionary+MTLMappingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+MTLMappingAdditions.m"; sourceTree = "<group>"; };
-		6AF4BD9E1BB441760047A720 /* NSError+MTLModelException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+MTLModelException.h"; sourceTree = "<group>"; };
-		6AF4BD9F1BB441760047A720 /* NSError+MTLModelException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+MTLModelException.m"; sourceTree = "<group>"; };
-		6AF4BDA01BB441760047A720 /* NSObject+MTLComparisonAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MTLComparisonAdditions.h"; sourceTree = "<group>"; };
-		6AF4BDA11BB441760047A720 /* NSObject+MTLComparisonAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MTLComparisonAdditions.m"; sourceTree = "<group>"; };
-		6AF4BDA21BB441760047A720 /* NSValueTransformer+MTLInversionAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSValueTransformer+MTLInversionAdditions.h"; sourceTree = "<group>"; };
-		6AF4BDA31BB441760047A720 /* NSValueTransformer+MTLInversionAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSValueTransformer+MTLInversionAdditions.m"; sourceTree = "<group>"; };
-		6AF4BDA41BB441760047A720 /* NSValueTransformer+MTLPredefinedTransformerAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSValueTransformer+MTLPredefinedTransformerAdditions.h"; sourceTree = "<group>"; };
-		6AF4BDA51BB441760047A720 /* NSValueTransformer+MTLPredefinedTransformerAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSValueTransformer+MTLPredefinedTransformerAdditions.m"; sourceTree = "<group>"; };
 		6AF4BDB81BB52D040047A720 /* AMBouncingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMBouncingView.h; sourceTree = "<group>"; };
 		6AF4BDB91BB52D040047A720 /* AMBouncingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMBouncingView.m; sourceTree = "<group>"; };
 		6AF4BDBA1BB52D040047A720 /* AMSmoothAlertConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSmoothAlertConstants.h; sourceTree = "<group>"; };
@@ -3722,7 +3669,6 @@
 				6AF4BDDB1BB551EF0047A720 /* LibraryUtility */,
 				6AF4BDD31BB550210047A720 /* FAPopup */,
 				6AF4BDB71BB52D040047A720 /* AMSmoothAlert */,
-				6AF4BD801BB441760047A720 /* Mantle */,
 				6AF4BD6E1BB3E43B0047A720 /* CatDetailViewController */,
 				6AF4BCC71BB2E9690047A720 /* LibraryAPI */,
 				6ACEBAF21BA974810011E3F7 /* MGSwipeTableCell */,
@@ -3962,57 +3908,6 @@
 			path = Memo;
 			sourceTree = "<group>";
 		};
-		6AF4BD801BB441760047A720 /* Mantle */ = {
-			isa = PBXGroup;
-			children = (
-				6AF4BD811BB441760047A720 /* extobjc */,
-				6AF4BD881BB441760047A720 /* Info.plist */,
-				6AF4BD891BB441760047A720 /* Mantle.h */,
-				6AF4BD8A1BB441760047A720 /* MTLJSONAdapter.h */,
-				6AF4BD8B1BB441760047A720 /* MTLJSONAdapter.m */,
-				6AF4BD8C1BB441760047A720 /* MTLModel+NSCoding.h */,
-				6AF4BD8D1BB441760047A720 /* MTLModel+NSCoding.m */,
-				6AF4BD8E1BB441760047A720 /* MTLModel.h */,
-				6AF4BD8F1BB441760047A720 /* MTLModel.m */,
-				6AF4BD901BB441760047A720 /* MTLReflection.h */,
-				6AF4BD911BB441760047A720 /* MTLReflection.m */,
-				6AF4BD921BB441760047A720 /* MTLTransformerErrorHandling.h */,
-				6AF4BD931BB441760047A720 /* MTLTransformerErrorHandling.m */,
-				6AF4BD941BB441760047A720 /* MTLValueTransformer.h */,
-				6AF4BD951BB441760047A720 /* MTLValueTransformer.m */,
-				6AF4BD961BB441760047A720 /* NSArray+MTLManipulationAdditions.h */,
-				6AF4BD971BB441760047A720 /* NSArray+MTLManipulationAdditions.m */,
-				6AF4BD981BB441760047A720 /* NSDictionary+MTLJSONKeyPath.h */,
-				6AF4BD991BB441760047A720 /* NSDictionary+MTLJSONKeyPath.m */,
-				6AF4BD9A1BB441760047A720 /* NSDictionary+MTLManipulationAdditions.h */,
-				6AF4BD9B1BB441760047A720 /* NSDictionary+MTLManipulationAdditions.m */,
-				6AF4BD9C1BB441760047A720 /* NSDictionary+MTLMappingAdditions.h */,
-				6AF4BD9D1BB441760047A720 /* NSDictionary+MTLMappingAdditions.m */,
-				6AF4BD9E1BB441760047A720 /* NSError+MTLModelException.h */,
-				6AF4BD9F1BB441760047A720 /* NSError+MTLModelException.m */,
-				6AF4BDA01BB441760047A720 /* NSObject+MTLComparisonAdditions.h */,
-				6AF4BDA11BB441760047A720 /* NSObject+MTLComparisonAdditions.m */,
-				6AF4BDA21BB441760047A720 /* NSValueTransformer+MTLInversionAdditions.h */,
-				6AF4BDA31BB441760047A720 /* NSValueTransformer+MTLInversionAdditions.m */,
-				6AF4BDA41BB441760047A720 /* NSValueTransformer+MTLPredefinedTransformerAdditions.h */,
-				6AF4BDA51BB441760047A720 /* NSValueTransformer+MTLPredefinedTransformerAdditions.m */,
-			);
-			path = Mantle;
-			sourceTree = "<group>";
-		};
-		6AF4BD811BB441760047A720 /* extobjc */ = {
-			isa = PBXGroup;
-			children = (
-				6AF4BD821BB441760047A720 /* EXTKeyPathCoding.h */,
-				6AF4BD831BB441760047A720 /* EXTRuntimeExtensions.h */,
-				6AF4BD841BB441760047A720 /* EXTRuntimeExtensions.m */,
-				6AF4BD851BB441760047A720 /* EXTScope.h */,
-				6AF4BD861BB441760047A720 /* EXTScope.m */,
-				6AF4BD871BB441760047A720 /* metamacros.h */,
-			);
-			path = extobjc;
-			sourceTree = "<group>";
-		};
 		6AF4BDB71BB52D040047A720 /* AMSmoothAlert */ = {
 			isa = PBXGroup;
 			children = (
@@ -4225,7 +4120,6 @@
 				6A3E5F951C0DCC8E0075EA98 /* Launch.m4v in Resources */,
 				6ACFE0101BA170720061DA35 /* Item_1_Cell.xib in Resources */,
 				44D9BBDB1C575ADC002E0A49 /* Localizable.strings in Resources */,
-				6AF4BDA81BB441760047A720 /* Info.plist in Resources */,
 				6ACFDFE71BA0207F0061DA35 /* list@2x.png in Resources */,
 				6A6DC8961BD3DFA900A359C0 /* html+samurai.css in Resources */,
 				6AF4BDCB1BB52D040047A720 /* info@2x.png in Resources */,
@@ -4342,7 +4236,6 @@
 				6ACFDFBB1B9C85A90061DA35 /* NSString+Size.m in Sources */,
 				6A6DC7CE1BD3DFA800A359C0 /* ServiceGestureSetting.m in Sources */,
 				6AD283431BB2C77A008900FA /* BaseView.m in Sources */,
-				6AF4BDAD1BB441760047A720 /* MTLTransformerErrorHandling.m in Sources */,
 				6A6DC74E1BD3DFA800A359C0 /* Samurai_Config(Phone).m in Sources */,
 				44D9BC531C5766D6002E0A49 /* UITableViewCell+.m in Sources */,
 				6A6DC8261BD3DFA800A359C0 /* UITextField+Html.m in Sources */,
@@ -4376,7 +4269,6 @@
 				6A6DC8011BD3DFA800A359C0 /* Samurai_CSSNumberHz.m in Sources */,
 				6A95EC401BBA7F6700B14EA5 /* NSObject+FBKVOController.m in Sources */,
 				6A6DC8311BD3DFA800A359C0 /* Samurai_HtmlDocumentWorklet_50MergeDomTree.m in Sources */,
-				6AF4BDAB1BB441760047A720 /* MTLModel.m in Sources */,
 				6A6DC85D1BD3DFA900A359C0 /* Samurai_HtmlElementInputReset.m in Sources */,
 				6A3E5F981C0DCCD50075EA98 /* LaunchMediaVC.m in Sources */,
 				6A6DC7761BD3DFA800A359C0 /* Samurai_EventConfig.m in Sources */,
@@ -4486,7 +4378,6 @@
 				6A6DC77F1BD3DFA800A359C0 /* Samurai_DockerWindow.m in Sources */,
 				6A6DC8811BD3DFA900A359C0 /* Samurai_HtmlLayoutElement.m in Sources */,
 				6AD283401BB2C754008900FA /* BaseEntity.m in Sources */,
-				6AF4BDAC1BB441760047A720 /* MTLReflection.m in Sources */,
 				44048DA41C5B4CC60007C7EF /* CommentBottomCell.m in Sources */,
 				6A674B6D1BE0BE9500562321 /* NSObject+AutoDatabase.m in Sources */,
 				6A6DC8191BD3DFA800A359C0 /* UIButton+Html.m in Sources */,
@@ -4501,7 +4392,6 @@
 				44D9BA8A1C4F8862002E0A49 /* FASourcePickerVC.m in Sources */,
 				6A6DC78C1BD3DFA800A359C0 /* Samurai_UIButton.m in Sources */,
 				44D9BA7A1C4F83A1002E0A49 /* FADatePickerViewController.m in Sources */,
-				6AF4BDB41BB441760047A720 /* NSObject+MTLComparisonAdditions.m in Sources */,
 				6A7436A11BE705C200A21481 /* ZIMSqlTruncateTableStatement.m in Sources */,
 				6A6DC7C21BD3DFA800A359C0 /* Samurai_ClassLoader.m in Sources */,
 				6A6DC86C1BD3DFA900A359C0 /* Samurai_HtmlElementSelect.m in Sources */,
@@ -4530,7 +4420,6 @@
 				6A6DC7C11BD3DFA800A359C0 /* Samurai_App.m in Sources */,
 				6A74368C1BE705C200A21481 /* ZIMSqlCreateTableStatement.m in Sources */,
 				6A6DC8581BD3DFA900A359C0 /* Samurai_HtmlElementInputFile.m in Sources */,
-				6AF4BDB61BB441760047A720 /* NSValueTransformer+MTLPredefinedTransformerAdditions.m in Sources */,
 				6A6DC8541BD3DFA900A359C0 /* Samurai_HtmlElementHtml.m in Sources */,
 				6A6DC88F1BD3DFA900A359C0 /* Samurai_HtmlRenderWorklet_10Begin.m in Sources */,
 				44D9BADA1C520768002E0A49 /* PhotoCommentVC.m in Sources */,
@@ -4560,7 +4449,6 @@
 				6A6DC83F1BD3DFA800A359C0 /* Samurai_HtmlElementCol.m in Sources */,
 				6A6DC8AB1BD3DFA900A359C0 /* util.c in Sources */,
 				44D9BACD1C51D3F7002E0A49 /* UIImageView+MKNKAdditions.m in Sources */,
-				6AF4BDA91BB441760047A720 /* MTLJSONAdapter.m in Sources */,
 				6A6DC7C61BD3DFA800A359C0 /* fishhook.c in Sources */,
 				6A6DA09D1BD343F400A359C0 /* FourQuadrantVC.m in Sources */,
 				6A6DC8A41BD3DFA900A359C0 /* error.c in Sources */,
@@ -4646,7 +4534,6 @@
 				6AF4BDC41BB52D040047A720 /* AMBouncingView.m in Sources */,
 				6A6DC83E1BD3DFA800A359C0 /* Samurai_HtmlElementCode.m in Sources */,
 				6A6DC7F51BD3DFA800A359C0 /* Samurai_CSSNumberAutomatic.m in Sources */,
-				6AF4BDB51BB441760047A720 /* NSValueTransformer+MTLInversionAdditions.m in Sources */,
 				6A6DC8371BD3DFA800A359C0 /* Samurai_HtmlElementAside.m in Sources */,
 				6A6DC8761BD3DFA900A359C0 /* Samurai_HtmlElementTfoot.m in Sources */,
 				6A6DC8321BD3DFA800A359C0 /* Samurai_HtmlDocumentWorklet_60ApplyStyleTree.m in Sources */,
@@ -4680,7 +4567,6 @@
 				6A6DC82A1BD3DFA800A359C0 /* UIWebView+Html.m in Sources */,
 				6A6DC8151BD3DFA800A359C0 /* Samurai_CSSString.m in Sources */,
 				6ACFE0111BA170720061DA35 /* PushupVC.m in Sources */,
-				6AF4BDB01BB441760047A720 /* NSDictionary+MTLJSONKeyPath.m in Sources */,
 				6ACFE0311BA2C8630061DA35 /* ScrollView.m in Sources */,
 				6A6DC7851BD3DFA800A359C0 /* Signal+ViewController.m in Sources */,
 				6A6DC80A1BD3DFA800A359C0 /* Samurai_CSSNumberQem.m in Sources */,
@@ -4691,7 +4577,6 @@
 				6A6DC8A81BD3DFA900A359C0 /* tag.c in Sources */,
 				6A6DC8A71BD3DFA900A359C0 /* string_piece.c in Sources */,
 				6A6DC7B61BD3DFA800A359C0 /* Samurai_EventTapGesture.m in Sources */,
-				6AF4BDAA1BB441760047A720 /* MTLModel+NSCoding.m in Sources */,
 				6A6DC7B21BD3DFA800A359C0 /* Samurai_EventInput.m in Sources */,
 				6A6DC81E1BD3DFA800A359C0 /* UIPageControl+Html.m in Sources */,
 				6A7436A21BE705C200A21481 /* ZIMSqlUpdateStatement.m in Sources */,
@@ -4725,7 +4610,6 @@
 				6A6DC88D1BD3DFA900A359C0 /* Samurai_HtmlRenderStyle.m in Sources */,
 				6A6DC7E31BD3DFA800A359C0 /* ServiceTapspotHook.m in Sources */,
 				6A7436861BE705C200A21481 /* ZIMOrmModel.m in Sources */,
-				6AF4BDA71BB441760047A720 /* EXTScope.m in Sources */,
 				6ACFDFD31B9E63DD0061DA35 /* Item1.m in Sources */,
 				6A6DC7D91BD3DFA800A359C0 /* JBBarChartView.m in Sources */,
 				6A6DC7591BD3DFA800A359C0 /* NSMutableDictionary+Extension.m in Sources */,
@@ -4735,7 +4619,6 @@
 				6A6DC80C1BD3DFA800A359C0 /* Samurai_CSSNumberRems.m in Sources */,
 				6A6DC8851BD3DFA900A359C0 /* Samurai_HtmlRenderContainer.m in Sources */,
 				6A6DC7941BD3DFA800A359C0 /* Samurai_UISlider.m in Sources */,
-				6AF4BDAE1BB441760047A720 /* MTLValueTransformer.m in Sources */,
 				44D9BAD21C51D3F7002E0A49 /* README.mdown in Sources */,
 				6A6DC7561BD3DFA800A359C0 /* NSDate+Extension.m in Sources */,
 				6A6DC7CC1BD3DFA800A359C0 /* ServiceGesture.m in Sources */,
@@ -4770,7 +4653,6 @@
 				6A95EC1A1BBA391B00B14EA5 /* Component.m in Sources */,
 				6A6DC7511BD3DFA800A359C0 /* Samurai_Namespace.m in Sources */,
 				6A6DC7ED1BD3DFA800A359C0 /* Samurai_CSSRuleCollector.m in Sources */,
-				6AF4BDAF1BB441760047A720 /* NSArray+MTLManipulationAdditions.m in Sources */,
 				6A6DC7D81BD3DFA800A359C0 /* ServiceInspectorWindow.m in Sources */,
 				6A6DC7711BD3DFA800A359C0 /* Samurai_NotificationCenter.m in Sources */,
 				6A7436951BE705C200A21481 /* ZIMSqlExplainStatement.m in Sources */,
@@ -4790,8 +4672,6 @@
 				6A6DC80F1BD3DFA800A359C0 /* Samurai_CSSNumberVh.m in Sources */,
 				6ACEBB001BA9B7CE0011E3F7 /* s.m in Sources */,
 				6A6DC7AF1BD3DFA800A359C0 /* Samurai_Template.m in Sources */,
-				6AF4BDB11BB441760047A720 /* NSDictionary+MTLManipulationAdditions.m in Sources */,
-				6AF4BDB21BB441760047A720 /* NSDictionary+MTLMappingAdditions.m in Sources */,
 				44D9BC451C5766D6002E0A49 /* allwarning.md in Sources */,
 				6A6DC7871BD3DFA800A359C0 /* UIView+TemplateLoading.m in Sources */,
 				6A6DC8A31BD3DFA900A359C0 /* char_ref.c in Sources */,
@@ -4800,7 +4680,6 @@
 				6A6DC8521BD3DFA900A359C0 /* Samurai_HtmlElementHgroup.m in Sources */,
 				6ACFDFF41BA040AE0061DA35 /* NSString+Theme.m in Sources */,
 				6A6DC7B11BD3DFA800A359C0 /* Samurai_Workflow.m in Sources */,
-				6AF4BDA61BB441760047A720 /* EXTRuntimeExtensions.m in Sources */,
 				44D9BC5B1C576877002E0A49 /* NSString+Localizable.m in Sources */,
 				6AF4BDD61BB550420047A720 /* FAPopup.m in Sources */,
 				6A158E391B70B482007FE54F /* main.m in Sources */,
@@ -4840,7 +4719,6 @@
 				6A74369F1BE705C200A21481 /* ZIMSqlShowViewsStatement.m in Sources */,
 				6A6DC8AA1BD3DFA900A359C0 /* utf8.c in Sources */,
 				6AD47CBB1BB7732300BBBC0F /* MemoVC.m in Sources */,
-				6AF4BDB31BB441760047A720 /* NSError+MTLModelException.m in Sources */,
 				44D9BC8D1C58DF18002E0A49 /* PocoCommentDetailVC.m in Sources */,
 				6A6DC8331BD3DFA800A359C0 /* Samurai_HtmlDocumentWorklet_70BuildRenderTree.m in Sources */,
 				6A6DC7501BD3DFA800A359C0 /* Samurai_Config.m in Sources */,
