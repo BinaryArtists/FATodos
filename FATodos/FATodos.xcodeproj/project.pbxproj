@@ -33,6 +33,7 @@
 		44C715901C5F02D4007F5D08 /* NSObject+MTLComparisonAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C7157D1C5F02D4007F5D08 /* NSObject+MTLComparisonAdditions.m */; };
 		44C715911C5F02D4007F5D08 /* NSValueTransformer+MTLInversionAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C7157F1C5F02D4007F5D08 /* NSValueTransformer+MTLInversionAdditions.m */; };
 		44C715921C5F02D4007F5D08 /* NSValueTransformer+MTLPredefinedTransformerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C715811C5F02D4007F5D08 /* NSValueTransformer+MTLPredefinedTransformerAdditions.m */; };
+		44C715961C5F0B06007F5D08 /* MTLHTTParamAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C715951C5F0B06007F5D08 /* MTLHTTParamAdapter.m */; };
 		44D9BA7A1C4F83A1002E0A49 /* FADatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D9BA771C4F83A1002E0A49 /* FADatePickerViewController.m */; };
 		44D9BA8A1C4F8862002E0A49 /* FASourcePickerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D9BA881C4F8862002E0A49 /* FASourcePickerVC.m */; };
 		44D9BA8B1C4F8862002E0A49 /* FASourcePickerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44D9BA891C4F8862002E0A49 /* FASourcePickerVC.xib */; };
@@ -646,6 +647,8 @@
 		44C7157F1C5F02D4007F5D08 /* NSValueTransformer+MTLInversionAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSValueTransformer+MTLInversionAdditions.m"; sourceTree = "<group>"; };
 		44C715801C5F02D4007F5D08 /* NSValueTransformer+MTLPredefinedTransformerAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSValueTransformer+MTLPredefinedTransformerAdditions.h"; sourceTree = "<group>"; };
 		44C715811C5F02D4007F5D08 /* NSValueTransformer+MTLPredefinedTransformerAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSValueTransformer+MTLPredefinedTransformerAdditions.m"; sourceTree = "<group>"; };
+		44C715941C5F0B06007F5D08 /* MTLHTTParamAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTLHTTParamAdapter.h; sourceTree = "<group>"; };
+		44C715951C5F0B06007F5D08 /* MTLHTTParamAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTLHTTParamAdapter.m; sourceTree = "<group>"; };
 		44D9BA761C4F83A1002E0A49 /* FADatePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FADatePickerViewController.h; sourceTree = "<group>"; };
 		44D9BA771C4F83A1002E0A49 /* FADatePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FADatePickerViewController.m; sourceTree = "<group>"; };
 		44D9BA871C4F8862002E0A49 /* FASourcePickerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FASourcePickerVC.h; sourceTree = "<group>"; };
@@ -1770,6 +1773,7 @@
 		44C7155C1C5F02D4007F5D08 /* Mantle */ = {
 			isa = PBXGroup;
 			children = (
+				44C715931C5F0AAC007F5D08 /* http */,
 				44C7155D1C5F02D4007F5D08 /* extobjc */,
 				44C715641C5F02D4007F5D08 /* Info.plist */,
 				44C715651C5F02D4007F5D08 /* Mantle.h */,
@@ -1817,6 +1821,15 @@
 				44C715631C5F02D4007F5D08 /* metamacros.h */,
 			);
 			path = extobjc;
+			sourceTree = "<group>";
+		};
+		44C715931C5F0AAC007F5D08 /* http */ = {
+			isa = PBXGroup;
+			children = (
+				44C715941C5F0B06007F5D08 /* MTLHTTParamAdapter.h */,
+				44C715951C5F0B06007F5D08 /* MTLHTTParamAdapter.m */,
+			);
+			path = http;
 			sourceTree = "<group>";
 		};
 		44D9BA741C4F83A1002E0A49 /* FAPickerView */ = {
@@ -4845,6 +4858,7 @@
 				44D9BC8D1C58DF18002E0A49 /* PocoCommentDetailVC.m in Sources */,
 				6A6DC8331BD3DFA800A359C0 /* Samurai_HtmlDocumentWorklet_70BuildRenderTree.m in Sources */,
 				6A6DC7501BD3DFA800A359C0 /* Samurai_Config.m in Sources */,
+				44C715961C5F0B06007F5D08 /* MTLHTTParamAdapter.m in Sources */,
 				6A6DC8301BD3DFA800A359C0 /* Samurai_HtmlDocumentWorklet_40MergeStyleTree.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

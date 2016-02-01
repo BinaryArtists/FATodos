@@ -39,6 +39,8 @@
     request.typeId              = typeId;
     request.timestamp           = lastUpdateTime;
     
+    NSLog(@"%@", [MTLJSONAdapter JSONDictionaryFromModel:request error:nil]);
+    
     /**
      *  default: httpMethod is GET
      */
