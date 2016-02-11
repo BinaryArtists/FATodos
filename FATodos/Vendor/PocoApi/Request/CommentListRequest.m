@@ -34,9 +34,9 @@
     return request;
 }
 
-#pragma mark - RequestProtocol
+#pragma mark - HTTPRequestProtocol
 
-+ (NSDictionary *)JSONKeyPathsByPropertyKey {
++ (NSDictionary *)HTTParamKeyPathsByPropertyKey {
     return @{
              @"action":@"action",
              @"articlePage":@"article_page",
