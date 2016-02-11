@@ -38,9 +38,7 @@
     CommentListRequest *request = [CommentListRequest instance];
     request.typeId              = typeId;
     request.timestamp           = lastUpdateTime;
-//    
-    NSDictionary *jsonDictionary    = [MTLJSONAdapter JSONDictionaryFromModel:request error:nil];
-    
+
     /**
      *  default: httpMethod is GET
      */

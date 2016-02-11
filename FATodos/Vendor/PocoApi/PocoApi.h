@@ -71,9 +71,9 @@
 @end
 
 /**
- *
+ *  todo：搞协议注入！！😄，有意思
  */
-@protocol RequestProtocol <MTLJSONSerializing>
+@protocol HTTPRequestProtocol <MTLHTTParamSerializing>
 
 @required
 
@@ -82,7 +82,7 @@
 
 @end
 
-@protocol ResponseProtocol <NSObject>
+@protocol HTTPResponseProtocol <NSObject>
 
 - (void)parse:(NSData *)data;
 

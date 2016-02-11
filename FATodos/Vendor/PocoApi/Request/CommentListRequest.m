@@ -8,7 +8,7 @@
 
 #import "CommentListRequest.h"
 
-@interface CommentListRequest () <RequestProtocol>
+@interface CommentListRequest () <HTTPRequestProtocol>
 
 @end
 
@@ -57,7 +57,13 @@
  */
 
 - (NSDictionary *)params {
-    return [self dictionaryValue];
+    NSError *error;
+    NSDictionary *params    = [MTLHTTParamAdapter HTTParamDictionaryFromModel:self error:&error];
+    if (error) {
+        DLog(@"error=%@", error);
+    }
+    
+    return params;
 }
 
 
