@@ -13,3 +13,6 @@
 [submodule "FATodos/Framework/Mantle"]
 	path = FATodos/Framework/Mantle
 	url = https://github.com/fallending/Mantle.git
+[submodule "FATodos/References/beautifulApp"]
+	path = FATodos/References/beautifulApp
+	url = https://github.com/lyimin/beautifulApp.git
