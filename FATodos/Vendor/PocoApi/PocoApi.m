@@ -48,12 +48,19 @@
         NSLog(@"%@", completedRequest.response);
         
         // 1. Has a error?
-        
-        
-        // 2. Parse response -> Json dictionary
-        
-        
-        // 3. Json dictionary -> Specific response
+        if (completedRequest.error) {
+            failureHandler(completedRequest.error);
+        } else {
+            CommentListResponse *response   = [CommentListResponse new];
+            
+            // 2. Parse response -> Json dictionary
+            
+            
+            // 3. Json dictionary -> Specific response
+            
+            
+            successHandler(response);
+        }
     }];
     
     [self.netHost startRequest:urlRequest];

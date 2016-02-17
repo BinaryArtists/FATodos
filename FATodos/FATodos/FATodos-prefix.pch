@@ -92,6 +92,7 @@
 // Request & response
 
 #import "CommentListRequest.h"
+#import "CommentListResponse.h"
 
 // Vendor
 #import "Mantle.h"

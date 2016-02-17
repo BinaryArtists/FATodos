@@ -85,6 +85,11 @@
 //    [self test_speech];
     
 //    [self test_gcd];
+//    
+//    UIView *view1 = (UIView *)self.description;
+//    UIView *view = (UIView *)self;
+//    view.width = view1.width;
+    
 }
 
 - (void)test_gcd {
