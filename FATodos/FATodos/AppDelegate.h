@@ -86,6 +86,11 @@
 // 产品是如何迭代的。。。。？？？？商业模式、盈利模式是如何确立的？？？？
 
 
+
+／／依赖的工程：
+1. beautiful app
+
+
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
 
