@@ -87,8 +87,8 @@
 
 
 
-／／依赖的工程：
-1. beautiful app
+//／／依赖的工程：
+//1. beautiful app
 
 
 #import <UIKit/UIKit.h>
