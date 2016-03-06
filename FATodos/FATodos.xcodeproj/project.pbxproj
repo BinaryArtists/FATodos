@@ -593,6 +593,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03C1227F1C8BE87F004E25B7 /* constdef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = constdef.h; sourceTree = "<group>"; };
+		03C122801C8BE8B9004E25B7 /* notificationdef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = notificationdef.h; sourceTree = "<group>"; };
+		03C122811C8BE8D5004E25B7 /* apidef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = apidef.h; sourceTree = "<group>"; };
+		03C122831C8BE922004E25B7 /* html5def.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = html5def.h; sourceTree = "<group>"; };
+		03C122841C8BE933004E25B7 /* networkdef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = networkdef.h; sourceTree = "<group>"; };
 		18CA0A1539FBCF69D8C82F1E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D659119DE5A3C514B68F1F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		44048D921C5B0DAB0007C7EF /* CommentBottomCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentBottomCollectionView.h; sourceTree = "<group>"; };
@@ -692,9 +697,9 @@
 		44D9BBDF1C575AF1002E0A49 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		44D9BBE01C575B76002E0A49 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		44D9BC041C5766D6002E0A49 /* allwarning.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = allwarning.md; sourceTree = "<group>"; };
-		44D9BC051C5766D6002E0A49 /* ColorContants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorContants.h; sourceTree = "<group>"; };
-		44D9BC061C5766D6002E0A49 /* MacroUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacroUtils.h; sourceTree = "<group>"; };
-		44D9BC071C5766D6002E0A49 /* UIConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIConstants.h; sourceTree = "<group>"; };
+		44D9BC051C5766D6002E0A49 /* colordef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = colordef.h; sourceTree = "<group>"; };
+		44D9BC061C5766D6002E0A49 /* def.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = def.h; sourceTree = "<group>"; };
+		44D9BC071C5766D6002E0A49 /* uidef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uidef.h; sourceTree = "<group>"; };
 		44D9BC081C5766D6002E0A49 /* VersionCompare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VersionCompare.h; sourceTree = "<group>"; };
 		44D9BC091C5766D6002E0A49 /* WarningIgnore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WarningIgnore.h; sourceTree = "<group>"; };
 		44D9BC0B1C5766D6002E0A49 /* NSStringWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringWrapper.h; sourceTree = "<group>"; };
@@ -709,7 +714,7 @@
 		44D9BC271C5766D6002E0A49 /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
 		44D9BC591C576877002E0A49 /* NSString+Localizable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Localizable.h"; sourceTree = "<group>"; };
 		44D9BC5A1C576877002E0A49 /* NSString+Localizable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Localizable.m"; sourceTree = "<group>"; };
-		44D9BC5C1C576A88002E0A49 /* TypeUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypeUtils.h; sourceTree = "<group>"; };
+		44D9BC5C1C576A88002E0A49 /* typedef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = typedef.h; sourceTree = "<group>"; };
 		44D9BC601C57C416002E0A49 /* CommentListRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentListRequest.h; sourceTree = "<group>"; };
 		44D9BC611C57C416002E0A49 /* CommentListRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentListRequest.m; sourceTree = "<group>"; };
 		44D9BC801C58A691002E0A49 /* CommentArticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentArticle.h; sourceTree = "<group>"; };
@@ -1979,12 +1984,17 @@
 			isa = PBXGroup;
 			children = (
 				44D9BC041C5766D6002E0A49 /* allwarning.md */,
-				44D9BC051C5766D6002E0A49 /* ColorContants.h */,
-				44D9BC061C5766D6002E0A49 /* MacroUtils.h */,
-				44D9BC071C5766D6002E0A49 /* UIConstants.h */,
+				44D9BC051C5766D6002E0A49 /* colordef.h */,
+				44D9BC061C5766D6002E0A49 /* def.h */,
+				44D9BC071C5766D6002E0A49 /* uidef.h */,
 				44D9BC081C5766D6002E0A49 /* VersionCompare.h */,
 				44D9BC091C5766D6002E0A49 /* WarningIgnore.h */,
-				44D9BC5C1C576A88002E0A49 /* TypeUtils.h */,
+				44D9BC5C1C576A88002E0A49 /* typedef.h */,
+				03C1227F1C8BE87F004E25B7 /* constdef.h */,
+				03C122801C8BE8B9004E25B7 /* notificationdef.h */,
+				03C122811C8BE8D5004E25B7 /* apidef.h */,
+				03C122831C8BE922004E25B7 /* html5def.h */,
+				03C122841C8BE933004E25B7 /* networkdef.h */,
 			);
 			path = Macros;
 			sourceTree = "<group>";
