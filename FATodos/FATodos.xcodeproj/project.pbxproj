@@ -81,6 +81,8 @@
 		6A158E471B70B482007FE54F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A158E461B70B482007FE54F /* Images.xcassets */; };
 		6A158E4A1B70B482007FE54F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A158E481B70B482007FE54F /* LaunchScreen.xib */; };
 		6A158E561B70B482007FE54F /* FATodosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A158E551B70B482007FE54F /* FATodosTests.m */; };
+		6A3842FC1CAFD404007A6BA4 /* NSObject+MKBlockTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A3842FB1CAFD404007A6BA4 /* NSObject+MKBlockTimer.m */; };
+		6A3843011CAFD5AA007A6BA4 /* RNTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A3843001CAFD5AA007A6BA4 /* RNTimer.m */; };
 		6A3E5F951C0DCC8E0075EA98 /* Launch.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 6A3E5F941C0DCC8E0075EA98 /* Launch.m4v */; };
 		6A3E5F981C0DCCD50075EA98 /* LaunchMediaVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A3E5F971C0DCCD50075EA98 /* LaunchMediaVC.m */; };
 		6A3E5F9A1C0DE34C0075EA98 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A3E5F991C0DE34C0075EA98 /* MediaPlayer.framework */; };
@@ -742,6 +744,10 @@
 		6A158E4F1B70B482007FE54F /* FATodosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FATodosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A158E541B70B482007FE54F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A158E551B70B482007FE54F /* FATodosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FATodosTests.m; sourceTree = "<group>"; };
+		6A3842FA1CAFD404007A6BA4 /* NSObject+MKBlockTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MKBlockTimer.h"; sourceTree = "<group>"; };
+		6A3842FB1CAFD404007A6BA4 /* NSObject+MKBlockTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MKBlockTimer.m"; sourceTree = "<group>"; };
+		6A3842FF1CAFD5AA007A6BA4 /* RNTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNTimer.h; sourceTree = "<group>"; };
+		6A3843001CAFD5AA007A6BA4 /* RNTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNTimer.m; sourceTree = "<group>"; };
 		6A3E5F941C0DCC8E0075EA98 /* Launch.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Launch.m4v; sourceTree = "<group>"; };
 		6A3E5F961C0DCCD50075EA98 /* LaunchMediaVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchMediaVC.h; sourceTree = "<group>"; };
 		6A3E5F971C0DCCD50075EA98 /* LaunchMediaVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchMediaVC.m; sourceTree = "<group>"; };
@@ -2171,6 +2177,24 @@
 				6A158E541B70B482007FE54F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6A3842F91CAFD404007A6BA4 /* MKBlockTimer */ = {
+			isa = PBXGroup;
+			children = (
+				6A3842FA1CAFD404007A6BA4 /* NSObject+MKBlockTimer.h */,
+				6A3842FB1CAFD404007A6BA4 /* NSObject+MKBlockTimer.m */,
+			);
+			path = MKBlockTimer;
+			sourceTree = "<group>";
+		};
+		6A3842FD1CAFD5AA007A6BA4 /* RNTimer */ = {
+			isa = PBXGroup;
+			children = (
+				6A3842FF1CAFD5AA007A6BA4 /* RNTimer.h */,
+				6A3843001CAFD5AA007A6BA4 /* RNTimer.m */,
+			);
+			path = RNTimer;
 			sourceTree = "<group>";
 		};
 		6A3E5F931C0DCC8E0075EA98 /* Resource */ = {
@@ -3790,6 +3814,8 @@
 		6ACFDDCA1B9C23FC0061DA35 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				6A3842FD1CAFD5AA007A6BA4 /* RNTimer */,
+				6A3842F91CAFD404007A6BA4 /* MKBlockTimer */,
 				44D9BAF51C55F6E3002E0A49 /* PocoApi */,
 				44D9BA741C4F83A1002E0A49 /* FAPickerView */,
 				6A6DC8CE1BD4976100A359C0 /* LibraryApplication */,
@@ -4377,6 +4403,7 @@
 				6A6DC8071BD3DFA800A359C0 /* Samurai_CSSNumberPercentage.m in Sources */,
 				6A6DC7521BD3DFA800A359C0 /* Samurai_Predefine.m in Sources */,
 				6A6DC8181BD3DFA800A359C0 /* UIActivityIndicatorView+Html.m in Sources */,
+				6A3843011CAFD5AA007A6BA4 /* RNTimer.m in Sources */,
 				6A6DC84A1BD3DFA800A359C0 /* Samurai_HtmlElementForm.m in Sources */,
 				6A6DC7DF1BD3DFA800A359C0 /* ServiceMonitorMemoryModel.m in Sources */,
 				6A6DC8751BD3DFA900A359C0 /* Samurai_HtmlElementTextarea.m in Sources */,
@@ -4640,6 +4667,7 @@
 				6A6DC7F91BD3DFA800A359C0 /* Samurai_CSSNumberDeg.m in Sources */,
 				6A6DC7D11BD3DFA800A359C0 /* ServiceGestureViewPinch.m in Sources */,
 				6A7436841BE705C200A21481 /* ZIMDbConnectionPool.m in Sources */,
+				6A3842FC1CAFD404007A6BA4 /* NSObject+MKBlockTimer.m in Sources */,
 				6A6DC8821BD3DFA900A359C0 /* Samurai_HtmlLayoutObject.m in Sources */,
 				6A6DC8651BD3DFA900A359C0 /* Samurai_HtmlElementNav.m in Sources */,
 				6A6DC8AE1BD3DFA900A359C0 /* katana.lex.c in Sources */,

@@ -21,7 +21,7 @@
 #import "Samurai_Property.h"
 #import "MKNetworkKit.h"
 #import "NSString+Localizable.h" // tool.oc
-#import "MacroUtils.h" // tool.oc
+#import "def.h" // tool.oc
 
 // Defines
 #import "typedef.h"
