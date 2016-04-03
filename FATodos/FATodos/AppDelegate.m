@@ -132,14 +132,23 @@
 }
 
 - (void)test_timer {
-    @weakify(self)
-    
-    self.timer = [RNTimer repeatingTimerWithTimeInterval:10 // 10 秒钟
-                                                   block:^{
-                                                       @strongify(self)
-                                                       
-                                                       NSLog(@"ddddddd");
-                                                   }];
+//    @weakify(self)
+    [self runLongTimeTest];
+//    self.timer = [RNTimer repeatingTimerWithTimeInterval:10 // 10 秒钟
+//                                                   block:^{
+//                                                       @strongify(self)
+//                                                       
+//                                                       [self runLongTimeTest];
+//                                                   }];
+}
+
+- (void)runLongTimeTest {
+    int timePeriodOnMinute = 10;
+    while (timePeriodOnMinute-- >= 0) {
+        NSLog(@"ddddddd");
+        
+        [NSThread sleepForTimeInterval:60];
+    }
 }
 
 #pragma mark - VC manager

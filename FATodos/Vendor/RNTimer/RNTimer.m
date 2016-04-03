@@ -58,7 +58,7 @@
 - (void)invalidate {
   if (self.source) {
     dispatch_source_cancel(self.source);
-    dispatch_release(self.source);
+//    dispatch_release(self.source);
     self.source = nil;
   }
   self.block = nil;

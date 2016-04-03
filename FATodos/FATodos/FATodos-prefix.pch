@@ -24,7 +24,7 @@
 #import "def.h" // tool.oc
 
 // Defines
-#import "typedef.h"
+#import "fatodo_typedef.h"
 
 // Base
 #import "BaseViewProtocol.h"
