@@ -588,6 +588,9 @@
 		6AF4BDDE1BB551EF0047A720 /* Item_1_Cache.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF4BDDA1BB551EF0047A720 /* Item_1_Cache.m */; };
 		6AF4BDDF1BB551EF0047A720 /* UIUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF4BDDD1BB551EF0047A720 /* UIUtils.m */; };
 		6AF4BDE21BB553190047A720 /* UIView+Hierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF4BDE11BB553190047A720 /* UIView+Hierarchy.m */; };
+		6AFED19C1CC8E49400D36C3A /* FWGeoPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFED1961CC8E49400D36C3A /* FWGeoPoint.m */; };
+		6AFED19D1CC8E49400D36C3A /* FWLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFED1991CC8E49400D36C3A /* FWLogin.m */; };
+		6AFED19E1CC8E49400D36C3A /* FWResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFED19B1CC8E49400D36C3A /* FWResponse.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1749,6 +1752,13 @@
 		6AF4BDDD1BB551EF0047A720 /* UIUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIUtils.m; sourceTree = "<group>"; };
 		6AF4BDE01BB553190047A720 /* UIView+Hierarchy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Hierarchy.h"; sourceTree = "<group>"; };
 		6AF4BDE11BB553190047A720 /* UIView+Hierarchy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Hierarchy.m"; sourceTree = "<group>"; };
+		6AFED1951CC8E49400D36C3A /* FWGeoPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWGeoPoint.h; sourceTree = "<group>"; };
+		6AFED1961CC8E49400D36C3A /* FWGeoPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWGeoPoint.m; sourceTree = "<group>"; };
+		6AFED1971CC8E49400D36C3A /* FWJsonProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWJsonProtocol.h; sourceTree = "<group>"; };
+		6AFED1981CC8E49400D36C3A /* FWLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWLogin.h; sourceTree = "<group>"; };
+		6AFED1991CC8E49400D36C3A /* FWLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWLogin.m; sourceTree = "<group>"; };
+		6AFED19A1CC8E49400D36C3A /* FWResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWResponse.h; sourceTree = "<group>"; };
+		6AFED19B1CC8E49400D36C3A /* FWResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWResponse.m; sourceTree = "<group>"; };
 		850482635E526CD13E018DB7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		9B16E1206F253B4579B0BD13 /* Pods-FATodosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FATodosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FATodosTests/Pods-FATodosTests.release.xcconfig"; sourceTree = "<group>"; };
 		AAE214C40F4F23B5E7224076 /* Pods-FATodosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FATodosTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FATodosTests/Pods-FATodosTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -1969,6 +1979,7 @@
 		44D9BAF51C55F6E3002E0A49 /* PocoApi */ = {
 			isa = PBXGroup;
 			children = (
+				6AFED1941CC8E49400D36C3A /* TestJson */,
 				44D9BC7F1C58A61C002E0A49 /* Entity */,
 				44D9BC5E1C57C3CB002E0A49 /* Request */,
 				44D9BC5F1C57C3CB002E0A49 /* Response */,
@@ -4185,6 +4196,20 @@
 			path = LibraryUtility;
 			sourceTree = "<group>";
 		};
+		6AFED1941CC8E49400D36C3A /* TestJson */ = {
+			isa = PBXGroup;
+			children = (
+				6AFED1951CC8E49400D36C3A /* FWGeoPoint.h */,
+				6AFED1961CC8E49400D36C3A /* FWGeoPoint.m */,
+				6AFED1971CC8E49400D36C3A /* FWJsonProtocol.h */,
+				6AFED1981CC8E49400D36C3A /* FWLogin.h */,
+				6AFED1991CC8E49400D36C3A /* FWLogin.m */,
+				6AFED19A1CC8E49400D36C3A /* FWResponse.h */,
+				6AFED19B1CC8E49400D36C3A /* FWResponse.m */,
+			);
+			path = TestJson;
+			sourceTree = "<group>";
+		};
 		D9A204C453E856BEF0A3F158 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -4586,6 +4611,7 @@
 				6A6DC77A1BD3DFA800A359C0 /* Samurai_Model.m in Sources */,
 				6A6DC7B81BD3DFA800A359C0 /* Samurai_Color.m in Sources */,
 				6A6DC8AC1BD3DFA900A359C0 /* vector.c in Sources */,
+				6AFED19C1CC8E49400D36C3A /* FWGeoPoint.m in Sources */,
 				6A6DC7A21BD3DFA800A359C0 /* Samurai_ActivityStackGroup.m in Sources */,
 				44C715881C5F02D4007F5D08 /* MTLReflection.m in Sources */,
 				6A6DC7E51BD3DFA800A359C0 /* ServiceTapspotView.m in Sources */,
@@ -4772,6 +4798,7 @@
 				6A674B701BE0BFAD00562321 /* DatabaseProxy.m in Sources */,
 				6A6DC7E21BD3DFA800A359C0 /* ServiceTapspot.m in Sources */,
 				6A6DC7CA1BD3DFA800A359C0 /* ServiceBorderLayer.m in Sources */,
+				6AFED19D1CC8E49400D36C3A /* FWLogin.m in Sources */,
 				6AF4BDC41BB52D040047A720 /* AMBouncingView.m in Sources */,
 				6A6DC83E1BD3DFA800A359C0 /* Samurai_HtmlElementCode.m in Sources */,
 				6A6DC7F51BD3DFA800A359C0 /* Samurai_CSSNumberAutomatic.m in Sources */,
@@ -4900,6 +4927,7 @@
 				6A7436951BE705C200A21481 /* ZIMSqlExplainStatement.m in Sources */,
 				6A7436941BE705C200A21481 /* ZIMSqlDropViewStatement.m in Sources */,
 				6ACFE0441BA2D98F0061DA35 /* FBShimmeringView.m in Sources */,
+				6AFED19E1CC8E49400D36C3A /* FWResponse.m in Sources */,
 				6A6DC7DC1BD3DFA800A359C0 /* ServiceMonitor.m in Sources */,
 				6A6DC79C1BD3DFA800A359C0 /* Samurai_UIView.m in Sources */,
 				6A6DC8121BD3DFA800A359C0 /* Samurai_CSSNumberVw.m in Sources */,

@@ -131,6 +131,7 @@
                                          
                                      } failureHandler:^(NSError *error) {
                                          //
+                                         NSLog(@"error = %@", error);
                                      }];
 }
 
